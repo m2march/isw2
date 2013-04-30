@@ -1,0 +1,5 @@
+doc/informe/*.out
+doc/informe/*.log
+doc/informe/informe.pdf
+doc/informe/*.toc
+doc/informe/*.aux
