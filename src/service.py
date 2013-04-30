@@ -3,6 +3,9 @@
 import cherrypy
 
 class RestApi:
+	def __init__(self, aQueryProcessor):
+		self.queryProcessor = aQueryProcessor
+
 	def query(self, producto, rango=None):
 		cherrypy.response.headers["Content-Type"] =  "text/plain"
 		result = ["Se consulto el producto: " + producto]
