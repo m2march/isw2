@@ -1,8 +1,6 @@
-isw2
-====
+#isw2
 
-Dependences
------------
+##Dependences
 
 Para manejar dependencias es necesario tener instalado pipy:
 
