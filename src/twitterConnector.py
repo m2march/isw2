@@ -2,6 +2,13 @@ from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
 
+#TODO: hacer una estrategia comun de loggers
+level = "DEBUG"
+
+def debug(x):
+	if level == "DEBUG":
+		print(x)
+
 # Go to http://dev.twitter.com and create an app. 
 # The consumer key and secret will be generated for you after
 consumer_key="KsMla1PNoIANjKAIYxOAw"
@@ -12,16 +19,18 @@ consumer_secret="cxsJEBxeYRNbrQcOT7pKI5dKKzK5GlLQtAtpCn3s"
 access_token="220551350-XpcmMVkkA7JojJzoqzhNUSuUS0TJQKigROsz11Pr"
 access_token_secret="0YkZTlFw3RqLWEj0JaYEzEkJ1EqDmFd0qMRkBJ2fMO8"
 
-
 class TwitterStreamingConnector:
 	def __init__(self):
+		debug("building an instance of the streaming connector")
 		self.__tweets__= list()
-		print "se ejecuto el constructor"
-	def __getData__(self):
-		print "se ejecuto getData"
+		self.startStream()
+		debug("instance of the streaming connector successfully created")		
+		
+	def _getData(self):
+		debug("retrieving the data from streaming connector")
 		return self.__tweets__
 	def startStream(self):
-		print "starteando el stream"
+		debug("starting up stream")
 		l = StdOutListener()
 		l.startData(self.__tweets__)
 		auth = OAuthHandler(consumer_key, consumer_secret)
@@ -46,10 +55,7 @@ class StdOutListener(StreamListener):
 	def on_error(self, status):
 		print status
 
-# if __name__ == '__main__':
-# 	l = StdOutListener()
-# 	auth = OAuthHandler(consumer_key, consumer_secret)
-# 	auth.set_access_token(access_token, access_token_secret)
-
-# 	stream = Stream(auth, l)	
-# 	stream.filter(track=['#boludoJusto'])
+if __name__ == '__main__':
+	print "test for twitter streaming connector"
+	tc = TwitterStreamingConnector()
+	tc._getData()	
