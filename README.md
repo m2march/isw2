@@ -10,4 +10,6 @@ Para manejar dependencias es necesario tener instalado pipy:
 
 Luego instalar las siguientes dependencias:
 
-* _Tweepy_: python library for tweeter | `sudo pip install tweepy`
+* _Tweepy_: python library for tweeter 
+
+	`sudo pip install tweepy`
