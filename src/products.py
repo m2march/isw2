@@ -1,6 +1,9 @@
 class Product:
-	def name(self):
-		raise NotImplementedError()
+    def name(self):
+        raise NotImplementedError()
+
+    def __str__(self):
+        return self.name()
 
 class Yerba(Product):
 	def name(self):

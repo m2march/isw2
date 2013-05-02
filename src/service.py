@@ -1,19 +1,26 @@
 #-*- coding: utf-8 -*-
 
 import cherrypy
+from queryProcessing import ProcessingQuery
+from query import QueryFactory
 
 class RestApi:
-	def __init__(self, aQueryProcessor):
-		self.queryProcessor = aQueryProcessor
+    print "RestApi startup"
+    def __init__(self, aQueryProcessor):
+        self.queryProcessor = aQueryProcessor
 
-	def query(self, producto, rango=None):
-		cherrypy.response.headers["Content-Type"] =  "text/plain"
-		result = ["Se consulto el producto: " + producto]
-		if (rango!=None):
-			result.append("Con el rango: " + rango)
+    def service(self):
+        return "PrecioJusto v0.0.0.0.0.0.0.0.0.0.0.5"
 
-		return "\n".join(result)
+    def query(self, producto, rango=None):
+        cherrypy.response.headers["Content-Type"] =  "text/plain"
+        processingQuery = ProcessingQuery(producto)
+        processingQuery.setRango(rango)
 
-	query.exposed = True	
+        self.queryProcessor.processQuery(processingQuery)
+        query = QueryFactory().createQuery(processingQuery)
+        return str(query)
 
-cherrypy.quickstart(RestApi())
+
+    service.exposed = True
+    query.exposed = True	

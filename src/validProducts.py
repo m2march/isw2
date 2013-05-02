@@ -1,6 +1,6 @@
 import products
 
-class ValidProductProvider:
+class ValidProductsProvider:
 	def products(self):
 		return [products.Yerba(), products.Azucar()]
 
