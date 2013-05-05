@@ -1,14 +1,12 @@
 class Product:
+    def __init__(self, name):
+	self._name = name.upper()
+
     def name(self):
-        raise NotImplementedError()
+	return self._name
 
     def __str__(self):
         return self.name()
 
-class Yerba(Product):
-	def name(self):
-		return "Yerba"
-
-class Azucar(Product):
-	def name(self):
-		return "Azucar"
+    def __eq__(self, other):
+	return self.name() == other.name()
