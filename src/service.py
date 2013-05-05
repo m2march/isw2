@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 
 import cherrypy
+
 from queryProcessing import ProcessingQuery
 from query import QueryFactory
 
@@ -13,21 +14,19 @@ class RestApi:
 	def service(self):
 		return "PrecioJusto v0.0.0.0.0.0.0.0.0.0.0.5"
 
-	def query(self, producto, rango=None):
+	def strategys(self):
+		cherrypy.response.headers["Content-Type"] =  "text/plain"
+		return str(QueryFactory().createStrategyQuery())
+
+	def query(self, Product, MinPrice, MaxPrice, Submit, Strategy):
 		cherrypy.response.headers["Content-Type"] =  "text/plain"
 		processingQuery = ProcessingQuery(producto)
 		processingQuery.setRango(rango)
-
-		self.queryProcessor.processQuery(processingQuery)
-		query = QueryFactory().createQuery(processingQuery)
-		return str(query)
 		
 	def products(self):
 		cherrypy.response.headers["Content-Type"] =  "text/plain"
 		return str(self.validProductsProvider.products())
 
-
 	service.exposed = True
+	strategys.exposed = True
 	query.exposed = True
-	products.exposed = True
-

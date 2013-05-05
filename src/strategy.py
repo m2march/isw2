@@ -1,4 +1,9 @@
-class Strategy:
+class Strategy(object):
+
+	@staticmethod
+	def strategy_name():
+		raise NotImplementedError("")
+
 	def __init__(self):
 		raise NotImplementedError("")
 
@@ -9,6 +14,11 @@ class Strategy:
 		raise NotImplementedError("")
 
 class WalkingTheLeastStrategy(Strategy):
+
+	@staticmethod
+	def strategy_name():
+		return "Nearest"
+
 	def __init__(self, aLocation):
 		raise NotImplementedError("")
 
@@ -19,6 +29,11 @@ class WalkingTheLeastStrategy(Strategy):
 		raise NotImplementedError("")
 
 class CheapestStrategy(Strategy):
+
+	@staticmethod
+	def strategy_name():
+		return "Cheapest"
+
 	def __init__(self):
 		pass
 

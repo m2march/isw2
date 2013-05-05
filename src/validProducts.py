@@ -7,6 +7,7 @@ class ValidProductsProvider:
 		return [Product("Yerba", kilo), Product("Azucar", kilo)]
 
 
+
 if __name__ == "__main__":
-	productsList = ValidProductsProvider().products()
-	assert map(lambda p : p.name(), productsList) == ["YERBA", "AZUCAR"]
+  productsList = ValidProductsProvider().products()
+  assert map(lambda p : p.name(), productsList) == ["YERBA", "AZUCAR"]

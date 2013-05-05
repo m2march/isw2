@@ -1,4 +1,4 @@
-class Product:
+class Product(object):
 	def __init__(self, name, unit):
 		self._name = name.lower()
 		self._unit = unit
