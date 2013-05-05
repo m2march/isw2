@@ -1,4 +1,4 @@
-class ProcessingQuery:
+class ProcessingQuery(object):
     """Passed among QueryProcessors to process each part of the query.
         sVariables are strings
         proper variables should be set by the processor."""
@@ -11,7 +11,7 @@ class ProcessingQuery:
         self.sRango = rango
 
 ## Query processing classes
-class QueryProcessor:
+class QueryProcessor(object):
     """Abstract class for query processing. processQuery modifies
         the given processingQuery adding proper variables made
         from the sVariables. """

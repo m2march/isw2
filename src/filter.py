@@ -1,4 +1,4 @@
-class Filter:
+class Filter(object):
 	def __init__(self):
 		raise NotImplementedError("")
 
@@ -35,7 +35,7 @@ class AndFilter(Filter):
 		self._filters = []
 	
 	def __str__(self):
-		toString = "MultiFilter ["
+		toString = "AndFilter ["
 		for aFilter in self.filters:
 			toString = toString + str(aFilter) + " " 
 		toString = toString + "]"
