@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Beautify to commit python files
+for s in `git diff --name-only --cached`
+do
+  echo "Beautifing... ${s}"
+  python tools/pybeautify.py 2 $s
+  git add $s
+  if [ -f "${s}~" ]; then
+    rm "${s}~" ;
+  fi
+done
