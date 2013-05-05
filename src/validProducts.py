@@ -1,10 +1,13 @@
-import products
+from products import Product
+from unit import Unit
 
-class ValidProductsProvider(object):
+class ValidProductsProvider:
 	def products(self):
-		return [products.Yerba(), products.Azucar()]
+		kilo = Unit("kilo", ["kilo", "kg", "kilos", "kgs"])
+		return [Product("Yerba", kilo), Product("Azucar", kilo)]
+
 
 
 if __name__ == "__main__":
-	productsList = ValidProductProvider().products()
-	assert map(lambda p : p.name(), productsList) == ["Yerba", "Azucar"]
+  productsList = ValidProductsProvider().products()
+  assert map(lambda p : p.name(), productsList) == ["YERBA", "AZUCAR"]
