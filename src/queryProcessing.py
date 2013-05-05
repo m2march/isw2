@@ -1,20 +1,20 @@
-class ProcessingQuery:
-  """Passed among QueryProcessors to process each part of the query.
-    sVariables are strings
-    proper variables should be set by the processor."""
-
-  def __init__(self, product):
-    self.sProduct = product
-    self.sRango = None
-
-  def setRango(self, rango):
-    self.sRango = rango
+class ProcessingQuery(object):
+    """Passed among QueryProcessors to process each part of the query.
+        sVariables are strings
+        proper variables should be set by the processor."""
+    
+    def __init__(self, product):
+        self.sProduct = product
+        self.sRango = None
+    
+    def setRango(self, rango):
+        self.sRango = rango
 
 ## Query processing classes
-class QueryProcessor:
-  """Abstract class for query processing. processQuery modifies
-    the given processingQuery adding proper variables made
-    from the sVariables. """
+class QueryProcessor(object):
+    """Abstract class for query processing. processQuery modifies
+        the given processingQuery adding proper variables made
+        from the sVariables. """
     def processQuery(self, aProcessingQuery):
         raise NotImplementedError()
 

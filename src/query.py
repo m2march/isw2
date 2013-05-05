@@ -1,12 +1,30 @@
-class QueryFactory:
-  def createQuery(self, aProcessingQuery):
-    return Query(aProcessingQuery.product)
+import filter
+import json
+from strategy import Strategy
 
-class Query:
-  def __init__(self, product):
-    self.product = product
+class StrategyQuery(object):
+	def __str__(self):
+		subclasses = Strategy.__subclasses__()
+		subclassNameList = [] 
 
-  def __str__(self):
-    return "Query [product="+str(self.product)+"]"
+		print subclassNameList
 
+		for aSubclass in subclasses:
+			subclassNameList.append(aSubclass.strategy_name())
+
+		return json.dumps(subclassNameList)
+
+class QueryFactory(object):
+	def createStrategyQuery(self):
+		return StrategyQuery()
+
+	def createQuery(self, aProcessingQuery):
+		return Query(aProcessingQuery.product)
+
+class Query(object):
+	def __init__(self, product):
+		self.product = product
+
+	def __str__(self):
+		return "Query [product="+str(self.product)+"]"
 

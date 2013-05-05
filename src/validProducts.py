@@ -1,4 +1,4 @@
-from products import Product
+import products
 
 class ValidProductsProvider:
   def products(self):
