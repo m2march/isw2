@@ -14,4 +14,4 @@ queryProcessor = MultiQueryProcessor([productQueryProcessor])
 
 
 
-cherrypy.quickstart(RestApi(queryProcessor))
+cherrypy.quickstart(RestApi(queryProcessor, validProductsProvider))
