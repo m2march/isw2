@@ -1,6 +1,8 @@
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
+from observable import *
+import json
 
 #TODO: hacer una estrategia comun de loggers
 level = "DEBUG"
@@ -19,24 +21,24 @@ consumer_secret="cxsJEBxeYRNbrQcOT7pKI5dKKzK5GlLQtAtpCn3s"
 access_token="220551350-XpcmMVkkA7JojJzoqzhNUSuUS0TJQKigROsz11Pr"
 access_token_secret="0YkZTlFw3RqLWEj0JaYEzEkJ1EqDmFd0qMRkBJ2fMO8"
 
-class TwitterStreamingConnector:
-	def __init__(self):
-		debug("building an instance of the streaming connector")
-		self.__tweets__= list()
+class TwitterStreamingConnector(Observable):
+	def __init__(self, hashtag):
+		debug("building an instance of the streaming connector")		
+		self.observers = []
+		self.hashtag = hashtag
 		self.startStream()
 		debug("instance of the streaming connector successfully created")		
 		
-	def _getData(self):
-		debug("retrieving the data from streaming connector")
-		return self.__tweets__
 	def startStream(self):
 		debug("starting up stream")
 		l = StdOutListener()
-		l.startData(self.__tweets__)
+		l.startData(self.observers)
 		auth = OAuthHandler(consumer_key, consumer_secret)
 		auth.set_access_token(access_token, access_token_secret)
 		stream = Stream(auth, l)	
-		stream.filter(track=['#boludoJusto'], async = True)
+		stream.filter(track=[self.hashtag], async = True)
+	def addObserver(self, observer):
+		self.observers.append(observer)
 
 
 class StdOutListener(StreamListener):
@@ -44,18 +46,19 @@ class StdOutListener(StreamListener):
 	This is a basic listener that just prints received tweets to stdout.
 
 	"""
-	def startData(self,tweets):
-		self.database = tweets
+	def startData(self,observers):
+		self.observers = observers
 
-	def on_data(self, data):		
-		print data
-		self.database.append(data)
+	def on_data(self, data):				
+		jsonData = json.loads(data)
+		#TODO data to textableData
+		for observer in self.observers:
+			observer.update(jsonData['text'])			
 		return True
 
 	def on_error(self, status):
 		print status
 
-if __name__ == '__main__':
-	print "test for twitter streaming connector"
-	tc = TwitterStreamingConnector()
-	tc._getData()	
+# if __name__ == '__main__':
+# 	print "test for twitter streaming connector"
+# 	tc = TwitterStreamingConnector()
