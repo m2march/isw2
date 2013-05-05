@@ -1,3 +1,4 @@
+	
 	def function():
 		return 'true'
 
