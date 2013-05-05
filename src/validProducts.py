@@ -1,10 +1,10 @@
-import products
+from products import Product
 
 class ValidProductsProvider:
 	def products(self):
-		return [products.Yerba(), products.Azucar()]
+		return [Product("Yerba"), Product("Azucar")]
 
 
 if __name__ == "__main__":
-	productsList = ValidProductProvider().products()
-	assert map(lambda p : p.name(), productsList) == ["Yerba", "Azucar"]
+	productsList = ValidProductsProvider().products()
+	assert map(lambda p : p.name(), productsList) == ["YERBA", "AZUCAR"]
