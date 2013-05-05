@@ -1,12 +1,16 @@
 class Product:
-    def __init__(self, name):
-	self._name = name.upper()
+	def __init__(self, name, unit):
+		self._name = name.lower()
+		self._unit = unit
 
-    def name(self):
-	return self._name
+	def name(self):
+		return self._name
 
-    def __str__(self):
-        return self.name()
+	def unit(self):
+		return self._unit
 
-    def __eq__(self, other):
-	return self.name() == other.name()
+	def __str__(self):
+		return self.name()
+
+	def __eq__(self, other):
+		return self.name() == other.name()
