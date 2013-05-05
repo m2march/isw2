@@ -1,5 +1,9 @@
 #isw2
 
+### Python reference
+
+Una referencia a python para tener en cuenta: http://rgruet.free.fr/PQR2.3.html
+
 ### Dependences
 
 Para manejar dependencias es necesario tener instalado pipy:
