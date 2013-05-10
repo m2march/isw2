@@ -2,6 +2,7 @@ import products
 from validProducts import ValidProductsProvider
 from location import Location
 
+
 ## Parser error
 class ParserError(Exception):
 	"""Create offer error"""
@@ -16,14 +17,14 @@ class Parser:
 		pass
 
 	def parsing(self, rawText):
-		rawText = rawText.lower()
-		rawText = self._removeHashTag(rawText)
-		product = self._getProduct(rawText)
-		rawText = self._removeProduct(rawText, product)
-		price = self._getPrice(rawText)			
-		rawText = self._removePriceAndUnit(rawText,product)
-		locationName = self._getLocation(rawText)
-		location = Location(locationName)
+		rawText = self._removeHashTag(rawText.lower())
+		product = ProductParser().get(rawText)
+		price = PriceParser(product).get(rawText)
+		locationName = LocationParser(product, price).get(rawText)
+		try:
+			location = Location(locationName)
+		except:
+			raise ParserError("location")
 		return (product, price, location)
 
 	def _removeHashTag(self, rawText):
@@ -34,22 +35,31 @@ class Parser:
 				rawText.append(palabra)
 		return " ".join(rawText)
 
-	def _getProduct(self, rawText):
+
+class EspecificParser:
+	def __init__(self):
+		pass
+	def get(self):
+		raise NotImplementedError( "Should have implemented this" )
+
+class ProductParser(EspecificParser):
+	def get(self, rawText):
 		resultProduct = None
 		for product in ValidProductsProvider().products():
-			name = product.name()
-			 
+			name = product.name()			 
 			if name == rawText[:len(name)]:
 				if not(resultProduct) or len(name) > len(resultProduct.name()):
 					resultProduct = product
+
 		if not(resultProduct):
 			raise ParserError("product")
 		return resultProduct
 		
-	def _removeProduct(self, text, product):
-		return text[len(product.name()) + 1:]
+class PriceParser(EspecificParser):
+	def __init__(self, product):
+		self._product = product
 
-	def _getPrice(self, rawText):
+	def get(self, rawText):
 		## devuelve el primer numero que encuentra en el texto
 		rawText = rawText.replace("$", "")
 		rawText = rawText.replace(",", ".")
@@ -59,15 +69,21 @@ class Parser:
 			except ValueError:
 				pass
 		raise ParserError("Price")
-	
-	def _removePriceAndUnit(self, rawText, product):
-		for unit_name in product.unit().representations():
+
+class LocationParser(EspecificParser):
+	def __init__(self, product, price):
+		self._product = product
+		self._price = price
+
+	def get(self, rawText):
+		rawText = self._removePriceAndUnit(rawText)
+		return rawText.strip()
+		
+	def _removePriceAndUnit(self, rawText):
+		for unit_name in self._product.unit().representations():
 			if rawText.find(unit_name) != -1:
 				return rawText[rawText.find(unit_name) + len(unit_name):]
 		raise ParserError("Unit")
-	
-	def _getLocation(self, rawText):
-		return rawText.strip()
 
 if __name__ == "__main__":
 	(product, price, location) = Parser().parsing("Yerba 5 pesos el kilo av.lafuente 1277 #precioJusto")

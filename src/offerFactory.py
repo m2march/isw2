@@ -1,9 +1,10 @@
 import products
 from offer import Offer
 from parser import ParserError
+from parser import Parser
 
 class OfferFactory:
-	def __init__(self, parser):
+	def __init__(self, parser=Parser()):
 		self.parser = parser
 		pass
 	
