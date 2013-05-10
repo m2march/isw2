@@ -1,7 +1,23 @@
 import cherrypy
 
+import httplib
+import json
+
 def build_option(self, Name, Value):
 	return "<option value=\"" + Value + "\">" + Name + "</option>"
+
+def rest_call(aBackendURL, aBackendPort, aResource):
+	conn = httplib.HTTPConnection(aBackendURL, aBackendPort)
+	conn.request("GET", aBackendURL + aResource)
+
+	response = conn.getresponse()
+
+	assert(response.status == 200)
+	
+	data = response.read()
+
+	asjson = json.load(data)
+	return asjson
 
 class Frontend(object):
 	print "Frontend startup"
@@ -10,14 +26,14 @@ class Frontend(object):
 		self._backend_port = aBackendPort
 
 	def index(self):
-		return index_string
+		return self.index_string()
 
-	def index_string():
+	def index_string(self):
 		headAndBody = self.build_head() + self.build_body()
 		return "<html>" + headAndBody + "</html>"
 
 	def build_head(self):
-		return "<head><title>El #Precio Justo</title></head>
+		return "<head><title>El #Precio Justo</title></head>"
 
 	def build_body(self):
 		productList = self.get_products()
@@ -56,4 +72,17 @@ class Frontend(object):
 		for aStrategyName in someStrategys:
 			strategy_option_list = strategy_option_list + build_option(aStrategyName, aStrategyName)
 
+	def get_products(self):
+		products = rest_call(self._backend_url, self._backend_port, "/products")
+		return products
+
+	def get_strategys(self):
+		strategys = rest_call(self._backend_url, self._backend_port, "/strategys")
+		return strategys
+
+
 	index.exposed = True
+
+if __name__ == '__main__':
+	cherrypy.config.update({'server.socket_host': '127.0.0.1', 'server.socket_port': 8081})
+	cherrypy.quickstart(Frontend("127.0.0.1", 8080))

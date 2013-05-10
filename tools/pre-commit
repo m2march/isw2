@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Beautify to commit python files
-for s in `git diff --name-only --cached`
+for s in `git diff --name-only --cached | grep .*\.py$`
 do
   echo "Beautifing... ${s}"
   python tools/pybeautify.py 2 $s

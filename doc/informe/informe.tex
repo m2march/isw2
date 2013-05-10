@@ -37,60 +37,37 @@
 \tableofcontents
 \newpage
 
-	\section{Product backlog}
-		\includepdf[pages={1,2}]{product_backlog.pdf}
+\section{Introducción}
 
-	\section{Sprint backlog}
-		\includepdf[pages={1}]{sprint_backlog.pdf}
+El actual informe presenta el análisis, diseño y desarrollo inicial realizado para el producto \textbf{Precio Justo}. En este se detallan el conjunto de \emph{user stories} que abarcan el desarrollo completo de la aplicación, incluyendo tanto las definiciones actuales como la desiciones de extensión que se tienen en cuenta en este momento. Se presenta además un primer \emph{diseño orientado a objetos} de la aplicación completa. Este diseño tiene como intención estar abierto a los distintos ejes de cambios considerados en esta instancia. Por último, se analiza el alcance, el proceso y el éxito de la primera iteración. En esta sección se explica lo logrado y se generan conclusiones y propuestas de cambio para el resto del proceso de la aplicación.
 
-  \begin{landscape}
-  \section{Análisis del sistema}
-  \begin{figure}[H]
-      \centering
-      \includegraphics[scale=0.8]{graphics/arch_diagram.pdf}
-      \caption{Diagrama de arquitectura (primer boceto)}
-    \end{figure}
-  \end{landscape}
+\section{Análisis de la aplicación}
 
-  El diagrama presentado anteriormente es una aproximación informal de la arquitectura del sistema, que sirve para entender la estructura 
-  de las \textsf{User Stories} definidas respecto a la primera concepción del mismo. Cada círculo consituye una \textsf{User Story} (aunque no todas las
-  \textsf{User Stories} se encuentran en el diagrama). Cuando un círculo se encuentra por debajo de otros es porque esta \textsf{User Story} es predecesora
-  de las otras (i.e. debe realizarse antes).
+\subsection{Objetivo}
 
+\textbf{Precio Justo} es una aplicación de recolección y resumen de datos masivos provistos por las redes sociales. La intención es poder obtener los precios más baratos para ciertos productos, de forma confiable e independiente. El uso de las redes sociales para obtener los datos tiene como objetivo lograr imparcialidad en los mismos.
 
-  \subsection{Definiciones}
-  \begin{itemize}
-    \item\textbf{Oferta:} Una oferta es la información extraída de un tweet que cumple con el formato del \emph{Precio Justo}.
-    Una oferta posee un producto, un precio por una cierta unidad y una ubicación. En una primera instancia la ubicación sería
-    un texto indicando calle y altura, en un futuro esta podría ser un punto geográfico representado ya validado por el sistema
-    (por ejemplo, si se incluye la información de georeferenciación de twitter). Las \textsf{ofertas} será lo que finalmente se
-    muestra al usuario.
+\subsection{Ejes de cambio}
 
-  \item\textbf{Filtro:} Un filtro de ofertas define si una Oferta cumple con un criterio para luego descartarlo de los
-    resultados en caso de no cumplirlo.
+Dentro de la resolución genérica del objetivo de la aplicación se establecen, para una primera instancia, las siguientes restricciones, que pasan a conformar \emph{ejes de cambio} de la aplicación:
 
-  \item\textbf{Estrategia:} Una estrategia separa un subconjunto de \textsf{Ofertas} utilizando información global de los mismos
-    (por ejemplo al buscar menor precio busca los mínimos del conjunto segun el precio de cada oferta).
-  \end{itemize}
+\paragraph{Obtención de datos}
+\begin{itemize}
+    \item \textbf{Origen de los datos:} En un primer lugar los datos a utilizar por la aplicación se obtendrán exclusivamente de \emph{twitter}. Dentro del flujo de datos del mismo, se espera filtrar aquellos que contengan información relevante para nuestros propósitos.
+    \item \textbf{Formato de los tweets:} Considerando la restricción anterior, debe definirse bajo qué criterio un \emph{tweet} es útil. En una primera instancia se espera que los mismos tengan un formato similar a \textsf{<Producto> <Precio> <Unidad> <Lugar> \#PrecioJusto}, donde el \emph{hashtag} es indicador de que el \emph{tweet} está orientado a ser utilizado por nuestra aplicación. Se espera en un futuro poder precindir del \emph{hashtag} y poder interpretar formatos más liberales.
+    \item \textbf{Unidad de los productos:} Otra restricción impuesta para el procesamiento de datos es que los precios estén indicados en su valor por unidad, siendo restringida las unidades aceptadas para cada producto. Por ejemplo, para tomates se aceptan solo kilogramos, y para aceite la unidad.
+\end{itemize}
 
-  \subsection{Criterios}
-  \begin{itemize}
-    \item\textbf{Cantidad de productos:} en una primera instancia la aplicación estará trabajando con consultas para un único producto por vez, 
-      dejando la complejidad de utilizar varios para próximas iteraciones.
-    \item\textbf{Responsabilidad de la información:} durante el debate de definición de la aplicación surgió el problema de cómo hacer que los datos
-      provistos por la aplicación sean correctos o, en todo caso, a quién le corresponde esta responsabilidad. Una primera forma de ver la aplicación
-      fue como alguién que recorre twitter y reproduce la información del mismo de forma ordenada y sin ruido. En este caso, la aplicación se separa
-      de la responsabilidad de que la información mostrada sea correcta. No obstante, surgieron ideas respecto a como tener mayor seguridad sobre la 
-      ofertas exhibidas. Una primera aproximación fue utilizar siempre la oferta más nueva para un producto en un lugar, considerando que si dos tweets
-      hablan de lo mismo el más nuevo tiene datos más actualizados. Otra idea fue no mostrar información que fuese más antigua que cierto tiempo, 
-      denominado \texttt{freshness}. Finalmente se planteó que nuestro sistema podría actuar como una base de datos de información de precios en negocios
-      que se actualiza desde distintas fuentes. Así existiría una alta, baja y modificación de ofertas, donde incluso los mismos usuarios de la aplicación
-      podrían contribuir a la misma sin utilizar twitter. Esta última opción hace al sistema completamente responsable de los datos provistos al usuario.
-    \item\textbf{Ofertas de tiempo limitado:} relacionado con el concepto de \texttt{freshness} surgió la idea de que podrían existir ofertas de tiempo 
-      limitado (como ser "kilo de naranjas \$4 este fin de semana"). Es de interés considerar en un futuro la posibilidad de que los usuarios puedan
-      reportar este tipo de ofertas con toda su información. Mientras tanto, se decidió considerar que \emph{todas} las \textsf{ofertas} tendrán un
-      tiempo de expiración por defecto (lo cual también es útil para mantener la información correcta).
-  \end{itemize}
+\section{User Stories}
 
+\section{Diseño}
+
+\section{Primera Iteración}
+
+\subsection{Desarrollo}
+
+\subsection{Logros}
+
+\subsection{Review}
 
 \end{document}

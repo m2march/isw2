@@ -1,18 +1,31 @@
 import tweepy
+from observable import *
 
+class TwitterSimpleConnector(Observable):
+	def __init__(self,hashtag):
+		self.hashtag = hashtag
+		self.observers = []
+	
+	def addObserver(self, observer):
+		self.observers.append(observer)
 
-class TwitterSimpleConnector:
-	def _getData(self):		
+	def pull(self):		
 		api = tweepy.API()
-		return tweepy.Cursor(api.search,
-		                           q="boludoJusto",
-		                           rpp=100,
-		                           result_type="all",
+		tweets =  tweepy.Cursor(api.search,
+		                           q=self.hashtag,
+		                           rpp=300,
+		                           result_type="recent",
 		                           include_entities=True,
 		                           lang="en").items()
+		for observer in self.observers:
+			for tweet in tweets:
+				observer.update(tweet)
+		return tweets
+
+
 
 if __name__ == '__main__':
 	print "test for twitter simple connector"
 	tc = TwitterSimpleConnector()
-	for tweet in tc._getData():
-		print tweet.text
+	for tweet in tc.pull():		
+		print tweet.text.encode('utf-8','ignore')

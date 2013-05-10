@@ -27,4 +27,3 @@ class Query(object):
 
 	def __str__(self):
 		return "Query [product="+str(self.product)+"]"
-
