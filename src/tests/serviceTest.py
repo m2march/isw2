@@ -2,14 +2,29 @@ import unittest
 import httplib
 import subprocess
 
-host = "http://localhost"
+host = "127.0.0.1"
 port = "8080"
 
 class ServiceTest(unittest.TestCase):
 
   @classmethod
   def setUpClass(cls):
-    exitCode = subprocess.call("make start".split())
-    cls.assertEquals(exitCode, 0)
-    if (exitCode == 0):
-      httplib.HTTPConnection(host, port)
+    cls.p = subprocess.Popen("make start".split(), stdout=None, stdin=None)
+
+  def setUp(self):
+        self.conn = httplib.HTTPConnection(host, port)
+
+  def test_strategies(self):
+        response = self.conn.request("GET", "/strategies")
+        self.assertIsNotNone(response)
+
+  def test_products(self):
+        response = self.conn.request("GET", "/products")
+        self.assertIsNotNone(response)
+
+  @classmethod
+  def tearDownClass(cls):
+        cls.p.terminate()
+
+
+

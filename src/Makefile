@@ -1,5 +1,5 @@
 .PHONY: tests clean
-TEST_MODULES = tests.validProductsTest
+TEST_MODULES = tests.validProductsTest tests.serviceTest
 
 start:
 	python startup.py
