@@ -1,8 +1,9 @@
 #-*- coding: utf-8 -*-
 
 import cherrypy
+import json
 
-from queryProcessing import ProcessingQuery
+from queryProcessing import OfferQueryInConstruction 
 from query import QueryFactory
 
 class RestApi:
@@ -25,13 +26,20 @@ class RestApi:
 		response = self.queryProcessor.processProductsQuert(self.validProductsProvider)
 		return response 
 
-	def query(self, Product, MinPrice, MaxPrice, Submit, Strategy):
+	def offerquery(self, Product="", MinPrice="", MaxPrice="", Strategy=""):
 		cherrypy.response.headers["Content-Type"] =  "text/plain"
-		processingQuery = ProcessingQuery(producto)
-		processingQuery.setRango(rango)
-		return "ERROR! Not yet implemented!"
+
+		try:
+			offerQuery = OfferQueryInConstruction(Product, MinPrice, MaxPrice, Strategy)
+			processedOfferQuery = self.queryProcessor.processOfferQuery(offerQuery)
+
+			queryResult = ["a", "b", "c"]
+
+			return json.dumps({"result": queryResult}) 
+		except Exception as e:
+			return json.dumps({"error":True, "reason":str(e)})
 
 	service.exposed = True
 	strategys.exposed = True
 	products.exposed = True
-	query.exposed = True
+	offerquery.exposed = True

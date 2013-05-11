@@ -10,19 +10,33 @@ class UnreachableRestResource(Exception):
 	def __str__(self):
 		return self.reason
 
+class QueryError(Exception):
+	def __init__(self, aReason):
+		self.reason = aReason
+
+	def __str__(self):
+		return self.reason
+
+
 class RestBackend(object):
 	def __init__(self, aBackendURL, aBackendPort):
 		self.url = aBackendURL
 		self.port = aBackendPort
 
-	def ask_for(self, resource):
+	def ask_for(self, resource, parameter = {}):
+
+		if len(parameter) != 0:
+			resource = resource + "?"
+			for key, val in parameter.items():
+				resource = resource + key + "=" + val + "&" 
+
 		conn = httplib.HTTPConnection(self.url, self.port)
 		conn.request("GET", resource)
 
 		response = conn.getresponse()
 
 		if response.status != 200:
-			errorString = str(aBackendURL) + ":" + str(aBackendPort) + " " + resource  + "\n\tresponse_status = " + str(response.status) + "\n"
+			errorString = str(self.url) + ":" + str(self.port) + " " + resource  + "\n\tresponse_status = " + str(response.status) + "\n"
 			raise UnreachableRestResource(errorString)
 
 		data = json.loads(response.read())
@@ -43,35 +57,65 @@ class OfferRestBackend(object):
 	def strategys(self):
 		return OfferRestBackend.map_to_utf8(self.backend.ask_for("/strategys"))
 
-	def offerQuery(self):
-		pass
+	def offerQuery(self, Product, MinPrice, MaxPrice, Strategy):
+		parameters = {"Product" : Product, "MinPrice" : MinPrice, "MaxPrice" : MaxPrice, "Strategy":Strategy}
+		response = self.backend.ask_for("/offerquery", parameters)
 
+		if "error" in response.keys() :
+			raise QueryError(response["reason"])
+
+		return response["result"]
 
 class Frontend(object):
-	print "Frontend startup"
 	def __init__(self, aBackendURL, aBackendPort):
 		self.backend = OfferRestBackend(aBackendURL, aBackendPort)
+		print "Frontend startup"
 
-	def index(self):
+	def offerqueryPage(self, Product, MinPrice, MaxPrice, Strategy):
+		query_result = self.backend.offerQuery(Product, MinPrice, MaxPrice, Strategy) #parameter validation must be done on the backend
+		response = self.offerQueryResponse(query_result)
+		return response
+
+	def offerQueryResponse(self, queryResult):
+		response = "<html>"
+		response += self.buildHead()
+		response += "<body>"
+		
+		if len(queryResult) == 0:
+			response += "<h1 style=\"text-align: center\";>No offers matching the requested description.</h1>"
+		else:
+			response += "<h1 style=\"text-align: center\";>Offers matching the requested description</h1>"
+				
+			for result in queryResult:
+				response += "<p style=\"text-align: center\";>TODO: Print the result in a nice way! " + str(result) + "</p>"
+		response += "</body></html>"
+		return response
+
+	def index(self, Product = "", MinPrice = "", MaxPrice = "", Submit = "", Strategy = ""):
 		response = ""
 
 		try:
-			response = self.indexString()
-		except Exception as anyException:
-			response = self.errorString(anyException) 
+			if len(Submit) == 0:
+				response = self.indexPage()
+			else:
+				response = self.offerqueryPage(Product, MinPrice, MaxPrice, Strategy)
+		except Exception as anException:
+			response = self.errorPage(anException)
+
 		return response
 
-	def errorString(self, anError):
+	def errorPage(self, anError):
 		return "<html>\n" + self.buildHead() + "\n<body><h1>Ops!</h1>\n" + str(anError) + "</body>\n</head>"
 	
-	def indexString(self):
-		headAndBody = self.buildHead() + self.buildBody()
-		return "<html>" + headAndBody + "</html>"
+	def indexPage(self):
+		headAndBody = self.buildHead() + self.buildIndexBody()
+		response = "<html>" + headAndBody + "</html>"
+		return response
 
 	def buildHead(self):
 		return "<head><title>El #Precio Justo</title></head>"
 
-	def buildBody(self):
+	def buildIndexBody(self):
 		productList = self.backend.products()
 		strategyList = self.backend.strategys()
 
@@ -87,7 +131,7 @@ class Frontend(object):
 
 								<select name="Strategy">""" + self.strategySelectBox(strategyList) + """</select>
 
-								<input name="Submit" type="submit" value="I'm feeling lucky" />
+								<input name="Submit" type="submit" value="I'm feeling lucky" action="index" method="get"/>
 							</p>
 						</form>
 					<p style="text-align: center;">Ahorremos Ahora (AA)</p>
