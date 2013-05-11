@@ -1,9 +1,12 @@
-.PHONY: test clean
-TEST_MODULES = test.validProductsTest
+.PHONY: tests clean
+TEST_MODULES = tests.validProductsTest
 
-test:
+start:
+	python startup.py
+
+tests:
 	python -m unittest $(TEST_MODULES)
 
 clean:
 	rm -f *.pyc
-	rm -f test/*.pyc
+	rm -f tests/*.pyc
