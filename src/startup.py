@@ -8,10 +8,6 @@ validProductsProvider = ValidProductsProvider()
 
 #Inicializo el procesamiento de querys
 productQueryProcessor = ProductQueryProcessor(validProductsProvider)
-
 queryProcessor = MultiQueryProcessor([productQueryProcessor])
-
-
-
 
 cherrypy.quickstart(RestApi(queryProcessor, validProductsProvider))

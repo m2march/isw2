@@ -2,28 +2,13 @@ import filter
 import json
 from strategy import Strategy
 
-class StrategyQuery(object):
-	def __str__(self):
-		subclasses = Strategy.__subclasses__()
-		subclassNameList = [] 
+class Query(object):
+	pass
 
-		print subclassNameList
-
-		for aSubclass in subclasses:
-			subclassNameList.append(aSubclass.strategy_name())
-
-		return json.dumps(subclassNameList)
+class OfferQuery(Query):
+	def __init__(self, aProduct):
+		pass
 
 class QueryFactory(object):
-	def createStrategyQuery(self):
-		return StrategyQuery()
-
-	def createQuery(self, aProcessingQuery):
-		return Query(aProcessingQuery.product)
-
-class Query(object):
-	def __init__(self, product):
-		self.product = product
-
-	def __str__(self):
-		return "Query [product="+str(self.product)+"]"
+	def createOfferQuery(self, aProcessingQuery):
+		return OfferQuery(aProcessingQuery.product)

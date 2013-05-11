@@ -24,7 +24,7 @@ class PriceRangeFilter(Filter):
 		self._rangeMax = rangeMax
 	
 	def __str__(self):
-		return "PriceRangeFilter [rangeMin="+str(self._rangeMin)+", "+str(self._rangeMax)+"]"
+		return "PriceRangeFilter [rangeMin="+str(self._rangeMin)+", rangeMax="+str(self._rangeMax)+"]"
 	
 	def filter(self, aOffer):
 		offerPrice = aOffer.price()
