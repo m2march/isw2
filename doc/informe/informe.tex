@@ -31,66 +31,6 @@
 \integrante{Matías Incem}{396/09}{matias.incem@gmail.com}
 \integrante{Pablo Gauna}{334/09}{gaunapablo@gmail.com}
 
-%%% Macros %%%
-
-%userStory(idRally, titulo, descripcion, criterios-aceptacion, story-points, owner, iteración, estado)
-\newcommand{\userStory}[8]{
-	\fbox{
-	\begin{minipage}{0.9\textwidth}
-
-		\vspace{0.1cm}
-
-		\begin{large}\textbf{#1: \textit{#2}}		\end{large}
-
-		\vspace{11pt}
-
-		\textbf{Descripción:} #3
-
-		\vspace{9pt}
-
-		\textbf{Criterios de aceptación:} #4
-
-		\vspace{9pt}
-
-		\begin{tabular}{ l c l }
-		\textbf{Story Points:} #5 & \hspace{0.2\textwidth} & \textbf{Responsable:} #6 \\[6pt]
-		\textbf{Iteración:} #7 & \hspace{0.2\textwidth} & \textbf{Estado:} #8 \\
-		\end{tabular}
-
-		\vspace{2pt}
-
-	\end{minipage}
-	}
-}
-
-%task(idRally, titulo, descripcion, horas-estimadas, responsable, horas-faltantes, estado)
-\newcommand{\task}[7]{
-	\fbox{
-	\begin{minipage}{0.9\textwidth}
-
-		\vspace{0.1cm}
-
-		\begin{large}\textbf{#1: }\textit{#2}		\end{large}
-
-		\vspace{5pt}
-
-		\textbf{Descripción:} #3
-
-		\vspace{3pt}
-
-		\begin{tabular}{ l c l }
-		\textbf{Horas estimadas:} #4 & \hspace{0.2\textwidth} & \textbf{Responsable:} #5 \\[1pt]
-		\textbf{Horas faltantes:} #6 & \hspace{0.2\textwidth} & \textbf{Estado:} #7 \\
-		\end{tabular}
-
-		\vspace{2pt}
-
-	\end{minipage}
-	}
-}
-
-%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
@@ -147,72 +87,7 @@ La visualización de ofertas que se le dará al usuario no se encuentra completa
 
 \section{User Stories}
 
-%%%%% MOLDES PARA COMPLETAR STORIES Y TASKS
-
-% \userStory	{} % ID en el Rally
-% 			{} % título
-% 			{} % descripcion
-% 			{} % criterios de aceptacion
-% 			{} % story points
-% 			{} % story owner
-% 			{} % iteración (Primera o ``no definida'')
-% 			{} % estado (completada, bloqueada, etc.)
-
-% \task	{} % ID en el Rally
-% 		{} % título
-% 		{} % descripcion
-% 		{} % horas estimadas
-% 		{} % responsable
-% 		{} % horas faltantes
-% 		{} % estado (completada, bloqueada, etc.)
-
-\newpage
-
-\subsection{Ejemplos de tareas}
-
-\userStory	{US143} % ID en el Rally{Como desarrollador quiero un mecanismo para hacer tests unitarios} % título
-			{Como desarrollador quiero un mecanismo para hacer tests unitarios} % título
-			{Esta story se considera terminada cuando se encuentre implementado un mecanismo de fácil extensión para poder testear funcionalidades unitarias. } % descripcion
-			{El mecanismo debe haber sido testeado en su facilidad de uso y extensibilidad creando tests.} % criterios de aceptacion
-			{3} % story points
-			{Martín M} % story owner
-			{Primera} % iteración (Primera o ``no definida'')
-			{En proceso} % estado (completada, bloqueada, etc.)
-
-\task	{TA35} % ID en el Rally
-		{Investigar como funcionan las apis (Rest y Streaming) junto con las sdk de twitter} % título
-		{No había ninguna descripción escrita} % descripcion
-		{4} % horas estimadas
-		{Iván P} % responsable
-		{0} % horas faltantes
-		{Completada} % estado (completada, bloqueada, etc.)
-
-\task	{TA35} % ID en el Rally
-		{Investigar como funcionan las apis (Rest y Streaming) junto con las sdk de twitter} % título
-		{No había ninguna descripción escrita} % descripcion
-		{4} % horas estimadas
-		{Iván P} % responsable
-		{0} % horas faltantes
-		{Completada} % estado (completada, bloqueada, etc.)
-
-\vspace{20pt}
-
-\userStory	{US143} % ID en el Rally{Como desarrollador quiero un mecanismo para hacer tests unitarios} % título
-			{Como desarrollador quiero un mecanismo para hacer tests unitarios} % título
-			{Esta story se considera terminada cuando se encuentre implementado un mecanismo de fácil extensión para poder testear funcionalidades unitarias. } % descripcion
-			{El mecanismo debe haber sido testeado en su facilidad de uso y extensibilidad creando tests.} % criterios de aceptacion
-			{3} % story points
-			{Martín M} % story owner
-			{Primera} % iteración (Primera o ``no definida'')
-			{En proceso} % estado (completada, bloqueada, etc.)
-
-\task	{TA35} % ID en el Rally
-		{Investigar como funcionan las apis (Rest y Streaming) junto con las sdk de twitter} % título
-		{No había ninguna descripción escrita} % descripcion
-		{4} % horas estimadas
-		{Iván P} % responsable
-		{0} % horas faltantes
-		{Completada} % estado (completada, bloqueada, etc.)
+\include{userStories}
 
 \section{Diseño}
 
