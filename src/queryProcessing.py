@@ -26,7 +26,7 @@ class QueryProcessor(object):
 		subclassNameList = [] 
 
 		for aSubclass in subclasses:
-			subclassNameList.append(aSubclass.strategy_name())
+			subclassNameList.append(aSubclass.strategyName())
 
 		return json.dumps(subclassNameList, ensure_ascii=False)
 
@@ -60,7 +60,7 @@ class StrategyQueryProcessor(QueryProcessor):
 	def processOfferQuery(self, aQueryInConstruction):
 		sStrategy = aQueryInConstruction.sStrategy
 		try:
-			aStrategy = next(sc for sc in Strategy.__subclasses__() if sc.strategy_name() == aQueryInConstruction.sStrategy)
+			aStrategy = next(sc for sc in Strategy.__subclasses__() if sc.strategyName() == aQueryInConstruction.sStrategy)
 			aQueryInConstruction.Strategy = aStrategy
 		except Exception:
 			raise IllegalStrategy(aQueryInConstruction.sStrategy)

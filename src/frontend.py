@@ -43,7 +43,18 @@ class RestBackend(object):
 
     return data
 
-class OfferRestBackend(object):
+class OfferBackend(object):
+
+	def products(self):
+		raise NotImplementedError("")
+
+	def strategies(self):
+		raise NotImplementedError("")
+
+	def offers(self, Product, MinPrice, MaxPrice, Strategy):
+		raise NotImplementedError("")
+
+class OfferRestBackend(OfferBackend):
   def __init__(self, aBackendURL, aBackendPort):
     self.backend = RestBackend(aBackendURL, aBackendPort)
 
@@ -52,12 +63,12 @@ class OfferRestBackend(object):
     return map(lambda elem: elem.encode("utf-8"), anUnicodeList)
 
   def products(self):
-    return OfferRestBackend.map_to_utf8(self.backend.ask_for("/products"))
+    return OfferBackend.map_to_utf8(self.backend.ask_for("/products"))
 
   def strategies(self):
-    return OfferRestBackend.map_to_utf8(self.backend.ask_for("/strategies"))
+    return OfferBackend.map_to_utf8(self.backend.ask_for("/strategies"))
 
-  def offerQuery(self, Product, MinPrice, MaxPrice, Strategy):
+  def offers(self, Product, MinPrice, MaxPrice, Strategy):
     parameters = {"Product" : Product, "MinPrice" : MinPrice, "MaxPrice" : MaxPrice, "Strategy":Strategy}
     response = self.backend.ask_for("/offerquery", parameters)
 
@@ -66,13 +77,13 @@ class OfferRestBackend(object):
 
     return response["result"]
 
-class Frontend(object):
-  def __init__(self, aBackendURL, aBackendPort):
-    self.backend = OfferRestBackend(aBackendURL, aBackendPort)
-    print "Frontend startup"
+class WebFrontend(object):
+  def __init__(self, anOfferBackend):
+    self.backend = anOfferBackend
+    print "WebFrontend startup"
 
   def offerqueryPage(self, Product, MinPrice, MaxPrice, Strategy):
-    query_result = self.backend.offerQuery(Product, MinPrice, MaxPrice, Strategy) #parameter validation must be done on the backend
+    query_result = self.backend.offers(Product, MinPrice, MaxPrice, Strategy) #parameter validation must be done on the backend
     response = self.offerQueryResponse(query_result)
     return response
 
@@ -96,7 +107,7 @@ class Frontend(object):
 
     try:
       if len(Submit) == 0:
-        response = self.indexPage()
+        response = self.mainPage()
       else:
         response = self.offerqueryPage(Product, MinPrice, MaxPrice, Strategy)
     except Exception as anException:
@@ -107,7 +118,7 @@ class Frontend(object):
   def errorPage(self, anError):
     return "<html>\n" + self.buildHead() + "\n<body><h1>Ops!</h1>\n" + str(anError) + "</body>\n</head>"
 
-  def indexPage(self):
+  def mainPage(self):
     headAndBody = self.buildHead() + self.buildIndexBody()
     response = "<html>" + headAndBody + "</html>"
     return response
@@ -139,22 +150,18 @@ class Frontend(object):
     return body
 
   @staticmethod
-  def buildOption(Name, Value):
-    return "<option value=\"" + Value + "\">" + Name + "</option>"
-
-  @staticmethod
   def buildOptionsFromStringList(aStringList):
-    options = map(lambda name: Frontend.buildOption(name, name), aStringList)
+    options = map(lambda name: "<option value=\"" + name + "\">" + name + "</option>", aStringList)
     return reduce(lambda s1, s2: s1 + s2, options)
 
   def productSelectBox(self, someProducts):
-    return Frontend.buildOptionsFromStringList(someProducts)
+    return WebFrontend.buildOptionsFromStringList(someProducts)
 
   def strategySelectBox(self, someStrategys):
-    return Frontend.buildOptionsFromStringList(someStrategys)
+    return WebFrontend.buildOptionsFromStringList(someStrategys)
 
   index.exposed = True
 
 if __name__ == '__main__':
   cherrypy.config.update({'server.socket_host': '127.0.0.1', 'server.socket_port': 8081})
-  cherrypy.quickstart(Frontend("127.0.0.1", 8080))
+  cherrypy.quickstart(WebFrontend(OfferRestBackend("127.0.0.1", 8080)))

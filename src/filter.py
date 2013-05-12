@@ -8,7 +8,10 @@ class Filter(object):
 	def filter(self, aOffer):
 		raise NotImplementedError("")
 
-class ProductFilter(Filter):
+class SimpleFilter(Filter):
+	pass
+
+class ProductFilter(SimpleFilter):
 	def __init__(self, aProduct):
 		self._product = aProduct
 	
@@ -18,7 +21,7 @@ class ProductFilter(Filter):
 	def filter(self, aOffer):
 		return aOffer.product() == self._product
 
-class PriceRangeFilter(Filter):
+class PriceRangeFilter(SimpleFilter):
 	def __init__(self, rangeMin, rangeMax):
 		self._rangeMin = rangeMin
 		self._rangeMax = rangeMax
@@ -30,23 +33,39 @@ class PriceRangeFilter(Filter):
 		offerPrice = aOffer.price()
 		return self._rangeMin <= offerPrice and offerPrice <= self._rangeMax
 
-class AndFilter(Filter):
+class MultiFilter(Filter):
 	def __init__(self):
 		self._filters = []
 	
-	def __str__(self):
-		toString = "AndFilter ["
-		for aFilter in self.filters:
-			toString = toString + str(aFilter) + " " 
-		toString = toString + "]"
-		return toString
+	def baseCase(self):
+		raise NotImplementedError("")	
+	
+	def reduceOp(anAccumulator, aFilterResult):
+		raise NotImplementedError("")	
 	
 	def filter(self, aOffer):
+		result = self.baseCase()
+		
 		for aFilter in self._filters:
-			if not aFilter._filter(aOffer):
-				return False
-		return True
+			result = self.reduceOp(result, aFilter.filter(aOffer))
+		
+		return result
 
 	def addFilter(self, aFilter):
 		self._filters.append(aFilter)
 		return self
+
+class AndFilter(MultiFilter):
+	
+	def baseCase(self):
+		return True
+	
+	def reduceOp(anAccumulator, aFilterResult):
+		return anAccumulator and aFilterResult
+	
+	def __str__(self):
+		toString = "AndFilter ["
+		for aFilter in self._filters:
+			toString += str(aFilter) + " " 
+		toString += "]"
+		return toString

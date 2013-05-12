@@ -1,7 +1,7 @@
 class Strategy(object):
 
 	@staticmethod
-	def strategy_name():
+	def strategyName():
 		raise NotImplementedError("")
 
 	def __init__(self):
@@ -16,7 +16,7 @@ class Strategy(object):
 class WalkingTheLeastStrategy(Strategy):
 
 	@staticmethod
-	def strategy_name():
+	def strategyName():
 		return "Nearest"
 
 	def __init__(self, aLocation):
@@ -31,7 +31,7 @@ class WalkingTheLeastStrategy(Strategy):
 class CheapestStrategy(Strategy):
 
 	@staticmethod
-	def strategy_name():
+	def strategyName():
 		return "Cheapest"
 
 	def __init__(self):
