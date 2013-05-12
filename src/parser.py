@@ -18,11 +18,11 @@ class ParserChain(object):
 		self._parserList = parserList
 		pass
 
-	def parsing(self, rawText):
-		rawText = self._removeHashTag(rawText.lower())
+	def parsing(self, rawInfo):
+		rawInfo.text = self._removeHashTag(rawInfo.text.lower())
 		offerBuilder = OfferBuilder()
 		for parser in self._parserList:
-			offerBuilder = parser.process(rawText, offerBuilder)
+			offerBuilder = parser.process(rawInfo, offerBuilder)
 		return offerBuilder
 
 	def addParser(self, parser):
@@ -45,11 +45,12 @@ class DefaultParserChain(ParserChain):
 class EspecificParser:
 	def __init__(self):
 		pass
-	def process(self, offerBuilder):
+	def process(self, rawInfo, offerBuilder):
 		raise NotImplementedError( "Should have implemented this" )
 
 class ProductParser(EspecificParser):
-	def process(self, rawText, offerBuilder):
+	def process(self, rawInfo, offerBuilder):
+		rawText = rawInfo.text
 		resultProduct = None
 		for product in ValidProductsProvider().products():
 			name = product.name()			 
@@ -63,8 +64,9 @@ class ProductParser(EspecificParser):
 		return offerBuilder
 		
 class PriceParser(EspecificParser):
-	def process(self, rawText, offerBuilder):
+	def process(self, rawInfo, offerBuilder):
 		## devuelve el primer numero que encuentra en el texto
+		rawText = rawInfo.text
 		rawText = rawText.replace("$", "")
 		rawText = rawText.replace(",", ".")
 		for palabra in rawText.split(" "):
@@ -77,7 +79,8 @@ class PriceParser(EspecificParser):
 		raise ParserError("Price")
 
 class LocationParser(EspecificParser):
-	def process(self, rawText, offerBuilder):
+	def process(self, rawInfo, offerBuilder):
+		rawText = rawInfo.text
 		rawText = self._removePriceAndUnit(rawText, offerBuilder.getProduct())
 		Address = rawText.strip()	
 		
@@ -95,7 +98,11 @@ class LocationParser(EspecificParser):
 		raise ParserError("Unit")
 
 if __name__ == "__main__":
-	offerBuilder = DefaultParserChain().parsing("Yerba 5 pesos el kilo av.lafuente 1277 #precioJusto")
+	class TextData:
+		def __init__(self, text):
+			self.text = text
+	
+	offerBuilder = DefaultParserChain().parsing(TextData("Yerba 5 pesos el kilo av.lafuente 1277 #precioJusto"))
 	print offerBuilder.build()
 	
 

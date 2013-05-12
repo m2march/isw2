@@ -11,17 +11,16 @@ class OfferFactory(object):
 	
 	def createOffers(self, storeObject):
 		results = []
-		for textData in storeObject.getAll():
+		for rawInfo in storeObject.getAll():
 			try:
-				results.append(self.createOffer(textData))
+				results.append(self.createOffer(rawInfo))
 			except ParserError:
 				pass
 		return results
 			
 	
-	def createOffer(self, textData):
-		rawText = textData.text
-		offerbuilder = self.parser.parsing(rawText)
+	def createOffer(self, rawInfo):
+		offerbuilder = self.parser.parsing(rawInfo)
 		return offerbuilder.build()
 
 
