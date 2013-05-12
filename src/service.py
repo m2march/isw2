@@ -7,7 +7,8 @@ from queryProcessing import OfferQueryInConstruction
 
 class RestApi:
   print "RestApi startup"
-  def __init__(self, aQueryProcessor, aValidProductsProvider):
+  def __init__(self, aQueryProcessor, aValidProductsProvider, aModelManager):
+    self.modelManager = aModelManager
     self.queryProcessor = aQueryProcessor
     self.validProductsProvider = aValidProductsProvider
 
@@ -30,8 +31,10 @@ class RestApi:
     try:
       offerQuery = OfferQueryInConstruction(Product, MinPrice, MaxPrice, Strategy)
       processedOfferQuery = self.queryProcessor.processOfferQuery(offerQuery)
+      inmmutableOfferQuery = processedOfferQuery.makeInmmutable()
 
-      queryResult = ["a", "b", "c"]
+      queryResult = self.modelManager.process(inmmutableOfferQuery)
+      
 
       return json.dumps({"result": queryResult})
     except Exception as e:
