@@ -14,4 +14,4 @@ class ModelManager(object):
 		offersFiltered = filter(lambda anOffer: aFilter.filter(anOffer), offers)
 		aStrategy = anOfferQuery.strategy()
 		offersFinished = aStrategy.prioritize(offersFiltered)
-		return offersFiltered
+		return offersFinished
