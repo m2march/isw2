@@ -1,10 +1,11 @@
 import products
 from offer import Offer
+from offer import OfferBuilder
 from parser import ParserError
-from parser import Parser
+from parser import DefaultParserChain
 
 class OfferFactory:
-	def __init__(self, parser=Parser()):
+	def __init__(self, parser):
 		self.parser = parser
 		pass
 	
@@ -20,8 +21,8 @@ class OfferFactory:
 	
 	def createOffer(self, textData):
 		rawText = textData.text()
-		(product, price, location) = self.parser.parsing(rawText)
-		return Offer(product, price, location)
+		offerbuilder = self.parser.parsing(rawText)
+		return offerbuilder.build()
 
 ##TODO: borrame
 if __name__ == "__main__":
@@ -38,7 +39,7 @@ if __name__ == "__main__":
 		def getall(self):
 			return self._info
 	import parser
-	of = OfferFactory(parser.Parser())
+	of = OfferFactory(parser.DefaultParserChain())
 	lista = ["Yerba 5 pesos el kilo av.lafuente 1277 #precioJusto",
 			 "aZucar 2 p el kg yatai 50 5toA #precioJusto #lallaa",
 			 "dsadsadsadsa sdsad adsa 432 sda #precioJusto"]
