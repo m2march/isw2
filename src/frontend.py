@@ -89,7 +89,7 @@ class WebFrontend(object):
   def offerQueryResponse(self, queryResult):
     response = "<html>"
     response += self.buildHead()
-    response += "<body>"
+    response += "<body bgcolor=#F8ECE0>"
 
     if len(queryResult) == 0:
       response += "<h1 style=\"text-align: center\";>No offers matching the requested description.</h1>"
@@ -115,7 +115,7 @@ class WebFrontend(object):
     return response
 
   def errorPage(self, anError):
-    return "<html>\n" + self.buildHead() + "\n<body><h1>Ops!</h1>\n" + str(anError) + "</body>\n</head>"
+    return "<html>\n" + self.buildHead() + "\n<body bgcolor=#F8ECE0><h1>Ops!</h1>\n" + str(anError) + "</body>\n</head>"
 
   def mainPage(self):
     headAndBody = self.buildHead() + self.buildIndexBody()
@@ -129,7 +129,7 @@ class WebFrontend(object):
     productList = self.backend.products()
     strategyList = self.backend.strategies()
 
-    body = """<body>
+    body = """<body bgcolor=#F8ECE0>
           <h1 style="text-align: center;">Precio Justo</h1>
           <p style="text-align: center;">Product - Min price - Max price - Strategy</p>
             <form enctype="text/plain" method="get" name="UserQuery">

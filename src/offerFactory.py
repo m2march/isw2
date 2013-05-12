@@ -11,7 +11,7 @@ class OfferFactory(object):
 	
 	def createOffers(self, storeObject):
 		results = []
-		for textData in storeObject.getall():
+		for textData in storeObject.getAll():
 			try:
 				results.append(self.createOffer(textData))
 			except ParserError:
@@ -20,7 +20,7 @@ class OfferFactory(object):
 			
 	
 	def createOffer(self, textData):
-		rawText = textData.text()
+		rawText = textData.text
 		offerbuilder = self.parser.parsing(rawText)
 		return offerbuilder.build()
 
@@ -40,7 +40,7 @@ if __name__ == "__main__":
 			self._info = []
 			for text in lista:
 				self._info.append(TextData(text))
-		def getall(self):
+		def getAll(self):
 			return self._info
 	import parser
 	of = DefaultOfferFactory()

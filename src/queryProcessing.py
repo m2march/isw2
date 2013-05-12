@@ -1,6 +1,7 @@
 import json
 from strategy import Strategy
 from filter import ProductFilter, PriceRangeFilter, AndFilter
+from query import OfferQuery
 
 class OfferQueryInConstruction(object):
 	"""Passed among QueryProcessors to process each part of the query.
@@ -59,16 +60,13 @@ class ProductQueryProcessor(QueryProcessor):
 class RangeQueryProcessor(QueryProcessor):
 	def processOfferQuery(self, aQueryInConstruction):
 		(sMin, sMax) = aQueryInConstruction.sRange
-		
 		if len(sMin) != 0 or len(sMax) != 0:
 			try:
 				Min = float(sMin)
 				Max = float(sMax)
-				
 				aQueryInConstruction.filters.append(PriceRangeFilter(Min, Max))
 			except Exception:
 				raise IllegalRange(aQueryInConstruction.sRange)
-		
 		return aQueryInConstruction
 
 class StrategyQueryProcessor(QueryProcessor):
@@ -76,10 +74,9 @@ class StrategyQueryProcessor(QueryProcessor):
 		sStrategy = aQueryInConstruction.sStrategy
 		try:
 			aStrategy = next(sc for sc in Strategy.__subclasses__() if sc.strategyName() == aQueryInConstruction.sStrategy)
-			aQueryInConstruction.strategy = aStrategy
+			aQueryInConstruction.strategy = aStrategy()
 		except Exception:
 			raise IllegalStrategy(aQueryInConstruction.sStrategy)
-
 		return aQueryInConstruction
 
 class MultiQueryProcessor(QueryProcessor):
@@ -107,7 +104,7 @@ class IllegalRange(ProcessingError):
 		self.sRange = sRange
 	
 	def __str__(self):
-		return self.sRange + " is not a valid range"
+		return str(self.sRange) + " is not a valid range"
 
 class IllegalStrategy(ProcessingError):
 	def __init__(self, sStrategy):

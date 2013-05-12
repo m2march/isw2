@@ -3,7 +3,10 @@
 import cherrypy
 import json
 
+from defaultModelManager import *
+from query import *
 from queryProcessing import OfferQueryInConstruction
+from offer import offer_as_dict
 
 class RestApi:
   print "RestApi startup"
@@ -33,8 +36,8 @@ class RestApi:
       processedOfferQuery = self.queryProcessor.processOfferQuery(offerQuery)
       inmmutableOfferQuery = processedOfferQuery.makeInmmutable()
       queryResult = self.modelManager.process(inmmutableOfferQuery)
-
-      return json.dumps({"result": queryResult})
+      dictQueryResult = map(lambda e: offer_as_dict(e), queryResult)
+      return json.dumps({"result": dictQueryResult})
     except Exception as e:
       return json.dumps({"error":True, "reason":str(e)})
 

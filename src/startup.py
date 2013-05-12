@@ -2,6 +2,7 @@ import cherrypy
 from service import RestApi
 from validProducts import ValidProductsProvider
 from queryProcessing import MultiQueryProcessor, ProductQueryProcessor, StrategyQueryProcessor, RangeQueryProcessor
+from defaultModelManager import *
 
 #Products
 validProductsProvider = ValidProductsProvider()
