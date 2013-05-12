@@ -11,7 +11,8 @@ class DefaultMemoryStore(StoreObject):
 	def store(self, data2store):
 		if (not self.contains(data2store)):
 			self.data.append(data2store)
-			print " ".join(["data added", data2store.text])			
+			encodedData = data2store.text.encode('utf-8','ignore')
+			print " ".join(["data added", encodedData])			
 	def getAll(self):
 		return self.data
 	def contains(self, data2check):
