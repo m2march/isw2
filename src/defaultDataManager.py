@@ -12,12 +12,12 @@ class DefaultDataManager:
 		#new data storage
 		self.dataStorage = aStoreObject		
 		#new streaming observer
-		self.streamingObserver = DefaultStreamingConnectorObserver(self.dataStorage)
+		#self.streamingObserver = DefaultStreamingConnectorObserver(self.dataStorage)
 		#creating default twitter streaming connector
-		twitterStreamingConnector = TwitterStreamingConnector("#boludoJusto")
-		twitterStreamingConnector.addObserver(self.streamingObserver)		
+		#twitterStreamingConnector = TwitterStreamingConnector("#boludoJusto")
+		#twitterStreamingConnector.addObserver(self.streamingObserver)		
 		#do the observer registration
-		self.streamingObserver.addObservable(twitterStreamingConnector)
+		#self.streamingObserver.addObservable(twitterStreamingConnector)
 
 		#new pull observer
 		self.pulleableObserver = DefaultPulleableConnectorObserver(self.dataStorage)
