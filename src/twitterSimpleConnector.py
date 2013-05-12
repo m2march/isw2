@@ -16,7 +16,7 @@ class TwitterSimpleConnector(Observable):
 		                           rpp=300,
 		                           result_type="recent",
 		                           include_entities=True,
-		                           lang="en").items()
+		                           lang="es").items()
 		for observer in self.observers:
 			for tweet in tweets:
 				observer.update(tweet)

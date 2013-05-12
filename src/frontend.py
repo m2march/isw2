@@ -97,7 +97,7 @@ class WebFrontend(object):
       response += "<h1 style=\"text-align: center\";>Offers matching the requested description</h1>"
 
       for result in queryResult:
-        response += "<p style=\"text-align: center\";>TODO: Print the result in a nice way! " + str(result) + "</p>"
+         response += "<p style=\"text-align: center\";>" + "<b>" + result['name'] + "</b> x " + result['unit'] + " &nbsp;&nbsp;&nbsp;&nbsp;" + result['price'] + "$ &nbsp;&nbsp;&nbsp;&nbsp; <i>" + result['location']  + "</i></p>"
     response += "</body></html>"
     return response
 

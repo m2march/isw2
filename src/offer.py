@@ -1,7 +1,7 @@
 import products
 
 def offer_as_dict(anOffer):
-	return {"name":anOffer.product().name(), "price":anOffer.price(), "location":str(anOffer.location)}
+	return {"name":anOffer.product().name(), "price":str(anOffer.price()), "location":str(anOffer.location()), 'unit':str(anOffer.product().unit())}
 
 class Offer:
 	def __init__(self, product, price, location):
