@@ -8,6 +8,7 @@ class ModelManager(object):
 		self.dataManager.getOffers()
 		#Parse and create offers
 		offers = self.offerFactory.createOffers(self.storeObject)
+		print offers
 		#filter by user requirements
 		aFilter = anOfferQuery.filter()		
 		offersFiltered = filter(lambda anOffer: aFilter.filter(anOffer), offers)

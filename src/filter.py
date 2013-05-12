@@ -40,7 +40,7 @@ class MultiFilter(Filter):
 	def baseCase(self):
 		raise NotImplementedError("")	
 	
-	def reduceOp(anAccumulator, aFilterResult):
+	def reduceOp(self, anAccumulator, aFilterResult):
 		raise NotImplementedError("")	
 	
 	def filter(self, aOffer):
@@ -60,7 +60,7 @@ class AndFilter(MultiFilter):
 	def baseCase(self):
 		return True
 	
-	def reduceOp(anAccumulator, aFilterResult):
+	def reduceOp(self, anAccumulator, aFilterResult):
 		return anAccumulator and aFilterResult
 	
 	def __str__(self):
