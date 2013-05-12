@@ -4,5 +4,5 @@ from unit import Unit
 class ValidProductsProvider:
   def products(self):
     kilo = Unit("kilo", ["kilo", "kg", "kilos", "kgs"])
-    return [Product("Yerba", kilo), Product("Azucar", kilo)]
+    return [Product("Yerba", kilo), Product("Azucar", kilo), Product("Papa", kilo)]
 

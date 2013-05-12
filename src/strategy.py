@@ -1,3 +1,5 @@
+from offer import *
+
 class Strategy(object):
 	@staticmethod
 	def strategyName():

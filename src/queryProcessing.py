@@ -64,6 +64,8 @@ class RangeQueryProcessor(QueryProcessor):
 			try:
 				Min = float(sMin)
 				Max = float(sMax)
+				if not Min < Max :
+					raise IllegalRange(aQueryInConstruction.sRange)
 				aQueryInConstruction.filters.append(PriceRangeFilter(Min, Max))
 			except Exception:
 				raise IllegalRange(aQueryInConstruction.sRange)
