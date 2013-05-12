@@ -5,11 +5,12 @@ from defaultPulleableConnectorObserver import *
 from defaultMemoryStore import *
 from twitterSimpleConnector import *
 
+#TODO DO THE DATA MANAGER ABSTRACTION!
 
-class DefaultTwitterDataManager:
-	def __init__(self):		
+class DefaultDataManager:
+	def __init__(self, aStoreObject):		
 		#new data storage
-		self.dataStorage = DefaultMemoryStore()		
+		self.dataStorage = aStoreObject		
 		#new streaming observer
 		self.streamingObserver = DefaultStreamingConnectorObserver(self.dataStorage)
 		#creating default twitter streaming connector
@@ -31,7 +32,8 @@ class DefaultTwitterDataManager:
 		# return self.factory.createOffers(self.dataStorage)
 
 if __name__ == '__main__':
-	dtdm = DefaultTwitterDataManager()
+	store = DefaultMemoryStore()
+	dtdm = DefaultDataManager(store)
 	dtdm.getOffers()
 	print dtdm.dataStorage.data
 

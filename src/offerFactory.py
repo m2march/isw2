@@ -4,7 +4,7 @@ from offer import OfferBuilder
 from parser import ParserError
 from parser import DefaultParserChain
 
-class OfferFactory:
+class OfferFactory(object):
 	def __init__(self, parser):
 		self.parser = parser
 		pass
@@ -24,6 +24,10 @@ class OfferFactory:
 		offerbuilder = self.parser.parsing(rawText)
 		return offerbuilder.build()
 
+
+class DefaultOfferFactory(OfferFactory):
+	def __init__(self):
+		super(DefaultOfferFactory, self).__init__(DefaultParserChain())
 ##TODO: borrame
 if __name__ == "__main__":
 	class TextData:
@@ -39,7 +43,7 @@ if __name__ == "__main__":
 		def getall(self):
 			return self._info
 	import parser
-	of = OfferFactory(parser.DefaultParserChain())
+	of = DefaultOfferFactory()
 	lista = ["Yerba 5 pesos el kilo av.lafuente 1277 #precioJusto",
 			 "aZucar 2 p el kg yatai 50 5toA #precioJusto #lallaa",
 			 "dsadsadsadsa sdsad adsa 432 sda #precioJusto"]

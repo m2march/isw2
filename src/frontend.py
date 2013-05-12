@@ -1,5 +1,4 @@
 import cherrypy
-
 import httplib
 import json
 
@@ -63,10 +62,10 @@ class OfferRestBackend(OfferBackend):
     return map(lambda elem: elem.encode("utf-8"), anUnicodeList)
 
   def products(self):
-    return OfferBackend.map_to_utf8(self.backend.ask_for("/products"))
+    return OfferRestBackend.map_to_utf8(self.backend.ask_for("/products"))
 
   def strategies(self):
-    return OfferBackend.map_to_utf8(self.backend.ask_for("/strategies"))
+    return OfferRestBackend.map_to_utf8(self.backend.ask_for("/strategies"))
 
   def offers(self, Product, MinPrice, MaxPrice, Strategy):
     parameters = {"Product" : Product, "MinPrice" : MinPrice, "MaxPrice" : MaxPrice, "Strategy":Strategy}
@@ -146,6 +145,7 @@ class WebFrontend(object):
               </p>
             </form>
           <p style="text-align: center;">Ahorremos Ahora (AA)</p>
+          <p style="text-align: center;"><i>Is very internashonal!</i></p>
         </body>"""
     return body
 

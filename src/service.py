@@ -4,14 +4,13 @@ import cherrypy
 import json
 
 from queryProcessing import OfferQueryInConstruction
-from query import QueryFactory
 
 class RestApi:
   print "RestApi startup"
-  def __init__(self, aQueryProcessor, aValidProductsProvider):
+  def __init__(self, aQueryProcessor, aValidProductsProvider, aModelManager):
+    self.modelManager = aModelManager
     self.queryProcessor = aQueryProcessor
     self.validProductsProvider = aValidProductsProvider
-    self.aQueryFactory = QueryFactory()
 
   def service(self):
     return "PrecioJusto v0.0.0.0.0.0.0.0.0.0.0.5"
@@ -23,7 +22,7 @@ class RestApi:
 
   def products(self):
     cherrypy.response.headers["Content-Type"] =  "text/plain"
-    response = self.queryProcessor.processProductsQuert(self.validProductsProvider)
+    response = self.queryProcessor.processProductsQuery(self.validProductsProvider)
     return response
 
   def offerquery(self, Product="", MinPrice="", MaxPrice="", Strategy=""):
@@ -32,8 +31,8 @@ class RestApi:
     try:
       offerQuery = OfferQueryInConstruction(Product, MinPrice, MaxPrice, Strategy)
       processedOfferQuery = self.queryProcessor.processOfferQuery(offerQuery)
-
-      queryResult = ["a", "b", "c"]
+      inmmutableOfferQuery = processedOfferQuery.makeInmmutable()
+      queryResult = self.modelManager.process(inmmutableOfferQuery)
 
       return json.dumps({"result": queryResult})
     except Exception as e:
