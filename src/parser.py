@@ -90,13 +90,14 @@ class LocationParser(EspecificParser):
 		
 	def _removePriceAndUnit(self, rawText, product):
 		for unit_name in product.unit().representations():
-			if rawText.find(unit_name) != -1:
+			if rawText.find(" "+unit_name+" ") != -1:
 				return rawText[rawText.find(unit_name) + len(unit_name):]
 		raise ParserError("Unit")
 
 if __name__ == "__main__":
 	offerBuilder = DefaultParserChain().parsing("Yerba 5 pesos el kilo av.lafuente 1277 #precioJusto")
 	print offerBuilder.build()
+	
 
 		
 		
