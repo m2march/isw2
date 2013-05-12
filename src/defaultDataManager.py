@@ -22,7 +22,7 @@ class DefaultDataManager:
 		#new pull observer
 		self.pulleableObserver = DefaultPulleableConnectorObserver(self.dataStorage)
 		#creating default twitter rest connector
-		twitterSimpleConnector = TwitterSimpleConnector("#boludoJusto")
+		twitterSimpleConnector = TwitterSimpleConnector("#precioJusto")
 		twitterSimpleConnector.addObserver(self.pulleableObserver)
 		self.pulleableObserver.addObservable(twitterSimpleConnector)
 
