@@ -83,7 +83,7 @@ class LocationParser(EspecificParser):
 		
 		try:
 			location = Location(Address)
-			offerBuilder.setLocation(Location)
+			offerBuilder.setLocation(location)
 			return offerBuilder
 		except:
 			raise ParserError("location")

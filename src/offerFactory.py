@@ -32,9 +32,9 @@ class DefaultOfferFactory(OfferFactory):
 if __name__ == "__main__":
 	class TextData:
 		def __init__(self, text):
-			self._text = text
+			self.text = text
 		def text(self):
-			return self._text
+			return self.text
 	class StoreObject:
 		def __init__(self, lista):
 			self._info = []
