@@ -13,4 +13,6 @@ rangeQueryProcessor = RangeQueryProcessor()
 
 queryProcessor = MultiQueryProcessor([productQueryProcessor, rangeQueryProcessor, strategyQueryProcessor])
 
-cherrypy.quickstart(RestApi(queryProcessor, validProductsProvider))
+modelManager = DefaultModelManager()
+
+cherrypy.quickstart(RestApi(queryProcessor, validProductsProvider, modelManager))

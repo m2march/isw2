@@ -32,9 +32,7 @@ class RestApi:
       offerQuery = OfferQueryInConstruction(Product, MinPrice, MaxPrice, Strategy)
       processedOfferQuery = self.queryProcessor.processOfferQuery(offerQuery)
       inmmutableOfferQuery = processedOfferQuery.makeInmmutable()
-
       queryResult = self.modelManager.process(inmmutableOfferQuery)
-      
 
       return json.dumps({"result": queryResult})
     except Exception as e:
