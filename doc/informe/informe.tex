@@ -90,9 +90,19 @@ La visualización de ofertas que se le dará al usuario no se encuentra completa
 \include{userStories}
 
 \section{Diseño}
+
+La aplicación desarrollada se descompone en dos componentes, un \emph{Frontend}, a travez del cual el usuario accede a los servicios del sistema y se concentra en la presentación de la información, y un \emph{Backend}, al cual se le delegan las tareas de, a partir de una entrada del usuario, construir un resultado y comunicarselo al Frontend. En las siguientes secciones pasaremos a presentar en detalle el diseño del sistema.
+
 \subsection{Diagramas de clases}
-linea1\\
-linea2\\
+  
+A continuación detallaremos el diseño del Frontend. Dado que nos encontramos en la primer iteración del proceso de desarrollo, el foco se concentro en proveer una interfaz clara para comunicar el Frontend con el Backend, y no una implementación completa de la capa de presentación de los datos.
+
+La clase \textbf{WebFrontend} es la encargada de la presentación de los datos. Esta clase posee un unico metodo utilizado por la libreria \emph{CherryPy} para la presentación  al usuario. La capa de presentación de los datos se encuentra lo suficientemente desacoplada de la capa de comunicación con el Backend, de forma que el cambiar por completo la presentación no debería afectar la comunicación con el Backend.
+
+La clase \textbf{OfferBackend} representa al Backend de la aplicación, con el cual el Frontend se comunica. Se decidio que esta clase debe ser \emph{abstracta} debido a que podrian haber varios metodos de comunicación con el Backend (Por ejemplo, mediante un servicio REST, de forma local, etc...). Son las subclases de OfferBackend las encargadas de definir esta cuestion. Un caso particular de esto es \textbf{OfferRestBackend}, que utiliza REST para comunicarse con el Backend. 
+
+La clase \emph{RestCommunicator} provee una interfaz con la cual comunicarnos con un servicio REST como el implementado. 
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{graphics/frontend_class.jpg}
@@ -118,8 +128,10 @@ linea2\\
 \begin{landscape}
 
 \newpage
-linea1\\
-linea2\\
+En este diagrama se destacan las clases de objetos que se encargan de, dada una \textbf{OfferQueryInConstruction} (Objeto que representa una consulta por ofertas sin procesar), construyen el conjunto de restricciones a aplicar sobre las ofertas. Son los objetos de tipo \textbf{QueryProcessor} los encargados de construir los \textbf{Filter} y \textbf{Strategy} que determinan los resultados de la consulta. En caso de que alguno de los parametros introducido por el usuario no sea valido, el \textbf{QueryProcessor} correspondiente informara de esta situación mediante una excepción. La clase \textbf{QueryProcessor} y sus subclases, siguen el patron de diseño \emph{Composite}.
+
+Los objetos de tipo \textbf{ValidProductsProvider} llevan cuenta de cuales son los productos validos. Un objeto de este tipo es utilizado por un \textbf{ProductQueryProcessor} para verificar que el producto ingresado por el usuario se encuentre en la lista de los productos soportados por el sistema.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{graphics/queryProcessor_class.jpg}
@@ -127,8 +139,11 @@ linea2\\
 \end{figure}
 
 \newpage
-linea1\\
-linea2\\
+Como fue mencionado anteriormente, un objeto de tipo \textbf{OfferQueryInConstruction} representa una query del usuario, la cual todavia no se termino de procesar (Construir los filtros y estrategias correspondientes). Una vez que se terminaron de construir los filtros y estrategias correspondientes a la consulta del usuario, es necesario hacerla inmutable, obteniendo asi un objeto con tipo \textbf{OfferQuery}. Los objetos de esta clase poseen unicamente un \textbf{Filter} y una \textbf{Strategy}.
+
+Las \textbf{Strategy} representan distintas politicas para priorizar ofertas, por ejemplo, \emph{Mas baratas primero}.
+Los \textbf{Filter} representan condiciones booleanas que deben cumplir las ofertas para poder encontrarse en el conjunto de resultado. La clase \textbf{Filter} cumple con el patron de diseño \emph{Composite}. La clase \textbf{MultiFilter} sigue el patron \emph{TemplateMethod}, esta clase define un esqueleto para la función \emph{filter}, sin embargo, son las clases derivadas las que implementan los metodos \emph{reduceOp} y \emph{baseCase}.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.65]{graphics/filter_class.jpg}
