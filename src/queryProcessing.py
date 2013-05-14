@@ -27,20 +27,6 @@ class QueryProcessor(object):
 	the given processingQuery adding proper variables made
 	from the sVariables. """
 	
-	def processProductsQuery(self, aValidProductsProvider):
-		validProducts = aValidProductsProvider.products()
-		validProductsName = map(lambda p: p.name(), validProducts)
-		return json.dumps(validProductsName, ensure_ascii=False)
-	
-	def processStrategysQuery(self):
-		subclasses = Strategy.__subclasses__()
-		subclassNameList = [] 
-		
-		for aSubclass in subclasses:
-			subclassNameList.append(aSubclass.strategyName())
-		
-		return json.dumps(subclassNameList, ensure_ascii=False)
-		
 	def processOfferQuery(self, aQueryInConstruction):
 		raise NotImplementedError()
 
