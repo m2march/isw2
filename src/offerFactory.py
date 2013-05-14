@@ -47,7 +47,8 @@ if __name__ == "__main__":
 			 "aZucar 2 p el kg yatai 50 5toA #precioJusto #lallaa",
 			 "dsadsadsadsa sdsad adsa 432 sda #precioJusto",
 			 "Papa $12 Kg Cabildo 1000 #PrecioJusto",
-			 "leche $5.05 Lt Cabildo 3000 #PrecioJusto"]
+			 "leche $5.05 Lt Cabildo 3000 #PrecioJusto",
+			 "Dulce de leche $5.05 kg Cabildo 3000 #PrecioJusto"]
 	res = of.createOffers(StoreObject(lista))
 	
 	for x in res:

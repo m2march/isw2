@@ -42,13 +42,13 @@ class DefaultParserChain(ParserChain):
 		super(DefaultParserChain, self).__init__(listaParser)
 		
 
-class EspecificParser:
+class SpecificParser:
 	def __init__(self):
 		pass
 	def process(self, rawInfo, offerBuilder):
 		raise NotImplementedError( "Should have implemented this" )
 
-class ProductParser(EspecificParser):
+class ProductParser(SpecificParser):
 	def process(self, rawInfo, offerBuilder):
 		rawText = rawInfo.text
 		resultProduct = None
@@ -63,7 +63,7 @@ class ProductParser(EspecificParser):
 		offerBuilder.setProduct(resultProduct)
 		return offerBuilder
 		
-class PriceParser(EspecificParser):
+class PriceParser(SpecificParser):
 	def process(self, rawInfo, offerBuilder):
 		## devuelve el primer numero que encuentra en el texto
 		rawText = rawInfo.text
@@ -78,7 +78,7 @@ class PriceParser(EspecificParser):
 				pass
 		raise ParserError("Price")
 
-class LocationParser(EspecificParser):
+class LocationParser(SpecificParser):
 	def process(self, rawInfo, offerBuilder):
 		rawText = rawInfo.text
 		rawText = self._removePriceAndUnit(rawText, offerBuilder.getProduct())
@@ -94,7 +94,7 @@ class LocationParser(EspecificParser):
 	def _removePriceAndUnit(self, rawText, product):
 		for unit_name in product.unit().representations():
 			if rawText.find(" "+unit_name+" ") != -1:
-				return rawText[rawText.find(unit_name) + len(unit_name):]
+				return rawText[rawText.find(" "+unit_name+" ") + len(unit_name)+2:]
 		raise ParserError("Unit")
 
 if __name__ == "__main__":
