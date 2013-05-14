@@ -1,3 +1,7 @@
+from validProducts import ValidProductsProvider
+from offer import Offer
+from location import Location
+
 class Filter(object):
 	def __init__(self):
 		raise NotImplementedError("")
@@ -69,3 +73,33 @@ class AndFilter(MultiFilter):
 			toString += str(aFilter) + " " 
 		toString += "]"
 		return toString
+
+
+if __name__ == '__main__':
+	#test de los filtros
+
+	print "Testing filters"
+	aValidProductsProvider = ValidProductsProvider()
+	
+	aProduct = aValidProductsProvider.products()[0] 
+	otherProduct = aValidProductsProvider.products()[1]
+	
+	aLocation = Location("a road 500")
+	
+	Offers = [Offer(aProduct, 3, aLocation), Offer(aProduct, 4, aLocation), Offer(otherProduct, 4, aLocation)] 
+	
+	aProductFilter = ProductFilter(aProduct)
+	aPriceRangeFilter = PriceRangeFilter(3.5, 4.5)
+	anAndFilter = AndFilter().addFilter(aProductFilter).addFilter(aPriceRangeFilter)
+	
+	print "ProductFilter Test"
+	assert(aProductFilter.filter(Offers[0]) and aProductFilter.filter(Offers[1]) and not aProductFilter.filter(Offers[2]))
+	print "Pass"
+
+	print "PriceRangeFilter Test"
+	assert(not aPriceRangeFilter.filter(Offers[0]) and aPriceRangeFilter.filter(Offers[1]) and aPriceRangeFilter.filter(Offers[2]))
+	print "Pass"
+
+	print "AndFilter Test"
+	assert(not anAndFilter.filter(Offers[0]) and anAndFilter.filter(Offers[1]) and not anAndFilter.filter(Offers[2]))
+	print "Pass"

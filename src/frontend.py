@@ -17,7 +17,7 @@ class QueryError(Exception):
     return self.reason
 
 
-class RestBackend(object):
+class RestCommunicator(object):
   def __init__(self, aBackendURL, aBackendPort):
     self.url = aBackendURL
     self.port = aBackendPort
@@ -55,21 +55,21 @@ class OfferBackend(object):
 
 class OfferRestBackend(OfferBackend):
   def __init__(self, aBackendURL, aBackendPort):
-    self.backend = RestBackend(aBackendURL, aBackendPort)
+    self.communicator = RestCommunicator(aBackendURL, aBackendPort)
 
   @staticmethod
   def map_to_utf8(anUnicodeList):
     return map(lambda elem: elem.encode("utf-8"), anUnicodeList)
 
   def products(self):
-    return OfferRestBackend.map_to_utf8(self.backend.ask_for("/products"))
+    return OfferRestBackend.map_to_utf8(self.communicator.ask_for("/products"))
 
   def strategies(self):
-    return OfferRestBackend.map_to_utf8(self.backend.ask_for("/strategies"))
+    return OfferRestBackend.map_to_utf8(self.communicator.ask_for("/strategies"))
 
   def offers(self, Product, MinPrice, MaxPrice, Strategy):
     parameters = {"Product" : Product, "MinPrice" : MinPrice, "MaxPrice" : MaxPrice, "Strategy":Strategy}
-    response = self.backend.ask_for("/offerquery", parameters)
+    response = self.communicator.ask_for("/offerquery", parameters)
 
     if "error" in response.keys() :
       raise QueryError(response["reason"])

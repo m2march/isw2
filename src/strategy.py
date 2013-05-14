@@ -1,4 +1,6 @@
 from offer import *
+from validProducts import ValidProductsProvider
+from location import Location
 
 class Strategy(object):
 	@staticmethod
@@ -55,3 +57,29 @@ class CheapestStrategy(Strategy):
 	
 	def prioritize(self, anOfferList):
 		return sorted(anOfferList, key=Offer.price)
+
+if __name__ == '__main__':
+	#test de los filtros
+	
+	print "Testing filters"
+	aValidProductsProvider = ValidProductsProvider()
+	
+	aProduct = aValidProductsProvider.products()[0] 
+	otherProduct = aValidProductsProvider.products()[1]
+	
+	aLocation = Location("a road 500")
+	
+	Offers = [Offer(aProduct, 4, aLocation), Offer(aProduct, 3, aLocation),  Offer(otherProduct, 5, aLocation)] 
+	
+	aNullStrategy = NullStrategy()
+	aCheapestStrategy = CheapestStrategy()
+
+	print "NullStrategy Test"
+	assert(aNullStrategy.prioritize(Offers) == Offers)
+	print "Pass"
+	
+	print "CheapestStrategy"
+	cheapestOffers = aCheapestStrategy.prioritize(Offers)
+	for i in range(0, len(cheapestOffers) - 1):
+		assert(cheapestOffers[i].price() < cheapestOffers[i+1].price())
+	print "Pass"
