@@ -3,7 +3,7 @@
 import cherrypy
 import json
 
-from defaultModelManager import *
+# from ModelManager import *
 from query import *
 from queryProcessing import OfferQueryInConstruction
 from offer import offer_as_dict
