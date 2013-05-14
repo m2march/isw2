@@ -1,17 +1,16 @@
 import products
 from offer import Offer
 from offer import OfferBuilder
-from parser import ParserError
-from parser import DefaultParserChain
+from parser import *
 
 class OfferFactory(object):
 	def __init__(self, parser):
 		self.parser = parser
 		pass
 	
-	def createOffers(self, storeObject):
+	def createOffers(self, anIterable):
 		results = []
-		for rawInfo in storeObject.getAll():
+		for rawInfo in anIterable:
 			try:
 				results.append(self.createOffer(rawInfo))
 			except ParserError:
@@ -23,11 +22,6 @@ class OfferFactory(object):
 		offerbuilder = self.parser.parsing(rawInfo)
 		return offerbuilder.build()
 
-
-class DefaultOfferFactory(OfferFactory):
-	def __init__(self):
-		super(DefaultOfferFactory, self).__init__(DefaultParserChain())
-##TODO: borrame
 if __name__ == "__main__":
 	class TextData:
 		def __init__(self, text):
@@ -40,16 +34,17 @@ if __name__ == "__main__":
 			for text in lista:
 				self._info.append(TextData(text))
 		def getAll(self):
-			return self._info
+			return iter(self._info)
 	import parser
-	of = DefaultOfferFactory()
+	parserChain = ParserChain([ProductParser(), PriceParser(), LocationParser()])
+	of = OfferFactory(parserChain)
 	lista = ["Yerba 5 pesos el kilo av.lafuente 1277 #precioJusto",
 			 "aZucar 2 p el kg yatai 50 5toA #precioJusto #lallaa",
 			 "dsadsadsadsa sdsad adsa 432 sda #precioJusto",
 			 "Papa $12 Kg Cabildo 1000 #PrecioJusto",
 			 "leche $5.05 Lt Cabildo 3000 #PrecioJusto",
 			 "Dulce de leche $5.05 kg Cabildo 3000 #PrecioJusto"]
-	res = of.createOffers(StoreObject(lista))
+	res = of.createOffers(StoreObject(lista).getAll())
 	
 	for x in res:
 		print x

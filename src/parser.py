@@ -35,13 +35,7 @@ class ParserChain(object):
 			if palabra.find("#") == -1:
 				rawText.append(palabra)
 		return " ".join(rawText)
-
-class DefaultParserChain(ParserChain):
-	def __init__(self):
-		listaParser = [ProductParser(), PriceParser(), LocationParser()]
-		super(DefaultParserChain, self).__init__(listaParser)
 		
-
 class SpecificParser:
 	def __init__(self):
 		pass
