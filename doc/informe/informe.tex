@@ -129,17 +129,17 @@ linea2\\
 \end{figure}
 
 \newpage
-Para pasar de los Twits (u otro medio, ya que en este punto es transparente el origen de la información) a ofertas entendibles en nuestro sistema. Implementamos un \textbf{OfferFactory} el cual es capas de tranformar una lista de twits (validos o no) en una lista de offertas validas.\\
+Para pasar de los Twists (u otro medio, ya que en este punto es transparente el origen de la información) a ofertas entendibles en nuestro sistema. Implementamos un \textbf{OfferFactory} el cual es capaz de transformar una lista de twists (validos o no) en una lista de ofertas válidas.\\
 
-Para esto el OfferFactory es inicializado con un \textbf{ParserChain} que se encarga de intentar parsear la informacion de los twits devolviendo como resultado un \textbf{OfferBuilder} o la excepcion  \textbf{ParserError} en caso de no ser posible para el parser extrar la informacion para rellenar el OfferBuilder.\\
+Para esto el OfferFactory es inicializado con un \textbf{ParserChain} que se encarga de intentar parsear la información de los twists devolviendo como resultado un \textbf{OfferBuilder} o la excepción  \textbf{ParserError} en caso de no ser posible para el parser extraer la información para rellenar el OfferBuilder.\\
 
-El ParserChain es Inicializado con una lista de \textbf{SpecificParser}, los cuales son llamados en el orden en el que vienen en la lista, tratando de extrar la informacion que necesitan y volcandola dentro del OfferBuilder que se esta rellenado.\\
+El ParserChain es Inicializado con una lista de \textbf{SpecificParser}, los cuales son llamados en el orden en el que vienen en la lista, tratando de extraer la información que necesitan y volcándola dentro del OfferBuilder que se está rellenado.\\
 
-Este diseño nos da una gran flexibilidad para los cambios futuros, tanto en agregar nuevas formas de extraer datos, como tambien alterar la forma en la que se extraen los dados ahora sin modificar otras.\\
+Este diseño nos da una gran flexibilidad para los cambios futuros, tanto en agregar nuevas formas de extraer datos, como también alterar la forma en la que se extraen los dados ahora sin modificar otras.\\
 
-Como por ejemplo seria muy facil agregar el validador ortografico para poder detectar productos mal escritos sin necesidad de alterar nunguna otra parte (en el diseño se muestra una clase tentativa que le agrega a \textbf{ProductParser} la posibilidad de chequear esto).\\
+Como por ejemplo sería muy fácil agregar el validador ortográfico para poder detectar productos mal escritos sin necesidad de alterar ninguna otra parte (en el diseño se muestra una clase tentativa que le agrega a \textbf{ProductParser} la posibilidad de chequear esto).\\
 
-Lo mismo se aplica con la posibilidad de agregar validaciones a la \textbf{Location} la cual por el momento solo consiste en un string que no tiene ningun tipo de chequeo sobre su validez.\\
+Lo mismo se aplica con la posibilidad de agregar validaciones a la \textbf{Location} la cual por el momento solo consiste en un string que no tiene ningún tipo de chequeo sobre su validez.\\ 
 
 
 
