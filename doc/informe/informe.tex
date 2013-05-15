@@ -111,22 +111,20 @@ La clase \emph{RestCommunicator} provee una interfaz con la cual comunicarnos co
 \newpage
 
 
-linea1\\
-linea2\\
+\subsubsection{Obtenci\'on, traducci\'on y filtrado de datos}
+La clase \textbf{ModelManager} es la parte del sistema que se encarga de procesar la query (transformada ) del usuario. Es entonces parte de la interfaz provista a nuestro backend para procesar querys. Su nombre se desprende por su interaccion tanto con sus colaboradores internos, como sus parametros que genera a nivel de grafico de clases una forma de estrella.
+
+Un eje de cambio que tuvimos en consideracion y se ve reflejado en el diagrama es la posibilidad de tener mas de una fuente de datos similar a \emph{Twitter} es decir, que la informaci\'on se pida cada vez con un request al proveedor de datos.
+
+Otro eje de cambio est\'a en la interfaz \emph{iterable} facilmente reemplazable por cualquier tipo de almacenamiento de datos que provea una manera de iterarlos. En siguientes versiones del programa podria utilizarse algun mecanismo de persistencia que ayude a eliminar el costo de hacer el request a nuestros conectores cada vez y la clase \textbf{OfferFactory} no deberia modificarse. Si es el caso de \textbf{DataManager} que debera cambiar dada su dependencia con la obtenci\'on de los datos.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.55]{graphics/model_manager_iterable_class.jpg}
 \caption{Model Manager Iterable}
 \end{figure}
 
-\newpage
-linea1\\
-linea2\\
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{graphics/model_manager_storeObject_class.jpg}
-\caption{Model Manager StoreObject}
-\end{figure}
+
 
 \newpage
 Para pasar de los Twists (u otro medio, ya que en este punto es transparente el origen de la información) a ofertas entendibles en nuestro sistema. Implementamos un \textbf{OfferFactory} el cual es capaz de transformar una lista de twists (validos o no) en una lista de ofertas válidas.\\
@@ -173,7 +171,15 @@ Los \textbf{Filter} representan condiciones booleanas que deben cumplir las ofer
 \caption{Filter}
 \end{figure}
 
+\newpage
+\subsection{Obtenci\'ion de datos extra}
+Durante el transcurso del trabajo vimos que existen varias formas de conseguir informacion desde \emph{Twitter} asi como varias maneras de almacenarla. En el siguiente diagrama ilustramos una opci\'on para diseniar los mismos
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{graphics/model_manager_storeObject_class.jpg}
+\caption{Model Manager StoreObject}
+\end{figure}
 
 \newpage
 \subsection{Diagramas de secuencias}
