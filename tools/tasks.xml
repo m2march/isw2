@@ -1,0 +1,1009 @@
+<Objects>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394097389" objectVersion="7" refObjectName="Investigar cómo funcionan las APIs (REST y Streaming), junto con las SDK de Twitter" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T20:18:33.144Z</CreationDate>
+      <ObjectID>11394097389</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA35</FormattedID>
+      <LastUpdateDate>2013-05-14T18:11:05.284Z</LastUpdateDate>
+      <Name>Investigar cómo funcionan las APIs (REST y Streaming), junto con las SDK de Twitter</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343574048" refObjectName="Ivan P" type="User" />
+      <Ready>true</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394097390" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987328.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094759" refObjectName="Como desarrollador quiero investigar las opciones disponibles para obtener información de Twitter" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394097565" objectVersion="7" refObjectName="Discutir ventajas y desventajas de cada API y elegir una" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T20:20:02.600Z</CreationDate>
+      <ObjectID>11394097565</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA36</FormattedID>
+      <LastUpdateDate>2013-05-14T18:11:55.400Z</LastUpdateDate>
+      <Name>Discutir ventajas y desventajas de cada API y elegir una</Name>
+      <Notes />
+      <Ready>true</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394097566" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>2.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987328.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094759" refObjectName="Como desarrollador quiero investigar las opciones disponibles para obtener información de Twitter" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394098010" objectVersion="9" refObjectName="Investigar y elegir cómo y cuándo vamos a conseguir los datos" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T20:22:05.906Z</CreationDate>
+      <ObjectID>11394098010</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Se desea tener un método para conseguir datos para responder una consulta. Podemos obtenerlos siempre desde Twitter y no guardar nada, o bien podemos almacenarlos de antemano y usarlos cuando debemos responder una consulta. &lt;br /&gt;Revisar como impacta en el sprint backlog esta decisión.</Description>
+      <Discussion />
+      <FormattedID>TA37</FormattedID>
+      <LastUpdateDate>2013-05-14T18:17:43.739Z</LastUpdateDate>
+      <Name>Investigar y elegir cómo y cuándo vamos a conseguir los datos</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394098011" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987328.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>2</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094759" refObjectName="Como desarrollador quiero investigar las opciones disponibles para obtener información de Twitter" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394098632" objectVersion="10" refObjectName="Implementar el conector para Twitter" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T20:28:20.509Z</CreationDate>
+      <ObjectID>11394098632</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>&lt;div&gt;Necesitamos un conector que pueda realizar una llamada al servidor de Twitter y descargar datos. &lt;br /&gt;* El conector debe poder conectarse a Twitter autenticándose con OAuth2&lt;/div&gt; * El conector debe poder obtener los mensajes de Twitter con un hashtag particular, en nuestro caso, #precioJusto</Description>
+      <Discussion />
+      <FormattedID>TA40</FormattedID>
+      <LastUpdateDate>2013-05-14T18:29:54.216Z</LastUpdateDate>
+      <Name>Implementar el conector para Twitter</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394098633" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>6.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987378.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094634" refObjectName="Como PO espero que la información sea obtenida a través de Twitter" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394098723" objectVersion="8" refObjectName="Registrar la aplicación en Twitter" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T20:29:24.001Z</CreationDate>
+      <ObjectID>11394098723</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Es necesario dar de alta la aplicación en Twitter, para obtener las credenciales para usar la API. Esto es requerido para cualquier aplicación que quiera trabajar con Twitter.</Description>
+      <Discussion />
+      <FormattedID>TA41</FormattedID>
+      <LastUpdateDate>2013-05-14T18:31:13.605Z</LastUpdateDate>
+      <Name>Registrar la aplicación en Twitter</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394098724" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>2.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987378.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094634" refObjectName="Como PO espero que la información sea obtenida a través de Twitter" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394098816" objectVersion="5" refObjectName="Traducir los datos obtenidos de Twitter al modelo interno de representación" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T20:30:21.478Z</CreationDate>
+      <ObjectID>11394098816</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Debemos tener un traductor que lea los datos que conforman un tweet y los convierta en objetos de nuestro modelo, fundamentalmente en un objeto "oferta".</Description>
+      <Discussion />
+      <FormattedID>TA42</FormattedID>
+      <LastUpdateDate>2013-05-14T18:28:17.654Z</LastUpdateDate>
+      <Name>Traducir los datos obtenidos de Twitter al modelo interno de representación</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394098817" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987378.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>2</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094634" refObjectName="Como PO espero que la información sea obtenida a través de Twitter" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394438138" objectVersion="1" refObjectName="Investigar como vamos a representar una Zona y los posibles recursos que vamos a utilizar para determinarlas." CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T20:39:05.628Z</CreationDate>
+      <ObjectID>11394438138</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA44</FormattedID>
+      <LastUpdateDate>2013-04-13T20:39:05.704Z</LastUpdateDate>
+      <Name>Investigar como vamos a representar una Zona y los posibles recursos que vamos a utilizar para determinarlas.</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394438139" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>3.0</Estimate>
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987456.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Defined</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>3.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612345" refObjectName="Como usuario espero realizar búsquedas filtrando por zona" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394438371" objectVersion="1" refObjectName="Implementar el filtro por zonas." CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T20:40:57.106Z</CreationDate>
+      <ObjectID>11394438371</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA46</FormattedID>
+      <LastUpdateDate>2013-04-13T20:40:57.158Z</LastUpdateDate>
+      <Name>Implementar el filtro por zonas.</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394438372" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>10.0</Estimate>
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987456.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Defined</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>10.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612345" refObjectName="Como usuario espero realizar búsquedas filtrando por zona" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394751223" objectVersion="1" refObjectName="Consultar al PO qué productos con qué unidades son de interés" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T21:55:57.107Z</CreationDate>
+      <ObjectID>11394751223</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA54</FormattedID>
+      <LastUpdateDate>2013-04-13T21:55:57.177Z</LastUpdateDate>
+      <Name>Consultar al PO qué productos con qué unidades son de interés</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394751224" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>1.0</Estimate>
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999990528.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Defined</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>1.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094680" refObjectName="Como PO quiero enfocarme en productos de primera necesidad." type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394751269" objectVersion="1" refObjectName="Modificar el sistema para que tenga en cuenta las especificaciones del PO" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T21:56:18.266Z</CreationDate>
+      <ObjectID>11394751269</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA55</FormattedID>
+      <LastUpdateDate>2013-04-13T21:56:18.332Z</LastUpdateDate>
+      <Name>Modificar el sistema para que tenga en cuenta las especificaciones del PO</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394751270" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>1.0</Estimate>
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999990528.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Defined</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>1.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094680" refObjectName="Como PO quiero enfocarme en productos de primera necesidad." type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394752567" objectVersion="11" refObjectName="Implementar el filtrado de las ofertas por rango de precios" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T22:08:41.503Z</CreationDate>
+      <ObjectID>11394752567</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>El código debe acoplarse al mecanismo de filtros y estrategias implementado en la US124</Description>
+      <Discussion />
+      <FormattedID>TA56</FormattedID>
+      <LastUpdateDate>2013-05-12T22:33:54.055Z</LastUpdateDate>
+      <Name>Implementar el filtrado de las ofertas por rango de precios</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343574048" refObjectName="Ivan P" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394752568" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987417.250</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394751604" refObjectName="Como desarrollador quiero filtrar las ofertas según el rango de precios del usuario" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394752611" objectVersion="7" refObjectName="Testear la funcionalidad realizada según los criterios de aceptación" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T22:08:58.309Z</CreationDate>
+      <ObjectID>11394752611</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA57</FormattedID>
+      <LastUpdateDate>2013-05-14T02:43:40.222Z</LastUpdateDate>
+      <Name>Testear la funcionalidad realizada según los criterios de aceptación</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394752612" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>3.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987417.250</Rank>
+      <Recycled>false</Recycled>
+      <State>Defined</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>3.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394751604" refObjectName="Como desarrollador quiero filtrar las ofertas según el rango de precios del usuario" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394755210" objectVersion="7" refObjectName="Implementar en el cliente un medio para establecer el tipo de consulta &quot;por rango&quot; y el rango establecido" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T22:24:12.456Z</CreationDate>
+      <ObjectID>11394755210</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>La interfaz de usuario necesita tener una funcionalidad para elegir si se incluye un rango de precios en la búsqueda. Además, en caso de que se lo elija, también debe tener un campo donde ingresar precio máximo y mínimo.</Description>
+      <Discussion />
+      <FormattedID>TA59</FormattedID>
+      <LastUpdateDate>2013-05-14T19:53:15.834Z</LastUpdateDate>
+      <Name>Implementar en el cliente un medio para establecer el tipo de consulta "por rango" y el rango establecido</Name>
+      <Notes>Los valores se validan en el backend al construirse la query.</Notes>
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394755211" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987421.750</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092969" refObjectName="Como usuario espero realizar búsquedas filtrando por un rango de precios" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394755478" objectVersion="5" refObjectName="Implementar la comunicación del cliente con el backend, enviando los parámetros" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T22:26:08.275Z</CreationDate>
+      <ObjectID>11394755478</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>El backend debe tener un método REST para recibir la consulta. El cliente debe utilizar este método de forma correcta enviando los parámetros.</Description>
+      <Discussion />
+      <FormattedID>TA60</FormattedID>
+      <LastUpdateDate>2013-05-11T19:30:02.010Z</LastUpdateDate>
+      <Name>Implementar la comunicación del cliente con el backend, enviando los parámetros</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394755479" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>2.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987421.750</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092969" refObjectName="Como usuario espero realizar búsquedas filtrando por un rango de precios" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394755747" objectVersion="7" refObjectName="Implementar la recepción y exhibición de los datos de respuesta en el frontend" CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T22:27:03.021Z</CreationDate>
+      <ObjectID>11394755747</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>El cliente debe poder recibir la respuesta del backend y exponerla al usuario a través de su interfaz.</Description>
+      <Discussion />
+      <FormattedID>TA61</FormattedID>
+      <LastUpdateDate>2013-05-14T19:48:34.225Z</LastUpdateDate>
+      <Name>Implementar la recepción y exhibición de los datos de respuesta en el frontend</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394755748" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>3.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987421.750</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>2</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092969" refObjectName="Como usuario espero realizar búsquedas filtrando por un rango de precios" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394756108" objectVersion="5" refObjectName="Validar el funcionamiento." CreatedAt="Apr 13">
+      <CreationDate>2013-04-13T22:28:44.202Z</CreationDate>
+      <ObjectID>11394756108</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Implementar tests que validen que la consulta se efectúe correctamente y los parámetros sean validados.</Description>
+      <Discussion />
+      <FormattedID>TA62</FormattedID>
+      <LastUpdateDate>2013-05-12T22:46:14.228Z</LastUpdateDate>
+      <Name>Validar el funcionamiento.</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11394756109" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987421.750</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>3</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092969" refObjectName="Como usuario espero realizar búsquedas filtrando por un rango de precios" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11402173603" objectVersion="1" refObjectName="Investigar la API de google maps" CreatedAt="Apr 14">
+      <CreationDate>2013-04-14T18:16:39.844Z</CreationDate>
+      <ObjectID>11402173603</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>En la api de google maps es necesario investigar cómo: &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* Ingresarle los datos de los lugares a mostrar&lt;/div&gt; &lt;div&gt;* Ingresar junto con los puntos de interés datos de los mismos&lt;/div&gt; &lt;div&gt;* Mostrar el mapa en el cliente&lt;/div&gt;</Description>
+      <Discussion />
+      <FormattedID>TA105</FormattedID>
+      <LastUpdateDate>2013-04-14T18:16:39.941Z</LastUpdateDate>
+      <Name>Investigar la API de google maps</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11402173604" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999991520.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Defined</State>
+      <TaskIndex>0</TaskIndex>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393613818" refObjectName="Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11402174353" objectVersion="1" refObjectName="Implementar en el cliente la comunicación con Google Maps" CreatedAt="Apr 14">
+      <CreationDate>2013-04-14T18:24:01.516Z</CreationDate>
+      <ObjectID>11402174353</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>El código implementado debe tomar los resultados devueltos por el backend y traducirlos y enviárselos a la api de google maps para que cree el mapa con los datos de interés.</Description>
+      <Discussion />
+      <FormattedID>TA106</FormattedID>
+      <LastUpdateDate>2013-04-14T18:24:01.589Z</LastUpdateDate>
+      <Name>Implementar en el cliente la comunicación con Google Maps</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11402174354" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999991520.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Defined</State>
+      <TaskIndex>1</TaskIndex>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393613818" refObjectName="Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11402174452" objectVersion="1" refObjectName="Implementar en el cliente el display del mapa con los resultados" CreatedAt="Apr 14">
+      <CreationDate>2013-04-14T18:24:53.716Z</CreationDate>
+      <ObjectID>11402174452</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Utilizando los resultados de la api de maps, el código debe permitir visualizar en el cliente el mapa generado.</Description>
+      <Discussion />
+      <FormattedID>TA107</FormattedID>
+      <LastUpdateDate>2013-04-14T18:24:53.776Z</LastUpdateDate>
+      <Name>Implementar en el cliente el display del mapa con los resultados</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11402174453" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999991520.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Defined</State>
+      <TaskIndex>2</TaskIndex>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393613818" refObjectName="Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11403103862" objectVersion="11" refObjectName="Implementar una forma de exportar los productos soportados en el backend" CreatedAt="Apr 14">
+      <CreationDate>2013-04-14T20:59:39.148Z</CreationDate>
+      <ObjectID>11403103862</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>La interfaz REST debe exportar, mediante un método /products, la lista de productos soportados junto con su unidad.</Description>
+      <Discussion />
+      <FormattedID>TA108</FormattedID>
+      <LastUpdateDate>2013-05-14T19:09:24.884Z</LastUpdateDate>
+      <Name>Implementar una forma de exportar los productos soportados en el backend</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11403103863" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987415.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612976" refObjectName="Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11403104453" objectVersion="7" refObjectName="Implementar la obtención de los productos en el frontend" CreatedAt="Apr 14">
+      <CreationDate>2013-04-14T21:00:51.590Z</CreationDate>
+      <ObjectID>11403104453</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Se necesita que el cliente de la aplicación consulte satisfactoriamente al backend y pueda obtener la lista de los productos soportados y sus unidades para operar con ellos o presentárselos al usuario.</Description>
+      <Discussion />
+      <FormattedID>TA109</FormattedID>
+      <LastUpdateDate>2013-05-14T19:07:02.168Z</LastUpdateDate>
+      <Name>Implementar la obtención de los productos en el frontend</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11403104454" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987415.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612976" refObjectName="Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11403110607" objectVersion="9" refObjectName="Mostrar al usuario la lista de productos soportados y permitirle elegir un producto" CreatedAt="Apr 14">
+      <CreationDate>2013-04-14T21:04:03.095Z</CreationDate>
+      <ObjectID>11403110607</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>La interfaz con la que se comunica el usuario le debe dar a elegir al mismo uno o más productos de la lista de productos válidos, y esta selección debe estar visible durante el resto de la consulta.</Description>
+      <Discussion />
+      <FormattedID>TA110</FormattedID>
+      <LastUpdateDate>2013-05-14T19:08:52.272Z</LastUpdateDate>
+      <Name>Mostrar al usuario la lista de productos soportados y permitirle elegir un producto</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11403110608" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987415.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>2</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612976" refObjectName="Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11403429242" objectVersion="16" refObjectName="Implementar una operación básica de busqueda de ofertas en nuestro servicio" CreatedAt="Apr 14">
+      <CreationDate>2013-04-14T22:45:40.732Z</CreationDate>
+      <ObjectID>11403429242</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Esta task cubre la implementacion base del servicio.</Description>
+      <Discussion />
+      <FormattedID>TA111</FormattedID>
+      <LastUpdateDate>2013-05-02T16:26:05.064Z</LastUpdateDate>
+      <Name>Implementar una operación básica de busqueda de ofertas en nuestro servicio</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11403429243" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987406.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710907" refObjectName="Como desarrollador quiero tener una base para la api rest del backend" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11413204900" objectVersion="6" refObjectName="Implementar un mecanismo para obtener la lista de productos y sus unidades" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T12:57:20.139Z</CreationDate>
+      <ObjectID>11413204900</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Para poder validar los tweets, es necesario conocer la lista de productos válidos y de unidades válidas para cada producto. El sistema puede pedir esta lista.</Description>
+      <Discussion />
+      <FormattedID>TA135</FormattedID>
+      <LastUpdateDate>2013-05-14T18:49:59.051Z</LastUpdateDate>
+      <Name>Implementar un mecanismo para obtener la lista de productos y sus unidades</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11413204901" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>3.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987388.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403248428" refObjectName="Como desarrollador quiero reconocer tweets útiles y convertirlos a ofertas" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11413300966" objectVersion="5" refObjectName="Implementar el parser que reconozca si el formato de un tweet es correcto" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T13:02:54.843Z</CreationDate>
+      <ObjectID>11413300966</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Se deberá reconocer si el tweet tiene la información necesaria de producto, precio, unidad y lugar.  &lt;div&gt; El formato básico a soportar es: &amp;lt;Producto&amp;gt; &amp;lt;Precio&amp;gt; &amp;lt;Unidad&amp;gt; &amp;lt;Lugar&amp;gt; #PrecioJusto &lt;/div&gt;</Description>
+      <Discussion />
+      <FormattedID>TA139</FormattedID>
+      <LastUpdateDate>2013-05-14T18:51:02.962Z</LastUpdateDate>
+      <Name>Implementar el parser que reconozca si el formato de un tweet es correcto</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11413300967" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>5.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987388.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403248428" refObjectName="Como desarrollador quiero reconocer tweets útiles y convertirlos a ofertas" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11413303275" objectVersion="7" refObjectName="Con los tweets útiles reconocidos, extraer la información para generar una oferta" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T13:04:23.898Z</CreationDate>
+      <ObjectID>11413303275</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Se deben separar los datos validados del tweet para construir un objeto Oferta, que posea la información necesaria y pueda ser leído por la aplicación.</Description>
+      <Discussion />
+      <FormattedID>TA140</FormattedID>
+      <LastUpdateDate>2013-05-14T18:52:00.281Z</LastUpdateDate>
+      <Name>Con los tweets útiles reconocidos, extraer la información para generar una oferta</Name>
+      <Notes />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11413303276" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>2.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987388.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>2</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403248428" refObjectName="Como desarrollador quiero reconocer tweets útiles y convertirlos a ofertas" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11413570298" objectVersion="8" refObjectName="Investigar bibliotecas para la implementación del servicio" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T13:15:13.447Z</CreationDate>
+      <ObjectID>11413570298</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Investigar distintas bibliotecas útiles para la implementación del servicio.&amp;nbsp; &lt;div&gt;Como primera instancia se presenta la siguiente:&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;a href="http://www.cherrypy.org/"&gt;http://www.cherrypy.org/&lt;/a&gt;&lt;/div&gt;</Description>
+      <Discussion />
+      <FormattedID>TA141</FormattedID>
+      <LastUpdateDate>2013-05-02T16:25:42.758Z</LastUpdateDate>
+      <Name>Investigar bibliotecas para la implementación del servicio</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11413570299" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987406.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710907" refObjectName="Como desarrollador quiero tener una base para la api rest del backend" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11414671261" objectVersion="11" refObjectName="Implementar la funcionalidad deseada" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T14:13:54.382Z</CreationDate>
+      <ObjectID>11414671261</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA142</FormattedID>
+      <LastUpdateDate>2013-05-11T18:39:01.068Z</LastUpdateDate>
+      <Name>Implementar la funcionalidad deseada</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11414671262" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>5.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987410.500</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11414348371" refObjectName="Como desarrollador quiero implementar la base del mecanismo de estrategias y filtros" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11414672742" objectVersion="5" refObjectName="Testear la implementación mediante un filtro y una estrategia de prueba" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T14:14:32.314Z</CreationDate>
+      <ObjectID>11414672742</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA143</FormattedID>
+      <LastUpdateDate>2013-05-14T02:41:57.380Z</LastUpdateDate>
+      <Name>Testear la implementación mediante un filtro y una estrategia de prueba</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11414672743" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>3.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987410.500</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11414348371" refObjectName="Como desarrollador quiero implementar la base del mecanismo de estrategias y filtros" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11417469530" objectVersion="5" refObjectName="Instalar todos los componentes necesarios para el desarrollo" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T16:25:34.741Z</CreationDate>
+      <ObjectID>11417469530</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Necesitamos que todos los integrantes del grupo instalemos las aplicaciones que se necesitan para desarrollar el software: Python, Tweepy, Git.</Description>
+      <Discussion />
+      <FormattedID>TA145</FormattedID>
+      <LastUpdateDate>2013-05-14T19:18:12.750Z</LastUpdateDate>
+      <Name>Instalar todos los componentes necesarios para el desarrollo</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11417469531" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>5.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987336.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710841" refObjectName="Como desarrollador quiero tener una implementación básica del frontend y backend" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11417470449" objectVersion="5" refObjectName="Crear el proyecto inicial" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T16:26:08.120Z</CreationDate>
+      <ObjectID>11417470449</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Se debe crear un proyecto que incluya espacio para el código fuente, la documentación y los diagramas de diseño. Cada uno de ellos deberá ser completado a medida que avanza el proyecto.</Description>
+      <Discussion />
+      <FormattedID>TA146</FormattedID>
+      <LastUpdateDate>2013-05-14T19:20:02.409Z</LastUpdateDate>
+      <Name>Crear el proyecto inicial</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11417470450" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987336.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710841" refObjectName="Como desarrollador quiero tener una implementación básica del frontend y backend" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11417471354" objectVersion="15" refObjectName="Agregar un primer código que le dé cierta funcionalidad al cliente frontend" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T16:26:42.307Z</CreationDate>
+      <ObjectID>11417471354</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Se necesita un código básico de un frontend que pueda comunicarse con el backend de nuestro sistema a través de una API, y con el usuario por medio de una interfaz.</Description>
+      <Discussion />
+      <FormattedID>TA147</FormattedID>
+      <LastUpdateDate>2013-05-14T19:22:34.398Z</LastUpdateDate>
+      <Name>Agregar un primer código que le dé cierta funcionalidad al cliente frontend</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11417471355" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987336.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>2</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710841" refObjectName="Como desarrollador quiero tener una implementación básica del frontend y backend" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11417475858" objectVersion="7" refObjectName="Generar el código de la interfaz que siente las bases para la fácil implementación de agregados" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T16:28:58.510Z</CreationDate>
+      <ObjectID>11417475858</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Se debe hacer un primer esbozo de una interfaz de usuario.</Description>
+      <Discussion />
+      <FormattedID>TA148</FormattedID>
+      <LastUpdateDate>2013-05-14T19:23:25.124Z</LastUpdateDate>
+      <Name>Generar el código de la interfaz que siente las bases para la fácil implementación de agregados</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11417475859" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>5.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987336.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>3</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710841" refObjectName="Como desarrollador quiero tener una implementación básica del frontend y backend" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11417477263" objectVersion="5" refObjectName="Implementar la conexión con el servicio REST" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T16:29:28.578Z</CreationDate>
+      <ObjectID>11417477263</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>El frontend debe ser capaz de comunicarse con el backend, por medio de la API REST de este último.</Description>
+      <Discussion />
+      <FormattedID>TA149</FormattedID>
+      <LastUpdateDate>2013-05-14T19:25:22.237Z</LastUpdateDate>
+      <Name>Implementar la conexión con el servicio REST</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11417477264" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987336.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>4</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710841" refObjectName="Como desarrollador quiero tener una implementación básica del frontend y backend" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11417477563" objectVersion="5" refObjectName="Validar los funcionamientos generados" CreatedAt="Apr 15">
+      <CreationDate>2013-04-15T16:29:41.222Z</CreationDate>
+      <ObjectID>11417477563</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>Es necesario testear la funcionalidad del frontend y backend en cuanto a comunicación.</Description>
+      <Discussion />
+      <FormattedID>TA150</FormattedID>
+      <LastUpdateDate>2013-05-14T19:26:05.857Z</LastUpdateDate>
+      <Name>Validar los funcionamientos generados</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11417477564" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>4.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999987336.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>5</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710841" refObjectName="Como desarrollador quiero tener una implementación básica del frontend y backend" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11748939477" objectVersion="7" refObjectName="Investigar bibliotecas o mecanismos para hacer unit testing en el lenguaje de programación del servidor" CreatedAt="May 5">
+      <CreationDate>2013-05-05T20:31:04.244Z</CreationDate>
+      <ObjectID>11748939477</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>&amp;nbsp;El código del servidor está escrito en Python, por lo que se investigará el funcionamiento de PyUnit para realizar tests unitarios.</Description>
+      <Discussion />
+      <FormattedID>TA192</FormattedID>
+      <LastUpdateDate>2013-05-14T18:06:48.064Z</LastUpdateDate>
+      <Name>Investigar bibliotecas o mecanismos para hacer unit testing en el lenguaje de programación del servidor</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11748939478" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>3.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999984896.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Completed</State>
+      <TaskIndex>0</TaskIndex>
+      <ToDo>0.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11748938680" refObjectName="Como desarrollador quiero tener un mecanismo para hacer tests unitarios" type="HierarchicalRequirement" />
+   </Task>
+   <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11748939565" objectVersion="3" refObjectName="Implementar tests de ejemplo con el mecanismo elegido que sirvan de modelo para futuros tests" CreatedAt="May 5">
+      <CreationDate>2013-05-05T20:31:34.606Z</CreationDate>
+      <ObjectID>11748939565</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description />
+      <Discussion />
+      <FormattedID>TA193</FormattedID>
+      <LastUpdateDate>2013-05-14T18:07:14.683Z</LastUpdateDate>
+      <Name>Implementar tests de ejemplo con el mecanismo elegido que sirvan de modelo para futuros tests</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11748939566" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <Blocked>false</Blocked>
+      <Estimate>1.0</Estimate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Rank>499999984896.000</Rank>
+      <Recycled>false</Recycled>
+      <State>Defined</State>
+      <TaskIndex>1</TaskIndex>
+      <ToDo>1.0</ToDo>
+      <WorkProduct rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11748938680" refObjectName="Como desarrollador quiero tener un mecanismo para hacer tests unitarios" type="HierarchicalRequirement" />
+   </Task>
+</Objects>
