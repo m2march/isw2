@@ -40,7 +40,7 @@
 
 \section{Introducción}
 
-El actual informe presenta el análisis, diseño y desarrollo inicial realizado para el producto \textbf{Precio Justo}. En el mismo se detallan el conjunto de \emph{user stories} que abarcan el desarrollo completo de la aplicación, incluyendo tanto las definiciones actuales como los puntos de extensión que se tendrán en cuenta. Se presenta además un primer \emph{diseño orientado a objetos} de la aplicación completa. Este tiene como intención estar abierto a los distintos ejes de cambios considerados en esta instancia. Por último, se analiza el alcance, el proceso y el éxito de la primera iteración del proceso de desarrollo. En esta sección se explica lo logrado y se generan conclusiones y propuestas de cambio para el resto del proceso.
+El actual informe presenta el análisis, diseño y desarrollo inicial realizado para el producto \textbf{Precio Justo}. En el mismo se detallan el conjunto de \emph{user stories} que abarcan el desarrollo completo de la aplicación, incluyendo tanto las definiciones actuales como los puntos de extensión que se tendrán en cuenta. Se presenta además un primer \emph{diseño orientado a objetos} de la aplicación completa. Este tiene como objetivo ser expansible respecto de los distintos ejes de cambios considerados para esta instancia. Por último, se analiza el alcance, el proceso y el éxito de la primera iteración del proceso de desarrollo. 
 
 \section{Análisis de la aplicación}
 
@@ -55,8 +55,8 @@ Dentro de la resolución del objetivo de la aplicación se establecen, para una 
 \paragraph{Obtención de datos}
 \begin{itemize}
     \item \textbf{Origen de los datos:} En un primer lugar los datos a utilizar por la aplicación se obtendrán exclusivamente de \emph{twitter}. Dentro del flujo de datos del mismo, se espera filtrar aquellos que contengan información relevante para nuestros propósitos.
-    \item \textbf{Formato de los tweets:} Considerando la restricción anterior, debe definirse bajo qué criterio un \emph{tweet} es útil. En una primera instancia se espera que los mismos tengan un formato similar a \textsf{$<$Producto$>$ $<$Precio$>$ $<$Unidad$>$ $<$Lugar$>$ \#PrecioJusto}, donde el \emph{hashtag} es indicador de que el \emph{tweet} está orientado a ser utilizado por nuestra aplicación. Se espera en un futuro poder precindir del \emph{hashtag} y poder interpretar formatos más flexibles.
-    \item \textbf{Unidad de los productos:} Otra restricción impuesta para el procesamiento de datos es que los precios estén indicados en su valor por una cierta unidad, siendo restringida las unidades aceptadas para cada producto. Por ejemplo, para tomates se aceptan solo \emph{kilogramos}, y para aceite la \emph{unidad}.
+    \item \textbf{Formato de los tweets:} Considerando la restricción anterior, debe definirse bajo qué criterio un \emph{tweet} es útil. En una primera instancia los mismos deberán tener un formato similar a \textsf{$<$Producto$>$ $<$Precio$>$ $<$Unidad$>$ $<$Lugar$>$ \#PrecioJusto}, donde el \emph{hashtag} es indicador de que el \emph{tweet} está orientado a ser utilizado por nuestra aplicación. Se espera en un futuro poder precindir del \emph{hashtag} y poder interpretar formatos más flexibles.
+    \item \textbf{Unidad de los productos:} Otra restricción impuesta para el procesamiento de datos es que los precios estén indicados en su valor por una cierta unidad, siendo restringida las unidades aceptadas para cada producto. Por ejemplo, para tomates se aceptan solo \emph{kilogramos}, y para leche el \emph{litro}.
     \item \textbf{Correctitud de los datos:} Una restricción implícita existente es que los mensajes a leer están bien escritos. Otra arista de cambio para la aplicación es poder soportar un cierto nivel de errores tipográficos en nuestra fuente cruda de datos.
 \end{itemize}
 
@@ -64,7 +64,7 @@ Dentro de la resolución del objetivo de la aplicación se establecen, para una 
 Inicialmente la aplicación tendrá soporte para una cantidad limitada de productos, enfocándose principalmente en aquellos de primera necesidad. La misma debe ser suficientemente flexible para poder cambiar estos productos. 
 
 \paragraph{Ubicación}
-La aplicación debe informar el lugar donde puede comprarse el producto al precio establecido. Inicialmente esta información deberá estar presente en el mismo \emph{tweet} en formato de 'calle y altura'. Conciendo que \textbf{twitter} permite agregar como información del \emph{tweet} la posición geográfica del mismo, esta información podría utilizarse en reemplazo del texto explicitando la dirección. Se espera que la aplicación pueda usar estos datos. 
+La aplicación debe informar el lugar donde puede comprarse el producto al precio establecido. Inicialmente esta información deberá estar presente en el mismo \emph{tweet} en formato de 'calle y altura'. Conciendo que \textbf{twitter} permite agregar como información del \emph{tweet} la posición geográfica del mismo, la misma podría utilizarse en reemplazo del texto explicitando la dirección. Se espera que la aplicación pueda usar estos datos. 
 
 Por otra parte, es importante tener en cuenta que, de agregarse nuevas fuentes de datos a la aplicación, estas deben ser capaces de indicar dónde se consigue el producto al precio publicitado.
 
@@ -72,17 +72,17 @@ Por otra parte, es importante tener en cuenta que, de agregarse nuevas fuentes d
 Dentro de la definición de la aplicación se establece que debe permitírsele al usuario especificar como la información será tratada. En esto se definen las siguientes características.
 
 \begin{itemize}
-  \item \textbf{Resumen:} Dentro de la masividad de datos que tendremos para un producto, es necesario definir como estos se resumirán para el usuario. En primer lugar, se deben poder priorizar los precios más baratos. Además se definen otras estrategias para tratar los datos como ser \emph{caminando lo menos posible}. El sistema debe permitir agregar nuevas estrategias fácilmente.
+  \item \textbf{Resumen:} Dentro de la masividad de datos que tendremos para un producto, es necesario definir cómo estos se resumirán para el usuario. En primer lugar, se deben poder priorizar los precios más baratos. Además se definen otras estrategias para tratar los datos, como ser \emph{caminando lo menos posible}. El sistema debe permitir agregar nuevas estrategias fácilmente.
   \item \textbf{Filtrado:} Otra posibilidad de tratamiento de datos que se le ofrece al usuario es el filtrado de los mismos. En este momento se presentan dos filtros: por zona geográfica y por rango de precios. El sistema debe soportar agregar nuevos criterios fácilmente.
   \item \textbf{Productos:} En esta primera instancia de la aplicación se está poniendo como restricción que el usuario pueda elegir un solo producto para buscar. En la versión final, la aplicación debe permitirle hacer búsquedas de varios productos a la vez.
 \end{itemize}
 
-\paragraph{Veracidad de los datos} A pesar del supuesto donde los datos provistos por redes sociales son imparciales, esto no nos asegura que los datos sean siempre correctos. Es importante tener en cuenta que los precios suben o que algún precio reportado puede ser una oferta temporal. Para tratar con estas complejidades se decidió que el sistema deberá incorporar en un futuro una forma de especificar la vigencia del precio en caso de ser una oferta. En una primera instancia, la aplicación se compromente a utilizar solo datos que tengan una frescura suficiente de forma que puedan considerarse correctos.
+\paragraph{Veracidad de los datos} A pesar del supuesto donde los datos provistos por redes sociales son imparciales, esto no nos asegura que los datos sean siempre correctos. Es importante tener en cuenta que los precios suben o que algún precio reportado puede ser una oferta temporal. Para tratar con estas complejidades se decidió que el sistema podrá incorporar en un futuro una forma de especificar la vigencia del precio en caso de ser una oferta. En una primera instancia, la aplicación se compromente a utilizar solo datos que tengan una frescura suficiente de forma que puedan considerarse correctos.
 
 Otra propuesta para esta temática es incrementar la interacción con el usuario y que este pueda votar o reportar las ofertas provistas según si fueron buenas o no. Este tipo de información nos permitiria eliminar datos falsos o desactualizados.
 
 \paragraph{Presentación de los datos}
-La visualización de ofertas que se le dará al usuario no se encuentra completamente definida en esta instancia, es por ello que el diseño debe ser capaz de adaptarse a distintas propuestas que puedan surgir en el mediano plazo. Una propuesta ya presente es que la aplicación incorpore la información de precios en un mapa.
+La visualización de ofertas que se le dará al usuario no se encuentra completamente definida en esta instancia, es por ello que el diseño del sistema debe ser capaz de adaptarse a distintas propuestas que puedan surgir en el mediano plazo. Una propuesta ya presente es que la aplicación incorpore la información de precios en un mapa.
 
 
 \section{User Stories}
@@ -235,12 +235,16 @@ El primer \emph{product increment} se enfocó en lograr una primera prueba de un
   \item Filtrado de los precios acorde a un mínimo y máximo.
 \end{itemize}
 
-\subsection{Review}
+\subsection{Revisión}
 
-* Poca comunicación con el PO: hubo muchas sorpresa en cuanto a requerimientos y expectativas tanto del desarrollo como del trabajo práctico
-* Seguimiento bruto del proyecto. el seguimiento fue espaciado
-* Poco asado
-* Disparidad en la formación de los integrantes
+Al finalizar el \emph{sprint} realizamos una revisón sobre cómo trabajó el equipo y qué mejoras podrían hacerse. Llegamos a las siguientes conclusiones. 
+
+\begin{itemize}
+  \item \textbf{Poca comunicación con el PO:} a lo largo del \emph{sprint}, la falta de comunicación con el \textbf{Product Owner} originó muchas sorpresas en cuanto a requerimientos y expectativas tanto del desarrollo del \emph{increment} como del trabajo práctico. En futuras iteraciones es recomendable reunirse con el \textbf{Product Owner} con mayor frecuencia.
+  \item \textbf{Seguimiento espaciado del proyecto:} a causa de otras responsabilidades y distracciones, las horas dedicadas al desarrollo estuvieron espaciadas y la mayor parte del trabajo se concentró en unos pocos días. En el futuro es recomendable una mayor frecuencia de trabajo de forma que los desvíos y las dudas puedan resolverse con mayor velocidad.
+  \item \textbf{Poco asado:} evidentemente el trabajo del equipo se vio afectado por la falta de asado en las reuniones, que bajó la moral y denigró el espíritu de trabajo. En las próximas iteraciones la bondiola y vacío serán protagonistas.
+  \item \textbf{Disparidad en la formación de los integrantes:} a causa de las distintas experiencias y líneas de trabajo de cada uno de los integrantes, nos encontramos con diferencias en la experiencia con las herramientas y variedad de forma de pensar las problemáticas. En el futuro será importante tener en cuenta que es necesario dedicarle más atención a cómo comunicamos las ideas dentro del equipo, así como equiparar mejor el conocimiento de las tecnologías.
+\end{itemize}
 
 
 
