@@ -177,8 +177,11 @@ Los \textbf{Filter} representan condiciones booleanas que deben cumplir las ofer
 
 \newpage
 \subsection{Diagramas de secuencias}
-linea1\\
-linea2\\
+
+En el siguiente diagrama se presenta el diagrama de secuencia para un \textbf{AndFilter}, que posee como colaborador a un \textbf{ProductFilter} y un \textbf{PriceRangeFilter}. La interacción que se captura en este diagrama es la del mensaje \emph{filter} con \emph{anOffer} pasada como parametro, a un \textbf{AndFilter}.
+El metodo asociado a este mensaje esta implementado en \textbf{MultiFilter}. 
+
+Este metodo envia los mensajes \emph{baseCase} y \emph{reduceOp} a si mismo. Los metodos asociados a estos mensajes estan implementados en \textbf{AndFilter}. \emph{baseCase} es utilizado para inicializar un acumulador interno, mientras que \emph{reduceOp} se aplica a este acumulador y al resultado de aplicar cada filtro.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{graphics/andFilter_sequence.jpg}
