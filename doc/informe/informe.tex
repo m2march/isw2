@@ -205,14 +205,15 @@ linea2\\
 
 \section{Primera Iteración}
 
-En un esquema de desarrollo iterativo incremental, el producto final se construye en iteraciones. En cada iteración se establecen ciertos objetivos, que apuntan a agregar una nueva funcionaliad al producto. Para el momento de este informe, se desarrolló solo la primera iteración. En la misma, el objetivo definido fue tener una primera versión de la aplicación con una funcionalidad limitada, pero completa frente al espíritu del proyecto. El resultado de una iteración se denomina \emph{product increment}. En el \emph{product increment} se deberá permitir buscar las ofertas de un producto en \emph{twitter}, filtrarlos con algún criterio y priorizalos mediante alguna estrategia.
+En un esquema de desarrollo iterativo incremental, el producto final se construye en iteraciones. En cada iteración se establecen ciertos objetivos, que apuntan a agregar una nueva funcionaliad al producto. Para el momento de este informe, se desarrolló solo la primera iteración. En la misma, el objetivo definido fue tener una primera versión de la aplicación con una funcionalidad limitada, pero completa frente al espíritu del proyecto. El resultado de una iteración se denomina \emph{product increment} y deberá permitir buscar las ofertas de un producto en \emph{twitter}, filtrarlos con algún criterio y priorizalos mediante alguna estrategia.
 
-A continuación explicamos como resulto el desarrollo de la primera iteración.
+A continuación explicamos cómo resulto el desarrollo de la primera iteración.
 
 \subsection{Desarrollo}
 
-En el ámbito del trabajo que se está realizando, es importante remarcar el hecho que el desarrollo iterativo incremental de la aplicación fue en el marco de un trabajo práctico cuyos objetivos exceden (en incluso son conflictivos con) los objetivos normales de una iteración. Es así que el trabajo se desarrolló en dos aristas: la de \emph{diseño orientado a objetos} y la de \emph{desarrollo}. Inicialmente se definieron los requerimientos y el alcance de la aplicación al generar un \emph{Product Backlog}, cuyas historias detallarían estas decisiones. Luego surgió la necesidad de orientarnos al diseño de la aplicación, que conformaba un punto muy importante del trabajo práctico. Esta sección de trabajo entra en conflicto con la metodología de desarrollo ya que en la misma la visibilidad completa del diseño no solo no es importante sino que debe postergarse para desarrollarse contínuamente en las iteraciones. A razón de este trabajo inicial de diseño el desarrollo quedó en segundo plano hasta la segunda mitad del \emph{sprint}, como 
-puede verse en el \textbf{burndown chart}.
+En el ámbito del trabajo que se está realizando, es importante remarcar el hecho que el desarrollo iterativo incremental de la aplicación fue en el marco de un trabajo práctico cuyos objetivos exceden (e incluso son conflictivos con) los objetivos normales de una iteración. Es así que el trabajo se dividió en dos aristas: la de \emph{diseño orientado a objetos} y la de \emph{desarrollo del increment}. 
+
+Lo primero que se hizo fue definir los requerimientos y el alcance de la aplicación al generar el \emph{Product Backlog}, cuyas historias detallarían estas decisiones. Luego surgió la necesidad de enfocarnos completamente en el diseño de la aplicación, lo que conformaba un punto muy importante del trabajo práctico. Esta sección de trabajo entra en conflicto con la metodología de desarrollo ya que en la misma la visibilidad completa del diseño no solo no es importante sino que debe postergarse para extenderse y corregirse contínuamente con las iteraciones. A razón de este trabajo inicial de diseño el desarrollo quedó en segundo plano hasta la segunda mitad del \emph{sprint}, como puede verse en el \textbf{burndown chart}.
 
 \begin{figure}[H]
 \centering
@@ -223,6 +224,16 @@ puede verse en el \textbf{burndown chart}.
 Una vez contentos con el porcentaje de diseño realizado para los fines del trabajo práctico, el desarrollo de código adquirió prioridad. Considerando que los integrantes del equipo, teniendo otras responsabilidades, no podían dedicarse diariamente al proyecto, puede observarse en el gráfico que los días de trabajo están espaciados. Las actividades de finalización de tarea fueron bastante postergadas, por lo que la cantidad de historias aceptadas creció abrúptamente en los últimos días.
 
 \subsection{Logros}
+
+El primer \emph{product increment} se enfocó en lograr una primera prueba de un sistema funcionando completamente. Su desarrollo se orientó a que hubiera algo para presentar al \emph{Product Owner} y al usuario final, así como para que fuera fácilmente expansible a los ejes de cambio definidos. Entre las funcionalidades básicas logradas se encuentran:
+
+\begin{itemize}
+  \item Un frontend web que permite simple usabilidad para el usuario.
+  \item Consulta a \emph{twitter} de tweets con hashtag \textbf{\#PrecioJusto} para obtener precios de productos.
+  \item Interpretación de los \emph{tweets} para obtener la información.
+  \item Priorización de los menores precios encontrados para un producto.
+  \item Filtrado de los precios acorde a un mínimo y máximo.
+\end{itemize}
 
 \subsection{Review}
 
