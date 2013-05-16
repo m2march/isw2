@@ -3,58 +3,66 @@
 
 %userStory(idRally, titulo, descripcion, criterios-aceptacion, story-points, owner, iteración, estado)
 \newcommand{\userStory}[8]{
+  \vspace{13pt}
 	\fbox{
 	\begin{minipage}{0.9\textwidth}
+    {\small \sffamily
 
-		\vspace{0.1cm}
+            %\vspace{0.1cm}
 
-		\begin{large}\textbf{#1: \textit{#2}}		\end{large}
+            {\normalsize \textbf{#1:} \textit{#2}}
 
-		\vspace{11pt}
+            \vspace{3pt}
 
-		\textbf{Descripción:} #3
+            \textbf{Descripción:} #3
 
-		\vspace{9pt}
+            \vspace{1pt}
 
-		\textbf{Criterios de aceptación:} #4
+            \textbf{Criterios de aceptación:} #4
 
-		\vspace{9pt}
 
-		\begin{tabular}{ l c l }
-		\textbf{Story Points:} #5 & \hspace{0.2\textwidth} & \textbf{Responsable:} #6 \\[6pt]
-		\textbf{Iteración:} #7 & \hspace{0.2\textwidth} & \textbf{Estado:} #8 \\
-		\end{tabular}
-
-		\vspace{2pt}
-
+%            \begin{tabular}{ l c l }
+%            \textbf{Story Points:} #5 & \hspace{0.2\textwidth} & \textbf{Responsable:} #6 \\[6pt]
+%            \textbf{Iteración:} #7 & \hspace{0.2\textwidth} & \textbf{Estado:} #8 \\
+%            \end{tabular}
+            \begin{center}
+                    \begin{tabular}{ l l l }
+                    \textbf{Story Points:} #5 & \textbf{Iteración:} #7  & \textbf{Estado:} #8 \\
+                    \end{tabular}
+            \end{center}
+    }
 	\end{minipage}
 	}
+  \vskip
 }
 
 %task(idRally, titulo, descripcion, horas-estimadas, responsable, horas-faltantes, estado)
 \newcommand{\task}[7]{
+  \hspace{7pt}
 	\fbox{
-	\begin{minipage}{0.9\textwidth}
+	\begin{minipage}{0.88\textwidth}
+    {\small \sffamily
 
-		\vspace{0.1cm}
+            %\vspace{0.1cm}
 
-		\begin{large}\textbf{#1: }\textit{#2}		\end{large}
+            {\normalsize \textbf{#1:} \textit{#2}}
 
-		\vspace{5pt}
+            \vspace{3pt}
 
-		\textbf{Descripción:} #3
+            \textbf{Descripción:} #3
 
-		\vspace{3pt}
+            \vspace{5pt}
 
-		\begin{tabular}{ l c l }
-		\textbf{Horas estimadas:} #4 & \hspace{0.2\textwidth} & \textbf{Responsable:} #5 \\[1pt]
-		\textbf{Horas faltantes:} #6 & \hspace{0.2\textwidth} & \textbf{Estado:} #7 \\
-		\end{tabular}
+            \begin{tabular}{ l c l }
+            \textbf{Horas estimadas:} #4 & \hspace{0.2\textwidth} & \textbf{Responsable:} #5 \\[1pt]
+            \textbf{Horas faltantes:} #6 & \hspace{0.2\textwidth} & \textbf{Estado:} #7 \\
+            \end{tabular}
 
-		\vspace{2pt}
-
+            %\vspace{2pt}
+    }
 	\end{minipage}
 	}
+  \vskip
 }
 
 %%%%%%%%%%%%%%%
@@ -125,3 +133,4 @@
 		{Iván P} % responsable
 		{0} % horas faltantes
 		{Completada} % estado (completada, bloqueada, etc.)
+
