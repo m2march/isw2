@@ -3,7 +3,13 @@ import codecs
 f = codecs.open('out.out', encoding='utf-8', mode='w+')
 sys.stdout = f
 import xml.etree.ElementTree as ET
-from html2text import html2text
+from prettyDesc import prettyDesc
+
+def prettyDesc(description):
+    #do some work before converting to html
+    description = html2text(description)
+    #do somework afterwards
+    return description
 
 datosDeInteres = [	
 		"FormattedID", # ID en el Rally
@@ -61,7 +67,7 @@ def imprimirTask(s):
 
 	print "\t\\task"+"\t{" + s["FormattedID"]+ "} % ID en el Rally"
 	print "\t\t{" + s["Name"] + "} % titulo"
-	print "\t\t{" + html2text(s["Description"]) + "} % descripcion"
+	print "\t\t{" + prettyDesc(s["Description"]) + "} % descripcion"
 
 	if s.get("Estimate"):
 		print "\t\t{" + s["Estimate"] + "} % horas estimadas"
@@ -126,7 +132,7 @@ for s in stories:
 	print "\userStory" + "\t{" + s["FormattedID"]+ "} % ID en el Rally"
 
 	print "\t{" + s["Name"] + "} % titulo"
-	print "\t{" + html2text(s["Description"]) + "} % descripcion"
+	print "\t{" + prettyDesc(s["Description"]) + "} % descripcion"
 	if s.has_key("Criterios"):
 		print "\t{" + s["Criterios"] + "} % criterios de aceptacion"
 	else:
