@@ -1,3 +1,4 @@
+from unit import Unit
 from offer import *
 from validProducts import ValidProductsProvider
 from location import Location
