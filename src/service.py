@@ -1,6 +1,7 @@
 #-*- coding: utf-8 -*-
 
 import cherrypy
+import urllib
 import json
 
 # from ModelManager import *
@@ -37,7 +38,9 @@ class RestApi:
 
   def offerquery(self, Product="", MinPrice="", MaxPrice="", Strategy=""):
     cherrypy.response.headers["Content-Type"] =  "text/plain"
-
+    
+    print "Raw query: [product=" + Product + ", MinPrice=" + MinPrice + ", MaxPrice=" + MaxPrice + ", Strategy=" + Strategy + "]"
+    
     try:
       offerQuery = OfferQueryInConstruction(Product, MinPrice, MaxPrice, Strategy)
       processedOfferQuery = self.queryProcessor.processOfferQuery(offerQuery)
