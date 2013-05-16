@@ -172,6 +172,7 @@ Los \textbf{Filter} representan condiciones booleanas que deben cumplir las ofer
 \caption{Filter}
 \end{figure}
 
+\end{landscape}
 \newpage
 \subsection{Obtenci\'ion de datos extra}
 Durante el transcurso del trabajo vimos que existen varias formas de conseguir informacion desde \emph{Twitter} asi como varias maneras de almacenarla. En el siguiente diagrama ilustramos una opci\'on para diseniar los mismos
@@ -191,9 +192,10 @@ El metodo asociado a este mensaje esta implementado en \textbf{MultiFilter}.
 Este metodo envia los mensajes \emph{baseCase} y \emph{reduceOp} a si mismo. Los metodos asociados a estos mensajes estan implementados en \textbf{AndFilter}. \emph{baseCase} es utilizado para inicializar un acumulador interno, mientras que \emph{reduceOp} se aplica a este acumulador y al resultado de aplicar cada filtro.
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{graphics/andFilter_sequence.jpg}
+\includegraphics[scale=0.55]{graphics/andFilter_sequence.jpg}
 \caption{andFilter}
 \end{figure}
+\begin{landscape}
 \newpage
 linea1\\
 linea2\\
@@ -203,8 +205,7 @@ linea2\\
 \caption{Service}
 \end{figure}
 \newpage
-linea1\\
-linea2\\
+En este diagrama se muestra una llama a la \emph{createOffers} de un \textbf{OfferFactory} pasandole como parametro un Iterable con solo dos elementos, de los cuales el primero es un dato valido que es posible tranformarlo en offerta mientras que el segundo no lo es.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.60]{graphics/OfferFactory_sequence.jpg}
