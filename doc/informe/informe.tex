@@ -168,7 +168,7 @@ En el siguiente diagrama se presenta el diagrama de secuencia para un \textbf{An
  
 % Mostraremos a continuaci\'on un ejemplo de como es la interacci\'on que se produce cuando enviamos el mensaje \emph{filter(anOffer} a un filtro compuesto por otros dos, uno por productos y el siguiente por precios. Esta interacci\'on sera referenciada despu\'es al momento de filtrar una oferta por los filtros de una \emph{query}
 % 
-
+\newpage
 \subsection{OfferQueryProcessing}
 El siguiente diagrama gira entorno a la clase \textbf{ModelManager}, cuya responsabilidad es procesar una \emph{query} contra las ofertas que el sistema encuentra en \emph{Twitter}. Su nombre nace de su interacción con sus colaboradores internos (\textbf{DataManager}, \textbf{OfferFactory}) y parámetros (\textbf{OfferQuery}). Para realizar el procesamiento de una \emph{query} el mismo debe ir interactuando uno a uno con los mismos. Dicha interacción resulta a nivel gr\'afico en una forma de estrella.
 
@@ -192,8 +192,9 @@ La interacci\'on primordial de \textbf{ModelManager} esta en el mensaje \emph{pr
 
 En esta secuencia se vislumbra lo que viene en la pr\'oxima secci\'on vinculada al armado de \emph{ofertas} desde los datos obtenidos desde \emph{Twitter} con el mensaje \emph{getOffers()}.Luego de obtener un iterador de los datos se delega en \textbf{OfferFactory} la responsabilidad de traducci\'on, parseo y validaci\'on de los datos iterables hasta devolver una lista de ofertas.
 
-
+\newpage
 \subsection{Offer Building with OfferFactory}
+
 Para pasar de los Tweets (u otro medio, ya que en este punto es transparente el origen de la información) a ofertas entendibles en nuestro sistema. Implementamos un \textbf{OfferFactory} el cual es capaz de transformar una lista de tweets (validos o no) en una lista de ofertas válidas.\\
 
 Para esto el OfferFactory es inicializado con un \textbf{ParserChain} que se encarga de intentar parsear la información de los twists devolviendo como resultado un \textbf{OfferBuilder} o la excepción  \textbf{ParserError} en caso de no ser posible para el parser extraer la información para rellenar el OfferBuilder.\\
@@ -213,7 +214,7 @@ Lo mismo se aplica con la posibilidad de agregar validaciones a la \textbf{Locat
 \includegraphics[scale=0.65]{graphics/parser_class.jpg}
 \caption{Offer Factory}
 \end{figure}
- \textbf{CHAMUYAR ACA EL DIAGRAMA QUE VIENE LO QUE MUESTRA}
+
  
 \begin{landscape}
 
