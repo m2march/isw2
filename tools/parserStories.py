@@ -8,6 +8,7 @@ from html2text import html2text
 def prettyDesc(description):
     #do some work before converting to html
     description = html2text(description)
+    description = formatoLatex(description)
     #do somework afterwards
     return description
 
@@ -63,8 +64,30 @@ tree = ET.parse('stories.xml')
 rellenar(tree.getroot())
 maxdig = 1000000
 
-def imprimirTask(s):
+def formatoLatex(y):
+	yy= ""
+	for c in y:
+		if c == "<" or c == ">":
+			yy += "$" +c+ "$ "
+		else:
+			if c == "\n":
+				yy += "\\\\" +c
+			else:
+				yy += c
+	return yy
 
+def maptoformatoLatex(s):
+	for x in s:
+		s[x] = formatoLatex(s[x])
+	return s
+ss = {}
+ss["a"] = "dsadas\ndsadas<sdas>dasdas"
+ss["b"]  = "sdadas"
+#print ss
+#print formatoLatex(ss)
+
+
+def imprimirTask(s):
 	print "\t\\task"+"\t{" + s["FormattedID"]+ "} % ID en el Rally"
 	print "\t\t{" + s["Name"] + "} % titulo"
 	print "\t\t{" + prettyDesc(s["Description"]) + "} % descripcion"
