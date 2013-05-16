@@ -161,12 +161,12 @@ Las \textbf{Strategy} representan distintas politicas para priorizar ofertas, po
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{graphics/filter_class.jpg}
-\caption{Filter}
+\caption{Filters and Strategies}
 \end{figure}
 
 \end{landscape}
 \newpage
-\subsection{Obtenci\'ion de datos extra}
+\subsection{Obtenc\'ion de datos extra}
 Durante el transcurso del trabajo vimos que existen varias formas de conseguir informacion desde \emph{Twitter} asi como varias maneras de almacenarla. En el siguiente diagrama ilustramos una opci\'on para diseñar los mismos.
 
 \begin{figure}[H]
@@ -176,12 +176,23 @@ Durante el transcurso del trabajo vimos que existen varias formas de conseguir i
 \end{figure}
 
 \newpage
+
+\begin{landscape}
 \subsection{Diagramas de secuencias}
 
-En el siguiente diagrama se presenta el diagrama de secuencia para un \textbf{AndFilter}, que posee como colaborador a un \textbf{ProductFilter} y un \textbf{PriceRangeFilter}. La interacción que se captura en este diagrama es la del mensaje \emph{filter} con \emph{anOffer} pasada como parametro, a un \textbf{AndFilter}.
-El metodo asociado a este mensaje esta implementado en \textbf{MultiFilter}. 
+El diagrama de secuencias debajo presenta el comportamiento global del \textbf{Backend}, iniciado por el mensaje \emph{query} recibido por la \textbf{RestApi}, clase que se encarga de la comunicación con el exterior. Esta clase sabe traducir desde y hacia el lenguaje externo, en este caso el protocolo \textsf{Rest} yl el lenguaje \textsf{Json}. La funcionalidad luego de la misma es recibir el mensaje en formato \emph{rest}, convertirlo en una \emph{query} de nuestro modelo llamando a un \textsf{QueryProcessor}, para así obtener una \textsf{OfferQuery}. Esta \textsf{OfferQuery} se le pasa al \textsf{ModelManager} que nos devolverá el resultado deseado y que \textsf{RestApi} se encargará de traducir al lenguaje utilizado en el exterior de la aplicación.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.60]{graphics/service_sequence.jpg}
+\caption{Service}
+\end{figure}
+\end{landscape}
 
-Este metodo envia los mensajes \emph{baseCase} y \emph{reduceOp} a si mismo. Los metodos asociados a estos mensajes estan implementados en \textbf{AndFilter}. \emph{baseCase} es utilizado para inicializar un acumulador interno, mientras que \emph{reduceOp} se aplica a este acumulador y al resultado de aplicar cada filtro.
+\newpage
+
+En el siguiente diagrama se presenta el diagrama de secuencia para un \textbf{AndFilter}, que posee como colaborador a un \textbf{ProductFilter} y un \textbf{PriceRangeFilter}. Un \textbf{AndFilter} es un filtro que da su aprobación cuando todos los filtros contiene internamente también dan su aprobación. La interacción que se captura en este diagrama es la del mensaje \emph{filter} con \emph{anOffer} pasada como parámetro, a un \textbf{AndFilter}. El método asociado a este mensaje está implementado en \textbf{MultiFilter}. 
+
+ Este método envia los mensajes \emph{baseCase} y \emph{reduceOp} a sí mismo. Los métodos asociados a estos mensajes están implementados en \textbf{AndFilter}. \emph{baseCase} es utilizado para inicializar un acumulador interno, mientras que \emph{reduceOp} se aplica a este acumulador y al resultado de aplicar cada filtro.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.55]{graphics/andFilter_sequence.jpg}
@@ -189,15 +200,8 @@ Este metodo envia los mensajes \emph{baseCase} y \emph{reduceOp} a si mismo. Los
 \end{figure}
 \begin{landscape}
 \newpage
-linea1\\
-linea2\\
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.70]{graphics/service_sequence.jpg}
-\caption{Service}
-\end{figure}
-\newpage
-En este diagrama se muestra una llama a la \emph{createOffers} de un \textbf{OfferFactory} pasandole como parametro un Iterable con solo dos elementos, de los cuales el primero es un dato valido que es posible tranformarlo en offerta mientras que el segundo no lo es.
+
+En este diagrama se muestra el envío del mensaje \emph{createOffers} a un \textbf{OfferFactory} pasándole como parámetro un Iterable con solo dos elementos, de los cuales el primero es un dato válido que es posible tranformarlo en oferta mientras que el segundo no lo es.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.60]{graphics/OfferFactory_sequence.jpg}

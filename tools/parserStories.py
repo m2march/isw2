@@ -1,6 +1,6 @@
 import sys
 import codecs
-f = codecs.open('out.out', encoding='utf-8', mode='w+')
+f = codecs.open('stories.tex', encoding='utf-8', mode='w')
 sys.stdout = f
 import xml.etree.ElementTree as ET
 from html2text import html2text
@@ -66,12 +66,16 @@ maxdig = 1000000
 
 def formatoLatex(y):
 	yy= ""
-	for c in y:
+	for i in xrange(len(y)):
+		c = y[i]
 		if c == "<" or c == ">":
 			yy += "$" +c+ "$ "
 		else:
 			if c == "\n":
-				yy += "\\\\" +c
+				if (i + 1 < len(y) and y[i+1] == "\n"):
+				  pass	
+				else:
+				  yy += "\\\\" +c
 			else:
 				yy += c
 	return yy
