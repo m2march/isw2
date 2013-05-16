@@ -95,17 +95,17 @@ Son sumamente generales y deberán ser desarrolladas en el futuro. Cada uno repr
 
 \section{Diseño}
 
-Comenzaremos explicando el diseño del sistema desde afuera hacia adentro. Es decir desde las capas mas externas del mismo hacia el corazón de nuestro modelo. Para cada diagrama haremos incapi\'e en sus puntos destacados y referencia a aquellos otros que puedan ayudar o que complementen la comprensi\'on del mismo.
+Comenzaremos explicando el diseño del sistema desde afuera hacia adentro. Es decir desde las capas más externas del mismo hacia el corazón de nuestro modelo. Para cada diagrama haremos incapi\'e en sus puntos destacados y referencia a aquellos otros que puedan ayudar o que complementen la comprensi\'on del mismo.
 
 \subsection{Frontend-Backend}
 
-La aplicación desarrollada se descompone en dos componentes, un \emph{Frontend}, a traves del cuál el usuario accede a los servicios del sistema y se concentra en la presentación de la información; y un \emph{Backend}, al cual se le delegan las tareas de construir un resultado y comunicarselo al \emph{Frontend} a partir del input del usuario.
+La aplicación desarrollada se descompone en dos componentes, un \emph{Frontend}, a traves del cuál el usuario accede a los servicios del sistema y se le presenta la información; y un \emph{Backend}, al cual se le delegan las tareas de construir un resultado y comunicarselo al \emph{Frontend}, dado el input del usuario.
   
 A continuación detallaremos el diseño del Frontend. Dado que nos encontramos en la primer iteración del proceso de desarrollo, el foco se concentró en proveer una interfaz clara para comunicar el Frontend con el Backend, y no una implementación completa de la capa de presentación de los datos.
 
-La clase \textbf{WebFrontend} es la encargada de la presentación de los datos. Esta clase posee un único método utilizado por la librería \emph{CherryPy} que lo exporta en el formato de un método \textsf{rest}\footnote{\url{https://en.wikipedia.org/wiki/Representational\_state\_transfer}}. La capa de presentación de los datos se encuentra suficientemente desacoplada de la capa de comunicación con el Backend, de forma que puede cambiarse por completo la primera, sin afectar el resto de funcionamiento.
+La clase \textbf{WebFrontend} es la encargada de la presentación de los datos. Esta clase posee un único método utilizado por la librería \emph{CherryPy}, la cual lo exporta en el formato de un método \textsf{rest}\footnote{\url{https://en.wikipedia.org/wiki/Representational\_state\_transfer}}. Este método es \emph{index}. La capa de presentación de los datos se encuentra suficientemente desacoplada de la capa de comunicación con el Backend, de forma que puede cambiarse por completo la primera, sin afectar el resto de funcionamiento.
 
-La clase \textbf{OfferBackend} representa al Backend de la aplicación, con el cuál el Frontend se comunica. Se decidió que esta clase debe ser \emph{abstracta} debido a que podrían haber varios métodos de comunicación con el Backend (Por ejemplo, mediante un servicio REST, de forma local, etc...). Son las subclases de OfferBackend las encargadas de definir esta cuestión. Un caso particular de esto es \textbf{OfferRestBackend}, que utiliza REST para comunicarse con el Backend. 
+La clase \textbf{OfferBackend} representa al Backend de la aplicación dentro del contexto del Frontend. Se decidió que esta clase debe ser \emph{abstracta} debido a que podrían haber varios métodos de comunicación con el Backend (Por ejemplo, mediante un servicio REST, de forma local, etc...). Son las subclases de OfferBackend las encargadas de definir esta cuestión. Un caso particular de esto es \textbf{OfferRestBackend}, que utiliza REST para comunicarse con el Backend. 
 
 La clase \emph{RestCommunicator} provee una interfaz con la cual comunicarnos con un servicio REST como el implementado. 
 
@@ -117,7 +117,7 @@ La clase \emph{RestCommunicator} provee una interfaz con la cual comunicarnos co
 \newpage
 
 \subsection{REST Api}
-Luego de que el \emph{Backend} haga su pedido a trav\'es de \emph{RestCommunicator} el mismo llegara a nuestra \emph{REST Api}. Para lograr esto utilizamos de nuevo a \emph{CherryPy} que nos provee un mensaje \emph{quickstart} para elegir una clase que hará el manejo de dichos pedidos. El siguiente diagrama ilustra dicha clase. El resto de las colaboraciones con estas clases ser\'an explicadas en detalle durante secciones posteriores.
+Luego de que el \emph{Backend} haga su pedido a trav\'es de \emph{RestCommunicator} el mismo llegara a nuestra \emph{REST Api}. Para lograr esto utilizamos de nuevo a \emph{CherryPy} que nos provee un mensaje \emph{quickstart} para elegir una clase que hará el manejo de dichos pedidos. El siguiente diagrama ilustra dicha clase. El resto de las colaboraciones con estas clases ser\'an explicadas en detalle en las próximas secciones.
 
 \begin{figure}[H]
 \centering
@@ -125,7 +125,7 @@ Luego de que el \emph{Backend} haga su pedido a trav\'es de \emph{RestCommunicat
 \caption{RestApi class}
 \end{figure}
 
-El comportamiento m\'as interesante se encuentra en el mensaje \emph{offerquery}. El diagrama de secuencias debajo presenta el comportamiento global del \textbf{Backend}, iniciado por el mensaje \emph{offerquery} recibido por la \textbf{RestApi}, clase que se encarga de la comunicación con el exterior. Esta clase sabe traducir desde y hacia el lenguaje externo, en este caso el protocolo \textsf{Rest} y el lenguaje \textsf{Json}. La funcionalidad de la misma es recibir el mensaje en formato \emph{rest}, convertirlo en una \emph{query} de nuestro modelo llamando a un \textsf{QueryProcessor}, para así obtener una \textsf{OfferQuery}. Esta \textsf{OfferQuery} se le pasa al \textsf{ModelManager} que nos devolverá el resultado deseado y que \textsf{RestApi} se encargará de traducir al lenguaje utilizado en el exterior de la aplicación.
+El comportamiento m\'as interesante se encuentra en el mensaje \emph{offerquery}. El diagrama de secuencias debajo presenta el comportamiento global del \textbf{Backend}, iniciado por el mensaje \emph{offerquery}. Esta clase sabe traducir desde y hacia el lenguaje externo, en este caso el protocolo \textsf{Rest} y el lenguaje \textsf{Json}. La funcionalidad de la misma es recibir el mensaje en formato \emph{rest}, convertirlo en una \emph{query} de nuestro modelo llamando a un \textsf{QueryProcessor}, para así obtener una \textsf{OfferQuery}. Esta \textsf{OfferQuery} se le pasa al \textsf{ModelManager} que nos devolverá el resultado deseado y que \textsf{RestApi} se encargará de traducir al lenguaje utilizado en el exterior de la aplicación.
 
 El resultado del \textsf{ModelManager} al ejecutar una \textsf{OfferQuery} es un conjunto de \textsf{Offer}. Las ofertas son las entidades que resumen los datos que desean presentarse al usuario, esto es: un precio por unidad para un producto particular, en una locación específica. 
 \begin{figure}[H]
@@ -135,9 +135,9 @@ El resultado del \textsf{ModelManager} al ejecutar una \textsf{OfferQuery} es un
 \end{figure}
 
 \subsection{QueryConstruction}
-En esta secci\'on explicaremos con mas detalle el proceso y el diseño involucrados en la construccion de \emph{querys} que ocurre en los primeros mensajes del diagrama previo (\emph{RestApi sequence}). 
+En esta secci\'on explicaremos con más detalle el proceso y el diseño involucrados en la construccion de \emph{querys} que ocurre en los primeros mensajes del diagrama previo (\emph{RestApi sequence}). 
 
-En este diagrama se destacan las clases de objetos que se encargan de, dada una \textbf{OfferQueryInConstruction} (Objeto que representa una consulta por ofertas sin procesar), construye el conjunto de restricciones a aplicar sobre las ofertas. Son los objetos de tipo \textbf{QueryProcessor} los encargados de construir los \textbf{Filter} y \textbf{Strategy} que determinan cuales serán los resultados finales de la consulta. En caso de que alguno de los párametros introducidos por el usuario no sean válidos, el \textbf{QueryProcessor} correspondiente informará de esta situación mediante una excepción. La clase \textbf{QueryProcessor} y sus subclases, siguen el patron de diseño \emph{Composite}.
+En este diagrama se destacan las clases de objetos que se encargan de, dada una \textbf{OfferQueryInConstruction} (Objeto que representa una consulta por ofertas sin procesar), construir el conjunto de restricciones a aplicar sobre las ofertas. Son los objetos de tipo \textbf{QueryProcessor} los encargados de construir los \textbf{Filter} y \textbf{Strategy} que determinan cuales serán los resultados finales de la consulta. En caso de que alguno de los párametros introducidos por el usuario no sean válidos, el \textbf{QueryProcessor} correspondiente informará de esta situación mediante una excepción. La clase \textbf{QueryProcessor} y sus subclases, siguen el patron de diseño \emph{Composite}.
 
 Los objetos de tipo \textbf{ValidProductsProvider} llevan cuenta de cuales son los productos válidos. Un objeto de este tipo es utilizado por un \textbf{ProductQueryProcessor} para verificar que el producto ingresado por el usuario se encuentre en la lista de los productos soportados por el sistema.
 
@@ -149,7 +149,7 @@ Los objetos de tipo \textbf{ValidProductsProvider} llevan cuenta de cuales son l
 
 Como fue mencionado anteriormente, un objeto de tipo \textbf{OfferQueryInConstruction} representa una query del usuario, la cual todavía no se terminó de procesar. Una vez que se terminaron de construir los filtros y estrategias correspondientes a la consulta del usuario, es necesario hacerla inmutable, obteniendo así un objeto con tipo \textbf{OfferQuery}. Los objetos de esta clase poseen únicamente un \textbf{Filter} y una \textbf{Strategy}.
 
-Las \textbf{Strategy} representan distintas políticas para priorizar ofertas, por ejemplo, \emph{Mas baratas primero}. Los \textbf{Filter} representan condiciones booleanas que deben cumplir las ofertas para poder encontrarse en el conjunto de resultado. La clase \textbf{Filter} cumple con el patrón de diseño \emph{Composite}. La clase \textbf{MultiFilter} sigue el patrón \emph{TemplateMethod}, esta clase define un esqueleto para la función \emph{filter}, sin embargo, son las clases derivadas las que implementan los métodos \emph{reduceOp} y \emph{baseCase}.
+Las \textbf{Strategy} representan distintas políticas para priorizar ofertas, por ejemplo, \emph{Mas baratas primero}. Los \textbf{Filter} representan condiciones booleanas que deben cumplir las ofertas para poder encontrarse en el conjunto de resultado. La clase \textbf{Filter} cumple con el patrón de diseño \emph{Composite}. Su subclase \textbf{MultiFilter} sigue el patrón \emph{TemplateMethod}, esta clase define un esqueleto para la función \emph{filter}, sin embargo, son las clases derivadas las que implementan los métodos \emph{reduceOp} y \emph{baseCase}.
 
 \begin{figure}[H]
 \centering
@@ -159,7 +159,7 @@ Las \textbf{Strategy} representan distintas políticas para priorizar ofertas, p
 
 \subsection{Filters}
 
-En el siguiente diagrama se presenta el diagrama de secuencia para un \textbf{AndFilter}, que posee como colaborador a un \textbf{ProductFilter} y un \textbf{PriceRangeFilter}. Un \textbf{AndFilter} es un filtro que da su aprobación cuando todos los filtros contiene internamente también dan su aprobación. La interacción que se captura en este diagrama es la del mensaje \emph{filter} con \emph{anOffer} pasada como parámetro, a un \textbf{AndFilter}. El método asociado a este mensaje está implementado en \textbf{MultiFilter}. 
+La única implementación actual del \textbf{MultiFilter} es el \textbf{Andfilter}. Un \textbf{AndFilter} es un filtro que da su aprobación cuando todos los filtros contiene internamente también dan su aprobación. A continuación se presenta un diagrama de secuencia para un \textbf{AndFilter} que posee como colaborador a un \textbf{ProductFilter} y un \textbf{PriceRangeFilter}. La interacción que se captura en este diagrama es la del mensaje \emph{filter} con \emph{anOffer} pasada como parámetro, a un \textbf{AndFilter}. El método asociado a este mensaje está implementado en \textbf{MultiFilter}. 
 
  Este método envia los mensajes \emph{baseCase} y \emph{reduceOp} a sí mismo. Los métodos asociados a estos mensajes están implementados en \textbf{AndFilter}. \emph{baseCase} es utilizado para inicializar un acumulador interno, mientras que \emph{reduceOp} se aplica a este acumulador y al resultado de aplicar cada filtro.
 \begin{figure}[H]
@@ -174,7 +174,7 @@ En el siguiente diagrama se presenta el diagrama de secuencia para un \textbf{An
 \subsection{OfferQueryProcessing}
 El siguiente diagrama gira entorno a la clase \textbf{ModelManager}, cuya responsabilidad es procesar una \emph{query} contra las ofertas que el sistema encuentra en \emph{Twitter}. Su nombre nace de su interacción con sus colaboradores internos (\textbf{DataManager}, \textbf{OfferFactory}) y parámetros (\textbf{OfferQuery}). Para realizar el procesamiento de una \emph{query} el mismo debe ir interactuando uno a uno con los mismos. Dicha interacción resulta a nivel gr\'afico en una forma de estrella.
 
-El primer eje de cambio que tuvimos en consideración y se ve reflejado en el diagrama es la posibilidad de tener más de una fuente de datos adem\'as de la REST api de \emph{Twitter}. Este eje se logra facilmente agregando otro \textbf{DataSource} concreto a la instancia de  DataManager con el m\'ensaje \emph{addConnector}.
+El primer eje de cambio que tuvimos en consideración y se ve reflejado en el diagrama es la posibilidad de tener más de una fuente de datos adem\'as de la REST api de \emph{Twitter}. Este eje se logra facilmente agregando otro \textbf{DataSource} concreto a la instancia de  DataManager con el mensaje \emph{addConnector}.
 
 El siguiente eje de cambio est\'a en el uso de la interfaz \emph{iterable} por \textbf{OfferFactory}, \textbf{OfferFactory} la utiliza para iterar los datos que provee \textbf{DataManager} y esto genera un desacoplamiento ya que lo unico que \textbf{OfferFactory} necesita es un tipo de almacenamiento de datos que provea una manera de iterarlos mediante el mensaje \emph{next()}. Por ejemplo, en siguientes versiones del sistema podría utilizarse algun mecanismo de persistencia que ayude a eliminar el costo de hacer el request a nuestros conectores cada vez y la clase \textbf{OfferFactory} no deber\'ia modificarse. 
 
@@ -184,7 +184,7 @@ El siguiente eje de cambio est\'a en el uso de la interfaz \emph{iterable} por \
 \caption{Model Manager Class}
 \end{figure}
 
-La interacci\'on primordial de \textbf{ModelManager} esta en el mensaje \emph{process(anOfferQuery)} que es llamado por \textbf{RestApi} luego de el armado de la \emph{anOfferQuery} visto en la secci\'on previa. Vemos entonces como esta compuesta esta interacci\'on en el siguiente diagrama. 
+La interacci\'on primordial con \textbf{ModelManager} está en el mensaje \emph{process(anOfferQuery)} que es llamado por \textbf{RestApi} luego del armado de \emph{anOfferQuery} visto en la secci\'on previa. Vemos entonces como está compuesta esta interacci\'on en el siguiente diagrama. 
 
 \begin{figure}[H]
 \centering
@@ -192,24 +192,22 @@ La interacci\'on primordial de \textbf{ModelManager} esta en el mensaje \emph{pr
 \caption{Model Manager Sequence}
 \end{figure}
 
-En esta secuencia se vislumbra lo que viene en la pr\'oxima secci\'on vinculada al armado de \emph{ofertas} desde los datos obtenidos desde \emph{Twitter} con el mensaje \emph{getOffers()}.Luego de obtener un iterador de los datos se delega en \textbf{OfferFactory} la responsabilidad de traducci\'on, parseo y validaci\'on de los datos iterables hasta devolver una lista de ofertas.
+En esta secuencia se vislumbra lo que viene en la pr\'oxima secci\'on vinculada al armado de \emph{ofertas} desde los datos obtenidos desde \emph{Twitter} con el mensaje \emph{getOffers()}. Luego de obtener un iterador de los datos se delega en \textbf{OfferFactory} la responsabilidad de traducci\'on, parseo y validaci\'on de los datos iterables hasta devolver una lista de ofertas.
 
 \newpage
 \subsection{Offer Building with OfferFactory}
 
-Para pasar de los Tweets (u otro medio, ya que en este punto es transparente el origen de la información) a ofertas entendibles en nuestro sistema. Implementamos un \textbf{OfferFactory} el cual es capaz de transformar una lista de tweets (validos o no) en una lista de ofertas válidas.\\
+Para pasar de los Tweets (u otro medio, ya que en este punto es transparente el origen de la información) a ofertas entendibles en nuestro sistema. Implementamos un \textbf{OfferFactory} el cual es capaz de transformar una lista de tweets (validos o no) en una lista de ofertas válidas.
 
-Para esto el OfferFactory es inicializado con un \textbf{ParserChain} que se encarga de intentar parsear la información de los twists devolviendo como resultado un \textbf{OfferBuilder} o la excepción  \textbf{ParserError} en caso de no ser posible para el parser extraer la información para rellenar el OfferBuilder.\\
+Para esto el OfferFactory es inicializado con un \textbf{ParserChain} que se encarga de intentar parsear la información de los tweets devolviendo como resultado un \textbf{OfferBuilder} o la excepción\textbf{ParserError} en caso de no ser posible para el parser extraer la información para rellenar el OfferBuilder.
 
-El ParserChain es Inicializado con una lista de \textbf{SpecificParser}, los cuales son llamados en el orden en el que vienen en la lista, tratando de extraer la información que necesitan y volcándola dentro del OfferBuilder que se está rellenado.\\
+El ParserChain es inicializado con una lista de \textbf{SpecificParser}, los cuales son llamados en el órden en el que vienen en la lista, tratando de extraer la información que necesitan y volcándola dentro del OfferBuilder que se está rellenado.
 
-Este diseño nos da una gran flexibilidad para los cambios futuros, tanto en agregar nuevas formas de extraer datos, como también alterar la forma en la que se extraen los dados ahora sin modificar otras.\\
+Este diseño nos da una gran flexibilidad para los cambios futuros, tanto en agregar nuevas formas de extraer datos, como en alterar la forma en la que se extraen algunos datos ahora sin modificar la obtención de los otros.
 
-Como por ejemplo sería muy fácil agregar el validador ortográfico para poder detectar productos mal escritos sin necesidad de alterar ninguna otra parte (en el diseño se muestra una clase tentativa que le agrega a \textbf{ProductParser} la posibilidad de chequear esto).\\
+Como por ejemplo sería muy fácil agregar el validador ortográfico para poder detectar productos mal escritos (en el diseño se muestra una clase tentativa que le agrega a \textbf{ProductParser} la posibilidad de chequear esto). Esto sería transparente a la obtención de la ubicación de la oferta.
 
-Lo mismo se aplica con la posibilidad de agregar validaciones a la \textbf{Location} la cual por el momento solo consiste en un string que no tiene ningún tipo de chequeo sobre su validez.\\ 
-
-
+Lo mismo se aplica con la posibilidad de agregar validaciones a la \textbf{Location} la cual por el momento solo consiste en un string que no tiene ningún tipo de chequeo sobre su validez.
 
 \begin{figure}[H]
 \centering
