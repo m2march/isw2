@@ -207,7 +207,7 @@ Este diseño nos da una gran flexibilidad para los cambios futuros, tanto en agr
 
 Como por ejemplo sería muy fácil agregar el validador ortográfico para poder detectar productos mal escritos (en el diseño se muestra una clase tentativa que le agrega a \textbf{ProductParser} la posibilidad de chequear esto). Esto sería transparente a la obtención de la ubicación de la oferta.
 
-Lo mismo se aplica con la posibilidad de agregar validaciones a la \textbf{Location} la cual por el momento solo consiste en un string que no tiene ningún tipo de chequeo sobre su validez.
+Lo mismo se aplica con la posibilidad de agregar validaciones a \textbf{Location}. Esta es la clase que representa la ubicación física de un negocio que vende un producto a un determinado precio (el lugar de la oferta). En esta instancia la \textbf{Location} solo consiste en un string cuya validéz no fue verificada. En el futuro la representación podría ser más sofisticada. 
 
 \begin{figure}[H]
 \centering
