@@ -33,7 +33,7 @@ class RestApi:
     cherrypy.response.headers["Content-Type"] =  "text/plain"
     validProducts = self.validProductsProvider.products()
     validProductsName = map(lambda p: p.name(), validProducts)
-	return json.dumps(validProductsName, ensure_ascii=False)
+    return json.dumps(validProductsName, ensure_ascii=False)
 
   def offerquery(self, Product="", MinPrice="", MaxPrice="", Strategy=""):
     cherrypy.response.headers["Content-Type"] =  "text/plain"
