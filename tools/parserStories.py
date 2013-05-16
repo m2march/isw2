@@ -57,11 +57,33 @@ tree = ET.parse('stories.xml')
 rellenar(tree.getroot())
 maxdig = 1000000
 
-def imprimirTask(s):
+def formatoLatex(y):
+	yy= ""
+	for c in y:
+		if c == "<" or c == ">":
+			yy += "$" +c+ "$ "
+		else:
+			if c == "\n":
+				yy += "\\\\" +c
+			else:
+				yy += c
+	return yy
 
+def maptoformatoLatex(s):
+	for x in s:
+		s[x] = formatoLatex(s[x])
+	return s
+ss = {}
+ss["a"] = "dsadas\ndsadas<sdas>dasdas"
+ss["b"]  = "sdadas"
+#print ss
+#print formatoLatex(ss)
+
+
+def imprimirTask(s):
 	print "\t\\task"+"\t{" + s["FormattedID"]+ "} % ID en el Rally"
-	print "\t\t{" + s["Name"] + "} % titulo"
-	print "\t\t{" + html2text(s["Description"]) + "} % descripcion"
+	print "\t\t{" + formatoLatex(s["Name"]) + "} % titulo"
+	print "\t\t{" + formatoLatex(html2text(s["Description"])) + "} % descripcion"
 
 	if s.get("Estimate"):
 		print "\t\t{" + s["Estimate"] + "} % horas estimadas"
@@ -125,8 +147,8 @@ for s in stories:
 		continue
 	print "\userStory" + "\t{" + s["FormattedID"]+ "} % ID en el Rally"
 
-	print "\t{" + s["Name"] + "} % titulo"
-	print "\t{" + html2text(s["Description"]) + "} % descripcion"
+	print "\t{" + formatoLatex(s["Name"]) + "} % titulo"
+	print "\t{" + formatoLatex(html2text(s["Description"])) + "} % descripcion"
 	if s.has_key("Criterios"):
 		print "\t{" + s["Criterios"] + "} % criterios de aceptacion"
 	else:
