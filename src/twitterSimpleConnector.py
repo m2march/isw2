@@ -1,7 +1,7 @@
 import tweepy
-from observable import *
+#from observable import *
 
-class TwitterSimpleConnector(Observable):
+class TwitterSimpleConnector:
 	def __init__(self,hashtag, language="es"):
 		self.language = language
 		self.hashtag = hashtag
@@ -20,5 +20,5 @@ class TwitterSimpleConnector(Observable):
 if __name__ == '__main__':
 	print "test for twitter simple connector"
 	tc = TwitterSimpleConnector("#precioJusto","es")
-	for tweet in tc.getData():		
+	for tweet in tc.getData():
 		print tweet.text.encode('utf-8','ignore')
