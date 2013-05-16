@@ -1,97 +1,24 @@
-\userStory	{US106} % ID en el Rally
-	{Como desarrollador quiero tener una base para la API REST del backend} % titulo
-	{Se espera implementar un código inicial del backend que permita agregar\\
-fácilmente nuevos métodos a la interfaz REST, los cuales permitirán acceder al\\
-funcionamiento interno del mismo.\\
+\userStory	{US145} % ID en el Rally
+	{Realizar un primer análisis y diseño de la aplicación} % titulo
+	{En una primera instancia es importante comprender la naturaleza de la\\
+aplicación, entender los requerimientos, sugerir propuestas para resolverlos y\\
+bocetar una estructura global que permita la división del trabajo entre los\\
+integrantes del grupo.\\
+  \\
+También es necesario definir un camino de desarrollo, priorizar los\\
+requerimientos y establecer líneas de expansión de la aplicación que sean\\
+deseables.\\
   \\
 Criterios de aceptación:\\
-* El backend dispondrá de un método /status que permita verificar si está funcionando correctamente.   \\
-* El código de este método será fácilmente replicable para agregar nuevas funcionalidades.\\
+* El grupo de trabajo acordará en un lenguaje/código común para realizar el diseño orientado a objetos.  \\
+* El grupo poseerá un boceto básico del diseño global de la aplicación.  \\
+* Los integrantes podrán comenzar a trabajar por separado con un conocimiento básico de las actividades que el grupo debe realizar.  \\
 } % descripcion
 	{} % criterios de aceptacion
-	{5.0} % story points
+	{8.0} % story points
 	{Martin M} % story owner
 	{Primera} % iteracion (Primera o ``no definida'')
 	{Accepted} % estado (completada, bloqueada, etc.)
-
-	\task	{TA111} % ID en el Rally
-		{Implementar una operación básica de busqueda de ofertas en nuestro servicio} % titulo
-		{Esta task cubre la implementacion base del servicio.\\
-} % descripcion
-		{4.0} % horas estimadas
-		{Martin M} % story owner
-		{0.0} % horas faltantes
-		{Completed} % estado (completada, bloqueada, etc.)
-
-	\task	{TA141} % ID en el Rally
-		{Investigar bibliotecas para la implementación del servicio} % titulo
-		{Investigar distintas bibliotecas útiles para la implementación del servicio.\\
-Como primera instancia se presenta la siguiente:\\
-  \\
-[http://www.cherrypy.org/](http://www.cherrypy.org/)\\
-} % descripcion
-		{4.0} % horas estimadas
-		{Martin M} % story owner
-		{0.0} % horas faltantes
-		{Completed} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US113} % ID en el Rally
-	{Como desarrollador quiero reconocer tweets útiles y convertirlos a ofertas} % titulo
-	{Cuando el sistema recibe datos de Twitter, necesita poder identificar aquellos\\
-que tienen información útil. Esto se determina de acuerdo a su formato. En\\
-esta etapa del proyecto, los tweets que son útiles son aquellos que cumplen el\\
-formato "$<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$  #precioJusto", y además, tengan\\
-un producto válido, una unidad soportada por el producto, y un precio y lugar\\
-válidos. Es necesario identificar los tweets válidos y extraer la información\\
-contenida en ellos.\\
-  \\
-Criterios de aceptación:\\
-* La aplicación conocerá los productos y unidades aceptados por los administradores y podrá contrastarlos con los datos de los tweets.  \\
-* Si un tweet con el hashtag #precioJusto no tiene información correcta o no es relevante, deberá ser ignorado por el sistema.  \\
-* Si un tweet con el hashtag es relevante y válido, el sistema deberá componer un objeto 'oferta' que contenga la información dada por dicho tweet.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{5.0} % story points
-	{Martin M} % story owner
-	{Primera} % iteracion (Primera o ``no definida'')
-	{Accepted} % estado (completada, bloqueada, etc.)
-
-	\task	{TA135} % ID en el Rally
-		{Implementar un mecanismo para obtener la lista de productos y sus unidades} % titulo
-		{Para poder validar los tweets, es necesario conocer la lista de productos\\
-válidos y de unidades válidas para cada producto. El sistema puede pedir esta\\
-lista.\\
-} % descripcion
-		{3.0} % horas estimadas
-		{} % story owner
-		{0.0} % horas faltantes
-		{Completed} % estado (completada, bloqueada, etc.)
-
-	\task	{TA139} % ID en el Rally
-		{Implementar el parser que reconozca si el formato de un tweet es correcto} % titulo
-		{Se deberá reconocer si el tweet tiene la información necesaria de producto,\\
-precio, unidad y lugar.\\
-El formato básico a soportar es: $<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$ \\
-#PrecioJusto\\
-} % descripcion
-		{5.0} % horas estimadas
-		{} % story owner
-		{0.0} % horas faltantes
-		{Completed} % estado (completada, bloqueada, etc.)
-
-	\task	{TA140} % ID en el Rally
-		{Con los tweets útiles reconocidos, extraer la información para generar una oferta} % titulo
-		{Se deben separar los datos validados del tweet para construir un objeto\\
-Oferta, que posea la información necesaria y pueda ser leído por la\\
-aplicación.\\
-} % descripcion
-		{2.0} % horas estimadas
-		{} % story owner
-		{0.0} % horas faltantes
-		{Completed} % estado (completada, bloqueada, etc.)
 
 
 \vspace{20pt}
@@ -113,6 +40,45 @@ Criterios de aceptación:\\
 	{Martin M} % story owner
 	{Primera} % iteracion (Primera o ``no definida'')
 	{Accepted} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US143} % ID en el Rally
+	{Como desarrollador quiero tener un mecanismo para hacer tests unitarios} % titulo
+	{Se quiere disponer de un software que nos permita realizar tests unitarios. El\\
+mecanismo debe haber sido testeado en su facilidad de uso y extensibilidad\\
+creando tests.\\
+  \\
+  \\
+Criterios de aceptación:\\
+  \\
+* Se dispondrá de un mecanismo de fácil extensión para poder testear funcionalidades unitarias. \\
+} % descripcion
+	{} % criterios de aceptacion
+	{3.0} % story points
+	{Martin M} % story owner
+	{Primera} % iteracion (Primera o ``no definida'')
+	{Accepted} % estado (completada, bloqueada, etc.)
+
+	\task	{TA192} % ID en el Rally
+		{Investigar bibliotecas o mecanismos para hacer unit testing en el lenguaje de programación del servidor} % titulo
+		{El código del servidor está escrito en Python, por lo que se investigará el\\
+funcionamiento de PyUnit para realizar tests unitarios.\\
+} % descripcion
+		{3.0} % horas estimadas
+		{Juan M} % story owner
+		{0.0} % horas faltantes
+		{Completed} % estado (completada, bloqueada, etc.)
+
+	\task	{TA193} % ID en el Rally
+		{Implementar tests de ejemplo con el mecanismo elegido que sirvan de modelo para futuros tests} % titulo
+		{\\
+} % descripcion
+		{1.0} % horas estimadas
+		{Martin M} % story owner
+		{1.0} % horas faltantes
+		{Defined} % estado (completada, bloqueada, etc.)
 
 
 \vspace{20pt}
@@ -223,6 +189,104 @@ convierta en objetos de nuestro modelo, fundamentalmente en un objeto\\
 
 \vspace{20pt}
 
+\userStory	{US113} % ID en el Rally
+	{Como desarrollador quiero reconocer tweets útiles y convertirlos a ofertas} % titulo
+	{Cuando el sistema recibe datos de Twitter, necesita poder identificar aquellos\\
+que tienen información útil. Esto se determina de acuerdo a su formato. En\\
+esta etapa del proyecto, los tweets que son útiles son aquellos que cumplen el\\
+formato "$<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$  #precioJusto", y además, tengan\\
+un producto válido, una unidad soportada por el producto, y un precio y lugar\\
+válidos. Es necesario identificar los tweets válidos y extraer la información\\
+contenida en ellos.\\
+  \\
+Criterios de aceptación:\\
+* La aplicación conocerá los productos y unidades aceptados por los administradores y podrá contrastarlos con los datos de los tweets.  \\
+* Si un tweet con el hashtag #precioJusto no tiene información correcta o no es relevante, deberá ser ignorado por el sistema.  \\
+* Si un tweet con el hashtag es relevante y válido, el sistema deberá componer un objeto 'oferta' que contenga la información dada por dicho tweet.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{5.0} % story points
+	{Martin M} % story owner
+	{Primera} % iteracion (Primera o ``no definida'')
+	{Accepted} % estado (completada, bloqueada, etc.)
+
+	\task	{TA135} % ID en el Rally
+		{Implementar un mecanismo para obtener la lista de productos y sus unidades} % titulo
+		{Para poder validar los tweets, es necesario conocer la lista de productos\\
+válidos y de unidades válidas para cada producto. El sistema puede pedir esta\\
+lista.\\
+} % descripcion
+		{3.0} % horas estimadas
+		{} % story owner
+		{0.0} % horas faltantes
+		{Completed} % estado (completada, bloqueada, etc.)
+
+	\task	{TA139} % ID en el Rally
+		{Implementar el parser que reconozca si el formato de un tweet es correcto} % titulo
+		{Se deberá reconocer si el tweet tiene la información necesaria de producto,\\
+precio, unidad y lugar.\\
+El formato básico a soportar es: $<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$ \\
+#PrecioJusto\\
+} % descripcion
+		{5.0} % horas estimadas
+		{} % story owner
+		{0.0} % horas faltantes
+		{Completed} % estado (completada, bloqueada, etc.)
+
+	\task	{TA140} % ID en el Rally
+		{Con los tweets útiles reconocidos, extraer la información para generar una oferta} % titulo
+		{Se deben separar los datos validados del tweet para construir un objeto\\
+Oferta, que posea la información necesaria y pueda ser leído por la\\
+aplicación.\\
+} % descripcion
+		{2.0} % horas estimadas
+		{} % story owner
+		{0.0} % horas faltantes
+		{Completed} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US106} % ID en el Rally
+	{Como desarrollador quiero tener una base para la API REST del backend} % titulo
+	{Se espera implementar un código inicial del backend que permita agregar\\
+fácilmente nuevos métodos a la interfaz REST, los cuales permitirán acceder al\\
+funcionamiento interno del mismo.\\
+  \\
+Criterios de aceptación:\\
+* El backend dispondrá de un método /status que permita verificar si está funcionando correctamente.   \\
+* El código de este método será fácilmente replicable para agregar nuevas funcionalidades.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{5.0} % story points
+	{Martin M} % story owner
+	{Primera} % iteracion (Primera o ``no definida'')
+	{Accepted} % estado (completada, bloqueada, etc.)
+
+	\task	{TA111} % ID en el Rally
+		{Implementar una operación básica de busqueda de ofertas en nuestro servicio} % titulo
+		{Esta task cubre la implementacion base del servicio.\\
+} % descripcion
+		{4.0} % horas estimadas
+		{Martin M} % story owner
+		{0.0} % horas faltantes
+		{Completed} % estado (completada, bloqueada, etc.)
+
+	\task	{TA141} % ID en el Rally
+		{Investigar bibliotecas para la implementación del servicio} % titulo
+		{Investigar distintas bibliotecas útiles para la implementación del servicio.\\
+Como primera instancia se presenta la siguiente:\\
+  \\
+[http://www.cherrypy.org/](http://www.cherrypy.org/)\\
+} % descripcion
+		{4.0} % horas estimadas
+		{Martin M} % story owner
+		{0.0} % horas faltantes
+		{Completed} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
 \userStory	{US124} % ID en el Rally
 	{Como desarrollador quiero implementar la base del mecanismo de estrategias y filtros} % titulo
 	{Se desea implementar el código básico que se aprovechará en las futuras\\
@@ -297,7 +361,7 @@ Criterios de aceptación:\\
 	{2.0} % story points
 	{Ivan P} % story owner
 	{Primera} % iteracion (Primera o ``no definida'')
-	{Completed} % estado (completada, bloqueada, etc.)
+	{Accepted} % estado (completada, bloqueada, etc.)
 
 	\task	{TA56} % ID en el Rally
 		{Implementar el filtrado de las ofertas por rango de precios} % titulo
@@ -308,31 +372,6 @@ la US124\\
 		{Ivan P} % story owner
 		{0.0} % horas faltantes
 		{Completed} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US145} % ID en el Rally
-	{Realizar un primer análisis y diseño de la aplicación} % titulo
-	{En una primera instancia es importante comprender la naturaleza de la\\
-aplicación, entender los requerimientos, sugerir propuestas para resolverlos y\\
-bocetar una estructura global que permita la división del trabajo entre los\\
-integrantes del grupo.\\
-  \\
-También es necesario definir un camino de desarrollo, priorizar los\\
-requerimientos y establecer líneas de expansión de la aplicación que sean\\
-deseables.\\
-  \\
-Criterios de aceptación:\\
-* El grupo de trabajo acordará en un lenguaje/código común para realizar el diseño orientado a objetos.  \\
-* El grupo poseerá un boceto básico del diseño global de la aplicación.  \\
-* Los integrantes podrán comenzar a trabajar por separado con un conocimiento básico de las actividades que el grupo debe realizar.  \\
-} % descripcion
-	{} % criterios de aceptacion
-	{8.0} % story points
-	{Martin M} % story owner
-	{Primera} % iteracion (Primera o ``no definida'')
-	{Accepted} % estado (completada, bloqueada, etc.)
 
 
 \vspace{20pt}
@@ -392,277 +431,24 @@ a través de su interfaz.\\
 
 \vspace{20pt}
 
-\userStory	{US143} % ID en el Rally
-	{Como desarrollador quiero tener un mecanismo para hacer tests unitarios} % titulo
-	{Se quiere disponer de un software que nos permita realizar tests unitarios. El\\
-mecanismo debe haber sido testeado en su facilidad de uso y extensibilidad\\
-creando tests.\\
+\userStory	{US110} % ID en el Rally
+	{Como desarrollador quiero investigar cómo determinar zonas geográficas} % titulo
+	{Es necesario establecer un criterio para delimitar las zonas que servirán de\\
+filtro en nuestra aplicación.\\
+Algunas opciones son:\\
   \\
+* Utilizar la API de google maps si es que tiene en ella información de zonas\\
+* Si existe, utilizar la API del mapa del Gobierno de la Ciudad para usar las zonas delimitadas en la misma\\
+* Definir las zonas manualmente en nuestra aplicación\\
+  \\
+También se debe determinar si es necesario recortar inicialmente el alcance\\
+total de la aplicación a, por ejemplo, Capital Federal.\\
   \\
 Criterios de aceptación:\\
-  \\
-* Se dispondrá de un mecanismo de fácil extensión para poder testear funcionalidades unitarias. \\
-} % descripcion
-	{} % criterios de aceptacion
-	{3.0} % story points
-	{Martin M} % story owner
-	{Primera} % iteracion (Primera o ``no definida'')
-	{Completed} % estado (completada, bloqueada, etc.)
-
-	\task	{TA192} % ID en el Rally
-		{Investigar bibliotecas o mecanismos para hacer unit testing en el lenguaje de programación del servidor} % titulo
-		{El código del servidor está escrito en Python, por lo que se investigará el\\
-funcionamiento de PyUnit para realizar tests unitarios.\\
-} % descripcion
-		{3.0} % horas estimadas
-		{Juan M} % story owner
-		{0.0} % horas faltantes
-		{Completed} % estado (completada, bloqueada, etc.)
-
-	\task	{TA193} % ID en el Rally
-		{Implementar tests de ejemplo con el mecanismo elegido que sirvan de modelo para futuros tests} % titulo
-		{\\
-} % descripcion
-		{1.0} % horas estimadas
-		{Martin M} % story owner
-		{1.0} % horas faltantes
-		{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US118} % ID en el Rally
-	{Como desarrollador quiero filtrar las ofertas por la estrategia "caminando lo menos posible"} % titulo
-	{**Requerimiento:**\\
-El usuario debe poder comunicar la información sobre su ubicación actual. En\\
-un principio podría transmitirla directamente por texto, indicando\\
-$<$ Calle$>$ $<$ Altura$>$ ; más adelante podría hacerlo utilizando algún método de\\
-geolocalización. (Ver US127)\\
-  \\
-  \\
-Criterio de aceptación:\\
-  \\
-* El usuario ingresa una búsqueda de un producto y selecciona la estrategia "caminando lo menos posible".  \\
-* El resultado de la búsqueda será, entre las ofertas que cumplen las demás restricciones seleccionadas, la mas cercana a la posición informada por el usuario.\\
-* En caso de no haber ofertas disponibles que cumplan las restricciones, se informará de esto al usuario mediante un mensaje. \\
-  \\
-  \\
+* El grupo de trabajo conocerá el concepto de zona que se utilizará, así como la manera de operar con las zonas.  \\
 } % descripcion
 	{} % criterios de aceptacion
 	{5.0} % story points
-	{Ivan P} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US89} % ID en el Rally
-	{Como PO espero poder agregar y eliminar productos de la lista de productos soportados junto con su respectiva unidad} % titulo
-	{El sistema está pensado para tratar con productos "de primera necesidad", y el\\
-objetivo es tener una lista cerrada de productos soportados. En principio esta\\
-lista es fija, pero se quiere que en un futuro pueda ser modificada, agregando\\
-o quitando productos según las decisiones del Product Owner, que puede querer\\
-que un producto sea o no soportado por la aplicación.\\
-  \\
-Criterios de aceptación:\\
-* Un administrador del sistema podrá incluir un nuevo producto para ser soportado por la aplicación, junto con una o más unidades de medida asociadas. Los usuarios podrán consultar por dicho producto luego de que haya sido dado de alta, y el funcionamiento deberá ser correcto al igual que con los productos originales.  \\
-* Un administrador podrá eliminar un producto de la lista. Los usuarios no podrán volver a consultar sobre dicho producto en la aplicación.  \\
-* Un administrador podrá agregar una nueva unidad asociada a un producto existente. Las respuestas a las consultas de dicho producto incluirán ofertas con dicho producto y unidad. También podrá ser eliminada una unidad existente, y las ofertas que usen esa unidad no aparecerán.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{8.0} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US86} % ID en el Rally
-	{Como usuario quiero ingresar el nombre de un producto y que el sistema me ofrezca los productos válidos más similares lexicográficamente} % titulo
-	{Se desea que el usuario pueda ingresar el nombre del producto que quiere\\
-buscar en formato "string", dentro de un campo de texto provisto por la\\
-interfaz. El sistema deberá mostrar los productos válidos que se parecen\\
-lexicográficamente al ingresado, y el usuario tendrá que elegir uno.\\
-  \\
-Criterios de aceptación:\\
-* El usuario puede ingresar cualquier palabra o frase en el campo de texto llamado "producto". Por ejemplo, "japón".  \\
-* El sistema deberá mostrar una lista con productos que se parecen lexicográficamente al texto ingresado. Por ejemplo, "jamón; jabón" (suponiendo que en el momento de la consulta ambos son productos válidos del sistema).  \\
-* De no haber ningún producto que se considere parecido, se deberá indicar que no hay conicidencias. El usuario deberá poder borrar y reescribir el producto.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{5.0} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US87} % ID en el Rally
-	{Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos} % titulo
-	{El mapa es un método visualmente eficiente para mostrar las ofertas que son\\
-respuesta a una consulta del usuario. La dirección puede ser señalada con un\\
-punto en el mapa, y el resto de la información puede verse en el epígrafe que\\
-acompaña al punto.\\
-  \\
-Criterios de aceptación:\\
-* Cuando el usuario realiza una consulta, podrá elegir que los resultados se muestren en un mapa.  \\
-* Las direcciones de todas las ofertas resultantes aparecerán como puntos en el mapa, y los datos restantes de las ofertas estarán escritos al costado de cada punto.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{13.0} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-	\task	{TA105} % ID en el Rally
-		{Investigar la API de google maps} % titulo
-		{En la api de google maps es necesario investigar cómo:\\
-  \\
-* Ingresarle los datos de los lugares a mostrar\\
-* Ingresar junto con los puntos de interés datos de los mismos\\
-* Mostrar el mapa en el cliente\\
-} % descripcion
-		{} % horas estimadas
-		{} % story owner
-		{} % horas faltantes
-		{Defined} % estado (completada, bloqueada, etc.)
-
-	\task	{TA106} % ID en el Rally
-		{Implementar en el cliente la comunicación con Google Maps} % titulo
-		{El código implementado debe tomar los resultados devueltos por el backend y\\
-traducirlos y enviárselos a la api de google maps para que cree el mapa con\\
-los datos de interés.\\
-} % descripcion
-		{} % horas estimadas
-		{} % story owner
-		{} % horas faltantes
-		{Defined} % estado (completada, bloqueada, etc.)
-
-	\task	{TA107} % ID en el Rally
-		{Implementar en el cliente el display del mapa con los resultados} % titulo
-		{Utilizando los resultados de la api de maps, el código debe permitir\\
-visualizar en el cliente el mapa generado.\\
-} % descripcion
-		{} % horas estimadas
-		{} % story owner
-		{} % horas faltantes
-		{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US95} % ID en el Rally
-	{Como usuario quiero poder interactuar con la información mostrada por el sistema (actualizar, denunciar, votar)} % titulo
-	{Se desea que los usuarios que recibieron una respuesta del sistema, en forma\\
-de una o más ofertas, puedan interactuar con ellas. Un usuario que descubre\\
-que la información ofrecida está desactualizada puede querer modificar esa\\
-oferta directamente desde el sistema (sin necesidad de abrir Twitter y\\
-escribir un tweet). Si encuentra que la información es incorrecta o engañosa\\
-puede querer denunciarla para que sea removida; también puede querer puntuar\\
-la calidad de la oferta de acuerdo a si su experiencia fue positiva o\\
-negativa.\\
-  \\
-Criterios de aceptación:\\
-* Un usuario recibe una oferta desde el sistema, y encuentra que, en la realidad, el precio o la dirección han cambiado. El usuario enviará una corrección de estos datos directamente desde el sistema. En consultas subsiguientes, los usuarios recibirán la información actualizada.  \\
-* Un usuario encuentra que en la realidad la oferta ya no existe, o bien es fraudulenta por algún motivo. El usuario denunciará la información desde el sistema. Cuando el sistema recibe suficiente evidencia de que la información es inválida, esta no deberá aparecer como resultado de ninguna consulta.  \\
-* Un usuario quiere valorar la experiencia de compra de un producto que consiguió a través de una oferta del sistema. El usuario ingresará su valoración, y en consultas subsiguientes, los usuarios la verán cuando reciban la oferta.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US100} % ID en el Rally
-	{Como PO quiero enfocarme en productos de primera necesidad.} % titulo
-	{Desde los requerimientos iniciales se estableció que el sistema se enfocará en\\
-buscar ofertas para productos de primera necesidad. Cuales son estos productos\\
-deberá ser definido por el product owner.\\
-  \\
-Criterios de aceptación:\\
-* El sistema admite como productos a buscar aquellos definidos por el product owner.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{1.0} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-	\task	{TA54} % ID en el Rally
-		{Consultar al PO qué productos con qué unidades son de interés} % titulo
-		{\\
-} % descripcion
-		{1.0} % horas estimadas
-		{} % story owner
-		{1.0} % horas faltantes
-		{Defined} % estado (completada, bloqueada, etc.)
-
-	\task	{TA55} % ID en el Rally
-		{Modificar el sistema para que tenga en cuenta las especificaciones del PO} % titulo
-		{\\
-} % descripcion
-		{1.0} % horas estimadas
-		{} % story owner
-		{1.0} % horas faltantes
-		{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US92} % ID en el Rally
-	{Como usuario espero que las ofertas obtenidas como respuesta sean las más recientes} % titulo
-	{Se debe proveer al sistema mecanismos que le permitan reconocer ofertas\\
-obsoletas entre los tweets que consigue. Consideramos que una oferta es\\
-obsoleta si existe un tweet más reciente que informa sobre el mismo producto\\
-en el mismo lugar, con un precio actualizado. Se desea que el sistema\\
-reconozca cuál es el tweet menos reciente y lo descarte por ser información\\
-obsoleta.\\
-En caso de que el precio en ambos tweets sea el mismo, se lo considera\\
-información repetida, por lo que también se puede descartar al más antiguo sin\\
-inconvenientes.\\
-  \\
-Criterios de aceptación:\\
-* El usuario realiza una búsqueda por un producto, para el cual el sistema conoce dos ofertas del mismo lugar, con distinto precio y distinta fecha.  \\
-* La oferta de fecha menos reciente no deberá ser incluida en la respuesta en ningún caso. La más reciente será incluida en el caso de que cumpla con todos los criterios impuestos por los filtros y estrategias de la búsqueda.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US91} % ID en el Rally
-	{Como usuario de la comunidad de Twitter quiero poder especificar una fecha de expiración para mi tweet de precioJusto} % titulo
-	{Cuando el usuario de Twitter publica un tweet de precioJusto, es posible que\\
-sepa que la oferta que está informando sólo es válida por tiempo limitado. En\\
-ese caso querría informar la fecha de expiración de la oferta cuando publica\\
-el tweet.\\
-Por otra parte, queremos investigar otras maneras de conseguir el dato de una\\
-fecha de expiración. Por ejemplo, el usuario de Twitter que la publicó puede\\
-querer avisar que ya no es válida. También un usuario de nuestro sistema, que\\
-recibió la oferta en su búsqueda pero descubrió que ya no era válida, puede\\
-querer informarlo.\\
-  \\
-Además, queremos designar una fecha de expiración por defecto en las ofertas\\
-que no tienen una, para que los usuarios no reciban información obsoleta. Se\\
-desea investigar un valor razonable para este default.\\
-  \\
-Criterios de aceptación:\\
-* El sistema tiene una fecha de expiración asignada a cada oferta.  \\
-* Si un usuario de Twitter publica un tweet que incluye una fecha límite, esta fecha deberá asignarse a la oferta.  \\
-* Ninguna oferta deberá aparecer como parte de un resultado de búsqueda si su fecha de expiración ya pasó.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{} % story points
 	{Martin M} % story owner
 	{no definida} % iteracion (Primera o ``no definida'')
 	{Defined} % estado (completada, bloqueada, etc.)
@@ -892,6 +678,239 @@ Criterios de aceptación:\\
 
 \vspace{20pt}
 
+\userStory	{US100} % ID en el Rally
+	{Como PO quiero enfocarme en productos de primera necesidad.} % titulo
+	{Desde los requerimientos iniciales se estableció que el sistema se enfocará en\\
+buscar ofertas para productos de primera necesidad. Cuales son estos productos\\
+deberá ser definido por el product owner.\\
+  \\
+Criterios de aceptación:\\
+* El sistema admite como productos a buscar aquellos definidos por el product owner.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{1.0} % story points
+	{Martin M} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+	\task	{TA54} % ID en el Rally
+		{Consultar al PO qué productos con qué unidades son de interés} % titulo
+		{\\
+} % descripcion
+		{1.0} % horas estimadas
+		{} % story owner
+		{1.0} % horas faltantes
+		{Defined} % estado (completada, bloqueada, etc.)
+
+	\task	{TA55} % ID en el Rally
+		{Modificar el sistema para que tenga en cuenta las especificaciones del PO} % titulo
+		{\\
+} % descripcion
+		{1.0} % horas estimadas
+		{} % story owner
+		{1.0} % horas faltantes
+		{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US89} % ID en el Rally
+	{Como PO espero poder agregar y eliminar productos de la lista de productos soportados junto con su respectiva unidad} % titulo
+	{El sistema está pensado para tratar con productos "de primera necesidad", y el\\
+objetivo es tener una lista cerrada de productos soportados. En principio esta\\
+lista es fija, pero se quiere que en un futuro pueda ser modificada, agregando\\
+o quitando productos según las decisiones del Product Owner, que puede querer\\
+que un producto sea o no soportado por la aplicación.\\
+  \\
+Criterios de aceptación:\\
+* Un administrador del sistema podrá incluir un nuevo producto para ser soportado por la aplicación, junto con una o más unidades de medida asociadas. Los usuarios podrán consultar por dicho producto luego de que haya sido dado de alta, y el funcionamiento deberá ser correcto al igual que con los productos originales.  \\
+* Un administrador podrá eliminar un producto de la lista. Los usuarios no podrán volver a consultar sobre dicho producto en la aplicación.  \\
+* Un administrador podrá agregar una nueva unidad asociada a un producto existente. Las respuestas a las consultas de dicho producto incluirán ofertas con dicho producto y unidad. También podrá ser eliminada una unidad existente, y las ofertas que usen esa unidad no aparecerán.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{8.0} % story points
+	{Martin M} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US87} % ID en el Rally
+	{Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos} % titulo
+	{El mapa es un método visualmente eficiente para mostrar las ofertas que son\\
+respuesta a una consulta del usuario. La dirección puede ser señalada con un\\
+punto en el mapa, y el resto de la información puede verse en el epígrafe que\\
+acompaña al punto.\\
+  \\
+Criterios de aceptación:\\
+* Cuando el usuario realiza una consulta, podrá elegir que los resultados se muestren en un mapa.  \\
+* Las direcciones de todas las ofertas resultantes aparecerán como puntos en el mapa, y los datos restantes de las ofertas estarán escritos al costado de cada punto.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{13.0} % story points
+	{Martin M} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+	\task	{TA105} % ID en el Rally
+		{Investigar la API de google maps} % titulo
+		{En la api de google maps es necesario investigar cómo:\\
+  \\
+* Ingresarle los datos de los lugares a mostrar\\
+* Ingresar junto con los puntos de interés datos de los mismos\\
+* Mostrar el mapa en el cliente\\
+} % descripcion
+		{} % horas estimadas
+		{} % story owner
+		{} % horas faltantes
+		{Defined} % estado (completada, bloqueada, etc.)
+
+	\task	{TA106} % ID en el Rally
+		{Implementar en el cliente la comunicación con Google Maps} % titulo
+		{El código implementado debe tomar los resultados devueltos por el backend y\\
+traducirlos y enviárselos a la api de google maps para que cree el mapa con\\
+los datos de interés.\\
+} % descripcion
+		{} % horas estimadas
+		{} % story owner
+		{} % horas faltantes
+		{Defined} % estado (completada, bloqueada, etc.)
+
+	\task	{TA107} % ID en el Rally
+		{Implementar en el cliente el display del mapa con los resultados} % titulo
+		{Utilizando los resultados de la api de maps, el código debe permitir\\
+visualizar en el cliente el mapa generado.\\
+} % descripcion
+		{} % horas estimadas
+		{} % story owner
+		{} % horas faltantes
+		{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US118} % ID en el Rally
+	{Como desarrollador quiero filtrar las ofertas por la estrategia "caminando lo menos posible"} % titulo
+	{**Requerimiento:**\\
+El usuario debe poder comunicar la información sobre su ubicación actual. En\\
+un principio podría transmitirla directamente por texto, indicando\\
+$<$ Calle$>$ $<$ Altura$>$ ; más adelante podría hacerlo utilizando algún método de\\
+geolocalización. (Ver US127)\\
+  \\
+  \\
+Criterio de aceptación:\\
+  \\
+* El usuario ingresa una búsqueda de un producto y selecciona la estrategia "caminando lo menos posible".  \\
+* El resultado de la búsqueda será, entre las ofertas que cumplen las demás restricciones seleccionadas, la mas cercana a la posición informada por el usuario.\\
+* En caso de no haber ofertas disponibles que cumplan las restricciones, se informará de esto al usuario mediante un mensaje. \\
+  \\
+  \\
+} % descripcion
+	{} % criterios de aceptacion
+	{5.0} % story points
+	{Ivan P} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US86} % ID en el Rally
+	{Como usuario quiero ingresar el nombre de un producto y que el sistema me ofrezca los productos válidos más similares lexicográficamente} % titulo
+	{Se desea que el usuario pueda ingresar el nombre del producto que quiere\\
+buscar en formato "string", dentro de un campo de texto provisto por la\\
+interfaz. El sistema deberá mostrar los productos válidos que se parecen\\
+lexicográficamente al ingresado, y el usuario tendrá que elegir uno.\\
+  \\
+Criterios de aceptación:\\
+* El usuario puede ingresar cualquier palabra o frase en el campo de texto llamado "producto". Por ejemplo, "japón".  \\
+* El sistema deberá mostrar una lista con productos que se parecen lexicográficamente al texto ingresado. Por ejemplo, "jamón; jabón" (suponiendo que en el momento de la consulta ambos son productos válidos del sistema).  \\
+* De no haber ningún producto que se considere parecido, se deberá indicar que no hay conicidencias. El usuario deberá poder borrar y reescribir el producto.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{5.0} % story points
+	{Martin M} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US127} % ID en el Rally
+	{Como desarrollador quiero poder obtener la informaciòn de localización del usuario} % titulo
+	{En la actualidad, muchos dispositivos móviles tienen la capacidad de obtener\\
+información acerca de la ubicación actual del usuario, y comunicar este dato a\\
+las aplicaciones que están corriendo. La aplicación de Precio Justo la\\
+necesita para algunas de sus funcionalidades, por ejemplo la estrategia\\
+"caminando lo menos posible". Por lo tanto, es útil poder recibir la\\
+localización del usuario y operar con ella.\\
+En caso de no estar disponible la información en forma automática, un método\\
+alternativo para obtenerla es el de pedirle al usuario que la ingrese\\
+manualmente.\\
+  \\
+Criterios de aceptación:\\
+* El sistema conocerá la ubicación actual del usuario en cualquier momento que la necesite para operar.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{8.0} % story points
+	{Martin M} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US91} % ID en el Rally
+	{Como usuario de la comunidad de Twitter quiero poder especificar una fecha de expiración para mi tweet de precioJusto} % titulo
+	{Cuando el usuario de Twitter publica un tweet de precioJusto, es posible que\\
+sepa que la oferta que está informando sólo es válida por tiempo limitado. En\\
+ese caso querría informar la fecha de expiración de la oferta cuando publica\\
+el tweet.\\
+Por otra parte, queremos investigar otras maneras de conseguir el dato de una\\
+fecha de expiración. Por ejemplo, el usuario de Twitter que la publicó puede\\
+querer avisar que ya no es válida. También un usuario de nuestro sistema, que\\
+recibió la oferta en su búsqueda pero descubrió que ya no era válida, puede\\
+querer informarlo.\\
+  \\
+Además, queremos designar una fecha de expiración por defecto en las ofertas\\
+que no tienen una, para que los usuarios no reciban información obsoleta. Se\\
+desea investigar un valor razonable para este default.\\
+  \\
+Criterios de aceptación:\\
+* El sistema tiene una fecha de expiración asignada a cada oferta.  \\
+* Si un usuario de Twitter publica un tweet que incluye una fecha límite, esta fecha deberá asignarse a la oferta.  \\
+* Ninguna oferta deberá aparecer como parte de un resultado de búsqueda si su fecha de expiración ya pasó.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{} % story points
+	{Martin M} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US112} % ID en el Rally
+	{Epic: Como usuario deseo tener una interfaz para acceder a la aplicación desde distintos dispositivos} % titulo
+	{Se quiere desarrollar distintas interfaces para que el usuario consulte a la\\
+aplicación. Por el momento el Product Owner no requiere la implementación de\\
+ninguna interfaz en particular, pero a futuro puede hacerlo. Se deberá\\
+desarrollar la interfaz pedida, y asegurar que puede comunicarse correctamente\\
+con nuestro sistema.\\
+  \\
+Criterios de aceptación:\\
+* El usuario podrá interactuar con el sistema correctamente a través de la interfaz de su dispositivo.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{} % story points
+	{Martin M} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
 \userStory	{US98} % ID en el Rally
 	{Epic: Como PO espero que se pueda obtener información de tweets sin el hashtag #precioJusto, y de otros medios de comunicación} % titulo
 	{A futuro se desea incorporar nuevas fuentes de información para conocer\\
@@ -904,6 +923,56 @@ podemos extraer información correcta y completa de estas fuentes.\\
   \\
 Criterios de aceptación:\\
 * Cuando se designen nuevas fuentes de información, el sistema deberá poder leer, interpretar y usar los datos obtenidos de dichas fuentes.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{} % story points
+	{Martin M} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US92} % ID en el Rally
+	{Como usuario espero que las ofertas obtenidas como respuesta sean las más recientes} % titulo
+	{Se debe proveer al sistema mecanismos que le permitan reconocer ofertas\\
+obsoletas entre los tweets que consigue. Consideramos que una oferta es\\
+obsoleta si existe un tweet más reciente que informa sobre el mismo producto\\
+en el mismo lugar, con un precio actualizado. Se desea que el sistema\\
+reconozca cuál es el tweet menos reciente y lo descarte por ser información\\
+obsoleta.\\
+En caso de que el precio en ambos tweets sea el mismo, se lo considera\\
+información repetida, por lo que también se puede descartar al más antiguo sin\\
+inconvenientes.\\
+  \\
+Criterios de aceptación:\\
+* El usuario realiza una búsqueda por un producto, para el cual el sistema conoce dos ofertas del mismo lugar, con distinto precio y distinta fecha.  \\
+* La oferta de fecha menos reciente no deberá ser incluida en la respuesta en ningún caso. La más reciente será incluida en el caso de que cumpla con todos los criterios impuestos por los filtros y estrategias de la búsqueda.\\
+} % descripcion
+	{} % criterios de aceptacion
+	{} % story points
+	{Martin M} % story owner
+	{no definida} % iteracion (Primera o ``no definida'')
+	{Defined} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
+\userStory	{US95} % ID en el Rally
+	{Como usuario quiero poder interactuar con la información mostrada por el sistema (actualizar, denunciar, votar)} % titulo
+	{Se desea que los usuarios que recibieron una respuesta del sistema, en forma\\
+de una o más ofertas, puedan interactuar con ellas. Un usuario que descubre\\
+que la información ofrecida está desactualizada puede querer modificar esa\\
+oferta directamente desde el sistema (sin necesidad de abrir Twitter y\\
+escribir un tweet). Si encuentra que la información es incorrecta o engañosa\\
+puede querer denunciarla para que sea removida; también puede querer puntuar\\
+la calidad de la oferta de acuerdo a si su experiencia fue positiva o\\
+negativa.\\
+  \\
+Criterios de aceptación:\\
+* Un usuario recibe una oferta desde el sistema, y encuentra que, en la realidad, el precio o la dirección han cambiado. El usuario enviará una corrección de estos datos directamente desde el sistema. En consultas subsiguientes, los usuarios recibirán la información actualizada.  \\
+* Un usuario encuentra que en la realidad la oferta ya no existe, o bien es fraudulenta por algún motivo. El usuario denunciará la información desde el sistema. Cuando el sistema recibe suficiente evidencia de que la información es inválida, esta no deberá aparecer como resultado de ninguna consulta.  \\
+* Un usuario quiere valorar la experiencia de compra de un producto que consiguió a través de una oferta del sistema. El usuario ingresará su valoración, y en consultas subsiguientes, los usuarios la verán cuando reciban la oferta.\\
 } % descripcion
 	{} % criterios de aceptacion
 	{} % story points
@@ -936,55 +1005,6 @@ Criterios de aceptación:\\
 
 \vspace{20pt}
 
-\userStory	{US127} % ID en el Rally
-	{Como desarrollador quiero poder obtener la informaciòn de localización del usuario} % titulo
-	{En la actualidad, muchos dispositivos móviles tienen la capacidad de obtener\\
-información acerca de la ubicación actual del usuario, y comunicar este dato a\\
-las aplicaciones que están corriendo. La aplicación de Precio Justo la\\
-necesita para algunas de sus funcionalidades, por ejemplo la estrategia\\
-"caminando lo menos posible". Por lo tanto, es útil poder recibir la\\
-localización del usuario y operar con ella.\\
-En caso de no estar disponible la información en forma automática, un método\\
-alternativo para obtenerla es el de pedirle al usuario que la ingrese\\
-manualmente.\\
-  \\
-Criterios de aceptación:\\
-* El sistema conocerá la ubicación actual del usuario en cualquier momento que la necesite para operar.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{8.0} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US110} % ID en el Rally
-	{Como desarrollador quiero investigar cómo determinar zonas geográficas} % titulo
-	{Es necesario establecer un criterio para delimitar las zonas que servirán de\\
-filtro en nuestra aplicación.\\
-Algunas opciones son:\\
-  \\
-* Utilizar la API de google maps si es que tiene en ella información de zonas\\
-* Si existe, utilizar la API del mapa del Gobierno de la Ciudad para usar las zonas delimitadas en la misma\\
-* Definir las zonas manualmente en nuestra aplicación\\
-  \\
-También se debe determinar si es necesario recortar inicialmente el alcance\\
-total de la aplicación a, por ejemplo, Capital Federal.\\
-  \\
-Criterios de aceptación:\\
-* El grupo de trabajo conocerá el concepto de zona que se utilizará, así como la manera de operar con las zonas.  \\
-} % descripcion
-	{} % criterios de aceptacion
-	{5.0} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
 \userStory	{US126} % ID en el Rally
 	{Epic: Como usuario quiero poder buscar más de un producto en una misma consulta} % titulo
 	{Se quiere poder extender la funcionalidad actual de consultas del usuario para\\
@@ -997,26 +1017,6 @@ entre cada par de productos entre los seleccionados.\\
 Criterios de aceptación:\\
 * Un usuario quiere buscar ofertas para dos o más productos en una misma consulta. El sistema deberá devolver resultados correctos para todos ellos.  \\
 * Los filtros y estrategias se aplicarán como corresponde considerando el hecho de que hay varios productos involucrados en el cálculo.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US112} % ID en el Rally
-	{Epic: Como usuario deseo tener una interfaz para acceder a la aplicación desde distintos dispositivos} % titulo
-	{Se quiere desarrollar distintas interfaces para que el usuario consulte a la\\
-aplicación. Por el momento el Product Owner no requiere la implementación de\\
-ninguna interfaz en particular, pero a futuro puede hacerlo. Se deberá\\
-desarrollar la interfaz pedida, y asegurar que puede comunicarse correctamente\\
-con nuestro sistema.\\
-  \\
-Criterios de aceptación:\\
-* El usuario podrá interactuar con el sistema correctamente a través de la interfaz de su dispositivo.\\
 } % descripcion
 	{} % criterios de aceptacion
 	{} % story points

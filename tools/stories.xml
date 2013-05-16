@@ -40,16 +40,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11748940617" objectVersion="9" refObjectName="Como desarrollador quiero buscar un mecanismo que permita estandarizar los archivos de código Python" CreatedAt="May 5">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11748940617" objectVersion="11" refObjectName="Como desarrollador quiero buscar un mecanismo que permita estandarizar los archivos de código Python" CreatedAt="May 5">
       <CreationDate>2013-05-05T20:43:06.612Z</CreationDate>
       <ObjectID>11748940617</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Python es sensible a la identación, y en el trabajo en equipo puede ser problemático que los integrantes acostumbren usar distintos criterios de tabulación.  &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Es necesario encontrar algún mecanismo/programa/utilitario que ayude a manejar este y otros problemas de formato de código.&lt;/div&gt;</Description>
+      <Description>Python es sensible a la identación, y en el trabajo en equipo puede ser problemático que los integrantes acostumbren usar distintos criterios de tabulación.   &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Es necesario encontrar algún mecanismo/programa/utilitario que ayude a manejar este y otros problemas de formato de código.&lt;br /&gt;&lt;br /&gt;Criterios de aceptación:&lt;br /&gt;* Los integrantes del grupo trabajarán con código Python estandarizado&lt;br /&gt;&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US144</FormattedID>
-      <LastUpdateDate>2013-05-14T15:19:40.206Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-15T19:48:19.972Z</LastUpdateDate>
       <Name>Como desarrollador quiero buscar un mecanismo que permita estandarizar los archivos de código Python</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -81,7 +81,7 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11748938680" objectVersion="9" refObjectName="Como desarrollador quiero tener un mecanismo para hacer tests unitarios" CreatedAt="May 5">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11748938680" objectVersion="12" refObjectName="Como desarrollador quiero tener un mecanismo para hacer tests unitarios" CreatedAt="May 5">
       <CreationDate>2013-05-05T20:24:02.583Z</CreationDate>
       <ObjectID>11748938680</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
@@ -90,7 +90,7 @@
       <Description>Se quiere disponer de un software que nos permita realizar tests unitarios. El mecanismo debe haber sido testeado en su facilidad de uso y extensibilidad creando tests.&lt;br /&gt;&lt;br&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;&lt;br&gt;* Se dispondrá de un mecanismo de fácil extensión para poder testear funcionalidades unitarias.  &lt;div&gt;&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US143</FormattedID>
-      <LastUpdateDate>2013-05-14T17:54:39.208Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T05:12:26.207Z</LastUpdateDate>
       <Name>Como desarrollador quiero tener un mecanismo para hacer tests unitarios</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -99,6 +99,7 @@
       <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11748938681" type="RevisionHistory" />
       <Tags />
       <Attachments />
+      <AcceptedDate>2013-05-16T05:12:26.178Z</AcceptedDate>
       <Blocked>false</Blocked>
       <Children />
       <DefectStatus>NONE</DefectStatus>
@@ -111,12 +112,12 @@
       <Predecessors />
       <Rank>499999984896.000</Rank>
       <Recycled>false</Recycled>
-      <ScheduleState>In-Progress</ScheduleState>
+      <ScheduleState>Accepted</ScheduleState>
       <Successors />
       <TaskActualTotal>0.0</TaskActualTotal>
       <TaskEstimateTotal>4.0</TaskEstimateTotal>
-      <TaskRemainingTotal>1.0</TaskRemainingTotal>
-      <TaskStatus>IN_PROGRESS</TaskStatus>
+      <TaskRemainingTotal>0.0</TaskRemainingTotal>
+      <TaskStatus>COMPLETED</TaskStatus>
       <Tasks>
          <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11748939477" refObjectName="Investigar bibliotecas o mecanismos para hacer unit testing en el lenguaje de programación del servidor" type="Task" />
          <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11748939565" refObjectName="Implementar tests de ejemplo con el mecanismo elegido que sirvan de modelo para futuros tests" type="Task" />
@@ -226,16 +227,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403248428" objectVersion="28" refObjectName="Como desarrollador quiero reconocer tweets útiles y convertirlos a ofertas" CreatedAt="Apr 14">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403248428" objectVersion="30" refObjectName="Como desarrollador quiero reconocer tweets útiles y convertirlos a ofertas" CreatedAt="Apr 14">
       <CreationDate>2013-04-14T21:51:34.513Z</CreationDate>
       <ObjectID>11403248428</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Cuando el sistema recibe datos de Twitter, necesita poder identificar aquellos que tienen información útil. Esto se determina de acuerdo a su formato. En esta etapa del proyecto, los tweets que son útiles son aquellos que cumplen el formato "&amp;lt;Producto&amp;gt; &amp;lt;Precio&amp;gt; &amp;lt;Unidad&amp;gt; &amp;lt;Lugar&amp;gt; #precioJusto", y además, tengan un producto válido, una unidad soportada por el producto, y un precio y lugar válidos. Es necesario identificar los tweets válidos y extraer la información contenida en ellos.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* La aplicación conocerá los productos y unidades aceptados por los administradores y podrá contrastarlos con los datos de los tweets.&lt;br&gt;* Si un tweet con el hashtag #precioJusto no tiene información correcta o no es relevante, deberá ser ignorado por el sistema.&lt;br&gt;* Si un tweet con el hashtag es relevante y válido, el sistema deberá componer un objeto "oferta" que contenga la información dada por dicho tweet.</Description>
+      <Description>Cuando el sistema recibe datos de Twitter, necesita poder identificar aquellos que tienen información útil. Esto se determina de acuerdo a su formato. En esta etapa del proyecto, los tweets que son útiles son aquellos que cumplen el formato "&amp;lt;Producto&amp;gt; &amp;lt;Precio&amp;gt; &amp;lt;Unidad&amp;gt; &amp;lt;Lugar&amp;gt; #precioJusto", y además, tengan un producto válido, una unidad soportada por el producto, y un precio y lugar válidos. Es necesario identificar los tweets válidos y extraer la información contenida en ellos.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* La aplicación conocerá los productos y unidades aceptados por los administradores y podrá contrastarlos con los datos de los tweets.&lt;br&gt;* Si un tweet con el hashtag #precioJusto no tiene información correcta o no es relevante, deberá ser ignorado por el sistema.&lt;br&gt;* Si un tweet con el hashtag es relevante y válido, el sistema deberá componer un objeto 'oferta' que contenga la información dada por dicho tweet.</Description>
       <Discussion />
       <FormattedID>US113</FormattedID>
-      <LastUpdateDate>2013-05-14T18:48:25.997Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T04:03:14.604Z</LastUpdateDate>
       <Name>Como desarrollador quiero reconocer tweets útiles y convertirlos a ofertas</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -273,17 +274,17 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710907" objectVersion="22" refObjectName="Como desarrollador quiero tener una base para la api rest del backend" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394710907" objectVersion="24" refObjectName="Como desarrollador quiero tener una base para la API REST del backend" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T22:51:24.596Z</CreationDate>
       <ObjectID>11394710907</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>En esta historia se espera implementar en el backend código que permita agregar fácilmente nuevos métodos a la interfaz REST, que permitan acceder al funcionamiento interno del mismo.  &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Para el final de la historia debería haber un método /status que permita verificar si el backend está funcionando correctamente. Luego el código de este método debería ser fácilmente replicable para agregar nuevas funcionalidades.&lt;/div&gt;</Description>
+      <Description>Se espera implementar un código inicial del backend que permita agregar fácilmente nuevos métodos a la interfaz REST, los cuales permitirán acceder al funcionamiento interno del mismo.   &lt;div&gt;&lt;br /&gt;Criterios de aceptación:&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* El backend dispondrá de un método /status que permita verificar si está funcionando correctamente. &lt;br /&gt;* El código de este método será fácilmente replicable para agregar nuevas funcionalidades.&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US106</FormattedID>
-      <LastUpdateDate>2013-05-02T23:47:32.335Z</LastUpdateDate>
-      <Name>Como desarrollador quiero tener una base para la api rest del backend</Name>
+      <LastUpdateDate>2013-05-15T19:53:09.361Z</LastUpdateDate>
+      <Name>Como desarrollador quiero tener una base para la API REST del backend</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
       <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
@@ -319,16 +320,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11414348371" objectVersion="20" refObjectName="Como desarrollador quiero implementar la base del mecanismo de estrategias y filtros" CreatedAt="Apr 15">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11414348371" objectVersion="24" refObjectName="Como desarrollador quiero implementar la base del mecanismo de estrategias y filtros" CreatedAt="Apr 15">
       <CreationDate>2013-04-15T13:56:19.551Z</CreationDate>
       <ObjectID>11414348371</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>En esta historia se cubre el implementar el código básico que aprovechará las futuras implementaciones de filtros y estrategias. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;En este código debe tomarse el total de ofertas y devolver un subconjunto, definido por los filtros y estrategias configurados.&amp;nbsp;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Se entiende por filtro una función: Oferta -&amp;gt; Bool que diga si la oferta cumple el criterio o no.&lt;/div&gt; &lt;div&gt;Se entiende por estrategia una función [Oferta] -&amp;gt; [Oferta] que utiliza información global del conjunto de ofertas para seleccionar las más importantes.&lt;/div&gt;</Description>
+      <Description>Se desea implementar el código básico que se aprovechará en las futuras implementaciones de filtros y estrategias.    &lt;div&gt;En este código debe tomarse el total de ofertas y devolver un subconjunto, definido por los filtros y &amp;nbsp;las estrategias configuradas.&amp;nbsp;&lt;/div&gt; &lt;div&gt;Un filtro toma un conjunto de ofertas y devuelve el subconjunto de ellas que cumple un criterio determinado, por ejemplo, su precio es menor a 5 pesos, o su dirección está en determinada calle. Otra forma de entender este concepto es como una función Oferta -&amp;gt; Bool que responde si la oferta cumple el criterio o no.&lt;br /&gt;Una estrategia toma un conjunto de ofertas y las ordena de acuerdo a una cualidad, por ejemplo, de menor a mayor precio. Notar que en algunos casos, el resultado final no aprovechará la lista ordenada completa (por ejemplo, podría necesitar solo el primer elemento), por lo que no siempre se necesita hacer todo el procedimiento.&lt;br /&gt;&lt;br /&gt;Criterios de aceptación:&lt;br /&gt;* El sistema tendrá código que le permita llamar a un manejador de filtros y estrategias.&lt;br /&gt;* Se podrá invocar la aplicación de un filtro o estrategia "nulo". Esta operación no tendrá ningún efecto en los datos, pero su código será fácilmente extensible para agregar funcionalidades.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US124</FormattedID>
-      <LastUpdateDate>2013-05-14T02:42:43.764Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T04:13:43.693Z</LastUpdateDate>
       <Name>Como desarrollador quiero implementar la base del mecanismo de estrategias y filtros</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
@@ -352,30 +353,73 @@
       <Recycled>false</Recycled>
       <ScheduleState>Accepted</ScheduleState>
       <Successors>
-         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394751604" refObjectName="Como desarrollador quiero filtrar las ofertas según el rango de precios del usuario" type="HierarchicalRequirement" />
+         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394751604" refObjectName="Como desarrollador quiero filtrar las ofertas según un rango de precios" type="HierarchicalRequirement" />
       </Successors>
       <TaskActualTotal>0.0</TaskActualTotal>
       <TaskEstimateTotal>8.0</TaskEstimateTotal>
       <TaskRemainingTotal>0.0</TaskRemainingTotal>
       <TaskStatus>COMPLETED</TaskStatus>
       <Tasks>
-         <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11414671261" refObjectName="Implementar la funcionalidad deseada" type="Task" />
+         <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11414671261" refObjectName="Implementar un manejador de filtros y estrategias" type="Task" />
          <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11414672742" refObjectName="Testear la implementación mediante un filtro y una estrategia de prueba" type="Task" />
       </Tasks>
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394751604" objectVersion="36" refObjectName="Como desarrollador quiero filtrar las ofertas según el rango de precios del usuario" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11925858709" objectVersion="6" refObjectName="Como usuario del backend quiero conocer las estrategias provistas por el sistema" CreatedAt="42 minutes ago">
+      <CreationDate>2013-05-16T04:30:29.634Z</CreationDate>
+      <ObjectID>11925858709</ObjectID>
+      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
+      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
+      <Changesets />
+      <Description>En las capas de frontend que le presenten funcionalidad al usuario deseo poder mostrarle qué estrategias tiene disponible para resumir la información provista por el sistema. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Criterio de aceptación:&lt;/div&gt; &lt;div&gt;* La interfaz rest debe exponer la lista de estrategias disponibles mediante un método /strategies&lt;/div&gt;</Description>
+      <Discussion />
+      <FormattedID>US147</FormattedID>
+      <LastUpdateDate>2013-05-16T04:31:34.454Z</LastUpdateDate>
+      <Name>Como usuario del backend quiero conocer las estrategias provistas por el sistema</Name>
+      <Notes />
+      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343572394" refObjectName="Matias I" type="User" />
+      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
+      <Ready>false</Ready>
+      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11925858710" type="RevisionHistory" />
+      <Tags />
+      <Attachments />
+      <AcceptedDate>2013-05-16T04:31:34.404Z</AcceptedDate>
+      <Blocked>false</Blocked>
+      <Children />
+      <DefectStatus>NONE</DefectStatus>
+      <Defects />
+      <DirectChildrenCount>0</DirectChildrenCount>
+      <HasParent>false</HasParent>
+      <InProgressDate>2013-05-16T04:31:23.189Z</InProgressDate>
+      <Iteration rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/iteration/11394096636" refObjectName="1" type="Iteration" />
+      <PlanEstimate>3.0</PlanEstimate>
+      <Predecessors />
+      <Rank>499999987411.625</Rank>
+      <Recycled>false</Recycled>
+      <ScheduleState>Accepted</ScheduleState>
+      <Successors />
+      <TaskActualTotal>0.0</TaskActualTotal>
+      <TaskEstimateTotal>4.0</TaskEstimateTotal>
+      <TaskRemainingTotal>0.0</TaskRemainingTotal>
+      <TaskStatus>COMPLETED</TaskStatus>
+      <Tasks>
+         <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11925859230" refObjectName="Implementar el método rest que exponga las estrategias disponibles del sistema" type="Task" />
+      </Tasks>
+      <TestCaseStatus>NONE</TestCaseStatus>
+      <TestCases />
+   </HierarchicalRequirement>
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394751604" objectVersion="43" refObjectName="Como desarrollador quiero filtrar las ofertas según un rango de precios" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T21:58:54.004Z</CreationDate>
       <ObjectID>11394751604</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>En este story se debe lograr un código funcional que adquiera los datos de las ofertas y los filtre según el rango de precios especificado por el cliente. Dejando de lado aquellas ofertas que no entren en dicho rango.   &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Criterio de&amp;nbsp;aceptación:&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* Si tenemos ofertas con precios que van desde X hasta Y, y elegimos filtrar desde A hasta Z. &amp;nbsp;Luego de aplicado el filtro, las ofertas resultantes deben tener precio mayor o igual a A y menor o igual al precio Z y deben ser todas las que completan esta&amp;nbsp;condición&amp;nbsp;en las ofertas originales.&amp;nbsp;&lt;/div&gt;</Description>
+      <Description>Se debe lograr un código que adquiera los datos de las ofertas y los filtre según un rango de precios determinado. Las ofertas que estén fuera del rango deberán ser descartadas. Esta funcionalidad complementa la desarrollada en la US96, que permite que el sistema obtenga un rango de precios entre los datos enviados por el usuario.&lt;br /&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Criterios de&amp;nbsp;aceptación:&lt;/div&gt; &lt;div&gt;* Tenemos ofertas con precios que van desde X hasta Y, y elegimos filtrar desde A hasta Z.&amp;nbsp; &lt;br /&gt;* Luego de aplicado el filtro, las ofertas resultantes serán todas las que cumplan con los otros criterios de la consulta y tengan precio mayor o igual a A y menor o igual a Z.&lt;br /&gt;&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US104</FormattedID>
-      <LastUpdateDate>2013-05-14T02:44:08.844Z</LastUpdateDate>
-      <Name>Como desarrollador quiero filtrar las ofertas según el rango de precios del usuario</Name>
+      <LastUpdateDate>2013-05-16T05:12:05.980Z</LastUpdateDate>
+      <Name>Como desarrollador quiero filtrar las ofertas según un rango de precios</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343574048" refObjectName="Ivan P" type="User" />
       <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
@@ -386,6 +430,7 @@
          <Tag rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/tag/11403111281" refObjectName="Backend" type="Tag" />
       </Tags>
       <Attachments />
+      <AcceptedDate>2013-05-16T05:12:05.955Z</AcceptedDate>
       <Blocked>false</Blocked>
       <Children />
       <DefectStatus>NONE</DefectStatus>
@@ -400,29 +445,29 @@
       </Predecessors>
       <Rank>499999987417.250</Rank>
       <Recycled>false</Recycled>
-      <ScheduleState>In-Progress</ScheduleState>
+      <ScheduleState>Accepted</ScheduleState>
       <Successors />
       <TaskActualTotal>0.0</TaskActualTotal>
       <TaskEstimateTotal>7.0</TaskEstimateTotal>
-      <TaskRemainingTotal>3.0</TaskRemainingTotal>
-      <TaskStatus>IN_PROGRESS</TaskStatus>
+      <TaskRemainingTotal>0.0</TaskRemainingTotal>
+      <TaskStatus>COMPLETED</TaskStatus>
       <Tasks>
          <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394752567" refObjectName="Implementar el filtrado de las ofertas por rango de precios" type="Task" />
-         <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394752611" refObjectName="Testear la funcionalidad realizada según los criterios de aceptación" type="Task" />
+         <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394752611" refObjectName="Testear la funcionalidad realizada" type="Task" />
       </Tasks>
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092969" objectVersion="34" refObjectName="Como usuario espero realizar búsquedas filtrando por un rango de precios" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092969" objectVersion="36" refObjectName="Como usuario espero realizar búsquedas filtrando por un rango de precios" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T19:30:34.919Z</CreationDate>
       <ObjectID>11394092969</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Cuando el usuario realiza una consulta, puede querer definir un rango de precios, de forma que en la respuesta del sistema solo aparezcan las ofertas cuyos precios son mayores a un valor mínimo y menores a un valor máximo. &lt;br /&gt;&lt;br&gt;Criterios de aceptación:   &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* La inferfaz permitirá ingresar, de forma opcional, un rango de precios, formado por un valor MIN y un valor MAX.&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* Si los parámetros son ingresados incorrectamente la interfaz debe decirlo. Esto puede ocurrir si el rango es inválido o los números están mal escritos.&lt;/div&gt; &lt;div&gt;* Todas las ofertas sugeridas al finalizar la consulta se encontrarán dentro del rango explicitado.&lt;br /&gt;&lt;/div&gt;</Description>
+      <Description>Cuando el usuario realiza una consulta, puede querer definir un rango de precios, de forma que en la respuesta del sistema solo aparezcan las ofertas cuyos precios son mayores a un valor mínimo y menores a un valor máximo. &lt;br /&gt;Nota: Esta story describe las atribuciones del frontend. La funcionalidad que permite que el backend realice un filtro sobre sus datos se encuentra en la US104.&lt;br&gt;&lt;br&gt;Criterios de aceptación:    &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* La inferfaz permitirá ingresar, de forma opcional, un rango de precios, formado por un valor MIN y un valor MAX.&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* Si los parámetros son ingresados incorrectamente la interfaz debe decirlo. Esto puede ocurrir si el rango es inválido o los números están mal escritos.&lt;/div&gt; &lt;div&gt;* Todas las ofertas sugeridas al finalizar la consulta se encontrarán dentro del rango explicitado.&lt;br /&gt;&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US96</FormattedID>
-      <LastUpdateDate>2013-05-14T19:42:17.864Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-15T20:20:09.153Z</LastUpdateDate>
       <Name>Como usuario espero realizar búsquedas filtrando por un rango de precios</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
@@ -457,21 +502,21 @@
          <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394755210" refObjectName="Implementar en el cliente un medio para establecer el tipo de consulta &quot;por rango&quot; y el rango establecido" type="Task" />
          <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394755478" refObjectName="Implementar la comunicación del cliente con el backend, enviando los parámetros" type="Task" />
          <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394755747" refObjectName="Implementar la recepción y exhibición de los datos de respuesta en el frontend" type="Task" />
-         <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394756108" refObjectName="Validar el funcionamiento." type="Task" />
+         <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394756108" refObjectName="Validar el funcionamiento" type="Task" />
       </Tasks>
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11401815998" objectVersion="12" refObjectName="Como desarrollador quiero investigar cómo determinar zonas geográficas" CreatedAt="Apr 14">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11401815998" objectVersion="14" refObjectName="Como desarrollador quiero investigar cómo determinar zonas geográficas" CreatedAt="Apr 14">
       <CreationDate>2013-04-14T18:02:41.788Z</CreationDate>
       <ObjectID>11401815998</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Es necesario establecer un criterio para delimitar las zonas que servirán de filtro en nuestra aplicación.&amp;nbsp;   &lt;div&gt;Algunas opciones son:&lt;/div&gt;  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;  &lt;div&gt;* Utilizar la API de google maps si es que tiene en ella información de zonas&lt;/div&gt;  &lt;div&gt;* Si existe, utilizar la API del mapa del Gobierno de la Ciudad para usar las zonas delimitadas en la misma&lt;/div&gt;  &lt;div&gt;* Definir las zonas manualmente en nuestra aplicación&lt;/div&gt;  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;  &lt;div&gt;También se debe determinar si es necesario recortar inicialmente el alcance total de la aplicación a, por ejemplo, Capital Federal.&lt;/div&gt;  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;</Description>
+      <Description>Es necesario establecer un criterio para delimitar las zonas que servirán de filtro en nuestra aplicación.&amp;nbsp;    &lt;div&gt;Algunas opciones son:&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* Utilizar la API de google maps si es que tiene en ella información de zonas&lt;/div&gt; &lt;div&gt;* Si existe, utilizar la API del mapa del Gobierno de la Ciudad para usar las zonas delimitadas en la misma&lt;/div&gt; &lt;div&gt;* Definir las zonas manualmente en nuestra aplicación&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;También se debe determinar si es necesario recortar inicialmente el alcance total de la aplicación a, por ejemplo, Capital Federal.&lt;/div&gt; &lt;div&gt;&lt;br /&gt;Criterios de aceptación:&lt;br /&gt;* El grupo de trabajo conocerá el concepto de zona que se utilizará, así como la manera de operar con las zonas.&lt;br /&gt;&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US110</FormattedID>
-      <LastUpdateDate>2013-05-13T19:24:18.670Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-15T19:23:17.414Z</LastUpdateDate>
       <Name>Como desarrollador quiero investigar cómo determinar zonas geográficas</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -503,49 +548,7 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11402766757" objectVersion="15" refObjectName="Como desarrollador quiero filtrar las ofertas por zona geográfica" CreatedAt="Apr 14">
-      <CreationDate>2013-04-14T20:21:21.557Z</CreationDate>
-      <ObjectID>11402766757</ObjectID>
-      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
-      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
-      <Changesets />
-      <Description />
-      <Discussion />
-      <FormattedID>US111</FormattedID>
-      <LastUpdateDate>2013-05-13T19:43:37.928Z</LastUpdateDate>
-      <Name>Como desarrollador quiero filtrar las ofertas por zona geográfica</Name>
-      <Notes />
-      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
-      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
-      <Ready>false</Ready>
-      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11402766758" type="RevisionHistory" />
-      <Tags>
-         <Tag rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/tag/11402766873" refObjectName="Zona" type="Tag" />
-         <Tag rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/tag/11403111281" refObjectName="Backend" type="Tag" />
-      </Tags>
-      <Attachments />
-      <Blocked>true</Blocked>
-      <BlockedReason>US110</BlockedReason>
-      <Children />
-      <DefectStatus>NONE</DefectStatus>
-      <Defects />
-      <DirectChildrenCount>0</DirectChildrenCount>
-      <HasParent>false</HasParent>
-      <PlanEstimate>3.0</PlanEstimate>
-      <Predecessors />
-      <Rank>499999988224.000</Rank>
-      <Recycled>false</Recycled>
-      <ScheduleState>Defined</ScheduleState>
-      <Successors />
-      <TaskActualTotal>0.0</TaskActualTotal>
-      <TaskEstimateTotal>0.0</TaskEstimateTotal>
-      <TaskRemainingTotal>0.0</TaskRemainingTotal>
-      <TaskStatus>NONE</TaskStatus>
-      <Tasks />
-      <TestCaseStatus>NONE</TestCaseStatus>
-      <TestCases />
-   </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393614905" objectVersion="36" refObjectName="Epic: Como usuario quiero obtener la direccion, precio y unidad del producto respetando los filtros ingresados" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393614905" objectVersion="39" refObjectName="Epic: Como usuario quiero obtener la direccion, precio y unidad del producto respetando los filtros ingresados" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T18:45:31.443Z</CreationDate>
       <ObjectID>11393614905</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
@@ -554,7 +557,7 @@
       <Description />
       <Discussion />
       <FormattedID>US88</FormattedID>
-      <LastUpdateDate>2013-05-12T22:32:26.481Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T04:38:38.597Z</LastUpdateDate>
       <Name>Epic: Como usuario quiero obtener la direccion, precio y unidad del producto respetando los filtros ingresados</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -565,16 +568,16 @@
       <Attachments />
       <Blocked>true</Blocked>
       <Children>
-         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612345" objectVersion="15" refObjectName="Como usuario espero realizar búsquedas filtrando por zona" CreatedAt="Apr 13" type="HierarchicalRequirement">
+         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612345" objectVersion="23" refObjectName="Como usuario espero realizar búsquedas filtrando por zona" CreatedAt="Apr 13" type="HierarchicalRequirement">
             <CreationDate>2013-04-13T18:15:42.965Z</CreationDate>
             <ObjectID>11393612345</ObjectID>
             <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
             <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
             <Changesets />
-            <Description>&lt;div&gt;El sistema debe permitir una funcionalidad en la que el usuario pueda elegir e indicar una zona al momento de hacer su consulta,&amp;nbsp; en caso de que lo desee;&amp;nbsp; si lo hace, las respuestas que reciba deberán estar restringidas a ofertas dentro de dicha zona.&lt;br /&gt;&lt;/div&gt;  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;  Queda pendiente definir el concepto de zona, y decidir si estarán fijadas por el sistema o pueden ser delimitadas por el usuario durante la consulta.</Description>
+            <Description>&lt;div&gt;El sistema debe permitir una funcionalidad en la que el usuario pueda elegir e indicar una zona al momento de hacer su consulta,&amp;nbsp; en caso de que lo desee;&amp;nbsp; si lo hace, las respuestas que reciba deberán estar restringidas a ofertas dentro de dicha zona.&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; Queda pendiente definir el concepto de zona, y decidir si estarán fijadas por el sistema o pueden ser delimitadas por el usuario durante la consulta. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Esta historia es dependente de la investigación previa realizada en la US110&lt;br /&gt;&lt;br /&gt;Criterios de aceptación:&lt;br /&gt;* El usuario podrá elegir buscar ofertas por zona, y en dicho caso, podrá especificar una zona.&lt;br /&gt;* Todas las direcciones de las ofertas devueltas en el resultado estarán dentro de la zona elegida por el usuario.&lt;/div&gt;</Description>
             <Discussion />
             <FormattedID>US82</FormattedID>
-            <LastUpdateDate>2013-05-13T19:33:32.964Z</LastUpdateDate>
+            <LastUpdateDate>2013-05-16T04:39:29.031Z</LastUpdateDate>
             <Name>Como usuario espero realizar búsquedas filtrando por zona</Name>
             <Notes />
             <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -594,34 +597,34 @@
             <DirectChildrenCount>0</DirectChildrenCount>
             <HasParent>true</HasParent>
             <Parent rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393614905" refObjectName="Epic: Como usuario quiero obtener la direccion, precio y unidad del producto respetando los filtros ingresados" type="HierarchicalRequirement" />
-            <PlanEstimate>5.0</PlanEstimate>
+            <PlanEstimate>8.0</PlanEstimate>
             <Predecessors />
             <Rank>499999987456.000</Rank>
             <Recycled>false</Recycled>
             <ScheduleState>Defined</ScheduleState>
             <Successors />
             <TaskActualTotal>0.0</TaskActualTotal>
-            <TaskEstimateTotal>13.0</TaskEstimateTotal>
-            <TaskRemainingTotal>13.0</TaskRemainingTotal>
+            <TaskEstimateTotal>16.0</TaskEstimateTotal>
+            <TaskRemainingTotal>16.0</TaskRemainingTotal>
             <TaskStatus>DEFINED</TaskStatus>
             <Tasks>
-               <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394438138" refObjectName="Investigar como vamos a representar una Zona y los posibles recursos que vamos a utilizar para determinarlas." type="Task" />
                <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11394438371" refObjectName="Implementar el filtro por zonas." type="Task" />
+               <Task rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/task/11925862436" refObjectName="Validar el filtro de zonas" type="Task" />
             </Tasks>
             <TestCaseStatus>NONE</TestCaseStatus>
             <TestCases />
          </HierarchicalRequirement>
-         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612579" objectVersion="8" refObjectName="Como usuario quiero realizar búsquedas filtrando por la estrategia &quot;gastando lo menos posible&quot;" CreatedAt="Apr 13" type="HierarchicalRequirement">
+         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612579" objectVersion="12" refObjectName="Como usuario quiero realizar búsquedas con la estrategia &quot;gastando lo menos posible&quot;" CreatedAt="Apr 13" type="HierarchicalRequirement">
             <CreationDate>2013-04-13T18:21:15.257Z</CreationDate>
             <ObjectID>11393612579</ObjectID>
             <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
             <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
             <Changesets />
-            <Description />
+            <Description>Cuando se realiza una consulta, se puede elegir la estrategia "gastando lo menos posible", que consiste en seleccionar las ofertas de precio mínimo entre todas las ofertas válidas, y solamente mostrar esas en el resultado.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Cuando el usuario haga una consulta, podrá elegir que se aplique la estrategia "gastando lo menos posible"&lt;br&gt;* Si está seleccionada, el sistema solamente retornará como respuesta las ofertas con el precio más económico entre las que encontró para un determinado producto.</Description>
             <Discussion />
             <FormattedID>US83</FormattedID>
-            <LastUpdateDate>2013-05-13T19:37:26.354Z</LastUpdateDate>
-            <Name>Como usuario quiero realizar búsquedas filtrando por la estrategia "gastando lo menos posible"</Name>
+            <LastUpdateDate>2013-05-15T19:16:31.773Z</LastUpdateDate>
+            <Name>Como usuario quiero realizar búsquedas con la estrategia "gastando lo menos posible"</Name>
             <Notes />
             <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
             <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
@@ -652,7 +655,7 @@
             <TestCaseStatus>NONE</TestCaseStatus>
             <TestCases />
          </HierarchicalRequirement>
-         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612976" objectVersion="22" refObjectName="Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto" CreatedAt="Apr 13" type="HierarchicalRequirement">
+         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612976" objectVersion="24" refObjectName="Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto" CreatedAt="Apr 13" type="HierarchicalRequirement">
             <CreationDate>2013-04-13T18:26:36.805Z</CreationDate>
             <ObjectID>11393612976</ObjectID>
             <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
@@ -661,10 +664,10 @@
             <Description>Se desea tener una funcionalidad básica del sistema, que es la siguiente: el usuario ingresa el nombre de un producto válido, y el sistema devuelve un conjunto de ofertas relacionadas con dicho producto, las cuales se consiguen a partir de información de tweets.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El usuario podrá elegir un producto para realizar su consulta, y sabrá si el producto elegido es válido.&lt;br&gt;* El sistema devolverá una lista de ofertas para el producto, que incluyen información de precio por unidad y lugar.</Description>
             <Discussion />
             <FormattedID>US85</FormattedID>
-            <LastUpdateDate>2013-05-14T19:03:44.888Z</LastUpdateDate>
+            <LastUpdateDate>2013-05-16T04:40:46.420Z</LastUpdateDate>
             <Name>Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto</Name>
             <Notes />
-            <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
+            <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343572394" refObjectName="Matias I" type="User" />
             <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
             <Ready>false</Ready>
             <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11393612977" type="RevisionHistory" />
@@ -751,17 +754,17 @@
             <TestCaseStatus>NONE</TestCaseStatus>
             <TestCases />
          </HierarchicalRequirement>
-         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394750875" objectVersion="13" refObjectName="Como usuario quiero realizar búsquedas filtrando por la estrategia &quot;caminando lo menos posible&quot;" CreatedAt="Apr 13" type="HierarchicalRequirement">
+         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394750875" objectVersion="19" refObjectName="Como usuario quiero realizar búsquedas filtrando por la estrategia 'caminando lo menos posible'" CreatedAt="Apr 13" type="HierarchicalRequirement">
             <CreationDate>2013-04-13T21:52:42.620Z</CreationDate>
             <ObjectID>11394750875</ObjectID>
             <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
             <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
             <Changesets />
-            <Description>&lt;div&gt;Criterios de aceptación:&lt;/div&gt;  &lt;div&gt;&lt;br /&gt;&lt;/div&gt;  &lt;div&gt;* En la interfaz debe figurar la opción para elegir la estrategia "caminando lo menos posible"&lt;/div&gt;  &lt;div&gt;* El resultado de aplicar esta estrategia deberá mostrar la oferta que cumpla con los demás filtros (rango, zona, etc.), y además sea la mas cercana a la posición del usuario.&lt;/div&gt;  &lt;div&gt;* En caso de que el sistema no logre ubicar al usuario, un error será mostrado al usuario, indicando que no es posible ejecutar la consulta porque el sistema no conoce su ubicación.&lt;/div&gt;</Description>
+            <Description>&lt;div&gt;En una consulta del usuario se puede elegir la estrategia 'caminando lo menos posible', que elige, entre las ofertas válidas para un producto, aquella que se encuentra más cerca de la posición actual del usuario.&lt;br /&gt;Considerar: la funcionalidad será distinta si se permite la búsqueda simultánea de varios productos (Ver US126).&lt;br /&gt;&lt;br /&gt;Criterios de aceptación:&lt;/div&gt; &lt;div&gt;* En la interfaz deberá figurar la opción para elegir la estrategia 'caminando lo menos posible'&lt;/div&gt; &lt;div&gt;* El resultado de aplicar esta estrategia deberá mostrar la oferta que cumpla con los demás filtros (rango, zona, etc.), y además sea la mas cercana a la posición del usuario.&lt;/div&gt; &lt;div&gt;* En caso de que el sistema no logre ubicar al usuario, un error será mostrado al usuario, indicando que no es posible ejecutar la consulta porque el sistema no conoce su ubicación.&lt;/div&gt;</Description>
             <Discussion />
             <FormattedID>US102</FormattedID>
-            <LastUpdateDate>2013-05-13T19:36:17.445Z</LastUpdateDate>
-            <Name>Como usuario quiero realizar búsquedas filtrando por la estrategia "caminando lo menos posible"</Name>
+            <LastUpdateDate>2013-05-16T04:45:08.739Z</LastUpdateDate>
+            <Name>Como usuario quiero realizar búsquedas filtrando por la estrategia 'caminando lo menos posible'</Name>
             <Notes />
             <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
             <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
@@ -797,28 +800,28 @@
       <DirectChildrenCount>5</DirectChildrenCount>
       <HasParent>false</HasParent>
       <InProgressDate>2013-05-05T23:45:46.343Z</InProgressDate>
-      <PlanEstimate>27.0</PlanEstimate>
+      <PlanEstimate>30.0</PlanEstimate>
       <Predecessors />
       <Rank>499999988480.000</Rank>
       <Recycled>false</Recycled>
       <ScheduleState>In-Progress</ScheduleState>
       <Successors />
       <TaskActualTotal>0.0</TaskActualTotal>
-      <TaskEstimateTotal>51.0</TaskEstimateTotal>
-      <TaskRemainingTotal>13.0</TaskRemainingTotal>
+      <TaskEstimateTotal>54.0</TaskEstimateTotal>
+      <TaskRemainingTotal>16.0</TaskRemainingTotal>
       <Tasks />
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094680" objectVersion="5" refObjectName="Como PO quiero enfocarme en productos de primera necesidad." CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094680" objectVersion="7" refObjectName="Como PO quiero enfocarme en productos de primera necesidad." CreatedAt="Apr 13">
       <CreationDate>2013-04-13T19:46:13.502Z</CreationDate>
       <ObjectID>11394094680</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description />
+      <Description>Desde los requerimientos iniciales se estableció que el sistema se enfocará en buscar ofertas para productos de primera necesidad. Cuales son estos productos deberá ser definido por el product owner. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Criterios de aceptación:&lt;/div&gt; &lt;div&gt;* El sistema admite como productos a buscar aquellos definidos por el product owner.&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US100</FormattedID>
-      <LastUpdateDate>2013-04-13T21:57:12.065Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T05:00:08.975Z</LastUpdateDate>
       <Name>Como PO quiero enfocarme en productos de primera necesidad.</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -850,17 +853,17 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393615579" objectVersion="12" refObjectName="Como desarrollador espero poder agregar, cambiar y eliminar productos de la lista de productos soportados junto con su respectiva unidad " CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393615579" objectVersion="16" refObjectName="Como PO espero poder agregar y eliminar productos de la lista de productos soportados junto con su respectiva unidad" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T18:50:47.981Z</CreationDate>
       <ObjectID>11393615579</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description />
+      <Description>El sistema está pensado para tratar con productos "de primera necesidad", y el objetivo es tener una lista cerrada de productos soportados. En principio esta lista es fija, pero se quiere que en un futuro pueda ser modificada, agregando o quitando productos según las decisiones del Product Owner, que puede querer que un producto sea o no soportado por la aplicación.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Un administrador del sistema podrá incluir un nuevo producto para ser soportado por la aplicación, junto con una o más unidades de medida asociadas. Los usuarios podrán consultar por dicho producto luego de que haya sido dado de alta, y el funcionamiento deberá ser correcto al igual que con los productos originales.&lt;br&gt;* Un administrador podrá eliminar un producto de la lista. Los usuarios no podrán volver a consultar sobre dicho producto en la aplicación.&lt;br&gt;* Un administrador podrá agregar una nueva unidad asociada a un producto existente. Las respuestas a las consultas de dicho producto incluirán ofertas con dicho producto y unidad. También podrá ser eliminada una unidad existente, y las ofertas que usen esa unidad no aparecerán.</Description>
       <Discussion />
       <FormattedID>US89</FormattedID>
-      <LastUpdateDate>2013-04-14T23:24:46.456Z</LastUpdateDate>
-      <Name>Como desarrollador espero poder agregar, cambiar y eliminar productos de la lista de productos soportados junto con su respectiva unidad</Name>
+      <LastUpdateDate>2013-05-16T04:48:12.976Z</LastUpdateDate>
+      <Name>Como PO espero poder agregar y eliminar productos de la lista de productos soportados junto con su respectiva unidad</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
       <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
@@ -888,16 +891,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393613818" objectVersion="9" refObjectName="Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393613818" objectVersion="11" refObjectName="Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T18:37:37.922Z</CreationDate>
       <ObjectID>11393613818</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description />
+      <Description>El mapa es un método visualmente eficiente para mostrar las ofertas que son respuesta a una consulta del usuario. La dirección puede ser señalada con un punto en el mapa, y el resto de la información puede verse en el epígrafe que acompaña al punto.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Cuando el usuario realiza una consulta, podrá elegir que los resultados se muestren en un mapa.&lt;br&gt;* Las direcciones de todas las ofertas resultantes aparecerán como puntos en el mapa, y los datos restantes de las ofertas estarán escritos al costado de cada punto.</Description>
       <Discussion />
       <FormattedID>US87</FormattedID>
-      <LastUpdateDate>2013-05-14T03:43:04.855Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-15T18:50:32.156Z</LastUpdateDate>
       <Name>Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -930,16 +933,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403431524" objectVersion="9" refObjectName="Como desarrollador quiero filtrar las ofertas por la estrategia &quot;caminando lo menos posible&quot;" CreatedAt="Apr 14">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403431524" objectVersion="11" refObjectName="Como desarrollador quiero filtrar las ofertas por la estrategia &quot;caminando lo menos posible&quot;" CreatedAt="Apr 14">
       <CreationDate>2013-04-14T22:59:27.910Z</CreationDate>
       <ObjectID>11403431524</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>&lt;div&gt;&lt;b&gt;Requerimiento:&lt;/b&gt;&lt;/div&gt; &lt;div&gt;El usuario debe poder comunicar la información sobre su ubicación actual. En un principio podría transmitirla directamente por texto, indicando &amp;lt;Calle&amp;gt;&amp;lt;Altura&amp;gt;; más adelante podría hacerlo utilizando algún método de geolocalización.&amp;nbsp;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; Criterio de aceptación:   &lt;div&gt; &lt;br /&gt;* El usuario ingresa una búsqueda de un producto y selecciona la estrategia "caminando lo menos posible".&lt;br /&gt;   &lt;div&gt;* El resultado de la búsqueda será, entre las ofertas que cumplen las demás restricciones seleccionadas, la mas cercana a la posición informada por el usuario.&lt;/div&gt; &lt;div&gt;* En caso de no haber ofertas disponibles que cumplan las restricciones, se informará de esto al usuario mediante un mensaje. &amp;nbsp;&lt;/div&gt; &lt;div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</Description>
+      <Description>&lt;div&gt;&lt;b&gt;Requerimiento:&lt;/b&gt;&lt;/div&gt; &lt;div&gt;El usuario debe poder comunicar la información sobre su ubicación actual. En un principio podría transmitirla directamente por texto, indicando &amp;lt;Calle&amp;gt;&amp;lt;Altura&amp;gt;; más adelante podría hacerlo utilizando algún método de geolocalización. (Ver US127)&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; Criterio de aceptación:    &lt;div&gt; &lt;br /&gt;* El usuario ingresa una búsqueda de un producto y selecciona la estrategia "caminando lo menos posible".&lt;br /&gt;    &lt;div&gt;* El resultado de la búsqueda será, entre las ofertas que cumplen las demás restricciones seleccionadas, la mas cercana a la posición informada por el usuario.&lt;/div&gt; &lt;div&gt;* En caso de no haber ofertas disponibles que cumplan las restricciones, se informará de esto al usuario mediante un mensaje. &amp;nbsp;&lt;/div&gt; &lt;div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US118</FormattedID>
-      <LastUpdateDate>2013-05-14T03:48:32.848Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-15T18:42:01.042Z</LastUpdateDate>
       <Name>Como desarrollador quiero filtrar las ofertas por la estrategia "caminando lo menos posible"</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343574048" refObjectName="Ivan P" type="User" />
@@ -1009,16 +1012,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11423077743" objectVersion="7" refObjectName="Como desarrollador quiero poder obtener la informaciòn de localización del usuario" CreatedAt="Apr 15">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11423077743" objectVersion="9" refObjectName="Como desarrollador quiero poder obtener la informaciòn de localización del usuario" CreatedAt="Apr 15">
       <CreationDate>2013-04-15T21:21:38.000Z</CreationDate>
       <ObjectID>11423077743</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description />
+      <Description>En la actualidad, muchos dispositivos móviles tienen la capacidad de obtener información acerca de la ubicación actual del usuario, y comunicar este dato a las aplicaciones que están corriendo. La aplicación de Precio Justo la necesita para algunas de sus funcionalidades, por ejemplo la estrategia "caminando lo menos posible". Por lo tanto, es útil poder recibir la localización del usuario y operar con ella.&lt;br /&gt;En caso de no estar disponible la información en forma automática, un método alternativo para obtenerla es el de pedirle al usuario que la ingrese manualmente.&lt;br&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El sistema conocerá la ubicación actual del usuario en cualquier momento que la necesite para operar.</Description>
       <Discussion />
       <FormattedID>US127</FormattedID>
-      <LastUpdateDate>2013-05-14T04:03:51.269Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-15T18:40:39.154Z</LastUpdateDate>
       <Name>Como desarrollador quiero poder obtener la informaciòn de localización del usuario</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -1084,16 +1087,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403242960" objectVersion="6" refObjectName="Epic: Como usuario deseo tener una interfaz para acceder a la aplicación desde distintos dispositivos" CreatedAt="Apr 14">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403242960" objectVersion="8" refObjectName="Epic: Como usuario deseo tener una interfaz para acceder a la aplicación desde distintos dispositivos" CreatedAt="Apr 14">
       <CreationDate>2013-04-14T21:24:21.194Z</CreationDate>
       <ObjectID>11403242960</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Se quiere desarrollar distintas interfaces para que el usuario consulte a la aplicación. Por el momento el Product Owner no requiere la implementación de ninguna interfaz en particular, pero a futuro puede hacerlo. Se deberá desarrollar la interfaz pedida, y asegurar que puede comunicarse correctamente con nuestro sistema.</Description>
+      <Description>Se quiere desarrollar distintas interfaces para que el usuario consulte a la aplicación. Por el momento el Product Owner no requiere la implementación de ninguna interfaz en particular, pero a futuro puede hacerlo. Se deberá desarrollar la interfaz pedida, y asegurar que puede comunicarse correctamente con nuestro sistema.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El usuario podrá interactuar con el sistema correctamente a través de la interfaz de su dispositivo.</Description>
       <Discussion />
       <FormattedID>US112</FormattedID>
-      <LastUpdateDate>2013-05-14T14:16:57.575Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-15T18:33:37.619Z</LastUpdateDate>
       <Name>Epic: Como usuario deseo tener una interfaz para acceder a la aplicación desde distintos dispositivos</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -1121,17 +1124,17 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094545" objectVersion="10" refObjectName="Epic: Como PO espero que se pueda obtener información de tweets sin el hashtag #precioJusto, y de otros medios de comunicación." CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094545" objectVersion="14" refObjectName="Epic: Como PO espero que se pueda obtener información de tweets sin el hashtag #precioJusto, y de otros medios de comunicación" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T19:44:28.012Z</CreationDate>
       <ObjectID>11394094545</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>A futuro se desea incorporar nuevas fuentes de información para conocer ofertas. Por el momento se requiere que las ofertas se obtengan por medio de tweets terminados con el hashtag #precioJusto. Sabemos que en próximas etapas del desarrollo se puede requerir que el sistema obtenga información de cualquier tweet, y también es posible que se quiera buscar en otras redes sociales como Facebook y Google+. Cuando esto se pida, deberemos asegurar que podemos extraer información correcta y completa de estas fuentes.</Description>
+      <Description>A futuro se desea incorporar nuevas fuentes de información para conocer ofertas. Por el momento se requiere que las ofertas se obtengan por medio de tweets terminados con el hashtag #precioJusto. Sabemos que en próximas etapas del desarrollo se puede requerir que el sistema obtenga información de cualquier tweet, y también es posible que se quiera buscar en otras redes sociales como Facebook y Google+. Cuando esto se pida, deberemos asegurar que podemos extraer información correcta y completa de estas fuentes.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Cuando se designen nuevas fuentes de información, el sistema deberá poder leer, interpretar y usar los datos obtenidos de dichas fuentes.</Description>
       <Discussion />
       <FormattedID>US98</FormattedID>
-      <LastUpdateDate>2013-05-14T14:11:41.479Z</LastUpdateDate>
-      <Name>Epic: Como PO espero que se pueda obtener información de tweets sin el hashtag #precioJusto, y de otros medios de comunicación.</Name>
+      <LastUpdateDate>2013-05-15T19:29:59.225Z</LastUpdateDate>
+      <Name>Epic: Como PO espero que se pueda obtener información de tweets sin el hashtag #precioJusto, y de otros medios de comunicación</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
       <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
@@ -1232,7 +1235,7 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403909173" objectVersion="3" refObjectName="Como usuario de la comunidad de Twitter me gustaría que mis tweets se prioricen a la hora de mostrar las ofertas según su cantidad de favs o retweets" CreatedAt="Apr 14">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403909173" objectVersion="5" refObjectName="Como usuario de la comunidad de Twitter quiero que mis tweets se prioricen a la hora de mostrar las ofertas según su cantidad de favs o retweets" CreatedAt="Apr 14">
       <CreationDate>2013-04-14T23:32:07.786Z</CreationDate>
       <ObjectID>11403909173</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
@@ -1241,8 +1244,8 @@
       <Description>Twitter provee funcionalidad para que los tweets puedan ser marcados como favoritos ("favs"), o compartidos ("retweets"), y se suele tomar estos datos como indicadores de la popularidad de un tweet. Queremos que nuestro sistema obtenga información de favs y retweets de los tweets que usamos para conocer ofertas, y que considere a los tweets más populares como "más confiables" y "de mejor calidad".&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Un usuario de Twitter escribe un tweet con una oferta que nuestro sistema puede leer. Este tweet recibe gran cantidad de favs y retweets.&lt;br&gt;* En una consulta cuyo resultado incluya a este tweet, el sistema deberá darle prioridad por sobre los otros tweets que tengan menor cantidad de favs y retweets.</Description>
       <Discussion />
       <FormattedID>US120</FormattedID>
-      <LastUpdateDate>2013-05-14T14:49:18.831Z</LastUpdateDate>
-      <Name>Como usuario de la comunidad de Twitter me gustaría que mis tweets se prioricen a la hora de mostrar las ofertas según su cantidad de favs o retweets</Name>
+      <LastUpdateDate>2013-05-15T18:24:27.123Z</LastUpdateDate>
+      <Name>Como usuario de la comunidad de Twitter quiero que mis tweets se prioricen a la hora de mostrar las ofertas según su cantidad de favs o retweets</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343574048" refObjectName="Ivan P" type="User" />
       <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
@@ -1269,53 +1272,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403910080" objectVersion="3" refObjectName="(REPETIDO???)Como usuario quiero elegir mas de un producto para obtener las mejores ofertas de todos ellos y visualizarlas en un mapa" CreatedAt="Apr 14">
-      <CreationDate>2013-04-14T23:40:35.333Z</CreationDate>
-      <ObjectID>11403910080</ObjectID>
-      <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
-      <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
-      <Changesets />
-      <Description />
-      <Discussion />
-      <FormattedID>US121</FormattedID>
-      <LastUpdateDate>2013-05-14T14:18:42.833Z</LastUpdateDate>
-      <Name>(REPETIDO???)Como usuario quiero elegir mas de un producto para obtener las mejores ofertas de todos ellos y visualizarlas en un mapa</Name>
-      <Notes />
-      <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343574048" refObjectName="Ivan P" type="User" />
-      <Project rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/project/11343571057" refObjectName="TP1-Grupo5" type="Project" />
-      <Ready>false</Ready>
-      <RevisionHistory rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/revisionhistory/11403910081" type="RevisionHistory" />
-      <Tags />
-      <Attachments />
-      <Blocked>false</Blocked>
-      <Children />
-      <DefectStatus>NONE</DefectStatus>
-      <Defects />
-      <DirectChildrenCount>0</DirectChildrenCount>
-      <HasParent>false</HasParent>
-      <Predecessors />
-      <Rank>499999991551.750</Rank>
-      <Recycled>false</Recycled>
-      <ScheduleState>Defined</ScheduleState>
-      <Successors />
-      <TaskActualTotal>0.0</TaskActualTotal>
-      <TaskEstimateTotal>0.0</TaskEstimateTotal>
-      <TaskRemainingTotal>0.0</TaskRemainingTotal>
-      <TaskStatus>NONE</TaskStatus>
-      <Tasks />
-      <TestCaseStatus>NONE</TestCaseStatus>
-      <TestCases />
-   </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11423074366" objectVersion="3" refObjectName="Epic: Como usuario quiero poder buscar más de un producto en una misma consulta" CreatedAt="Apr 15">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11423074366" objectVersion="5" refObjectName="Epic: Como usuario quiero poder buscar más de un producto en una misma consulta" CreatedAt="Apr 15">
       <CreationDate>2013-04-15T21:19:10.942Z</CreationDate>
       <ObjectID>11423074366</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Se quiere poder extender la funcionalidad actual de consultas del usuario para que pueda realizar una consulta con múltiples productos. Se debe investigar cómo afecta esta modificación a las funcionalidades ya existentes. Por ejemplo, en la estrategia "caminando lo menos posible", además de considerar la distancia entre el usuario y el producto, se debe contemplar la distancia entre cada par de productos entre los seleccionados.</Description>
+      <Description>Se quiere poder extender la funcionalidad actual de consultas del usuario para que pueda realizar una consulta con múltiples productos. Se debe investigar cómo afecta esta modificación a las funcionalidades ya existentes. Por ejemplo, en la estrategia "caminando lo menos posible", además de considerar la distancia entre el usuario y el producto, se debe contemplar la distancia entre cada par de productos entre los seleccionados.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Un usuario quiere buscar ofertas para dos o más productos en una misma consulta. El sistema deberá devolver resultados correctos para todos ellos.&lt;br&gt;* Los filtros y estrategias se aplicarán como corresponde considerando el hecho de que hay varios productos involucrados en el cálculo.</Description>
       <Discussion />
       <FormattedID>US126</FormattedID>
-      <LastUpdateDate>2013-05-14T13:47:52.776Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-15T18:20:43.213Z</LastUpdateDate>
       <Name>Epic: Como usuario quiero poder buscar más de un producto en una misma consulta</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
