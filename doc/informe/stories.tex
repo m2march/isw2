@@ -157,7 +157,7 @@ Criterios de aceptación:\\
 		{Necesitamos un conector que pueda realizar una llamada al servidor de Twitter\\
 y descargar datos.\\
 * El conector debe poder conectarse a Twitter autenticándose con OAuth2\\
-* El conector debe poder obtener los mensajes de Twitter con un hashtag particular, en nuestro caso, #precioJusto\\
+* El conector debe poder obtener los mensajes de Twitter con un hashtag particular, en nuestro caso, \#precioJusto\\
 } % descripcion
 		{6.0} % horas estimadas
 		{} % story owner
@@ -194,14 +194,14 @@ convierta en objetos de nuestro modelo, fundamentalmente en un objeto\\
 	{Cuando el sistema recibe datos de Twitter, necesita poder identificar aquellos\\
 que tienen información útil. Esto se determina de acuerdo a su formato. En\\
 esta etapa del proyecto, los tweets que son útiles son aquellos que cumplen el\\
-formato "$<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$  #precioJusto", y además, tengan\\
+formato "$<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$  \#precioJusto", y además, tengan\\
 un producto válido, una unidad soportada por el producto, y un precio y lugar\\
 válidos. Es necesario identificar los tweets válidos y extraer la información\\
 contenida en ellos.\\
   \\
 Criterios de aceptación:\\
 * La aplicación conocerá los productos y unidades aceptados por los administradores y podrá contrastarlos con los datos de los tweets.  \\
-* Si un tweet con el hashtag #precioJusto no tiene información correcta o no es relevante, deberá ser ignorado por el sistema.  \\
+* Si un tweet con el hashtag \#precioJusto no tiene información correcta o no es relevante, deberá ser ignorado por el sistema.  \\
 * Si un tweet con el hashtag es relevante y válido, el sistema deberá componer un objeto 'oferta' que contenga la información dada por dicho tweet.\\
 } % descripcion
 	{} % criterios de aceptacion
@@ -226,7 +226,7 @@ lista.\\
 		{Se deberá reconocer si el tweet tiene la información necesaria de producto,\\
 precio, unidad y lugar.\\
 El formato básico a soportar es: $<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$ \\
-#PrecioJusto\\
+\#PrecioJusto\\
 } % descripcion
 		{5.0} % horas estimadas
 		{} % story owner
@@ -915,7 +915,7 @@ Criterios de aceptación:\\
 	{Epic: Como PO espero que se pueda obtener información de tweets sin el hashtag #precioJusto, y de otros medios de comunicación} % titulo
 	{A futuro se desea incorporar nuevas fuentes de información para conocer\\
 ofertas. Por el momento se requiere que las ofertas se obtengan por medio de\\
-tweets terminados con el hashtag #precioJusto. Sabemos que en próximas etapas\\
+tweets terminados con el hashtag \#precioJusto. Sabemos que en próximas etapas\\
 del desarrollo se puede requerir que el sistema obtenga información de\\
 cualquier tweet, y también es posible que se quiera buscar en otras redes\\
 sociales como Facebook y Google+. Cuando esto se pida, deberemos asegurar que\\

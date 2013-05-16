@@ -71,13 +71,16 @@ def formatoLatex(y):
 		if c == "<" or c == ">":
 			yy += "$" +c+ "$ "
 		else:
-			if c == "\n":
-				if (i + 1 < len(y) and y[i+1] == "\n"):
-				  pass	
-				else:
-				  yy += c
+			if c == "#":
+				yy+= "\\"+c
 			else:
-				yy += c
+				if c == "\n":
+					if (i + 1 < len(y) and y[i+1] == "\n"):
+					  pass	
+					else:
+					  yy += "\\\\" +c
+				else:
+					yy += c
 	return yy
 
 def maptoformatoLatex(s):
