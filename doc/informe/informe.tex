@@ -174,7 +174,7 @@ El siguiente diagrama gira entorno a la clase \textbf{ModelManager}, cuya respon
 
 El primer eje de cambio que tuvimos en consideración y se ve reflejado en el diagrama es la posibilidad de tener más de una fuente de datos adem\'as de la REST api de \emph{Twitter}. Este eje se logra facilmente agregando otro \textbf{DataSource} concreto a la instancia de  DataManager con el m\'ensaje \emph{addConnector}.
 
-El siguiente eje de cambio est\'a en el uso de la interfaz \emph{iterable} por \textbf{OfferFactory} la misma genera un desacoplamiento de f\'acil reemplazo por cualquier tipo de almacenamiento de datos que provea una manera de iterarlos mediante el mensaje \emph{next()}. Por ejemplo, en siguientes versiones del sistema podría utilizarse algun mecanismo de persistencia que ayude a eliminar el costo de hacer el request a nuestros conectores cada vez y la clase \textbf{OfferFactory} no deber\'ia modificarse. 
+El siguiente eje de cambio est\'a en el uso de la interfaz \emph{iterable} por \textbf{OfferFactory}, \textbf{OfferFactory} la utiliza para iterar los datos que provee \textbf{DataManager} y esto genera un desacoplamiento ya que lo unico que \textbf{OfferFactory} necesita es un tipo de almacenamiento de datos que provea una manera de iterarlos mediante el mensaje \emph{next()}. Por ejemplo, en siguientes versiones del sistema podría utilizarse algun mecanismo de persistencia que ayude a eliminar el costo de hacer el request a nuestros conectores cada vez y la clase \textbf{OfferFactory} no deber\'ia modificarse. 
 
 \begin{figure}[H]
 \centering
