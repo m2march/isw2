@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys
 import codecs
 f = codecs.open('stories.tex', encoding='utf-8', mode='w')
@@ -9,6 +11,8 @@ def prettyDesc(description):
     #do some work before converting to html
     description = html2text(description)
     description = formatoLatex(description)
+    description = description.replace("Bussiness Value:", "\\textbf{Bussiness Value:}")
+    description = description.replace("Criterios de aceptación:".decode("utf-8"), "\\textbf{Criterios de aceptación:}".decode("utf-8"))
     #do somework afterwards
     return description
 

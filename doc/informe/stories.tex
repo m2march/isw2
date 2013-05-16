@@ -1,21 +1,18 @@
 \userStory	{US145} % ID en el Rally
 	{Realizar un primer análisis y diseño de la aplicación} % titulo
-	{En una primera instancia es importante comprender la naturaleza de la
-aplicación, entender los requerimientos, sugerir propuestas para resolverlos y
-bocetar una estructura global que permita la división del trabajo entre los
-integrantes del grupo.
-  
-También es necesario definir un camino de desarrollo, priorizar los
-requerimientos y establecer líneas de expansión de la aplicación que sean
-deseables.
-   \\ 
-Criterios de aceptación:
-
-* El grupo de trabajo acordará en un lenguaje/código común para realizar el diseño orientado a objetos.
-
-* El grupo poseerá un boceto básico del diseño global de la aplicación.
-
-* Los integrantes podrán comenzar a trabajar por separado con un conocimiento básico de las actividades que el grupo debe realizar.  
+	{En una primera instancia es importante comprender la naturaleza de la\\
+aplicación, entender los requerimientos, sugerir propuestas para resolverlos y\\
+bocetar una estructura global que permita la división del trabajo entre los\\
+integrantes del grupo.\\
+  \\
+También es necesario definir un camino de desarrollo, priorizar los\\
+requerimientos y establecer líneas de expansión de la aplicación que sean\\
+deseables.\\
+  \\
+\textbf{Criterios de aceptación:}\\
+* El grupo de trabajo acordará en un lenguaje/código común para realizar el diseño orientado a objetos.  \\
+* El grupo poseerá un boceto básico del diseño global de la aplicación.  \\
+* Los integrantes podrán comenzar a trabajar por separado con un conocimiento básico de las actividades que el grupo debe realizar.  \\
 } % descripcion
 	{} % criterios de aceptacion
 	{8.0} % story points
@@ -28,16 +25,15 @@ Criterios de aceptación:
 
 \userStory	{US144} % ID en el Rally
 	{Como desarrollador quiero buscar un mecanismo que permita estandarizar los archivos de código Python} % titulo
-	{Python es sensible a la identación, y en el trabajo en equipo puede ser
-problemático que los integrantes acostumbren usar distintos criterios de
-tabulación.
-
-Es necesario encontrar algún mecanismo/programa/utilitario que ayude a manejar
-este y otros problemas de formato de código.
+	{Python es sensible a la identación, y en el trabajo en equipo puede ser\\
+problemático que los integrantes acostumbren usar distintos criterios de\\
+tabulación.\\
   \\
-Criterios de aceptación:
-
-* Los integrantes del grupo trabajarán con código Python estandarizado  
+Es necesario encontrar algún mecanismo/programa/utilitario que ayude a manejar\\
+este y otros problemas de formato de código.\\
+  \\
+\textbf{Criterios de aceptación:}\\
+* Los integrantes del grupo trabajarán con código Python estandarizado  \\
 } % descripcion
 	{} % criterios de aceptacion
 	{2.0} % story points
@@ -50,13 +46,14 @@ Criterios de aceptación:
 
 \userStory	{US143} % ID en el Rally
 	{Como desarrollador quiero tener un mecanismo para hacer tests unitarios} % titulo
-	{Se quiere disponer de un software que nos permita realizar tests unitarios. El
-mecanismo debe haber sido testeado en su facilidad de uso y extensibilidad
-creando tests.
+	{Se quiere disponer de un software que nos permita realizar tests unitarios. El\\
+mecanismo debe haber sido testeado en su facilidad de uso y extensibilidad\\
+creando tests.\\
   \\
-Criterios de aceptación:
-  
-* Se dispondrá de un mecanismo de fácil extensión para poder testear funcionalidades unitarias. 
+  \\
+\textbf{Criterios de aceptación:}\\
+  \\
+* Se dispondrá de un mecanismo de fácil extensión para poder testear funcionalidades unitarias. \\
 } % descripcion
 	{} % criterios de aceptacion
 	{3.0} % story points
@@ -66,8 +63,9 @@ Criterios de aceptación:
 
 	\task	{TA192} % ID en el Rally
 		{Investigar bibliotecas o mecanismos para hacer unit testing en el lenguaje de programación del servidor} % titulo
-		{El código del servidor está escrito en Python, por lo que se investigará el
-funcionamiento de PyUnit para realizar tests unitarios.} % descripcion
+		{El código del servidor está escrito en Python, por lo que se investigará el\\
+funcionamiento de PyUnit para realizar tests unitarios.\\
+} % descripcion
 		{3.0} % horas estimadas
 		{Juan M} % story owner
 		{0.0} % horas faltantes
@@ -79,27 +77,24 @@ funcionamiento de PyUnit para realizar tests unitarios.} % descripcion
 } % descripcion
 		{1.0} % horas estimadas
 		{Martin M} % story owner
-		{0.0} % horas faltantes
-		{Completed} % estado (completada, bloqueada, etc.)
+		{1.0} % horas faltantes
+		{Defined} % estado (completada, bloqueada, etc.)
 
 
 \vspace{20pt}
 
 \userStory	{US101} % ID en el Rally
 	{Como desarrollador quiero investigar las opciones disponibles para obtener información de Twitter} % titulo
-	{Queremos conocer y contrastar las alternativas sobre la obtención y
-almacenamiento de la información obtenida desde Twitter.
+	{Queremos conocer y contrastar las alternativas sobre la obtención y\\
+almacenamiento de la información obtenida desde Twitter.\\
   \\
-En principio tenemos las siguientes funcionalidades, en las que tenemos que
-decidir entre dos implementaciones en cada una:
-
-* Almacenar la información vs. obtenerla en cada búsqueda del usuario.
-
-* Investigar la Search REST API vs. Streaming API de Twitter.
+En principio tenemos las siguientes funcionalidades, en las que tenemos que\\
+decidir entre dos implementaciones en cada una:\\
+* Almacenar la información vs. obtenerla en cada búsqueda del usuario.\\
+* Investigar la Search REST API vs. Streaming API de Twitter.\\
   \\
-Criterios de aceptación:
-
-* El grupo de trabajo conocerá el método para obtener la información desde Twitter  
+\textbf{Criterios de aceptación:}\\
+* El grupo de trabajo conocerá el método para obtener la información desde Twitter  \\
 } % descripcion
 	{} % criterios de aceptacion
 	{5.0} % story points
@@ -127,10 +122,10 @@ Criterios de aceptación:
 
 	\task	{TA37} % ID en el Rally
 		{Investigar y elegir cómo y cuándo vamos a conseguir los datos} % titulo
-		{Se desea tener un método para conseguir datos para responder una consulta.
-Podemos obtenerlos siempre desde Twitter y no guardar nada, o bien podemos
-almacenarlos de antemano y usarlos cuando debemos responder una consulta.
-Revisar como impacta en el sprint backlog esta decisión.
+		{Se desea tener un método para conseguir datos para responder una consulta.\\
+Podemos obtenerlos siempre desde Twitter y no guardar nada, o bien podemos\\
+almacenarlos de antemano y usarlos cuando debemos responder una consulta.\\
+Revisar como impacta en el sprint backlog esta decisión.\\
 } % descripcion
 		{4.0} % horas estimadas
 		{} % story owner
@@ -142,14 +137,16 @@ Revisar como impacta en el sprint backlog esta decisión.
 
 \userStory	{US99} % ID en el Rally
 	{Como PO espero que la información sea obtenida a través de Twitter} % titulo
-	{El Product Owner desea que el sistema pueda comunicarse con Twitter para
-recibir información. Por lo tanto, es necesario asegurarse de que podemos
-recibir datos usando una conexión con Twitter, y que podemos decodificar y
-entender los datos recibidos.
+	{El Product Owner desea que el sistema pueda comunicarse con Twitter para\\
+recibir información. Por lo tanto, es necesario asegurarse de que podemos\\
+recibir datos usando una conexión con Twitter, y que podemos decodificar y\\
+entender los datos recibidos.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El sistema tendrá una conexión con la API de Twitter y podrá descargar los datos que necesita  \\
-* Toda la información obtenida podrá ser leída por el sistema, los datos útiles deberán ser identificados, separados y convertidos a un formato utilizable por la aplicación.\\
+* Toda la información obtenida podrá ser leída por el sistema, los datos útiles deberán ser identificados, separados y convertidos a un formato utilizable por la aplicación. \\
+  \\
+Business value: 8\\
 } % descripcion
 	{} % criterios de aceptacion
 	{5.0} % story points
@@ -159,7 +156,7 @@ Criterios de aceptación:\\
 
 	\task	{TA40} % ID en el Rally
 		{Implementar el conector para Twitter} % titulo
-		{Necesitamos un conector que pueda realizar una llamada al servidor de Twitter
+		{Necesitamos un conector que pueda realizar una llamada al servidor de Twitter\\
 y descargar datos.\\
 * El conector debe poder conectarse a Twitter autenticándose con OAuth2\\
 * El conector debe poder obtener los mensajes de Twitter con un hashtag particular, en nuestro caso, \#precioJusto\\
@@ -171,9 +168,9 @@ y descargar datos.\\
 
 	\task	{TA41} % ID en el Rally
 		{Registrar la aplicación en Twitter} % titulo
-		{Es necesario dar de alta la aplicación en Twitter, para obtener las
-credenciales para usar la API. Esto es requerido para cualquier aplicación que
-quiera trabajar con Twitter.
+		{Es necesario dar de alta la aplicación en Twitter, para obtener las\\
+credenciales para usar la API. Esto es requerido para cualquier aplicación que\\
+quiera trabajar con Twitter.\\
 } % descripcion
 		{2.0} % horas estimadas
 		{} % story owner
@@ -182,9 +179,9 @@ quiera trabajar con Twitter.
 
 	\task	{TA42} % ID en el Rally
 		{Traducir los datos obtenidos de Twitter al modelo interno de representación} % titulo
-		{Debemos tener un traductor que lea los datos que conforman un tweet y los
-convierta en objetos de nuestro modelo, fundamentalmente en un objeto
-"oferta".
+		{Debemos tener un traductor que lea los datos que conforman un tweet y los\\
+convierta en objetos de nuestro modelo, fundamentalmente en un objeto\\
+"oferta".\\
 } % descripcion
 		{4.0} % horas estimadas
 		{} % story owner
@@ -196,15 +193,15 @@ convierta en objetos de nuestro modelo, fundamentalmente en un objeto
 
 \userStory	{US113} % ID en el Rally
 	{Como desarrollador quiero reconocer tweets útiles y convertirlos a ofertas} % titulo
-	{Cuando el sistema recibe datos de Twitter, necesita poder identificar aquellos
-que tienen información útil. Esto se determina de acuerdo a su formato. En
-esta etapa del proyecto, los tweets que son útiles son aquellos que cumplen el
-formato "$<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$  \#precioJusto", y además, tengan
-un producto válido, una unidad soportada por el producto, y un precio y lugar
-válidos. Es necesario identificar los tweets válidos y extraer la información
-contenida en ellos.
+	{Cuando el sistema recibe datos de Twitter, necesita poder identificar aquellos\\
+que tienen información útil. Esto se determina de acuerdo a su formato. En\\
+esta etapa del proyecto, los tweets que son útiles son aquellos que cumplen el\\
+formato "$<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$  \#precioJusto", y además, tengan\\
+un producto válido, una unidad soportada por el producto, y un precio y lugar\\
+válidos. Es necesario identificar los tweets válidos y extraer la información\\
+contenida en ellos.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * La aplicación conocerá los productos y unidades aceptados por los administradores y podrá contrastarlos con los datos de los tweets.  \\
 * Si un tweet con el hashtag \#precioJusto no tiene información correcta o no es relevante, deberá ser ignorado por el sistema.  \\
 * Si un tweet con el hashtag es relevante y válido, el sistema deberá componer un objeto 'oferta' que contenga la información dada por dicho tweet.\\
@@ -217,9 +214,9 @@ Criterios de aceptación:\\
 
 	\task	{TA135} % ID en el Rally
 		{Implementar un mecanismo para obtener la lista de productos y sus unidades} % titulo
-		{Para poder validar los tweets, es necesario conocer la lista de productos
-válidos y de unidades válidas para cada producto. El sistema puede pedir esta
-lista.
+		{Para poder validar los tweets, es necesario conocer la lista de productos\\
+válidos y de unidades válidas para cada producto. El sistema puede pedir esta\\
+lista.\\
 } % descripcion
 		{3.0} % horas estimadas
 		{} % story owner
@@ -228,10 +225,9 @@ lista.
 
 	\task	{TA139} % ID en el Rally
 		{Implementar el parser que reconozca si el formato de un tweet es correcto} % titulo
-		{Se deberá reconocer si el tweet tiene la información necesaria de producto,
-precio, unidad y lugar.
-
-El formato básico a soportar es: $<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$ 
+		{Se deberá reconocer si el tweet tiene la información necesaria de producto,\\
+precio, unidad y lugar.\\
+El formato básico a soportar es: $<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$  $<$ Lugar$>$ \\
 \#PrecioJusto\\
 } % descripcion
 		{5.0} % horas estimadas
@@ -241,9 +237,9 @@ El formato básico a soportar es: $<$ Producto$>$  $<$ Precio$>$  $<$ Unidad$>$ 
 
 	\task	{TA140} % ID en el Rally
 		{Con los tweets útiles reconocidos, extraer la información para generar una oferta} % titulo
-		{Se deben separar los datos validados del tweet para construir un objeto
-Oferta, que posea la información necesaria y pueda ser leído por la
-aplicación.
+		{Se deben separar los datos validados del tweet para construir un objeto\\
+Oferta, que posea la información necesaria y pueda ser leído por la\\
+aplicación.\\
 } % descripcion
 		{2.0} % horas estimadas
 		{} % story owner
@@ -255,11 +251,11 @@ aplicación.
 
 \userStory	{US106} % ID en el Rally
 	{Como desarrollador quiero tener una base para la API REST del backend} % titulo
-	{Se espera implementar un código inicial del backend que permita agregar
-fácilmente nuevos métodos a la interfaz REST, los cuales permitirán acceder al
-funcionamiento interno del mismo.
+	{Se espera implementar un código inicial del backend que permita agregar\\
+fácilmente nuevos métodos a la interfaz REST, los cuales permitirán acceder al\\
+funcionamiento interno del mismo.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El backend dispondrá de un método /status que permita verificar si está funcionando correctamente.   \\
 * El código de este método será fácilmente replicable para agregar nuevas funcionalidades.\\
 } % descripcion
@@ -280,11 +276,10 @@ Criterios de aceptación:\\
 
 	\task	{TA141} % ID en el Rally
 		{Investigar bibliotecas para la implementación del servicio} % titulo
-		{Investigar distintas bibliotecas útiles para la implementación del servicio.
-		
-Como primera instancia se presenta la siguiente:
+		{Investigar distintas bibliotecas útiles para la implementación del servicio.\\
+Como primera instancia se presenta la siguiente:\\
   \\
-http:\/\/www.cherrypy.org\/
+[http://www.cherrypy.org/](http://www.cherrypy.org/)\\
 } % descripcion
 		{4.0} % horas estimadas
 		{Martin M} % story owner
@@ -296,23 +291,22 @@ http:\/\/www.cherrypy.org\/
 
 \userStory	{US124} % ID en el Rally
 	{Como desarrollador quiero implementar la base del mecanismo de estrategias y filtros} % titulo
-	{Se desea implementar el código básico que se aprovechará en las futuras
-implementaciones de filtros y estrategias.
-En este código debe tomarse el total de ofertas y devolver un subconjunto,
-definido por los filtros y  las estrategias configuradas.
-Un filtro toma un conjunto de ofertas y devuelve el subconjunto de ellas que
-cumple un criterio determinado, por ejemplo, su precio es menor a 5 pesos, o
-su dirección está en determinada calle. Otra forma de entender este concepto
-es como una función Oferta -$>$  Bool que responde si la oferta cumple el
-criterio o no.
-
-Una estrategia toma un conjunto de ofertas y las ordena de acuerdo a una
-cualidad, por ejemplo, de menor a mayor precio. Notar que en algunos casos, el
-resultado final no aprovechará la lista ordenada completa (por ejemplo, podría
-necesitar solo el primer elemento), por lo que no siempre se necesita hacer
-todo el procedimiento.
+	{Se desea implementar el código básico que se aprovechará en las futuras\\
+implementaciones de filtros y estrategias.\\
+En este código debe tomarse el total de ofertas y devolver un subconjunto,\\
+definido por los filtros y  las estrategias configuradas.\\
+Un filtro toma un conjunto de ofertas y devuelve el subconjunto de ellas que\\
+cumple un criterio determinado, por ejemplo, su precio es menor a 5 pesos, o\\
+su dirección está en determinada calle. Otra forma de entender este concepto\\
+es como una función Oferta -$>$  Bool que responde si la oferta cumple el\\
+criterio o no.\\
+Una estrategia toma un conjunto de ofertas y las ordena de acuerdo a una\\
+cualidad, por ejemplo, de menor a mayor precio. Notar que en algunos casos, el\\
+resultado final no aprovechará la lista ordenada completa (por ejemplo, podría\\
+necesitar solo el primer elemento), por lo que no siempre se necesita hacer\\
+todo el procedimiento.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El sistema tendrá código que le permita llamar a un manejador de filtros y estrategias.  \\
 * Se podrá invocar la aplicación de un filtro o estrategia "nulo". Esta operación no tendrá ningún efecto en los datos, pero su código será fácilmente extensible para agregar funcionalidades.  \\
   \\
@@ -337,12 +331,14 @@ Criterios de aceptación:\\
 
 \userStory	{US147} % ID en el Rally
 	{Como usuario del backend quiero conocer las estrategias provistas por el sistema} % titulo
-	{En las capas de frontend que le presenten funcionalidad al usuario deseo poder
-mostrarle qué estrategias tiene disponible para resumir la información
-provista por el sistema.
+	{En las capas de frontend que le presenten funcionalidad al usuario deseo poder\\
+mostrarle qué estrategias tiene disponible para resumir la información\\
+provista por el sistema.\\
   \\
-Criterio de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * La interfaz rest debe exponer la lista de estrategias disponibles mediante un método /strategies\\
+  \\
+\textbf{Bussiness Value:} 5\\
 } % descripcion
 	{} % criterios de aceptacion
 	{3.0} % story points
@@ -355,13 +351,13 @@ Criterio de aceptación:\\
 
 \userStory	{US104} % ID en el Rally
 	{Como desarrollador quiero filtrar las ofertas según un rango de precios} % titulo
-	{Se debe lograr un código que adquiera los datos de las ofertas y los filtre
-según un rango de precios determinado. Las ofertas que estén fuera del rango
-deberán ser descartadas. Esta funcionalidad complementa la desarrollada en la
-US96, que permite que el sistema obtenga un rango de precios entre los datos
-enviados por el usuario.
+	{Se debe lograr un código que adquiera los datos de las ofertas y los filtre\\
+según un rango de precios determinado. Las ofertas que estén fuera del rango\\
+deberán ser descartadas. Esta funcionalidad complementa la desarrollada en la\\
+US96, que permite que el sistema obtenga un rango de precios entre los datos\\
+enviados por el usuario.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * Tenemos ofertas con precios que van desde X hasta Y, y elegimos filtrar desde A hasta Z.   \\
 * Luego de aplicado el filtro, las ofertas resultantes serán todas las que cumplan con los otros criterios de la consulta y tengan precio mayor o igual a A y menor o igual a Z.  \\
 } % descripcion
@@ -386,18 +382,20 @@ la US124\\
 
 \userStory	{US96} % ID en el Rally
 	{Como usuario espero realizar búsquedas filtrando por un rango de precios} % titulo
-	{Cuando el usuario realiza una consulta, puede querer definir un rango de
-precios, de forma que en la respuesta del sistema solo aparezcan las ofertas
-cuyos precios son mayores a un valor mínimo y menores a un valor máximo.
-Nota: Esta story describe las atribuciones del frontend. La funcionalidad que
-permite que el backend realice un filtro sobre sus datos se encuentra en la
+	{Cuando el usuario realiza una consulta, puede querer definir un rango de\\
+precios, de forma que en la respuesta del sistema solo aparezcan las ofertas\\
+cuyos precios son mayores a un valor mínimo y menores a un valor máximo.\\
+Nota: Esta story describe las atribuciones del frontend. La funcionalidad que\\
+permite que el backend realice un filtro sobre sus datos se encuentra en la\\
 US104.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
   \\
 * La inferfaz permitirá ingresar, de forma opcional, un rango de precios, formado por un valor MIN y un valor MAX.  \\
 * Si los parámetros son ingresados incorrectamente la interfaz debe decirlo. Esto puede ocurrir si el rango es inválido o los números están mal escritos.\\
 * Todas las ofertas sugeridas al finalizar la consulta se encontrarán dentro del rango explicitado.  \\
+  \\
+\textbf{Bussiness Value:} 5\\
 } % descripcion
 	{} % criterios de aceptacion
 	{5.0} % story points
@@ -407,9 +405,9 @@ Criterios de aceptación:\\
 
 	\task	{TA59} % ID en el Rally
 		{Implementar en el cliente un medio para establecer el tipo de consulta "por rango" y el rango establecido} % titulo
-		{La interfaz de usuario necesita tener una funcionalidad para elegir si se
-incluye un rango de precios en la búsqueda. Además, en caso de que se lo
-elija, también debe tener un campo donde ingresar precio máximo y mínimo.
+		{La interfaz de usuario necesita tener una funcionalidad para elegir si se\\
+incluye un rango de precios en la búsqueda. Además, en caso de que se lo\\
+elija, también debe tener un campo donde ingresar precio máximo y mínimo.\\
 } % descripcion
 		{4.0} % horas estimadas
 		{Juan M} % story owner
@@ -418,7 +416,7 @@ elija, también debe tener un campo donde ingresar precio máximo y mínimo.
 
 	\task	{TA60} % ID en el Rally
 		{Implementar la comunicación del cliente con el backend, enviando los parámetros} % titulo
-		{El backend debe tener un método REST para recibir la consulta. El cliente debe
+		{El backend debe tener un método REST para recibir la consulta. El cliente debe\\
 utilizar este método de forma correcta enviando los parámetros.\\
 } % descripcion
 		{2.0} % horas estimadas
@@ -428,7 +426,7 @@ utilizar este método de forma correcta enviando los parámetros.\\
 
 	\task	{TA61} % ID en el Rally
 		{Implementar la recepción y exhibición de los datos de respuesta en el frontend} % titulo
-		{El cliente debe poder recibir la respuesta del backend y exponerla al usuario
+		{El cliente debe poder recibir la respuesta del backend y exponerla al usuario\\
 a través de su interfaz.\\
 } % descripcion
 		{3.0} % horas estimadas
@@ -441,7 +439,7 @@ a través de su interfaz.\\
 
 \userStory	{US110} % ID en el Rally
 	{Como desarrollador quiero investigar cómo determinar zonas geográficas} % titulo
-	{Es necesario establecer un criterio para delimitar las zonas que servirán de
+	{Es necesario establecer un criterio para delimitar las zonas que servirán de\\
 filtro en nuestra aplicación.\\
 Algunas opciones son:\\
   \\
@@ -449,10 +447,10 @@ Algunas opciones son:\\
 * Si existe, utilizar la API del mapa del Gobierno de la Ciudad para usar las zonas delimitadas en la misma\\
 * Definir las zonas manualmente en nuestra aplicación\\
   \\
-También se debe determinar si es necesario recortar inicialmente el alcance
+También se debe determinar si es necesario recortar inicialmente el alcance\\
 total de la aplicación a, por ejemplo, Capital Federal.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El grupo de trabajo conocerá el concepto de zona que se utilizará, así como la manera de operar con las zonas.  \\
 } % descripcion
 	{} % criterios de aceptacion
@@ -479,19 +477,21 @@ Criterios de aceptación:\\
 
 \userStory	{US82} % ID en el Rally
 	{Como usuario espero realizar búsquedas filtrando por zona} % titulo
-	{El sistema debe permitir una funcionalidad en la que el usuario pueda elegir e
-indicar una zona al momento de hacer su consulta, en caso de que lo desee; si
-lo hace, las respuestas que reciba deberán estar restringidas a ofertas dentro
-de dicha zona.
+	{El sistema debe permitir una funcionalidad en la que el usuario pueda elegir e\\
+indicar una zona al momento de hacer su consulta, en caso de que lo desee; si\\
+lo hace, las respuestas que reciba deberán estar restringidas a ofertas dentro\\
+de dicha zona.\\
   \\
-Queda pendiente definir el concepto de zona, y decidir si estarán fijadas por
-el sistema o pueden ser delimitadas por el usuario durante la consulta.
+Queda pendiente definir el concepto de zona, y decidir si estarán fijadas por\\
+el sistema o pueden ser delimitadas por el usuario durante la consulta.\\
   \\
-Esta historia es dependente de la investigación previa realizada en la US110
+Esta historia es dependente de la investigación previa realizada en la US110\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El usuario podrá elegir buscar ofertas por zona, y en dicho caso, podrá especificar una zona.  \\
 * Todas las direcciones de las ofertas devueltas en el resultado estarán dentro de la zona elegida por el usuario.\\
+  \\
+\textbf{Bussiness Value:} 6\\
 } % descripcion
 	{} % criterios de aceptacion
 	{8.0} % story points
@@ -513,13 +513,15 @@ Criterios de aceptación:\\
 
 \userStory	{US83} % ID en el Rally
 	{Como usuario quiero realizar búsquedas con la estrategia "gastando lo menos posible"} % titulo
-	{Cuando se realiza una consulta, se puede elegir la estrategia "gastando lo
-menos posible", que consiste en seleccionar las ofertas de precio mínimo entre
-todas las ofertas válidas, y solamente mostrar esas en el resultado.
+	{Cuando se realiza una consulta, se puede elegir la estrategia "gastando lo\\
+menos posible", que consiste en seleccionar las ofertas de precio mínimo entre\\
+todas las ofertas válidas, y solamente mostrar esas en el resultado.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * Cuando el usuario haga una consulta, podrá elegir que se aplique la estrategia "gastando lo menos posible"  \\
-* Si está seleccionada, el sistema solamente retornará como respuesta las ofertas con el precio más económico entre las que encontró para un determinado producto.\\
+* Si está seleccionada, el sistema solamente retornará como respuesta las ofertas con el precio más económico entre las que encontró para un determinado producto. \\
+  \\
+\textbf{Bussiness Value:} 9\\
 } % descripcion
 	{} % criterios de aceptacion
 	{3.0} % story points
@@ -532,14 +534,16 @@ Criterios de aceptación:\\
 
 \userStory	{US85} % ID en el Rally
 	{Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto} % titulo
-	{Se desea tener una funcionalidad básica del sistema, que es la siguiente: el
-usuario ingresa el nombre de un producto válido, y el sistema devuelve un
-conjunto de ofertas relacionadas con dicho producto, las cuales se consiguen a
-partir de información de tweets.
+	{Se desea tener una funcionalidad básica del sistema, que es la siguiente: el\\
+usuario ingresa el nombre de un producto válido, y el sistema devuelve un\\
+conjunto de ofertas relacionadas con dicho producto, las cuales se consiguen a\\
+partir de información de tweets.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El usuario podrá elegir un producto para realizar su consulta, y sabrá si el producto elegido es válido.  \\
-* El sistema devolverá una lista de ofertas para el producto, que incluyen información de precio por unidad y lugar.\\
+* El sistema devolverá una lista de ofertas para el producto, que incluyen información de precio por unidad y lugar. \\
+  \\
+\textbf{Bussiness Value:} 3\\
 } % descripcion
 	{} % criterios de aceptacion
 	{3.0} % story points
@@ -549,7 +553,7 @@ Criterios de aceptación:\\
 
 	\task	{TA108} % ID en el Rally
 		{Implementar una forma de exportar los productos soportados en el backend} % titulo
-		{La interfaz REST debe exportar, mediante un método /products, la lista de
+		{La interfaz REST debe exportar, mediante un método /products, la lista de\\
 productos soportados junto con su unidad.\\
 } % descripcion
 		{4.0} % horas estimadas
@@ -559,9 +563,9 @@ productos soportados junto con su unidad.\\
 
 	\task	{TA109} % ID en el Rally
 		{Implementar la obtención de los productos en el frontend} % titulo
-		{Se necesita que el cliente de la aplicación consulte satisfactoriamente al
-backend y pueda obtener la lista de los productos soportados y sus unidades
-para operar con ellos o presentárselos al usuario.
+		{Se necesita que el cliente de la aplicación consulte satisfactoriamente al\\
+backend y pueda obtener la lista de los productos soportados y sus unidades\\
+para operar con ellos o presentárselos al usuario.\\
 } % descripcion
 		{4.0} % horas estimadas
 		{Juan M} % story owner
@@ -570,8 +574,8 @@ para operar con ellos o presentárselos al usuario.
 
 	\task	{TA110} % ID en el Rally
 		{Mostrar al usuario la lista de productos soportados y permitirle elegir un producto} % titulo
-		{La interfaz con la que se comunica el usuario le debe dar a elegir al mismo
-uno o más productos de la lista de productos válidos, y esta selección debe
+		{La interfaz con la que se comunica el usuario le debe dar a elegir al mismo\\
+uno o más productos de la lista de productos válidos, y esta selección debe\\
 estar visible durante el resto de la consulta.\\
 } % descripcion
 		{4.0} % horas estimadas
@@ -584,12 +588,12 @@ estar visible durante el resto de la consulta.\\
 
 \userStory	{US105} % ID en el Rally
 	{Como desarrollador quiero tener una implementación básica del frontend y backend} % titulo
-	{Se necesita tener un código del backend que provea una API para comunicarse
-con el frontend. También necesitamos definir un frontend que sepa comunicarse
-con esa API y además provea un interfaz para que el usuario pueda realizar
+	{Se necesita tener un código del backend que provea una API para comunicarse\\
+con el frontend. También necesitamos definir un frontend que sepa comunicarse\\
+con esa API y además provea un interfaz para que el usuario pueda realizar\\
 consultas.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El backend deberá ponerse en funcionamiento y proveer una API REST.  \\
 * El frontend tendrá una interfaz visible para el usuario. Además podrá comunicarse con la API del backend.  \\
 * El código podrá ser fácilmente extensible para agregar funcionalidad.\\
@@ -602,8 +606,8 @@ Criterios de aceptación:\\
 
 	\task	{TA145} % ID en el Rally
 		{Instalar todos los componentes necesarios para el desarrollo} % titulo
-		{Necesitamos que todos los integrantes del grupo instalemos las aplicaciones
-que se necesitan para desarrollar el software: Python, Tweepy, Git.
+		{Necesitamos que todos los integrantes del grupo instalemos las aplicaciones\\
+que se necesitan para desarrollar el software: Python, Tweepy, Git.\\
 } % descripcion
 		{5.0} % horas estimadas
 		{Juan M} % story owner
@@ -612,9 +616,9 @@ que se necesitan para desarrollar el software: Python, Tweepy, Git.
 
 	\task	{TA146} % ID en el Rally
 		{Crear el proyecto inicial} % titulo
-		{Se debe crear un proyecto que incluya espacio para el código fuente, la
-documentación y los diagramas de diseño. Cada uno de ellos deberá ser
-completado a medida que avanza el proyecto.
+		{Se debe crear un proyecto que incluya espacio para el código fuente, la\\
+documentación y los diagramas de diseño. Cada uno de ellos deberá ser\\
+completado a medida que avanza el proyecto.\\
 } % descripcion
 		{4.0} % horas estimadas
 		{Juan M} % story owner
@@ -623,9 +627,9 @@ completado a medida que avanza el proyecto.
 
 	\task	{TA147} % ID en el Rally
 		{Agregar un primer código que le dé cierta funcionalidad al cliente frontend} % titulo
-		{Se necesita un código básico de un frontend que pueda comunicarse con el
-backend de nuestro sistema a través de una API, y con el usuario por medio de
-una interfaz.
+		{Se necesita un código básico de un frontend que pueda comunicarse con el\\
+backend de nuestro sistema a través de una API, y con el usuario por medio de\\
+una interfaz.\\
 } % descripcion
 		{4.0} % horas estimadas
 		{Juan M} % story owner
@@ -643,7 +647,7 @@ una interfaz.
 
 	\task	{TA149} % ID en el Rally
 		{Implementar la conexión con el servicio REST} % titulo
-		{El frontend debe ser capaz de comunicarse con el backend, por medio de la API
+		{El frontend debe ser capaz de comunicarse con el backend, por medio de la API\\
 REST de este último.\\
 } % descripcion
 		{4.0} % horas estimadas
@@ -653,7 +657,7 @@ REST de este último.\\
 
 	\task	{TA150} % ID en el Rally
 		{Validar los funcionamientos generados} % titulo
-		{Es necesario testear la funcionalidad del frontend y backend en cuanto a
+		{Es necesario testear la funcionalidad del frontend y backend en cuanto a\\
 comunicación.\\
 } % descripcion
 		{4.0} % horas estimadas
@@ -666,16 +670,18 @@ comunicación.\\
 
 \userStory	{US102} % ID en el Rally
 	{Como usuario quiero realizar búsquedas filtrando por la estrategia 'caminando lo menos posible'} % titulo
-	{En una consulta del usuario se puede elegir la estrategia 'caminando lo menos
-posible', que elige, entre las ofertas válidas para un producto, aquella que
-se encuentra más cerca de la posición actual del usuario.
-Considerar: la funcionalidad será distinta si se permite la búsqueda
-simultánea de varios productos (Ver US126).
+	{En una consulta del usuario se puede elegir la estrategia 'caminando lo menos\\
+posible', que elige, entre las ofertas válidas para un producto, aquella que\\
+se encuentra más cerca de la posición actual del usuario.\\
+Considerar: la funcionalidad será distinta si se permite la búsqueda\\
+simultánea de varios productos (Ver US126).\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * En la interfaz deberá figurar la opción para elegir la estrategia 'caminando lo menos posible'\\
 * El resultado de aplicar esta estrategia deberá mostrar la oferta que cumpla con los demás filtros (rango, zona, etc.), y además sea la mas cercana a la posición del usuario.\\
 * En caso de que el sistema no logre ubicar al usuario, un error será mostrado al usuario, indicando que no es posible ejecutar la consulta porque el sistema no conoce su ubicación.\\
+  \\
+\textbf{Bussiness Value:} 8\\
 } % descripcion
 	{} % criterios de aceptacion
 	{3.0} % story points
@@ -688,11 +694,11 @@ Criterios de aceptación:\\
 
 \userStory	{US100} % ID en el Rally
 	{Como PO quiero enfocarme en productos de primera necesidad.} % titulo
-	{Desde los requerimientos iniciales se estableció que el sistema se enfocará en
-buscar ofertas para productos de primera necesidad. Cuales son estos productos
+	{Desde los requerimientos iniciales se estableció que el sistema se enfocará en\\
+buscar ofertas para productos de primera necesidad. Cuales son estos productos\\
 deberá ser definido por el product owner.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El sistema admite como productos a buscar aquellos definidos por el product owner.\\
 } % descripcion
 	{} % criterios de aceptacion
@@ -724,13 +730,13 @@ Criterios de aceptación:\\
 
 \userStory	{US89} % ID en el Rally
 	{Como PO espero poder agregar y eliminar productos de la lista de productos soportados junto con su respectiva unidad} % titulo
-	{El sistema está pensado para tratar con productos "de primera necesidad", y el
-objetivo es tener una lista cerrada de productos soportados. En principio esta
-lista es fija, pero se quiere que en un futuro pueda ser modificada, agregando
-o quitando productos según las decisiones del Product Owner, que puede querer
+	{El sistema está pensado para tratar con productos "de primera necesidad", y el\\
+objetivo es tener una lista cerrada de productos soportados. En principio esta\\
+lista es fija, pero se quiere que en un futuro pueda ser modificada, agregando\\
+o quitando productos según las decisiones del Product Owner, que puede querer\\
 que un producto sea o no soportado por la aplicación.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * Un administrador del sistema podrá incluir un nuevo producto para ser soportado por la aplicación, junto con una o más unidades de medida asociadas. Los usuarios podrán consultar por dicho producto luego de que haya sido dado de alta, y el funcionamiento deberá ser correcto al igual que con los productos originales.  \\
 * Un administrador podrá eliminar un producto de la lista. Los usuarios no podrán volver a consultar sobre dicho producto en la aplicación.  \\
 * Un administrador podrá agregar una nueva unidad asociada a un producto existente. Las respuestas a las consultas de dicho producto incluirán ofertas con dicho producto y unidad. También podrá ser eliminada una unidad existente, y las ofertas que usen esa unidad no aparecerán.\\
@@ -746,14 +752,16 @@ Criterios de aceptación:\\
 
 \userStory	{US87} % ID en el Rally
 	{Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos} % titulo
-	{El mapa es un método visualmente eficiente para mostrar las ofertas que son
-respuesta a una consulta del usuario. La dirección puede ser señalada con un
-punto en el mapa, y el resto de la información puede verse en el epígrafe que
+	{El mapa es un método visualmente eficiente para mostrar las ofertas que son\\
+respuesta a una consulta del usuario. La dirección puede ser señalada con un\\
+punto en el mapa, y el resto de la información puede verse en el epígrafe que\\
 acompaña al punto.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * Cuando el usuario realiza una consulta, podrá elegir que los resultados se muestren en un mapa.  \\
-* Las direcciones de todas las ofertas resultantes aparecerán como puntos en el mapa, y los datos restantes de las ofertas estarán escritos al costado de cada punto.\\
+* Las direcciones de todas las ofertas resultantes aparecerán como puntos en el mapa, y los datos restantes de las ofertas estarán escritos al costado de cada punto. \\
+  \\
+\textbf{Bussiness Value:} 7\\
 } % descripcion
 	{} % criterios de aceptacion
 	{13.0} % story points
@@ -776,8 +784,8 @@ Criterios de aceptación:\\
 
 	\task	{TA106} % ID en el Rally
 		{Implementar en el cliente la comunicación con Google Maps} % titulo
-		{El código implementado debe tomar los resultados devueltos por el backend y
-traducirlos y enviárselos a la api de google maps para que cree el mapa con
+		{El código implementado debe tomar los resultados devueltos por el backend y\\
+traducirlos y enviárselos a la api de google maps para que cree el mapa con\\
 los datos de interés.\\
 } % descripcion
 		{} % horas estimadas
@@ -787,7 +795,7 @@ los datos de interés.\\
 
 	\task	{TA107} % ID en el Rally
 		{Implementar en el cliente el display del mapa con los resultados} % titulo
-		{Utilizando los resultados de la api de maps, el código debe permitir
+		{Utilizando los resultados de la api de maps, el código debe permitir\\
 visualizar en el cliente el mapa generado.\\
 } % descripcion
 		{} % horas estimadas
@@ -801,17 +809,17 @@ visualizar en el cliente el mapa generado.\\
 \userStory	{US118} % ID en el Rally
 	{Como desarrollador quiero filtrar las ofertas por la estrategia "caminando lo menos posible"} % titulo
 	{**Requerimiento:**\\
-El usuario debe poder comunicar la información sobre su ubicación actual. En
-un principio podría transmitirla directamente por texto, indicando
-$<$ Calle$>$ $<$ Altura$>$ ; más adelante podría hacerlo utilizando algún método de
-geolocalización. (Ver US127)
+El usuario debe poder comunicar la información sobre su ubicación actual. En\\
+un principio podría transmitirla directamente por texto, indicando\\
+$<$ Calle$>$ $<$ Altura$>$ ; más adelante podría hacerlo utilizando algún método de\\
+geolocalización. (Ver US127)\\
+  \\
   \\
 Criterio de aceptación:\\
   \\
 * El usuario ingresa una búsqueda de un producto y selecciona la estrategia "caminando lo menos posible".  \\
 * El resultado de la búsqueda será, entre las ofertas que cumplen las demás restricciones seleccionadas, la mas cercana a la posición informada por el usuario.\\
 * En caso de no haber ofertas disponibles que cumplan las restricciones, se informará de esto al usuario mediante un mensaje. \\
-  \\
   \\
 } % descripcion
 	{} % criterios de aceptacion
@@ -825,15 +833,17 @@ Criterio de aceptación:\\
 
 \userStory	{US86} % ID en el Rally
 	{Como usuario quiero ingresar el nombre de un producto y que el sistema me ofrezca los productos válidos más similares lexicográficamente} % titulo
-	{Se desea que el usuario pueda ingresar el nombre del producto que quiere
-buscar en formato "string", dentro de un campo de texto provisto por la
-interfaz. El sistema deberá mostrar los productos válidos que se parecen
-lexicográficamente al ingresado, y el usuario tendrá que elegir uno.
+	{Se desea que el usuario pueda ingresar el nombre del producto que quiere\\
+buscar en formato "string", dentro de un campo de texto provisto por la\\
+interfaz. El sistema deberá mostrar los productos válidos que se parecen\\
+lexicográficamente al ingresado, y el usuario tendrá que elegir uno.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El usuario puede ingresar cualquier palabra o frase en el campo de texto llamado "producto". Por ejemplo, "japón".  \\
 * El sistema deberá mostrar una lista con productos que se parecen lexicográficamente al texto ingresado. Por ejemplo, "jamón; jabón" (suponiendo que en el momento de la consulta ambos son productos válidos del sistema).  \\
-* De no haber ningún producto que se considere parecido, se deberá indicar que no hay conicidencias. El usuario deberá poder borrar y reescribir el producto.\\
+* De no haber ningún producto que se considere parecido, se deberá indicar que no hay conicidencias. El usuario deberá poder borrar y reescribir el producto. \\
+  \\
+\textbf{Bussiness Value:} 4\\
 } % descripcion
 	{} % criterios de aceptacion
 	{5.0} % story points
@@ -846,18 +856,20 @@ Criterios de aceptación:\\
 
 \userStory	{US127} % ID en el Rally
 	{Como desarrollador quiero poder obtener la informaciòn de localización del usuario} % titulo
-	{En la actualidad, muchos dispositivos móviles tienen la capacidad de obtener
-información acerca de la ubicación actual del usuario, y comunicar este dato a
-las aplicaciones que están corriendo. La aplicación de Precio Justo la
-necesita para algunas de sus funcionalidades, por ejemplo la estrategia
-"caminando lo menos posible". Por lo tanto, es útil poder recibir la
-localización del usuario y operar con ella.
-En caso de no estar disponible la información en forma automática, un método
-alternativo para obtenerla es el de pedirle al usuario que la ingrese
+	{En la actualidad, muchos dispositivos móviles tienen la capacidad de obtener\\
+información acerca de la ubicación actual del usuario, y comunicar este dato a\\
+las aplicaciones que están corriendo. La aplicación de Precio Justo la\\
+necesita para algunas de sus funcionalidades, por ejemplo la estrategia\\
+"caminando lo menos posible". Por lo tanto, es útil poder recibir la\\
+localización del usuario y operar con ella.\\
+En caso de no estar disponible la información en forma automática, un método\\
+alternativo para obtenerla es el de pedirle al usuario que la ingrese\\
 manualmente.\\
   \\
-Criterios de aceptación:\\
-* El sistema conocerá la ubicación actual del usuario en cualquier momento que la necesite para operar.\\
+\textbf{Criterios de aceptación:}\\
+* El sistema conocerá la ubicación actual del usuario en cualquier momento que la necesite para operar. \\
+  \\
+\textbf{Bussiness Value:} 3\\
 } % descripcion
 	{} % criterios de aceptacion
 	{8.0} % story points
@@ -870,25 +882,26 @@ Criterios de aceptación:\\
 
 \userStory	{US91} % ID en el Rally
 	{Como usuario de la comunidad de Twitter quiero poder especificar una fecha de expiración para mi tweet de precioJusto} % titulo
-	{Cuando el usuario de Twitter publica un tweet de precioJusto, es posible que
-sepa que la oferta que está informando sólo es válida por tiempo limitado. En
-ese caso querría informar la fecha de expiración de la oferta cuando publica
-el tweet.
-
-Por otra parte, queremos investigar otras maneras de conseguir el dato de una
-fecha de expiración. Por ejemplo, el usuario de Twitter que la publicó puede
-querer avisar que ya no es válida. También un usuario de nuestro sistema, que
-recibió la oferta en su búsqueda pero descubrió que ya no era válida, puede
-querer informarlo.
-  
-Además, queremos designar una fecha de expiración por defecto en las ofertas
-que no tienen una, para que los usuarios no reciban información obsoleta. Se
-desea investigar un valor razonable para este default.
+	{Cuando el usuario de Twitter publica un tweet de precioJusto, es posible que\\
+sepa que la oferta que está informando sólo es válida por tiempo limitado. En\\
+ese caso querría informar la fecha de expiración de la oferta cuando publica\\
+el tweet.\\
+Por otra parte, queremos investigar otras maneras de conseguir el dato de una\\
+fecha de expiración. Por ejemplo, el usuario de Twitter que la publicó puede\\
+querer avisar que ya no es válida. También un usuario de nuestro sistema, que\\
+recibió la oferta en su búsqueda pero descubrió que ya no era válida, puede\\
+querer informarlo.\\
   \\
-Criterios de aceptación:\\
+Además, queremos designar una fecha de expiración por defecto en las ofertas\\
+que no tienen una, para que los usuarios no reciban información obsoleta. Se\\
+desea investigar un valor razonable para este default.\\
+  \\
+\textbf{Criterios de aceptación:}\\
 * El sistema tiene una fecha de expiración asignada a cada oferta.  \\
 * Si un usuario de Twitter publica un tweet que incluye una fecha límite, esta fecha deberá asignarse a la oferta.  \\
-* Ninguna oferta deberá aparecer como parte de un resultado de búsqueda si su fecha de expiración ya pasó.\\
+* Ninguna oferta deberá aparecer como parte de un resultado de búsqueda si su fecha de expiración ya pasó. \\
+  \\
+\textbf{Bussiness Value:} 5\\
 } % descripcion
 	{} % criterios de aceptacion
 	{} % story points
@@ -901,13 +914,13 @@ Criterios de aceptación:\\
 
 \userStory	{US112} % ID en el Rally
 	{Epic: Como usuario deseo tener una interfaz para acceder a la aplicación desde distintos dispositivos} % titulo
-	{Se quiere desarrollar distintas interfaces para que el usuario consulte a la
-aplicación. Por el momento el Product Owner no requiere la implementación de
-ninguna interfaz en particular, pero a futuro puede hacerlo. Se deberá
-desarrollar la interfaz pedida, y asegurar que puede comunicarse correctamente
+	{Se quiere desarrollar distintas interfaces para que el usuario consulte a la\\
+aplicación. Por el momento el Product Owner no requiere la implementación de\\
+ninguna interfaz en particular, pero a futuro puede hacerlo. Se deberá\\
+desarrollar la interfaz pedida, y asegurar que puede comunicarse correctamente\\
 con nuestro sistema.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El usuario podrá interactuar con el sistema correctamente a través de la interfaz de su dispositivo.\\
 } % descripcion
 	{} % criterios de aceptacion
@@ -920,16 +933,16 @@ Criterios de aceptación:\\
 \vspace{20pt}
 
 \userStory	{US98} % ID en el Rally
-	{Epic: Como PO espero que se pueda obtener información de tweets sin el hashtag \#precioJusto, y de otros medios de comunicación} % titulo
-	{A futuro se desea incorporar nuevas fuentes de información para conocer
-ofertas. Por el momento se requiere que las ofertas se obtengan por medio de
-tweets terminados con el hashtag \#precioJusto. Sabemos que en próximas etapas
-del desarrollo se puede requerir que el sistema obtenga información de
-cualquier tweet, y también es posible que se quiera buscar en otras redes
-sociales como Facebook y Google+. Cuando esto se pida, deberemos asegurar que
-podemos extraer información correcta y completa de estas fuentes.
+	{Epic: Como PO espero que se pueda obtener información de tweets sin el hashtag #precioJusto, y de otros medios de comunicación} % titulo
+	{A futuro se desea incorporar nuevas fuentes de información para conocer\\
+ofertas. Por el momento se requiere que las ofertas se obtengan por medio de\\
+tweets terminados con el hashtag \#precioJusto. Sabemos que en próximas etapas\\
+del desarrollo se puede requerir que el sistema obtenga información de\\
+cualquier tweet, y también es posible que se quiera buscar en otras redes\\
+sociales como Facebook y Google+. Cuando esto se pida, deberemos asegurar que\\
+podemos extraer información correcta y completa de estas fuentes.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * Cuando se designen nuevas fuentes de información, el sistema deberá poder leer, interpretar y usar los datos obtenidos de dichas fuentes.\\
 } % descripcion
 	{} % criterios de aceptacion
@@ -943,20 +956,21 @@ Criterios de aceptación:\\
 
 \userStory	{US92} % ID en el Rally
 	{Como usuario espero que las ofertas obtenidas como respuesta sean las más recientes} % titulo
-	{Se debe proveer al sistema mecanismos que le permitan reconocer ofertas
-obsoletas entre los tweets que consigue. Consideramos que una oferta es
-obsoleta si existe un tweet más reciente que informa sobre el mismo producto
-en el mismo lugar, con un precio actualizado. Se desea que el sistema
-reconozca cuál es el tweet menos reciente y lo descarte por ser información
-obsoleta.
-
-En caso de que el precio en ambos tweets sea el mismo, se lo considera
-información repetida, por lo que también se puede descartar al más antiguo sin
+	{Se debe proveer al sistema mecanismos que le permitan reconocer ofertas\\
+obsoletas entre los tweets que consigue. Consideramos que una oferta es\\
+obsoleta si existe un tweet más reciente que informa sobre el mismo producto\\
+en el mismo lugar, con un precio actualizado. Se desea que el sistema\\
+reconozca cuál es el tweet menos reciente y lo descarte por ser información\\
+obsoleta.\\
+En caso de que el precio en ambos tweets sea el mismo, se lo considera\\
+información repetida, por lo que también se puede descartar al más antiguo sin\\
 inconvenientes.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * El usuario realiza una búsqueda por un producto, para el cual el sistema conoce dos ofertas del mismo lugar, con distinto precio y distinta fecha.  \\
-* La oferta de fecha menos reciente no deberá ser incluida en la respuesta en ningún caso. La más reciente será incluida en el caso de que cumpla con todos los criterios impuestos por los filtros y estrategias de la búsqueda.\\
+* La oferta de fecha menos reciente no deberá ser incluida en la respuesta en ningún caso. La más reciente será incluida en el caso de que cumpla con todos los criterios impuestos por los filtros y estrategias de la búsqueda. \\
+  \\
+\textbf{Bussiness Value:} 6\\
 } % descripcion
 	{} % criterios de aceptacion
 	{} % story points
@@ -969,19 +983,21 @@ Criterios de aceptación:\\
 
 \userStory	{US95} % ID en el Rally
 	{Como usuario quiero poder interactuar con la información mostrada por el sistema (actualizar, denunciar, votar)} % titulo
-	{Se desea que los usuarios que recibieron una respuesta del sistema, en forma
-de una o más ofertas, puedan interactuar con ellas. Un usuario que descubre
-que la información ofrecida está desactualizada puede querer modificar esa
-oferta directamente desde el sistema (sin necesidad de abrir Twitter y
-escribir un tweet). Si encuentra que la información es incorrecta o engañosa
-puede querer denunciarla para que sea removida; también puede querer puntuar
-la calidad de la oferta de acuerdo a si su experiencia fue positiva o
+	{Se desea que los usuarios que recibieron una respuesta del sistema, en forma\\
+de una o más ofertas, puedan interactuar con ellas. Un usuario que descubre\\
+que la información ofrecida está desactualizada puede querer modificar esa\\
+oferta directamente desde el sistema (sin necesidad de abrir Twitter y\\
+escribir un tweet). Si encuentra que la información es incorrecta o engañosa\\
+puede querer denunciarla para que sea removida; también puede querer puntuar\\
+la calidad de la oferta de acuerdo a si su experiencia fue positiva o\\
 negativa.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * Un usuario recibe una oferta desde el sistema, y encuentra que, en la realidad, el precio o la dirección han cambiado. El usuario enviará una corrección de estos datos directamente desde el sistema. En consultas subsiguientes, los usuarios recibirán la información actualizada.  \\
 * Un usuario encuentra que en la realidad la oferta ya no existe, o bien es fraudulenta por algún motivo. El usuario denunciará la información desde el sistema. Cuando el sistema recibe suficiente evidencia de que la información es inválida, esta no deberá aparecer como resultado de ninguna consulta.  \\
-* Un usuario quiere valorar la experiencia de compra de un producto que consiguió a través de una oferta del sistema. El usuario ingresará su valoración, y en consultas subsiguientes, los usuarios la verán cuando reciban la oferta.\\
+* Un usuario quiere valorar la experiencia de compra de un producto que consiguió a través de una oferta del sistema. El usuario ingresará su valoración, y en consultas subsiguientes, los usuarios la verán cuando reciban la oferta. \\
+  \\
+\textbf{Bussiness Value:} 6\\
 } % descripcion
 	{} % criterios de aceptacion
 	{} % story points
@@ -994,16 +1010,18 @@ Criterios de aceptación:\\
 
 \userStory	{US120} % ID en el Rally
 	{Como usuario de la comunidad de Twitter quiero que mis tweets se prioricen a la hora de mostrar las ofertas según su cantidad de favs o retweets} % titulo
-	{Twitter provee funcionalidad para que los tweets puedan ser marcados como
-favoritos ("favs"), o compartidos ("retweets"), y se suele tomar estos datos
-como indicadores de la popularidad de un tweet. Queremos que nuestro sistema
-obtenga información de favs y retweets de los tweets que usamos para conocer
-ofertas, y que considere a los tweets más populares como "más confiables" y
+	{Twitter provee funcionalidad para que los tweets puedan ser marcados como\\
+favoritos ("favs"), o compartidos ("retweets"), y se suele tomar estos datos\\
+como indicadores de la popularidad de un tweet. Queremos que nuestro sistema\\
+obtenga información de favs y retweets de los tweets que usamos para conocer\\
+ofertas, y que considere a los tweets más populares como "más confiables" y\\
 "de mejor calidad".\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * Un usuario de Twitter escribe un tweet con una oferta que nuestro sistema puede leer. Este tweet recibe gran cantidad de favs y retweets.  \\
-* En una consulta cuyo resultado incluya a este tweet, el sistema deberá darle prioridad por sobre los otros tweets que tengan menor cantidad de favs y retweets.\\
+* En una consulta cuyo resultado incluya a este tweet, el sistema deberá darle prioridad por sobre los otros tweets que tengan menor cantidad de favs y retweets. \\
+  \\
+\textbf{Bussiness Value:} 6\\
 } % descripcion
 	{} % criterios de aceptacion
 	{} % story points
@@ -1016,16 +1034,18 @@ Criterios de aceptación:\\
 
 \userStory	{US126} % ID en el Rally
 	{Epic: Como usuario quiero poder buscar más de un producto en una misma consulta} % titulo
-	{Se quiere poder extender la funcionalidad actual de consultas del usuario para
-que pueda realizar una consulta con múltiples productos. Se debe investigar
-cómo afecta esta modificación a las funcionalidades ya existentes. Por
-ejemplo, en la estrategia "caminando lo menos posible", además de considerar
-la distancia entre el usuario y el producto, se debe contemplar la distancia
+	{Se quiere poder extender la funcionalidad actual de consultas del usuario para\\
+que pueda realizar una consulta con múltiples productos. Se debe investigar\\
+cómo afecta esta modificación a las funcionalidades ya existentes. Por\\
+ejemplo, en la estrategia "caminando lo menos posible", además de considerar\\
+la distancia entre el usuario y el producto, se debe contemplar la distancia\\
 entre cada par de productos entre los seleccionados.\\
   \\
-Criterios de aceptación:\\
+\textbf{Criterios de aceptación:}\\
 * Un usuario quiere buscar ofertas para dos o más productos en una misma consulta. El sistema deberá devolver resultados correctos para todos ellos.  \\
-* Los filtros y estrategias se aplicarán como corresponde considerando el hecho de que hay varios productos involucrados en el cálculo.\\
+* Los filtros y estrategias se aplicarán como corresponde considerando el hecho de que hay varios productos involucrados en el cálculo. \\
+  \\
+\textbf{Bussiness Value:} 8\\
 } % descripcion
 	{} % criterios de aceptacion
 	{} % story points

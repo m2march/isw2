@@ -175,16 +175,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094634" objectVersion="35" refObjectName="Como PO espero que la información sea obtenida a través de Twitter" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394094634" objectVersion="39" refObjectName="Como PO espero que la información sea obtenida a través de Twitter" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T19:45:57.333Z</CreationDate>
       <ObjectID>11394094634</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>El Product Owner desea que el sistema pueda comunicarse con Twitter para recibir información. Por lo tanto, es necesario asegurarse de que podemos recibir datos usando una conexión con Twitter, y que podemos decodificar y entender los datos recibidos.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El sistema tendrá una conexión con la API de Twitter y podrá descargar los datos que necesita&lt;br&gt;* Toda la información obtenida podrá ser leída por el sistema, los datos útiles deberán ser identificados, separados y convertidos a un formato utilizable por la aplicación.</Description>
+      <Description>El Product Owner desea que el sistema pueda comunicarse con Twitter para recibir información. Por lo tanto, es necesario asegurarse de que podemos recibir datos usando una conexión con Twitter, y que podemos decodificar y entender los datos recibidos.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El sistema tendrá una conexión con la API de Twitter y podrá descargar los datos que necesita&lt;br&gt;* Toda la información obtenida podrá ser leída por el sistema, los datos útiles deberán ser identificados, separados y convertidos a un formato utilizable por la aplicación.  &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Business value: 8&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US99</FormattedID>
-      <LastUpdateDate>2013-05-14T20:00:58.314Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T17:45:50.101Z</LastUpdateDate>
       <Name>Como PO espero que la información sea obtenida a través de Twitter</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343574048" refObjectName="Ivan P" type="User" />
@@ -366,16 +366,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11925858709" objectVersion="6" refObjectName="Como usuario del backend quiero conocer las estrategias provistas por el sistema" CreatedAt="42 minutes ago">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11925858709" objectVersion="10" refObjectName="Como usuario del backend quiero conocer las estrategias provistas por el sistema" CreatedAt="today at 1:30 am">
       <CreationDate>2013-05-16T04:30:29.634Z</CreationDate>
       <ObjectID>11925858709</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>En las capas de frontend que le presenten funcionalidad al usuario deseo poder mostrarle qué estrategias tiene disponible para resumir la información provista por el sistema. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Criterio de aceptación:&lt;/div&gt; &lt;div&gt;* La interfaz rest debe exponer la lista de estrategias disponibles mediante un método /strategies&lt;/div&gt;</Description>
+      <Description>En las capas de frontend que le presenten funcionalidad al usuario deseo poder mostrarle qué estrategias tiene disponible para resumir la información provista por el sistema.   &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Criterios de aceptación:&lt;/div&gt; &lt;div&gt;* La interfaz rest debe exponer la lista de estrategias disponibles mediante un método /strategies&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 5&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US147</FormattedID>
-      <LastUpdateDate>2013-05-16T04:31:34.454Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T18:00:49.893Z</LastUpdateDate>
       <Name>Como usuario del backend quiero conocer las estrategias provistas por el sistema</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343572394" refObjectName="Matias I" type="User" />
@@ -458,16 +458,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092969" objectVersion="36" refObjectName="Como usuario espero realizar búsquedas filtrando por un rango de precios" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092969" objectVersion="38" refObjectName="Como usuario espero realizar búsquedas filtrando por un rango de precios" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T19:30:34.919Z</CreationDate>
       <ObjectID>11394092969</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Cuando el usuario realiza una consulta, puede querer definir un rango de precios, de forma que en la respuesta del sistema solo aparezcan las ofertas cuyos precios son mayores a un valor mínimo y menores a un valor máximo. &lt;br /&gt;Nota: Esta story describe las atribuciones del frontend. La funcionalidad que permite que el backend realice un filtro sobre sus datos se encuentra en la US104.&lt;br&gt;&lt;br&gt;Criterios de aceptación:    &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* La inferfaz permitirá ingresar, de forma opcional, un rango de precios, formado por un valor MIN y un valor MAX.&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* Si los parámetros son ingresados incorrectamente la interfaz debe decirlo. Esto puede ocurrir si el rango es inválido o los números están mal escritos.&lt;/div&gt; &lt;div&gt;* Todas las ofertas sugeridas al finalizar la consulta se encontrarán dentro del rango explicitado.&lt;br /&gt;&lt;/div&gt;</Description>
+      <Description>Cuando el usuario realiza una consulta, puede querer definir un rango de precios, de forma que en la respuesta del sistema solo aparezcan las ofertas cuyos precios son mayores a un valor mínimo y menores a un valor máximo. &lt;br /&gt;Nota: Esta story describe las atribuciones del frontend. La funcionalidad que permite que el backend realice un filtro sobre sus datos se encuentra en la US104.&lt;br&gt;&lt;br&gt;Criterios de aceptación:     &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* La inferfaz permitirá ingresar, de forma opcional, un rango de precios, formado por un valor MIN y un valor MAX.&lt;br /&gt;&lt;/div&gt; &lt;div&gt;* Si los parámetros son ingresados incorrectamente la interfaz debe decirlo. Esto puede ocurrir si el rango es inválido o los números están mal escritos.&lt;/div&gt; &lt;div&gt;* Todas las ofertas sugeridas al finalizar la consulta se encontrarán dentro del rango explicitado.&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 5&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US96</FormattedID>
-      <LastUpdateDate>2013-05-15T20:20:09.153Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T17:46:33.161Z</LastUpdateDate>
       <Name>Como usuario espero realizar búsquedas filtrando por un rango de precios</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573121" refObjectName="Juan M" type="User" />
@@ -568,16 +568,16 @@
       <Attachments />
       <Blocked>true</Blocked>
       <Children>
-         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612345" objectVersion="23" refObjectName="Como usuario espero realizar búsquedas filtrando por zona" CreatedAt="Apr 13" type="HierarchicalRequirement">
+         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612345" objectVersion="25" refObjectName="Como usuario espero realizar búsquedas filtrando por zona" CreatedAt="Apr 13" type="HierarchicalRequirement">
             <CreationDate>2013-04-13T18:15:42.965Z</CreationDate>
             <ObjectID>11393612345</ObjectID>
             <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
             <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
             <Changesets />
-            <Description>&lt;div&gt;El sistema debe permitir una funcionalidad en la que el usuario pueda elegir e indicar una zona al momento de hacer su consulta,&amp;nbsp; en caso de que lo desee;&amp;nbsp; si lo hace, las respuestas que reciba deberán estar restringidas a ofertas dentro de dicha zona.&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; Queda pendiente definir el concepto de zona, y decidir si estarán fijadas por el sistema o pueden ser delimitadas por el usuario durante la consulta. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Esta historia es dependente de la investigación previa realizada en la US110&lt;br /&gt;&lt;br /&gt;Criterios de aceptación:&lt;br /&gt;* El usuario podrá elegir buscar ofertas por zona, y en dicho caso, podrá especificar una zona.&lt;br /&gt;* Todas las direcciones de las ofertas devueltas en el resultado estarán dentro de la zona elegida por el usuario.&lt;/div&gt;</Description>
+            <Description>&lt;div&gt;El sistema debe permitir una funcionalidad en la que el usuario pueda elegir e indicar una zona al momento de hacer su consulta,&amp;nbsp; en caso de que lo desee;&amp;nbsp; si lo hace, las respuestas que reciba deberán estar restringidas a ofertas dentro de dicha zona.&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; Queda pendiente definir el concepto de zona, y decidir si estarán fijadas por el sistema o pueden ser delimitadas por el usuario durante la consulta.  &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Esta historia es dependente de la investigación previa realizada en la US110&lt;br /&gt;&lt;br /&gt;Criterios de aceptación:&lt;br /&gt;* El usuario podrá elegir buscar ofertas por zona, y en dicho caso, podrá especificar una zona.&lt;br /&gt;* Todas las direcciones de las ofertas devueltas en el resultado estarán dentro de la zona elegida por el usuario.&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 6&lt;/div&gt;</Description>
             <Discussion />
             <FormattedID>US82</FormattedID>
-            <LastUpdateDate>2013-05-16T04:39:29.031Z</LastUpdateDate>
+            <LastUpdateDate>2013-05-16T18:05:50.520Z</LastUpdateDate>
             <Name>Como usuario espero realizar búsquedas filtrando por zona</Name>
             <Notes />
             <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -614,16 +614,16 @@
             <TestCaseStatus>NONE</TestCaseStatus>
             <TestCases />
          </HierarchicalRequirement>
-         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612579" objectVersion="12" refObjectName="Como usuario quiero realizar búsquedas con la estrategia &quot;gastando lo menos posible&quot;" CreatedAt="Apr 13" type="HierarchicalRequirement">
+         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612579" objectVersion="14" refObjectName="Como usuario quiero realizar búsquedas con la estrategia &quot;gastando lo menos posible&quot;" CreatedAt="Apr 13" type="HierarchicalRequirement">
             <CreationDate>2013-04-13T18:21:15.257Z</CreationDate>
             <ObjectID>11393612579</ObjectID>
             <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
             <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
             <Changesets />
-            <Description>Cuando se realiza una consulta, se puede elegir la estrategia "gastando lo menos posible", que consiste en seleccionar las ofertas de precio mínimo entre todas las ofertas válidas, y solamente mostrar esas en el resultado.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Cuando el usuario haga una consulta, podrá elegir que se aplique la estrategia "gastando lo menos posible"&lt;br&gt;* Si está seleccionada, el sistema solamente retornará como respuesta las ofertas con el precio más económico entre las que encontró para un determinado producto.</Description>
+            <Description>Cuando se realiza una consulta, se puede elegir la estrategia "gastando lo menos posible", que consiste en seleccionar las ofertas de precio mínimo entre todas las ofertas válidas, y solamente mostrar esas en el resultado.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Cuando el usuario haga una consulta, podrá elegir que se aplique la estrategia "gastando lo menos posible"&lt;br&gt;* Si está seleccionada, el sistema solamente retornará como respuesta las ofertas con el precio más económico entre las que encontró para un determinado producto. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 9&lt;/div&gt;</Description>
             <Discussion />
             <FormattedID>US83</FormattedID>
-            <LastUpdateDate>2013-05-15T19:16:31.773Z</LastUpdateDate>
+            <LastUpdateDate>2013-05-16T18:06:23.153Z</LastUpdateDate>
             <Name>Como usuario quiero realizar búsquedas con la estrategia "gastando lo menos posible"</Name>
             <Notes />
             <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -655,16 +655,16 @@
             <TestCaseStatus>NONE</TestCaseStatus>
             <TestCases />
          </HierarchicalRequirement>
-         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612976" objectVersion="24" refObjectName="Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto" CreatedAt="Apr 13" type="HierarchicalRequirement">
+         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393612976" objectVersion="26" refObjectName="Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto" CreatedAt="Apr 13" type="HierarchicalRequirement">
             <CreationDate>2013-04-13T18:26:36.805Z</CreationDate>
             <ObjectID>11393612976</ObjectID>
             <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
             <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
             <Changesets />
-            <Description>Se desea tener una funcionalidad básica del sistema, que es la siguiente: el usuario ingresa el nombre de un producto válido, y el sistema devuelve un conjunto de ofertas relacionadas con dicho producto, las cuales se consiguen a partir de información de tweets.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El usuario podrá elegir un producto para realizar su consulta, y sabrá si el producto elegido es válido.&lt;br&gt;* El sistema devolverá una lista de ofertas para el producto, que incluyen información de precio por unidad y lugar.</Description>
+            <Description>Se desea tener una funcionalidad básica del sistema, que es la siguiente: el usuario ingresa el nombre de un producto válido, y el sistema devuelve un conjunto de ofertas relacionadas con dicho producto, las cuales se consiguen a partir de información de tweets.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El usuario podrá elegir un producto para realizar su consulta, y sabrá si el producto elegido es válido.&lt;br&gt;* El sistema devolverá una lista de ofertas para el producto, que incluyen información de precio por unidad y lugar. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 3&lt;/div&gt;</Description>
             <Discussion />
             <FormattedID>US85</FormattedID>
-            <LastUpdateDate>2013-05-16T04:40:46.420Z</LastUpdateDate>
+            <LastUpdateDate>2013-05-16T18:06:49.659Z</LastUpdateDate>
             <Name>Como usuario quiero elegir un producto entre los soportados por el sistema para obtener precios de dicho producto</Name>
             <Notes />
             <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343572394" refObjectName="Matias I" type="User" />
@@ -754,16 +754,16 @@
             <TestCaseStatus>NONE</TestCaseStatus>
             <TestCases />
          </HierarchicalRequirement>
-         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394750875" objectVersion="19" refObjectName="Como usuario quiero realizar búsquedas filtrando por la estrategia 'caminando lo menos posible'" CreatedAt="Apr 13" type="HierarchicalRequirement">
+         <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394750875" objectVersion="21" refObjectName="Como usuario quiero realizar búsquedas filtrando por la estrategia 'caminando lo menos posible'" CreatedAt="Apr 13" type="HierarchicalRequirement">
             <CreationDate>2013-04-13T21:52:42.620Z</CreationDate>
             <ObjectID>11394750875</ObjectID>
             <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
             <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
             <Changesets />
-            <Description>&lt;div&gt;En una consulta del usuario se puede elegir la estrategia 'caminando lo menos posible', que elige, entre las ofertas válidas para un producto, aquella que se encuentra más cerca de la posición actual del usuario.&lt;br /&gt;Considerar: la funcionalidad será distinta si se permite la búsqueda simultánea de varios productos (Ver US126).&lt;br /&gt;&lt;br /&gt;Criterios de aceptación:&lt;/div&gt; &lt;div&gt;* En la interfaz deberá figurar la opción para elegir la estrategia 'caminando lo menos posible'&lt;/div&gt; &lt;div&gt;* El resultado de aplicar esta estrategia deberá mostrar la oferta que cumpla con los demás filtros (rango, zona, etc.), y además sea la mas cercana a la posición del usuario.&lt;/div&gt; &lt;div&gt;* En caso de que el sistema no logre ubicar al usuario, un error será mostrado al usuario, indicando que no es posible ejecutar la consulta porque el sistema no conoce su ubicación.&lt;/div&gt;</Description>
+            <Description>&lt;div&gt;En una consulta del usuario se puede elegir la estrategia 'caminando lo menos posible', que elige, entre las ofertas válidas para un producto, aquella que se encuentra más cerca de la posición actual del usuario.&lt;br /&gt;Considerar: la funcionalidad será distinta si se permite la búsqueda simultánea de varios productos (Ver US126).&lt;br /&gt;&lt;br /&gt;Criterios de aceptación:&lt;/div&gt; &lt;div&gt;* En la interfaz deberá figurar la opción para elegir la estrategia 'caminando lo menos posible'&lt;/div&gt; &lt;div&gt;* El resultado de aplicar esta estrategia deberá mostrar la oferta que cumpla con los demás filtros (rango, zona, etc.), y además sea la mas cercana a la posición del usuario.&lt;/div&gt; &lt;div&gt;* En caso de que el sistema no logre ubicar al usuario, un error será mostrado al usuario, indicando que no es posible ejecutar la consulta porque el sistema no conoce su ubicación.&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 8&lt;/div&gt;</Description>
             <Discussion />
             <FormattedID>US102</FormattedID>
-            <LastUpdateDate>2013-05-16T04:45:08.739Z</LastUpdateDate>
+            <LastUpdateDate>2013-05-16T18:03:31.223Z</LastUpdateDate>
             <Name>Como usuario quiero realizar búsquedas filtrando por la estrategia 'caminando lo menos posible'</Name>
             <Notes />
             <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -891,16 +891,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393613818" objectVersion="11" refObjectName="Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393613818" objectVersion="13" refObjectName="Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T18:37:37.922Z</CreationDate>
       <ObjectID>11393613818</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>El mapa es un método visualmente eficiente para mostrar las ofertas que son respuesta a una consulta del usuario. La dirección puede ser señalada con un punto en el mapa, y el resto de la información puede verse en el epígrafe que acompaña al punto.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Cuando el usuario realiza una consulta, podrá elegir que los resultados se muestren en un mapa.&lt;br&gt;* Las direcciones de todas las ofertas resultantes aparecerán como puntos en el mapa, y los datos restantes de las ofertas estarán escritos al costado de cada punto.</Description>
+      <Description>El mapa es un método visualmente eficiente para mostrar las ofertas que son respuesta a una consulta del usuario. La dirección puede ser señalada con un punto en el mapa, y el resto de la información puede verse en el epígrafe que acompaña al punto.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Cuando el usuario realiza una consulta, podrá elegir que los resultados se muestren en un mapa.&lt;br&gt;* Las direcciones de todas las ofertas resultantes aparecerán como puntos en el mapa, y los datos restantes de las ofertas estarán escritos al costado de cada punto. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 7&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US87</FormattedID>
-      <LastUpdateDate>2013-05-15T18:50:32.156Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T17:46:51.430Z</LastUpdateDate>
       <Name>Como usuario quiero que la información consultada se muestre en un mapa, indicando los lugares de compra y los precios de los productos</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -933,16 +933,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403431524" objectVersion="11" refObjectName="Como desarrollador quiero filtrar las ofertas por la estrategia &quot;caminando lo menos posible&quot;" CreatedAt="Apr 14">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403431524" objectVersion="15" refObjectName="Como desarrollador quiero filtrar las ofertas por la estrategia &quot;caminando lo menos posible&quot;" CreatedAt="Apr 14">
       <CreationDate>2013-04-14T22:59:27.910Z</CreationDate>
       <ObjectID>11403431524</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>&lt;div&gt;&lt;b&gt;Requerimiento:&lt;/b&gt;&lt;/div&gt; &lt;div&gt;El usuario debe poder comunicar la información sobre su ubicación actual. En un principio podría transmitirla directamente por texto, indicando &amp;lt;Calle&amp;gt;&amp;lt;Altura&amp;gt;; más adelante podría hacerlo utilizando algún método de geolocalización. (Ver US127)&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; Criterio de aceptación:    &lt;div&gt; &lt;br /&gt;* El usuario ingresa una búsqueda de un producto y selecciona la estrategia "caminando lo menos posible".&lt;br /&gt;    &lt;div&gt;* El resultado de la búsqueda será, entre las ofertas que cumplen las demás restricciones seleccionadas, la mas cercana a la posición informada por el usuario.&lt;/div&gt; &lt;div&gt;* En caso de no haber ofertas disponibles que cumplan las restricciones, se informará de esto al usuario mediante un mensaje. &amp;nbsp;&lt;/div&gt; &lt;div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</Description>
+      <Description>&lt;div&gt;&lt;b&gt;Requerimiento:&lt;/b&gt;&lt;/div&gt; &lt;div&gt;El usuario debe poder comunicar la información sobre su ubicación actual. En un principio podría transmitirla directamente por texto, indicando &amp;lt;Calle&amp;gt;&amp;lt;Altura&amp;gt;; más adelante podría hacerlo utilizando algún método de geolocalización. (Ver US127)&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; Criterio de aceptación:      &lt;div&gt; &lt;br /&gt;* El usuario ingresa una búsqueda de un producto y selecciona la estrategia "caminando lo menos posible".&lt;br /&gt;      &lt;div&gt;* El resultado de la búsqueda será, entre las ofertas que cumplen las demás restricciones seleccionadas, la mas cercana a la posición informada por el usuario.&lt;/div&gt; &lt;div&gt;* En caso de no haber ofertas disponibles que cumplan las restricciones, se informará de esto al usuario mediante un mensaje. &amp;nbsp;&lt;/div&gt; &lt;div&gt; &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US118</FormattedID>
-      <LastUpdateDate>2013-05-15T18:42:01.042Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T18:03:58.483Z</LastUpdateDate>
       <Name>Como desarrollador quiero filtrar las ofertas por la estrategia "caminando lo menos posible"</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343574048" refObjectName="Ivan P" type="User" />
@@ -974,16 +974,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393613186" objectVersion="6" refObjectName="Como usuario quiero ingresar el nombre de un producto y que el sistema me ofrezca los productos válidos más similares lexicográficamente" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393613186" objectVersion="8" refObjectName="Como usuario quiero ingresar el nombre de un producto y que el sistema me ofrezca los productos válidos más similares lexicográficamente" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T18:30:50.890Z</CreationDate>
       <ObjectID>11393613186</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Se desea que el usuario pueda ingresar el nombre del producto que quiere buscar en formato "string", dentro de un campo de texto provisto por la interfaz. El sistema deberá mostrar los productos válidos que se parecen lexicográficamente al ingresado, y el usuario tendrá que elegir uno.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El usuario puede ingresar cualquier palabra o frase en el campo de texto llamado "producto". Por ejemplo, "japón".&lt;br&gt;* El sistema deberá mostrar una lista con productos que se parecen lexicográficamente al texto ingresado. Por ejemplo, "jamón; jabón" (suponiendo que en el momento de la consulta ambos son productos válidos del sistema).&lt;br&gt;* De no haber ningún producto que se considere parecido, se deberá indicar que no hay conicidencias. El usuario deberá poder borrar y reescribir el producto.</Description>
+      <Description>Se desea que el usuario pueda ingresar el nombre del producto que quiere buscar en formato "string", dentro de un campo de texto provisto por la interfaz. El sistema deberá mostrar los productos válidos que se parecen lexicográficamente al ingresado, y el usuario tendrá que elegir uno.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El usuario puede ingresar cualquier palabra o frase en el campo de texto llamado "producto". Por ejemplo, "japón".&lt;br&gt;* El sistema deberá mostrar una lista con productos que se parecen lexicográficamente al texto ingresado. Por ejemplo, "jamón; jabón" (suponiendo que en el momento de la consulta ambos son productos válidos del sistema).&lt;br&gt;* De no haber ningún producto que se considere parecido, se deberá indicar que no hay conicidencias. El usuario deberá poder borrar y reescribir el producto. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 4&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US86</FormattedID>
-      <LastUpdateDate>2013-05-14T03:57:09.730Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T17:47:49.658Z</LastUpdateDate>
       <Name>Como usuario quiero ingresar el nombre de un producto y que el sistema me ofrezca los productos válidos más similares lexicográficamente</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -1012,16 +1012,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11423077743" objectVersion="9" refObjectName="Como desarrollador quiero poder obtener la informaciòn de localización del usuario" CreatedAt="Apr 15">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11423077743" objectVersion="11" refObjectName="Como desarrollador quiero poder obtener la informaciòn de localización del usuario" CreatedAt="Apr 15">
       <CreationDate>2013-04-15T21:21:38.000Z</CreationDate>
       <ObjectID>11423077743</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>En la actualidad, muchos dispositivos móviles tienen la capacidad de obtener información acerca de la ubicación actual del usuario, y comunicar este dato a las aplicaciones que están corriendo. La aplicación de Precio Justo la necesita para algunas de sus funcionalidades, por ejemplo la estrategia "caminando lo menos posible". Por lo tanto, es útil poder recibir la localización del usuario y operar con ella.&lt;br /&gt;En caso de no estar disponible la información en forma automática, un método alternativo para obtenerla es el de pedirle al usuario que la ingrese manualmente.&lt;br&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El sistema conocerá la ubicación actual del usuario en cualquier momento que la necesite para operar.</Description>
+      <Description>En la actualidad, muchos dispositivos móviles tienen la capacidad de obtener información acerca de la ubicación actual del usuario, y comunicar este dato a las aplicaciones que están corriendo. La aplicación de Precio Justo la necesita para algunas de sus funcionalidades, por ejemplo la estrategia "caminando lo menos posible". Por lo tanto, es útil poder recibir la localización del usuario y operar con ella.&lt;br /&gt;En caso de no estar disponible la información en forma automática, un método alternativo para obtenerla es el de pedirle al usuario que la ingrese manualmente.&lt;br&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El sistema conocerá la ubicación actual del usuario en cualquier momento que la necesite para operar. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 3&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US127</FormattedID>
-      <LastUpdateDate>2013-05-15T18:40:39.154Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T18:02:00.765Z</LastUpdateDate>
       <Name>Como desarrollador quiero poder obtener la informaciòn de localización del usuario</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -1050,16 +1050,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393616302" objectVersion="10" refObjectName="Como usuario de la comunidad de Twitter quiero poder especificar una fecha de expiración para mi tweet de precioJusto" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393616302" objectVersion="12" refObjectName="Como usuario de la comunidad de Twitter quiero poder especificar una fecha de expiración para mi tweet de precioJusto" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T18:55:12.442Z</CreationDate>
       <ObjectID>11393616302</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Cuando el usuario de Twitter publica un tweet de precioJusto, es posible que sepa que la oferta que está informando sólo es válida por tiempo limitado. En ese caso querría informar la fecha de expiración de la oferta cuando publica el tweet.&lt;br /&gt;Por otra parte, queremos investigar otras maneras de conseguir el dato de una fecha de expiración. Por ejemplo, el usuario de Twitter que la publicó puede querer avisar que ya no es válida. También un usuario de nuestro sistema, que recibió la oferta en su búsqueda pero descubrió que ya no era válida, puede querer informarlo. &lt;br&gt;&lt;br&gt;Además, queremos designar una fecha de expiración por defecto en las ofertas que no tienen una, para que los usuarios no reciban información obsoleta. Se desea investigar un valor razonable para este default.&lt;br&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El sistema tiene una fecha de expiración asignada a cada oferta.&lt;br&gt;* Si un usuario de Twitter publica un tweet que incluye una fecha límite, esta fecha deberá asignarse a la oferta.&lt;br&gt;* Ninguna oferta deberá aparecer como parte de un resultado de búsqueda si su fecha de expiración ya pasó.</Description>
+      <Description>Cuando el usuario de Twitter publica un tweet de precioJusto, es posible que sepa que la oferta que está informando sólo es válida por tiempo limitado. En ese caso querría informar la fecha de expiración de la oferta cuando publica el tweet.&lt;br /&gt;Por otra parte, queremos investigar otras maneras de conseguir el dato de una fecha de expiración. Por ejemplo, el usuario de Twitter que la publicó puede querer avisar que ya no es válida. También un usuario de nuestro sistema, que recibió la oferta en su búsqueda pero descubrió que ya no era válida, puede querer informarlo. &lt;br&gt;&lt;br&gt;Además, queremos designar una fecha de expiración por defecto en las ofertas que no tienen una, para que los usuarios no reciban información obsoleta. Se desea investigar un valor razonable para este default.&lt;br&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El sistema tiene una fecha de expiración asignada a cada oferta.&lt;br&gt;* Si un usuario de Twitter publica un tweet que incluye una fecha límite, esta fecha deberá asignarse a la oferta.&lt;br&gt;* Ninguna oferta deberá aparecer como parte de un resultado de búsqueda si su fecha de expiración ya pasó. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 5&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US91</FormattedID>
-      <LastUpdateDate>2013-05-14T04:18:00.041Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T17:48:07.367Z</LastUpdateDate>
       <Name>Como usuario de la comunidad de Twitter quiero poder especificar una fecha de expiración para mi tweet de precioJusto</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -1161,16 +1161,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393617197" objectVersion="6" refObjectName="Como usuario espero que las ofertas obtenidas como respuesta sean las más recientes" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11393617197" objectVersion="8" refObjectName="Como usuario espero que las ofertas obtenidas como respuesta sean las más recientes" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T19:01:24.161Z</CreationDate>
       <ObjectID>11393617197</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Se debe proveer al sistema mecanismos que le permitan reconocer ofertas obsoletas entre los tweets que consigue. Consideramos que una oferta es obsoleta si existe un tweet más reciente que informa sobre el mismo producto en el mismo lugar, con un precio actualizado. Se desea que el sistema reconozca cuál es el tweet menos reciente y lo descarte por ser información obsoleta. &lt;br /&gt;En caso de que el precio en ambos tweets sea el mismo, se lo considera información repetida, por lo que también se puede descartar al más antiguo sin inconvenientes.&lt;br&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El usuario realiza una búsqueda por un producto, para el cual el sistema conoce dos ofertas del mismo lugar, con distinto precio y distinta fecha.&lt;br&gt;* La oferta de fecha menos reciente no deberá ser incluida en la respuesta en ningún caso. La más reciente será incluida en el caso de que cumpla con todos los criterios impuestos por los filtros y estrategias de la búsqueda.</Description>
+      <Description>Se debe proveer al sistema mecanismos que le permitan reconocer ofertas obsoletas entre los tweets que consigue. Consideramos que una oferta es obsoleta si existe un tweet más reciente que informa sobre el mismo producto en el mismo lugar, con un precio actualizado. Se desea que el sistema reconozca cuál es el tweet menos reciente y lo descarte por ser información obsoleta. &lt;br /&gt;En caso de que el precio en ambos tweets sea el mismo, se lo considera información repetida, por lo que también se puede descartar al más antiguo sin inconvenientes.&lt;br&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* El usuario realiza una búsqueda por un producto, para el cual el sistema conoce dos ofertas del mismo lugar, con distinto precio y distinta fecha.&lt;br&gt;* La oferta de fecha menos reciente no deberá ser incluida en la respuesta en ningún caso. La más reciente será incluida en el caso de que cumpla con todos los criterios impuestos por los filtros y estrategias de la búsqueda. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 6&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US92</FormattedID>
-      <LastUpdateDate>2013-05-14T14:03:59.218Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T17:48:29.881Z</LastUpdateDate>
       <Name>Como usuario espero que las ofertas obtenidas como respuesta sean las más recientes</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -1198,16 +1198,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092181" objectVersion="10" refObjectName="Como usuario quiero poder interactuar con la información mostrada por el sistema (actualizar, denunciar, votar)" CreatedAt="Apr 13">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11394092181" objectVersion="12" refObjectName="Como usuario quiero poder interactuar con la información mostrada por el sistema (actualizar, denunciar, votar)" CreatedAt="Apr 13">
       <CreationDate>2013-04-13T19:27:19.590Z</CreationDate>
       <ObjectID>11394092181</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Se desea que los usuarios que recibieron una respuesta del sistema, en forma de una o más ofertas, puedan interactuar con ellas. Un usuario que descubre que la información ofrecida está desactualizada puede querer modificar esa oferta directamente desde el sistema (sin necesidad de abrir Twitter y escribir un tweet). Si encuentra que la información es incorrecta o engañosa puede querer denunciarla para que sea removida; también puede querer puntuar la calidad de la oferta de acuerdo a si su experiencia fue positiva o negativa.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Un usuario recibe una oferta desde el sistema, y encuentra que, en la realidad, el precio o la dirección han cambiado. El usuario enviará una corrección de estos datos directamente desde el sistema. En consultas subsiguientes, los usuarios recibirán la información actualizada.&lt;br&gt;* Un usuario encuentra que en la realidad la oferta ya no existe, o bien es fraudulenta por algún motivo. El usuario denunciará la información desde el sistema. Cuando el sistema recibe suficiente evidencia de que la información es inválida, esta no deberá aparecer como resultado de ninguna consulta.&lt;br&gt;* Un usuario quiere valorar la experiencia de compra de un producto que consiguió a través de una oferta del sistema. El usuario ingresará su valoración, y en consultas subsiguientes, los usuarios la verán cuando reciban la oferta.</Description>
+      <Description>Se desea que los usuarios que recibieron una respuesta del sistema, en forma de una o más ofertas, puedan interactuar con ellas. Un usuario que descubre que la información ofrecida está desactualizada puede querer modificar esa oferta directamente desde el sistema (sin necesidad de abrir Twitter y escribir un tweet). Si encuentra que la información es incorrecta o engañosa puede querer denunciarla para que sea removida; también puede querer puntuar la calidad de la oferta de acuerdo a si su experiencia fue positiva o negativa.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Un usuario recibe una oferta desde el sistema, y encuentra que, en la realidad, el precio o la dirección han cambiado. El usuario enviará una corrección de estos datos directamente desde el sistema. En consultas subsiguientes, los usuarios recibirán la información actualizada.&lt;br&gt;* Un usuario encuentra que en la realidad la oferta ya no existe, o bien es fraudulenta por algún motivo. El usuario denunciará la información desde el sistema. Cuando el sistema recibe suficiente evidencia de que la información es inválida, esta no deberá aparecer como resultado de ninguna consulta.&lt;br&gt;* Un usuario quiere valorar la experiencia de compra de un producto que consiguió a través de una oferta del sistema. El usuario ingresará su valoración, y en consultas subsiguientes, los usuarios la verán cuando reciban la oferta. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 6&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US95</FormattedID>
-      <LastUpdateDate>2013-05-14T14:33:22.057Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T17:48:53.295Z</LastUpdateDate>
       <Name>Como usuario quiero poder interactuar con la información mostrada por el sistema (actualizar, denunciar, votar)</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
@@ -1235,16 +1235,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403909173" objectVersion="5" refObjectName="Como usuario de la comunidad de Twitter quiero que mis tweets se prioricen a la hora de mostrar las ofertas según su cantidad de favs o retweets" CreatedAt="Apr 14">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11403909173" objectVersion="7" refObjectName="Como usuario de la comunidad de Twitter quiero que mis tweets se prioricen a la hora de mostrar las ofertas según su cantidad de favs o retweets" CreatedAt="Apr 14">
       <CreationDate>2013-04-14T23:32:07.786Z</CreationDate>
       <ObjectID>11403909173</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Twitter provee funcionalidad para que los tweets puedan ser marcados como favoritos ("favs"), o compartidos ("retweets"), y se suele tomar estos datos como indicadores de la popularidad de un tweet. Queremos que nuestro sistema obtenga información de favs y retweets de los tweets que usamos para conocer ofertas, y que considere a los tweets más populares como "más confiables" y "de mejor calidad".&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Un usuario de Twitter escribe un tweet con una oferta que nuestro sistema puede leer. Este tweet recibe gran cantidad de favs y retweets.&lt;br&gt;* En una consulta cuyo resultado incluya a este tweet, el sistema deberá darle prioridad por sobre los otros tweets que tengan menor cantidad de favs y retweets.</Description>
+      <Description>Twitter provee funcionalidad para que los tweets puedan ser marcados como favoritos ("favs"), o compartidos ("retweets"), y se suele tomar estos datos como indicadores de la popularidad de un tweet. Queremos que nuestro sistema obtenga información de favs y retweets de los tweets que usamos para conocer ofertas, y que considere a los tweets más populares como "más confiables" y "de mejor calidad".&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Un usuario de Twitter escribe un tweet con una oferta que nuestro sistema puede leer. Este tweet recibe gran cantidad de favs y retweets.&lt;br&gt;* En una consulta cuyo resultado incluya a este tweet, el sistema deberá darle prioridad por sobre los otros tweets que tengan menor cantidad de favs y retweets. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 6&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US120</FormattedID>
-      <LastUpdateDate>2013-05-15T18:24:27.123Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T17:49:08.149Z</LastUpdateDate>
       <Name>Como usuario de la comunidad de Twitter quiero que mis tweets se prioricen a la hora de mostrar las ofertas según su cantidad de favs o retweets</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343574048" refObjectName="Ivan P" type="User" />
@@ -1272,16 +1272,16 @@
       <TestCaseStatus>NONE</TestCaseStatus>
       <TestCases />
    </HierarchicalRequirement>
-   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11423074366" objectVersion="5" refObjectName="Epic: Como usuario quiero poder buscar más de un producto en una misma consulta" CreatedAt="Apr 15">
+   <HierarchicalRequirement rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/hierarchicalrequirement/11423074366" objectVersion="7" refObjectName="Epic: Como usuario quiero poder buscar más de un producto en una misma consulta" CreatedAt="Apr 15">
       <CreationDate>2013-04-15T21:19:10.942Z</CreationDate>
       <ObjectID>11423074366</ObjectID>
       <Subscription rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/subscription/7528484264" refObjectName="Universidad de Buenos Aires - Dpto Computacion" type="Subscription" />
       <Workspace rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/workspace/11287957817" refObjectName="TP1-2013" type="Workspace" />
       <Changesets />
-      <Description>Se quiere poder extender la funcionalidad actual de consultas del usuario para que pueda realizar una consulta con múltiples productos. Se debe investigar cómo afecta esta modificación a las funcionalidades ya existentes. Por ejemplo, en la estrategia "caminando lo menos posible", además de considerar la distancia entre el usuario y el producto, se debe contemplar la distancia entre cada par de productos entre los seleccionados.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Un usuario quiere buscar ofertas para dos o más productos en una misma consulta. El sistema deberá devolver resultados correctos para todos ellos.&lt;br&gt;* Los filtros y estrategias se aplicarán como corresponde considerando el hecho de que hay varios productos involucrados en el cálculo.</Description>
+      <Description>Se quiere poder extender la funcionalidad actual de consultas del usuario para que pueda realizar una consulta con múltiples productos. Se debe investigar cómo afecta esta modificación a las funcionalidades ya existentes. Por ejemplo, en la estrategia "caminando lo menos posible", además de considerar la distancia entre el usuario y el producto, se debe contemplar la distancia entre cada par de productos entre los seleccionados.&lt;br /&gt;&lt;br&gt;Criterios de aceptación:&lt;br&gt;* Un usuario quiere buscar ofertas para dos o más productos en una misma consulta. El sistema deberá devolver resultados correctos para todos ellos.&lt;br&gt;* Los filtros y estrategias se aplicarán como corresponde considerando el hecho de que hay varios productos involucrados en el cálculo. &lt;div&gt;&lt;br /&gt;&lt;/div&gt; &lt;div&gt;Bussiness Value: 8&lt;/div&gt;</Description>
       <Discussion />
       <FormattedID>US126</FormattedID>
-      <LastUpdateDate>2013-05-15T18:20:43.213Z</LastUpdateDate>
+      <LastUpdateDate>2013-05-16T18:02:18.841Z</LastUpdateDate>
       <Name>Epic: Como usuario quiero poder buscar más de un producto en una misma consulta</Name>
       <Notes />
       <Owner rallyAPIMajor="1" rallyAPIMinor="43" ref="https://rally1.rallydev.com/slm/webservice/x/user/11343573647" refObjectName="Martin M" type="User" />
