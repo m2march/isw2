@@ -200,8 +200,9 @@ En el siguiente diagrama se presenta el diagrama de secuencia para un \textbf{An
 \end{figure}
 \begin{landscape}
 \newpage
+En este diagrama se muestra el envío del mensaje \emph{createOffers} a un \textbf{OfferFactory} pasándole como parámetro un objeto Iterable, este almacena un conjuntos de objetos del tipo \textbf{RawInfo} los cuales pueden ser pedidos uno tras otro utilizando el mensaje \emph{next}. \\
 
-En este diagrama se muestra el envío del mensaje \emph{createOffers} a un \textbf{OfferFactory} pasándole como parámetro un Iterable con solo dos elementos, de los cuales el primero es un dato válido que es posible tranformarlo en oferta mientras que el segundo no lo es.
+En este caso particular el objeto Iterable va a contar con dos elementos en su interior, de los cuales el primero es un dato válido ya que el objeto RawInfo contiene un text parseable por el sistema(ej: "Leche a 5 p el lt en varela al 20 $#$precioJusto"), mientas que el segundo contiene información no parseable(ej: "los mejores productos $#$precioJusto").
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.60]{graphics/OfferFactory_sequence.jpg}

@@ -75,7 +75,7 @@ def formatoLatex(y):
 				if (i + 1 < len(y) and y[i+1] == "\n"):
 				  pass	
 				else:
-				  yy += "\\\\" +c
+				  yy += c
 			else:
 				yy += c
 	return yy
