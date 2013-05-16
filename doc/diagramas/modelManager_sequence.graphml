@@ -39,7 +39,7 @@
           <y:Geometry height="35.0" width="117.27551020408163" x="657.3571428571429" y="91.84693877551035"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="custom" textColor="#000000" visible="true" width="82.451171875" x="17.412169164540785" y="8.43359375">anOfferQuery<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="custom" textColor="#000000" visible="true" width="82.451171875" x="17.412169164540842" y="8.43359375">anOfferQuery<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -237,7 +237,7 @@
     <node id="n12">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="35.0" width="123.27551020408163" x="995.7619047619049" y="430.3877551020414"/>
+          <y:Geometry height="35.0" width="123.27551020408163" x="921.361904761905" y="430.3877551020414"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="custom" textColor="#000000" visible="true" width="111.982421875" x="5.646544164540842" y="8.43359375">anFilteredOfferList<y:LabelModel>
@@ -256,7 +256,7 @@
     <node id="n13">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="41.473958803002915" width="11.0" x="1051.0" y="577.5170068027437"/>
+          <y:Geometry height="41.473958803002915" width="11.0" x="978.9999999999999" y="579.1170068027436"/>
           <y:Fill color="#C0C0C0" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="3.5" y="18.736979401501458">
@@ -342,7 +342,7 @@
     <node id="n18">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="30.0" x="1041.0655181135662" y="664.5531044484792"/>
+          <y:Geometry height="30.0" width="30.0" x="970.6655181135661" y="671.7531044484792"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" type="dashed" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="custom" textColor="#000000" visible="false" width="11.587890625" x="9.2060546875" y="5.93359375">6<y:LabelModel>
@@ -422,10 +422,10 @@
     <node id="n22">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.bpmn.Gateway.withShadow">
-          <y:Geometry height="15.619009140725439" width="18.43636442860111" x="1048.5387566116283" y="667.2928635025066"/>
+          <y:Geometry height="15.619009140725439" width="18.43636442860111" x="974.9387566116283" y="674.7595301691732"/>
           <y:Fill color="#FFFFFFE6" color2="#D4D4D4CC" transparent="false"/>
           <y:BorderStyle color="#E38B00" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="22.43636442860111" y="-8.0">
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="22.436364428601337" y="-8.0">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -443,7 +443,6 @@
       </data>
     </node>
     <edge id="e0" source="n0" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -454,7 +453,6 @@
       </data>
     </edge>
     <edge id="e1" source="n5" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-15.008315518927702" sy="0.0" tx="-5.5234375" ty="-268.119285122674"/>
@@ -474,7 +472,6 @@ process(anOfferQuery)<y:LabelModel>
       </data>
     </edge>
     <edge id="e2" source="n4" target="n6">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="5.5078125" sy="-251.6360303947175" tx="-5.5390625" ty="-15.277186857303231"/>
@@ -494,7 +491,6 @@ getOffers()<y:LabelModel>
       </data>
     </edge>
     <edge id="e3" source="n6" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-5.4765625" sy="17.489125391922045" tx="5.5078125" ty="-218.86971814549221"/>
@@ -514,7 +510,6 @@ getOffers()<y:LabelModel>
       </data>
     </edge>
     <edge id="e4" source="n4" target="n7">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="5.522705743056349" sy="-175.33092319132243" tx="-5.4921875" ty="-11.25439257907965"/>
@@ -535,7 +530,6 @@ createOffers(anIterable)
       </data>
     </edge>
     <edge id="e5" source="n7" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-5.4921875" sy="20.554836748225398" tx="5.535000883542722" ty="-143.52169386401738"/>
@@ -555,7 +549,6 @@ createOffers(anIterable)
       </data>
     </edge>
     <edge id="e6" source="n4" target="n9">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="5.5227617066396135" sy="-100.3327640534747" tx="-5.4765625" ty="-15.820859291574891"/>
@@ -575,7 +568,6 @@ filter()<y:LabelModel>
       </data>
     </edge>
     <edge id="e7" source="n9" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-5.5078125" sy="13.988719225144678" tx="5.50590220832288" ty="-70.52318553675514"/>
@@ -595,7 +587,6 @@ filter()<y:LabelModel>
       </data>
     </edge>
     <edge id="e8" source="n4" target="n10">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="5.521913018257862" sy="-12.237113175540514" tx="-5.4765625" ty="-14.854460114326628"/>
@@ -615,7 +606,6 @@ filter(aFilter)<y:LabelModel>
       </data>
     </edge>
     <edge id="e9" source="n10" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-4.5" sy="16.004517197126688" tx="5.474798552155818" ty="24.511130950543475"/>
@@ -635,7 +625,6 @@ filter(aFilter)<y:LabelModel>
       </data>
     </edge>
     <edge id="e10" source="n4" target="n11">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="5.4609375" sy="54.902372487269815" tx="-5.4765625" ty="-17.714974451516298"/>
@@ -656,7 +645,6 @@ filter(aFilter)<y:LabelModel>
       </data>
     </edge>
     <edge id="e11" source="n11" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-5.4921875" sy="18.740088600104286" tx="5.534423726867431" ty="90.3574355388904"/>
@@ -676,13 +664,12 @@ filter(aFilter)<y:LabelModel>
       </data>
     </edge>
     <edge id="e12" source="n4" target="n13">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="5.528381737002718" sy="134.64267791249836" tx="-1.791666666666515" ty="-16.253986204245166"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="32.265625" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="172.990234375" x="601.7131917553099" y="-45.361954817457445">
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="32.265625" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="172.990234375" x="546.6095129651025" y="-44.0973951616902">
 prioritize(anFilteredOfferList)<y:LabelModel>
               <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
             </y:LabelModel>
@@ -696,13 +683,12 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e13" source="n13" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-5.533854166666515" sy="17.690019377470662" tx="5.481205525037808" ty="169.56586971762863"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="32.265625" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="128.265625" x="-499.3489990234375" y="-16.132837680002922">
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="32.265625" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="128.265625" x="-463.34893798828136" y="-16.932760517402357">
 ^aPrioritizedOfferList<y:LabelModel>
               <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
             </y:LabelModel>
@@ -716,7 +702,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e14" source="n4" target="n5">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-5.5078125" sy="272.6218641359128" tx="-27.844253018927702" ty="540.7411492585868"/>
@@ -736,7 +721,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e15" source="n3" target="n6">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -747,7 +731,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e16" source="n6" target="n14">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="6.811493962144596" ty="-1.5177014828263964"/>
@@ -758,7 +741,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e17" source="n2" target="n7">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -769,7 +751,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e18" source="n7" target="n15">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-1.0327590567831066" ty="2.2234477757604054"/>
@@ -780,7 +761,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e19" source="n1" target="n9">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -791,7 +771,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e20" source="n9" target="n11">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -802,7 +781,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e21" source="n11" target="n16">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -813,7 +791,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e22" source="n19" target="n10">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-2.6310362271324266" sy="0.8937911030416217" tx="0.0" ty="0.0"/>
@@ -824,7 +801,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e23" source="n10" target="n17">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -835,7 +811,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e24" source="n12" target="n13">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -846,7 +821,6 @@ prioritize(anFilteredOfferList)<y:LabelModel>
       </data>
     </edge>
     <edge id="e25" source="n13" target="n18">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
