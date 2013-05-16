@@ -3,7 +3,7 @@ import codecs
 f = codecs.open('out.out', encoding='utf-8', mode='w+')
 sys.stdout = f
 import xml.etree.ElementTree as ET
-from prettyDesc import prettyDesc
+from html2text import html2text
 
 def prettyDesc(description):
     #do some work before converting to html
