@@ -59,7 +59,7 @@ Criterios de aceptación:\\
 	{3.0} % story points
 	{Martin M} % story owner
 	{Primera} % iteracion (Primera o ``no definida'')
-	{In-Progress} % estado (completada, bloqueada, etc.)
+	{Accepted} % estado (completada, bloqueada, etc.)
 
 	\task	{TA192} % ID en el Rally
 		{Investigar bibliotecas o mecanismos para hacer unit testing en el lenguaje de programación del servidor} % titulo
@@ -202,7 +202,7 @@ contenida en ellos.\\
 Criterios de aceptación:\\
 * La aplicación conocerá los productos y unidades aceptados por los administradores y podrá contrastarlos con los datos de los tweets.  \\
 * Si un tweet con el hashtag #precioJusto no tiene información correcta o no es relevante, deberá ser ignorado por el sistema.  \\
-* Si un tweet con el hashtag es relevante y válido, el sistema deberá componer un objeto "oferta" que contenga la información dada por dicho tweet.\\
+* Si un tweet con el hashtag es relevante y válido, el sistema deberá componer un objeto 'oferta' que contenga la información dada por dicho tweet.\\
 } % descripcion
 	{} % criterios de aceptacion
 	{5.0} % story points
@@ -289,10 +289,10 @@ Como primera instancia se presenta la siguiente:\\
 
 \userStory	{US124} % ID en el Rally
 	{Como desarrollador quiero implementar la base del mecanismo de estrategias y filtros} % titulo
-	{Se desea implementar el código básico que aprovechará las futuras\\
+	{Se desea implementar el código básico que se aprovechará en las futuras\\
 implementaciones de filtros y estrategias.\\
 En este código debe tomarse el total de ofertas y devolver un subconjunto,\\
-definido por los filtros y estrategias configurados.\\
+definido por los filtros y  las estrategias configuradas.\\
 Un filtro toma un conjunto de ofertas y devuelve el subconjunto de ellas que\\
 cumple un criterio determinado, por ejemplo, su precio es menor a 5 pesos, o\\
 su dirección está en determinada calle. Otra forma de entender este concepto\\
@@ -327,6 +327,24 @@ Criterios de aceptación:\\
 
 \vspace{20pt}
 
+\userStory	{US147} % ID en el Rally
+	{Como usuario del backend quiero conocer las estrategias provistas por el sistema} % titulo
+	{En las capas de frontend que le presenten funcionalidad al usuario deseo poder\\
+mostrarle qué estrategias tiene disponible para resumir la información\\
+provista por el sistema.\\
+  \\
+Criterio de aceptación:\\
+* La interfaz rest debe exponer la lista de estrategias disponibles mediante un método /strategies\\
+} % descripcion
+	{} % criterios de aceptacion
+	{3.0} % story points
+	{Matias I} % story owner
+	{Primera} % iteracion (Primera o ``no definida'')
+	{Accepted} % estado (completada, bloqueada, etc.)
+
+
+\vspace{20pt}
+
 \userStory	{US104} % ID en el Rally
 	{Como desarrollador quiero filtrar las ofertas según un rango de precios} % titulo
 	{Se debe lograr un código que adquiera los datos de las ofertas y los filtre\\
@@ -343,7 +361,7 @@ Criterios de aceptación:\\
 	{2.0} % story points
 	{Ivan P} % story owner
 	{Primera} % iteracion (Primera o ``no definida'')
-	{In-Progress} % estado (completada, bloqueada, etc.)
+	{Accepted} % estado (completada, bloqueada, etc.)
 
 	\task	{TA56} % ID en el Rally
 		{Implementar el filtrado de las ofertas por rango de precios} % titulo
@@ -438,32 +456,12 @@ Criterios de aceptación:\\
 
 \vspace{20pt}
 
-\userStory	{US111} % ID en el Rally
-	{Como desarrollador quiero filtrar las ofertas por zona geográfica} % titulo
-	{Considerando que utilizaremos el concepto de zona geográfica en varias\\
-funcionalidades del sistema, necesitamos conseguir la información de la zona\\
-en la que se encuentra la dirección de las ofertas que el sistema conoce.\\
-Todavía no está completamente definido el concepto de zona (ver US110), pero\\
-en cualquier caso se quiere decidir si una oferta pertenece o no a una zona.\\
-  \\
-Criterios de aceptación:\\
-* Dada una oferta (con su dirección asociada) y una zona geográfica, el sistema podrá decidir si la dirección (y, por extensión, la oferta) pertenece o no a dicha zona.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{3.0} % story points
-	{Martin M} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
 \userStory	{US88} % ID en el Rally
 	{Epic: Como usuario quiero obtener la direccion, precio y unidad del producto respetando los filtros ingresados} % titulo
 	{\\
 } % descripcion
 	{} % criterios de aceptacion
-	{27.0} % story points
+	{30.0} % story points
 	{Martin M} % story owner
 	{no definida} % iteracion (Primera o ``no definida'')
 	{In-Progress} % estado (completada, bloqueada, etc.)
@@ -481,24 +479,17 @@ de dicha zona.\\
 Queda pendiente definir el concepto de zona, y decidir si estarán fijadas por\\
 el sistema o pueden ser delimitadas por el usuario durante la consulta.\\
   \\
+Esta historia es dependente de la investigación previa realizada en la US110\\
+  \\
 Criterios de aceptación:\\
 * El usuario podrá elegir buscar ofertas por zona, y en dicho caso, podrá especificar una zona.  \\
 * Todas las direcciones de las ofertas devueltas en el resultado estarán dentro de la zona elegida por el usuario.\\
 } % descripcion
 	{} % criterios de aceptacion
-	{5.0} % story points
+	{8.0} % story points
 	{Martin M} % story owner
 	{no definida} % iteracion (Primera o ``no definida'')
 	{Defined} % estado (completada, bloqueada, etc.)
-
-	\task	{TA44} % ID en el Rally
-		{Investigar como vamos a representar una Zona y los posibles recursos que vamos a utilizar para determinarlas.} % titulo
-		{\\
-} % descripcion
-		{3.0} % horas estimadas
-		{} % story owner
-		{3.0} % horas faltantes
-		{Defined} % estado (completada, bloqueada, etc.)
 
 	\task	{TA46} % ID en el Rally
 		{Implementar el filtro por zonas.} % titulo
@@ -544,7 +535,7 @@ Criterios de aceptación:\\
 } % descripcion
 	{} % criterios de aceptacion
 	{3.0} % story points
-	{Juan M} % story owner
+	{Matias I} % story owner
 	{Primera} % iteracion (Primera o ``no definida'')
 	{Accepted} % estado (completada, bloqueada, etc.)
 
@@ -666,15 +657,15 @@ comunicación.\\
 \vspace{20pt}
 
 \userStory	{US102} % ID en el Rally
-	{Como usuario quiero realizar búsquedas filtrando por la estrategia "caminando lo menos posible"} % titulo
-	{En una consulta del usuario se puede elegir la estrategia "caminando lo menos\\
-posible", que elige, entre las ofertas válidas para un producto, aquella que\\
+	{Como usuario quiero realizar búsquedas filtrando por la estrategia 'caminando lo menos posible'} % titulo
+	{En una consulta del usuario se puede elegir la estrategia 'caminando lo menos\\
+posible', que elige, entre las ofertas válidas para un producto, aquella que\\
 se encuentra más cerca de la posición actual del usuario.\\
 Considerar: la funcionalidad será distinta si se permite la búsqueda\\
 simultánea de varios productos (Ver US126).\\
   \\
 Criterios de aceptación:\\
-* En la interfaz deberá figurar la opción para elegir la estrategia "caminando lo menos posible"\\
+* En la interfaz deberá figurar la opción para elegir la estrategia 'caminando lo menos posible'\\
 * El resultado de aplicar esta estrategia deberá mostrar la oferta que cumpla con los demás filtros (rango, zona, etc.), y además sea la mas cercana a la posición del usuario.\\
 * En caso de que el sistema no logre ubicar al usuario, un error será mostrado al usuario, indicando que no es posible ejecutar la consulta porque el sistema no conoce su ubicación.\\
 } % descripcion
@@ -689,7 +680,12 @@ Criterios de aceptación:\\
 
 \userStory	{US100} % ID en el Rally
 	{Como PO quiero enfocarme en productos de primera necesidad.} % titulo
-	{\\
+	{Desde los requerimientos iniciales se estableció que el sistema se enfocará en\\
+buscar ofertas para productos de primera necesidad. Cuales son estos productos\\
+deberá ser definido por el product owner.\\
+  \\
+Criterios de aceptación:\\
+* El sistema admite como productos a buscar aquellos definidos por el product owner.\\
 } % descripcion
 	{} % criterios de aceptacion
 	{1.0} % story points
@@ -723,13 +719,13 @@ Criterios de aceptación:\\
 	{El sistema está pensado para tratar con productos "de primera necesidad", y el\\
 objetivo es tener una lista cerrada de productos soportados. En principio esta\\
 lista es fija, pero se quiere que en un futuro pueda ser modificada, agregando\\
-o quitando productos según las decissiones del Product Owner, que puede querer\\
+o quitando productos según las decisiones del Product Owner, que puede querer\\
 que un producto sea o no soportado por la aplicación.\\
   \\
 Criterios de aceptación:\\
 * Un administrador del sistema podrá incluir un nuevo producto para ser soportado por la aplicación, junto con una o más unidades de medida asociadas. Los usuarios podrán consultar por dicho producto luego de que haya sido dado de alta, y el funcionamiento deberá ser correcto al igual que con los productos originales.  \\
 * Un administrador podrá eliminar un producto de la lista. Los usuarios no podrán volver a consultar sobre dicho producto en la aplicación.  \\
-* Un administrador podrá agregar una nueva unidad asociada a un producto existente. Las respuestas a las consultas de dicho producto incluirán ofertas con dicho producto y unidad. También podrá ser eliminada una unidad existente, y las ofertas que usen esa unidad no aparecerán.  \\
+* Un administrador podrá agregar una nueva unidad asociada a un producto existente. Las respuestas a las consultas de dicho producto incluirán ofertas con dicho producto y unidad. También podrá ser eliminada una unidad existente, y las ofertas que usen esa unidad no aparecerán.\\
 } % descripcion
 	{} % criterios de aceptacion
 	{8.0} % story points
@@ -999,19 +995,6 @@ ofertas, y que considere a los tweets más populares como "más confiables" y\\
 Criterios de aceptación:\\
 * Un usuario de Twitter escribe un tweet con una oferta que nuestro sistema puede leer. Este tweet recibe gran cantidad de favs y retweets.  \\
 * En una consulta cuyo resultado incluya a este tweet, el sistema deberá darle prioridad por sobre los otros tweets que tengan menor cantidad de favs y retweets.\\
-} % descripcion
-	{} % criterios de aceptacion
-	{} % story points
-	{Ivan P} % story owner
-	{no definida} % iteracion (Primera o ``no definida'')
-	{Defined} % estado (completada, bloqueada, etc.)
-
-
-\vspace{20pt}
-
-\userStory	{US121} % ID en el Rally
-	{(REPETIDO???)Como usuario quiero elegir mas de un producto para obtener las mejores ofertas de todos ellos y visualizarlas en un mapa} % titulo
-	{\\
 } % descripcion
 	{} % criterios de aceptacion
 	{} % story points
