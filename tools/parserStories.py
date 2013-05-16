@@ -160,9 +160,16 @@ def rellenar2 (root, padre = None):
 
 tree = ET.parse('tasks.xml')
 rellenar2(tree.getroot())
+
+sprintBacklog = True
+print "\\subsection{Sprint Backlog}"
 for s in stories:
 	if s == {}:
 		continue
+
+	if (s.get("Iteration") != "1" and sprintBacklog):
+		sprintBacklog = False
+		print "\\subsection{Product Backlog}"
 	print "\userStory" + "\t{" + s["FormattedID"]+ "} % ID en el Rally"
 
 	print "\t{" + s["Name"] + "} % titulo"
