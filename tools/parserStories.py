@@ -16,6 +16,18 @@ def prettyDesc(description):
     #do somework afterwards
     return description
 
+def itToNum(it):
+    if it == "1":
+        return 1
+    else:
+        return 0
+
+def storyCmp(storyA, storyB):
+    itA = itToNum(storyA.get("Iteration"))
+    itB = itToNum(storyB.get("Iteration"))
+    return itB - itA
+    
+
 datosDeInteres = [	
 		"FormattedID", # ID en el Rally
 		"Name", # titulo
@@ -161,8 +173,11 @@ def rellenar2 (root, padre = None):
 tree = ET.parse('tasks.xml')
 rellenar2(tree.getroot())
 
+stories.sort(storyCmp)
+
 sprintBacklog = True
 print "\\subsection{Sprint Backlog}"
+
 for s in stories:
 	if s == {}:
 		continue
