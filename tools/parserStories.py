@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+from html2text import html2text
 
 datosDeInteres = [	
 		"FormattedID", # ID en el Rally
@@ -56,7 +57,7 @@ def imprimirTask(s):
 	print "\t\\task"
 	print "\t\t{" + s["FormattedID"]+ "} % ID en el Rally"
 	print "\t\t{" + s["Name"] + "} % titulo"
-	print "\t\t{" + s["Description"] + "} % descripcion"
+	print "\t\t{" + html2text(s["Description"]) + "} % descripcion"
 
 	if s.get("Estimate"):
 		print "\t\t{" + s["Estimate"] + "} % horas estimadas"
@@ -120,7 +121,7 @@ for s in stories:
 	print "\userStory"
 	print "\t{" + s["FormattedID"]+ "} % ID en el Rally"
 	print "\t{" + s["Name"] + "} % titulo"
-	print "\t{" + s["Description"] + "} % descripcion"
+	print "\t{" + html2text(s["Description"]) + "} % descripcion"
 	if s.has_key("Criterios"):
 		print "\t{" + s["Criterios"] + "} % criterios de aceptacion"
 	else:
