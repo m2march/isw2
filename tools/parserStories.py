@@ -5,6 +5,13 @@ sys.stdout = f
 import xml.etree.ElementTree as ET
 from html2text import html2text
 
+def prettyDesc(description):
+    #do some work before converting to html
+    description = html2text(description)
+    description = formatoLatex(description)
+    #do somework afterwards
+    return description
+
 datosDeInteres = [	
 		"FormattedID", # ID en el Rally
 		"Name", # titulo
@@ -82,8 +89,8 @@ ss["b"]  = "sdadas"
 
 def imprimirTask(s):
 	print "\t\\task"+"\t{" + s["FormattedID"]+ "} % ID en el Rally"
-	print "\t\t{" + formatoLatex(s["Name"]) + "} % titulo"
-	print "\t\t{" + formatoLatex(html2text(s["Description"])) + "} % descripcion"
+	print "\t\t{" + s["Name"] + "} % titulo"
+	print "\t\t{" + prettyDesc(s["Description"]) + "} % descripcion"
 
 	if s.get("Estimate"):
 		print "\t\t{" + s["Estimate"] + "} % horas estimadas"
@@ -147,8 +154,8 @@ for s in stories:
 		continue
 	print "\userStory" + "\t{" + s["FormattedID"]+ "} % ID en el Rally"
 
-	print "\t{" + formatoLatex(s["Name"]) + "} % titulo"
-	print "\t{" + formatoLatex(html2text(s["Description"])) + "} % descripcion"
+	print "\t{" + s["Name"] + "} % titulo"
+	print "\t{" + prettyDesc(s["Description"]) + "} % descripcion"
 	if s.has_key("Criterios"):
 		print "\t{" + s["Criterios"] + "} % criterios de aceptacion"
 	else:
