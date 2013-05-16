@@ -1,3 +1,7 @@
+import sys
+import codecs
+f = codecs.open('out.out', encoding='utf-8', mode='w+')
+sys.stdout = f
 import xml.etree.ElementTree as ET
 
 datosDeInteres = [	
@@ -50,13 +54,13 @@ def rellenar (root, padre = None):
 
 tree = ET.parse('stories.xml')
 rellenar(tree.getroot())
-
+maxdig = 1000
 
 def imprimirTask(s):
-	print "\t\\task"
-	print "\t\t{" + s["FormattedID"]+ "} % ID en el Rally"
-	print "\t\t{" + s["Name"] + "} % titulo"
-	print "\t\t{" + s["Description"] + "} % descripcion"
+	global maxdig
+	print "\t\\task" + "\t{" + s["FormattedID"]+ "} % ID en el Rally"
+	print "\t\t{" + s["Name"][:maxdig] + "} % titulo"
+	print "\t\t{" + s["Description"][:maxdig] + "} % descripcion"
 
 	if s.get("Estimate"):
 		print "\t\t{" + s["Estimate"] + "} % horas estimadas"
@@ -71,6 +75,7 @@ def imprimirTask(s):
 	else:
 		print "\t\t{" + "} % horas faltantes"
 	print "\t\t{" + s["State"]+ "} % estado (completada, bloqueada, etc.)"
+	print
 
 
 datosDeInteres = [	
@@ -117,30 +122,31 @@ rellenar2(tree.getroot())
 for s in stories:
 	if s == {}:
 		continue
-	print "\userStory"
-	print "\t{" + s["FormattedID"]+ "} % ID en el Rally"
-	print "\t{" + s["Name"] + "} % titulo"
-	print "\t{" + s["Description"] + "} % descripcion"
+	print "\userStory" + "\t{" + s["FormattedID"]+ "} % ID en el Rally"
+	print "\t\t\t{" + s["Name"][:maxdig] + "} % titulo"
+	print "\t\t\t{" + s["Description"][:maxdig] + "} % descripcion"
 	if s.has_key("Criterios"):
-		print "\t{" + s["Criterios"] + "} % criterios de aceptacion"
+		print "\t\t\t{" + s["Criterios"] + "} % criterios de aceptacion"
 	else:
-		print "\t{" + "} % criterios de aceptacion"
+		print "\t\t\t{" + "} % criterios de aceptacion"
 	
 	if s.get("PlanEstimate"):
-		print "\t{" + s["PlanEstimate"] + "} % story points"
+		print "\t\t\t{" + s["PlanEstimate"] + "} % story points"
 	else:
-		print "\t{" + "} % story points"
-	print "\t{" + s["Owner"] + "} % story owner"
+		print "\t\t\t{" + "} % story points"
+	print "\t\t\t{" + s["Owner"] + "} % story owner"
 	if s.get("Iteration") == "1":
-		print "\t{" + "Primera"+ "} % iteracion (Primera o ``no definida'')"
+		print "\t\t\t{" + "Primera"+ "} % iteracion (Primera o ``no definida'')"
 	else:
-		print "\t{" + "no definida"+ "} % iteracion (Primera o ``no definida'')"
-	print "\t{" + s["ScheduleState"]+ "} % estado (completada, bloqueada, etc.)"
-	
+		print "\t\t\t{" + "no definida"+ "} % iteracion (Primera o ``no definida'')"
+	print "\t\t\t{" + s["ScheduleState"]+ "} % estado (completada, bloqueada, etc.)"
+	print
 	for t in s["Tasks"]:
 		for tt in tasks:
 			if t == tt.get("Name"):
 				imprimirTask(tt)
-
+	print
+	print "\\vspace{20pt}"
+	print
 
 
