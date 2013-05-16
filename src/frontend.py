@@ -1,5 +1,6 @@
 import cherrypy
 import httplib
+import urllib
 import json
 
 class UnreachableRestResource(Exception):
@@ -24,10 +25,7 @@ class RestCommunicator(object):
 
   def ask_for(self, resource, parameter = {}):
 
-    if len(parameter) != 0:
-      resource = resource + "?"
-      for key, val in parameter.items():
-        resource = resource + key + "=" + val + "&"
+    resource += "?" + urllib.urlencode(parameter)
 
     conn = httplib.HTTPConnection(self.url, self.port)
     conn.request("GET", resource)
