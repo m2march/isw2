@@ -1,0 +1,23 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{3}{section.1}
+\contentsline {section}{\numberline {2}An\IeC {\'a}lisis de la aplicaci\IeC {\'o}n}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Objetivo}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Ejes de cambio}{3}{subsection.2.2}
+\contentsline {paragraph}{Obtenci\IeC {\'o}n de datos}{3}{section*.2}
+\contentsline {paragraph}{Productos soportados}{3}{section*.3}
+\contentsline {paragraph}{Ubicaci\IeC {\'o}n}{3}{section*.4}
+\contentsline {paragraph}{Resumen de la informaci\IeC {\'o}n}{3}{section*.5}
+\contentsline {paragraph}{Veracidad de los datos}{4}{section*.6}
+\contentsline {paragraph}{Presentaci\IeC {\'o}n de los datos}{4}{section*.7}
+\contentsline {section}{\numberline {3}User Stories}{4}{section.3}
+\contentsline {section}{\numberline {4}Dise\IeC {\~n}o}{18}{section.4}
+\contentsline {subsection}{\numberline {4.1}Frontend-Backend}{18}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}REST Api}{19}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}QueryConstruction}{20}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Filters}{22}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}OfferQueryProcessing}{22}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Offer Building with OfferFactory}{24}{subsection.4.6}
+\contentsline {section}{\numberline {5}Primera Iteraci\IeC {\'o}n}{27}{section.5}
+\contentsline {subsection}{\numberline {5.1}Desarrollo}{27}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Logros}{28}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Revisi\IeC {\'o}n}{28}{subsection.5.3}

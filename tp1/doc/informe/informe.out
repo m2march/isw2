@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{An\341lisis de la aplicaci\363n}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Objetivo}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Ejes de cambio}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{User Stories}{}% 5
+\BOOKMARK [1][-]{section.4}{Dise\361o}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Frontend-Backend}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{REST Api}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{QueryConstruction}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Filters}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{OfferQueryProcessing}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.6}{Offer Building with OfferFactory}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Primera Iteraci\363n}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Desarrollo}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Logros}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Revisi\363n}{section.5}% 16
