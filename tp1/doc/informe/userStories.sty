@@ -3,12 +3,10 @@
 
 %userStory(idRally, titulo, descripcion, criterios-aceptacion, story-points, owner, iteración, estado)
 \newcommand{\userStory}[8]{
-  \vspace{13pt}
+  \vspace{10pt}
 	\fbox{
 	\begin{minipage}{0.9\textwidth}
     {\small \sffamily
-
-            %\vspace{0.1cm}
 
             {\normalsize \textbf{#1:} \textit{#2}}
 
@@ -18,7 +16,7 @@
 
             \vspace{1pt}
 
-            %\textbf{Criterios de aceptación:} #4
+
 
 
 %            \begin{tabular}{ l c l }
@@ -27,13 +25,13 @@
 %            \end{tabular}
             \begin{center}
                     \begin{tabular}{ l l l }
-                    \textbf{Story Points:} #5 & \textbf{Iteración:} #7  & \textbf{Estado:} #8 \\
+                    \textbf{Story Points:} #5 & \textbf{Iteración:} #7  & \textbf{Estado:} #8
                     \end{tabular}
             \end{center}
     }
 	\end{minipage}
 	}
-  \vskip
+  %\vskip
 }
 
 %task(idRally, titulo, descripcion, horas-estimadas, responsable, horas-faltantes, estado)
@@ -62,7 +60,7 @@
     }
 	\end{minipage}
 	}
-  \vskip
+  %\vskip
 }
 
 %%%%%%%%%%%%%%%

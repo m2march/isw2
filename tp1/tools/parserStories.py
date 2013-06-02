@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys
 import codecs
 f = codecs.open('stories.tex', encoding='utf-8', mode='w')
@@ -9,8 +11,22 @@ def prettyDesc(description):
     #do some work before converting to html
     description = html2text(description)
     description = formatoLatex(description)
+    description = description.replace("Bussiness Value:", "\\textbf{Bussiness Value:}")
+    description = description.replace("Criterios de aceptación:".decode("utf-8"), "\\textbf{Criterios de aceptación:}".decode("utf-8"))
     #do somework afterwards
     return description
+
+def itToNum(it):
+    if it == "1":
+        return 1
+    else:
+        return 0
+
+def storyCmp(storyA, storyB):
+    itA = itToNum(storyA.get("Iteration"))
+    itB = itToNum(storyB.get("Iteration"))
+    return itB - itA
+    
 
 datosDeInteres = [	
 		"FormattedID", # ID en el Rally
@@ -156,9 +172,19 @@ def rellenar2 (root, padre = None):
 
 tree = ET.parse('tasks.xml')
 rellenar2(tree.getroot())
+
+stories.sort(storyCmp)
+
+sprintBacklog = True
+print "\\subsection{Sprint Backlog}"
+
 for s in stories:
 	if s == {}:
 		continue
+
+	if (s.get("Iteration") != "1" and sprintBacklog):
+		sprintBacklog = False
+		print "\\subsection{Product Backlog}"
 	print "\userStory" + "\t{" + s["FormattedID"]+ "} % ID en el Rally"
 
 	print "\t{" + s["Name"] + "} % titulo"

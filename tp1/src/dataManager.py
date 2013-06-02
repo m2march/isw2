@@ -1,14 +1,11 @@
 from twitterStreamingConnector import *
 # import offerFactory
-from defaultStreamingConnectorObserver import *
-from defaultPulleableConnectorObserver import *
-from defaultMemoryStore import *
 from twitterSimpleConnector import *
 from iterable import *
 
 class DataManager:
-	def __init__(self, aConnector):		
-		self.connectors = [] 
+	def __init__(self, aConnector):
+		self.connectors = []
 		self.connectors.append(aConnector)
 	def getOffers(self):
 		return Iterable(self.connectors)
