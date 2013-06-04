@@ -75,4 +75,5 @@
 * Por la falta de HW podemos tener problemas para otras tareas pesadas en procesamiento como ser: cálculo de prioridades de los usuarios, verificación de las ofertas conseguidas, mantenmiento de información de auditoría 
 * Inconvenientes con el servicio de spambust que nos deja sin esta funcionalidad. (E.g.: sube el precio, problemas de servicio por su parte)
 * Falta de dinero para financiar el proyecto.
-
+* El hardware disponible no es suficiente para realizar la extracción de datos de internet de manera suficientemente rápida
+* El hardware disponible no es suficiente para soportar TODAS las fucionalidades a cumplir (extraer datos, publicarlos mediante la api, predecir los deseos del usuario, verificar los datos recibidos, generar información de auditoría).
