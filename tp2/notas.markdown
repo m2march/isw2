@@ -77,3 +77,5 @@
 * Falta de dinero para financiar el proyecto.
 * El hardware disponible no es suficiente para realizar la extracción de datos de internet de manera suficientemente rápida
 * El hardware disponible no es suficiente para soportar TODAS las fucionalidades a cumplir (extraer datos, publicarlos mediante la api, predecir los deseos del usuario, verificar los datos recibidos, generar información de auditoría).
+* Falta de testing adecuado en algun modulo / funcionalidad del sistema.
+* Un miembro abandona el equipo de trabajo. Una posible forma de mitigar  esta situación es particionando al sistema en 'modulos' simples con una unica responsabilidad y alta cohesion interna, y manteniendo la documentación de la arquitectura del sistema actualizada, de forma que al incorporar un remplazo, la curva de aprendizaje del sistema se vea reducida.
