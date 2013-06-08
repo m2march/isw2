@@ -2,24 +2,23 @@
 
 * Obteniendo informacion de internet
 **Descripción**: El sistema colecta la información de los distintos medios, la procesa, y almacena la información obtenida en la base de datos, o algun otro medio. _Solo almaceno productos de rubros habilitados?_.
-    * Definición funcional de la información a obtener.
-    + Validación de la información a obtener.
-    * Evaluar la necesidad de paralelizar el procesamiento de los datos para soportar la masividad (escalabilidad)
-	+ Obteniendo información definida de Facebook.
-        * Investigar conectividad con facebook.
+    + Definición funcional de la información a obtener.
+    + Validación de la definición funcional con el stakholder.
+    * Obteniendo información definida de Facebook.
+        + Investigar conectividad con facebook.
         + Implementar conectividad con facebook.
         + Testeo de la conectividad con facebook.
-        * Integración de la conectividad con facebook con el resto del sistema
-	+ Obteniendo información definida de Pinterest.
-        * Investigar conectividad con Pinterest.
+        + Integración de la conectividad con facebook con el resto del sistema
+    * Obteniendo información definida de Pinterest.
+        + Investigar conectividad con Pinterest.
         + Implementar conectividad con Pinterest.
         + Testeo de la conectividad con Pinterest.
-        * Integración de la conectividad con Pinterest con el resto del sistema
-	+ Obteniendo información definida de Twitter.
-        * Investigar conectividad con Twitter.
+        + Integración de la conectividad con Pinterest con el resto del sistema
+    * Obteniendo información definida de Twitter.
+        + Investigar conectividad con Twitter.
         + Implementar conectividad con Twitter.
         + Testeo de la conectividad con Twitter.
-        * Integración de la conectividad con Twitter con el resto del sistema
+        + Integración de la conectividad con Twitter con el resto del sistema
 	+ Web mining de paginas de supermercados
     + Web mining de páginas de subastas
     + Web mining de páginas de descuentos
