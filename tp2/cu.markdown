@@ -31,3 +31,25 @@
 
 * Si realizo una consulta por un producto A, que se considera asociado con B, tambien se muestran ofertas de B.
 **Descripción**: El usuario consulta por un producto A dentro de los habilitados en algún rubro y se definió que está asociado con el producto B, luego el usuario recibe información de donde comprar A y donde comprar B y a qué precio. 
+
+* Si realizo una consulta por un producto A y soy un usuario autentificado, las ofertas recibidas se priorizan acorde a mis preferencias de confianza.
+**Descripción**: Dentro de las ofertas relacionadas al producto A que conoce el sistema, se mostrarán primero aquellas cuya fuente yo haya declarado de mayor confianza, luego las de fuentes con menor confianza y no se mostrará ninguna oferta cuya fuente declaré como no confiable.
+
+* Mostrando publicidades
+**Descripción**: Cuando el usuario utiliza la aplicación movil visualiza, aparte de los resultados de su consulta, propaganda de los spónsores de _twitteando para ahorrar_.
+
+* Detectando ofertas falsas
+**Descripción**: Al recopilar datos de precios en internet, el sistema es capaz de detectar si la información es sospechosa y marcarla como tal, para futura revisión. Además el sistema recopila todas las evidencias encontradas para sospechar de los datos.
+
+* Siendo martes se publica un informe de ofertas falsas
+**Descripción**: Cada martes el sistema arma y publica un informe con los productos sobre los cuales se encontraron precios dudosos junto con la evidencia que genera la sospecha. Este informe debe estar disponible para revisión por usuarios externos selectos. 
+
+* Se prepara un informe con las estadisticas de ofertas detectadas como falsas.
+**Descripción**: Al mismo tiempo que el usuario comienza a ingresar una consulta en la aplicación movil, la aplicación se anticipa a los deseos del usuario para mostrarle rápidamente precios de productos que podríán responder a la consulta que se está formulando.
+
+* El usuario se autentica con el sistema 
+**Descripción**: El usuario de la aplicación movil puede utilizar alguna cuenta de un servicio asociado con OpenID (google, yahoo, facebook y otro) para autenticarse en la aplicación. A partir de ese momento la aplicación sabe quién es el usuario y puede utilizar la información que tiene del mismo para proveerle funcionalidades más avanzadas.
+
+* Un usuario autentificado puede votar por la validez de una oferta.
+**Descripción**: Un usuario ya autenticado en el sistema elije una oferta y la marca como válida o inválida. Esto afecta la reputación del usuario o fuente que dio origen a la oferta para facilitar la detección de ofertas sospechosas.
+
