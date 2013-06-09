@@ -7,7 +7,7 @@
 * **Plan de contingencia**: Contratar gente especializada en las tecnologías.
 
 ###Riesgo2:
-* **Descripción**: Definiciones vagas: criterios de sustitución y asociación, información a recuperar, prioridad de los usuarios por la información.
+* **Descripción**: Por falta de definiciones claras y consisas el código desarrollado no cumple con las expectativas de los stakeholders y se vuelve necesario modificarlo. Se consideran particularmente riesgosas las definiciones en: criterios de sustitución y asociación, información a recuperar, prioridad de los usuarios por la información.
 * **Probabilidad**: Alta
 * **Impacto**: Alto
 * **Exposición**: Alta
