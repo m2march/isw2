@@ -12,7 +12,7 @@
 * **Impacto**: Alto
 * **Exposición**: Alta
 * **Mitigación**: Acordar fechas límites para la presentación de documentación definiendo mejor cada caso en particular.
-* **Plan de contingencia**: ??
+* **Plan de contingencia**: Se aislaran y se implementaran los modulos correspondientes a estas caracteristicas de forma que su modificación resulte lo mas rapida posible.
 
 ###Riesgo3:
 * **Descripción**: Inconvenientes con el servicio de spambust que nos deja sin esta funcionalidad. (E.g.: sube el precio, problemas de servicio por su parte).
@@ -61,6 +61,3 @@
 * **Exposición**: Media
 * **Mitigación**: Tener una versión beta de la aplicación de usuario para tener feedback lo antes posible y poder agregar las modificaciones de forma suave y sin desperdiciar tiempo de trabajo.
 * **Plan de contingencia**: Hacer estudios de marketing para comprender realmente las necesidades del usuario.
-
-* Falta de testing adecuado en algún modulo / funcionalidad del sistema.
-
