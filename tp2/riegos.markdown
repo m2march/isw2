@@ -7,12 +7,12 @@
 * **Plan de contingencia**: Contratar gente especializada en las tecnologías.
 
 ###Riesgo2:
-* **Descripción**: Definiciones vagas: criterios de sustitución y asociación, información a recuperar, prioridad de los usuarios por la información.
+* **Descripción**: Por falta de definiciones claras y consisas el código desarrollado no cumple con las expectativas de los stakeholders y se vuelve necesario modificarlo. Se consideran particularmente riesgosas las definiciones en: criterios de sustitución y asociación, información a recuperar, prioridad de los usuarios por la información.
 * **Probabilidad**: Alta
 * **Impacto**: Alto
 * **Exposición**: Alta
-* **Mitigación**: Acordar fechas límites para la presentación de documentación definiendo mejor cada caso en particular.
-* **Plan de contingencia**: Se aislaran y se implementaran los modulos correspondientes a estas caracteristicas de forma que su modificación resulte lo mas rapida posible.
+* **Mitigación**: Se aislaran y se implementaran los modulos correspondientes a estas caracteristicas de forma que su modificación resulte lo mas rapida posible. Se harán presentaciones iterativas de estas características a los stakeholders de forma de poder corregir diferencias lo antes posible y minimizar el costo de las correcciones.
+* **Plan de contingencia**: El código es adaptado a los nuevos requerimientos. 
 
 ###Riesgo3:
 * **Descripción**: Inconvenientes con el servicio de spambust que nos deja sin esta funcionalidad. (E.g.: sube el precio, problemas de servicio por su parte).
