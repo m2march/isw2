@@ -1,3 +1,14 @@
+#Primeras iteraciones
+
+* Obteniendo información definida de Twitter.
+* Establecer una primera interfaz de fácil implementación
+* Si realizo una consulta por un producto A, obtengo ofertas de este producto.
+* El usuario se autentifica usando OpenID.
+* Un usuario autentificado puede votar por la validez de una oferta.
+* Las ofertas mostradas a un usuario autenticado se priorizan usando su mecanismo de confianza. 
+* Mostrando publicidades en la aplicación
+* Filtrando ofertas falsas mediante nuestro sistema de spam
+
 #Casos de Uso
 
 * Obteniendo informacion de internet
@@ -9,34 +20,48 @@
         + Implementar conectividad con facebook.
         + Testeo de la conectividad con facebook.
         + Integración de la conectividad con facebook con el resto del sistema
+        + Investigar obtención de datos
+        + Implementar obtención de datos
+        + Testear obtención de datos
+        + Integración de componente
     * Obteniendo información definida de Pinterest.
         + Investigar conectividad con Pinterest.
         + Implementar conectividad con Pinterest.
         + Testeo de la conectividad con Pinterest.
         + Integración de la conectividad con Pinterest con el resto del sistema
+        + Investigar obtención de datos
+        + Implementar obtención de datos
+        + Testear obtención de datos
+        + Integración de componente
     * Obteniendo información definida de Twitter.
         + Investigar conectividad con Twitter.
         + Implementar conectividad con Twitter.
         + Testeo de la conectividad con Twitter.
         + Integración de la conectividad con Twitter con el resto del sistema
-	+ Web mining de paginas de supermercados
-    + Web mining de páginas de subastas
-    + Web mining de páginas de descuentos
-    + Obtener información de sms
-        * Averiguar como se podría obtener información companías telefónicas
-        + Evaluar hacibilidad del caso de uso frente a la nueva información
-        + Implementar la comunicación con las companías telefónicas
-        + Testear la comunicación con las companías telefónicas
-        * Investigar métodos de extracción de información a partir de textos como los de sms
-        + Implementar métodos de extracción de informacióñ desde los sms
-        + Testear la extracción de informacióñ desde sms
-        * Integrar la obtención de mensajes con la extracción de información
-        + Testear la intergración de las partes
-        + Integrar la información de sms al resto del sistema
+        + Investigar obtención de datos
+        + Implementar obtención de datos
+        + Testear obtención de datos
+        + Integración de componente
+	  * Obteniendo datos de otros sitios web 
+        + Definir sitios relevantes para la extracción de datos
+        + Investigar las posibilidades de extracción de datos de sitios web
+        + Implementación de mecanismos de extracción de datos
+        + Integración del mecanismo con sitios de internet de interés
+        + Validación del funcionamiento
+        + Corrección de errores 
+    + Obteniendo información de sms
+        + Investigar conectividad
+        + Implementar conectividad
+        + Testear conectividad 
+        + Integración de componente
+        + Investigar análisis de datos
+        + Implementar análisis de datos
+        + Testear análisis de datos
+        + Integración de componente
 
 * Se consulta información a travéz de el API publica.
 **Descripción**: Es posible realizar consultas al sistema mediante un API Publica (Rest?, XmlRpc?, SOAP?, Varias?, etc...).
-    * Definición de los servicios que van a ser provistos por la API
+    + Definición de los servicios que van a ser provistos por la API
     + Evaluar como afecta el proveer servicios a los requerimientos de hardware al sistema
     + Implementar los servicios a proveer
     + Testear el correcto funcionamiento de los servicios
@@ -88,6 +113,7 @@
 
 * Sistema de ofertas promocionadas (las empresas pagan por que sus productos aparezcan primeros en las busquedas, o resaltados). La meto pq hay que autofinanciarse.
 
+* Mostrando publicidades en la aplicación
 
 Referencias
 ===========

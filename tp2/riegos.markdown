@@ -54,6 +54,13 @@
 * **Mitigación**: Mantener un mínimo nivel de testing requerido en cada módulo.
 * **Plan de contingencia**: Reparar bugs y mejorar los test del módulo.
 
+###Riesgo8:
+* **Descripción**: Los deseos del usuario sobre la aplicación no son los esperados por los stakeholders y es necesario cambiar drásticamente la funcionalidad.
+* **Probabilidad**: Media
+* **Impacto**: Media
+* **Exposición**: Media
+* **Mitigación**: Tener una versión beta de la aplicación de usuario para tener feedback lo antes posible y poder agregar las modificaciones de forma suave y sin desperdiciar tiempo de trabajo.
+* **Plan de contingencia**: Hacer estudios de marketing para comprender realmente las necesidades del usuario.
 
 * Falta de testing adecuado en algún modulo / funcionalidad del sistema.
 

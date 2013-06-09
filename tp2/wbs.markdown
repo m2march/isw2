@@ -36,8 +36,8 @@ Sistema _Twitteando para ahorrar_
          * Testear obtención de datos
          * Integración de componente
     + Componente de obtención de datos de la web
-      + Documento de posibilidades de extracción de datos
       + Documento de sitios relevantes para la extracción de datos
+      + Documento de posibilidades de extracción de datos
       * Implementación de mecanismos de extracción de datos
       * Integración del mecanismo con sitios de internet de interés
       * Validación del funcionamiento
