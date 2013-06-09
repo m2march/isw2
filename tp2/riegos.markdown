@@ -11,8 +11,8 @@
 * **Probabilidad**: Alta
 * **Impacto**: Alto
 * **Exposición**: Alta
-* **Mitigación**: Acordar fechas límites para la presentación de documentación definiendo mejor cada caso en particular.
-* **Plan de contingencia**: Se aislaran y se implementaran los modulos correspondientes a estas caracteristicas de forma que su modificación resulte lo mas rapida posible.
+* **Mitigación**: Acordar fechas límites para la presentación de documentación definiendo mejor cada caso en particular. Se aislaran y se implementaran los modulos correspondientes a estas caracteristicas de forma que su modificación resulte lo mas rapida posible. (Modificabilidad)
+* **Plan de contingencia**: 
 
 ###Riesgo3:
 * **Descripción**: Inconvenientes con el servicio de spambust que nos deja sin esta funcionalidad. (E.g.: sube el precio, problemas de servicio por su parte).

@@ -94,6 +94,7 @@ Sistema _Twitteando para ahorrar_
        * Validación de funcionalidad con stakeholder
         + Documento de funcionalidad actualizado
        * Modificación del componente
+
   + Componente de detección de spam
     + Documento de requerimientos para el componente
     + Componente a partir de SpamBust
@@ -118,4 +119,27 @@ Sistema _Twitteando para ahorrar_
          + Documentación actualizado de los servicios provistos
       * Implementación de los cambios
       * Integración del componente con el sistema
+
   + Componente de información de usuario
+	  + Componente de identificación de usuarios 
+      	* Aprendizaje de uso de OpenID
+	  	* Documentación de requerimientos para el componente
+		* Diseño del componente
+		* Implementación del componente
+		* Testing del componente
+		* Integración del componente
+      + Componente de confianza individualizado 
+	  	* Documentación de requerimientos para el componente
+	  	* Diseño del componente 
+		* Implementación del componente
+		* Testing del componente
+		* Integración del componente
+		* Revisión de funcionalidad
+			+ Documento funcional actualizado
+		* Corrección de la implementación
+	  + Componente de reputación de usuarios 
+	  	* Documentación de requerimientos para el componente
+	  	* Diseño del componente 
+		* Implementación del componente
+		* Testing del componente
+		* Integración del componente
