@@ -112,6 +112,15 @@ faltan
 
 * Si realizo una consulta por un producto A, obtengo ofertas de este producto.
 **Descripción**: Se busca en la base de datos del sistema ofertas que cumplan lo especificado.
+    + Definir el tipo de consultas que se van a poder hacer
+    + Crear un diseño de BD que se ajuste a las necesidades y requerimientos del sistema
+    + Implementar una componente que alimente a la BD con los datos extraido de los obtenedores de datos
+        + Realizar tests funcionales
+        + Realizar tests de stress
+    + Implementar la componente encargada de hacer las consultas a la BD.
+        + Realizar tests funcionales
+        + Realizar tests de stress
+    + Integración de las consultas con el resto del sistema
 
 * Si realizo una consulta por un producto A y este no esta se le informa al usuario.
 * Si realizo una consulta por un producto A, que se sustituye por B, tambien se muestran ofertas de B.
