@@ -53,7 +53,7 @@ $$ monetización $$<y:LabelModel>
     <node id="n2">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="996.5" y="465.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="475.7791828793774"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="158.04296875" x="34.478515625" y="-0.96875">Definición de alternativas
@@ -71,7 +71,7 @@ de monetización<y:LabelModel>
     <node id="n3">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="996.5" y="506.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="516.2178988326847"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="151.6328125" x="37.68359375" y="6.015625">Elección de alternativas <y:LabelModel>
@@ -88,7 +88,7 @@ de monetización<y:LabelModel>
     <node id="n4">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="996.5" y="424.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="435.0"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="147.53125" x="39.734375" y="-0.96875">Análisis de alternativas 
@@ -106,7 +106,7 @@ de monetización<y:LabelModel>
     <node id="n5">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="739.5" y="506.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1328.098573281453" y="556.6566147859919"/>
           <y:Fill color="#CC99FF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="142.76171875" x="42.119140625" y="-0.96875">Documentación de 
@@ -124,7 +124,7 @@ los servicios a proveer <y:LabelModel>
     <node id="n6">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1339.5" y="424.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="597.0953307392991"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="150.255859375" x="38.3720703125" y="-0.96875">Implementación de 
@@ -142,7 +142,7 @@ las alternativas elegidas<y:LabelModel>
     <node id="n7">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1339.5" y="465.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="637.5340466926064"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="196.357421875" x="15.3212890625" y="6.015625">Testing de alternativas elegidas<y:LabelModel>
@@ -159,7 +159,7 @@ las alternativas elegidas<y:LabelModel>
     <node id="n8">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1339.5" y="547.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="718.4114785992208"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="149.330078125" x="38.8349609375" y="6.015625">Revisión de definiciones<y:LabelModel>
@@ -176,7 +176,7 @@ las alternativas elegidas<y:LabelModel>
     <node id="n9">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1607.0" y="547.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1328.098573281453" y="758.850194552528"/>
           <y:Fill color="#CC99FF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="174.935546875" x="26.0322265625" y="-0.96875">Documentación actualizada 
@@ -194,7 +194,7 @@ de los servicios provistos<y:LabelModel>
     <node id="n10">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1339.5" y="585.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="799.2889105058352"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="194.734375" x="16.1328125" y="6.015625">Implementación de los cambios<y:LabelModel>
@@ -211,7 +211,7 @@ de los servicios provistos<y:LabelModel>
     <node id="n11">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1339.5" y="506.0"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="677.9727626459136"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="173.248046875" x="26.8759765625" y="-0.96875">Integración del componente
@@ -238,8 +238,8 @@ con el sistema<y:LabelModel>
     <edge id="e1" source="n1" target="n2">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1290.0" y="480.0"/>
+          <y:Path sx="-75.26765287987723" sy="15.0078125" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1214.7323471201228" y="490.7791828793774"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -249,8 +249,8 @@ con el sistema<y:LabelModel>
     <edge id="e2" source="n1" target="n3">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1290.0" y="521.0"/>
+          <y:Path sx="-78.52669859143157" sy="15.00755017150476" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1211.4733014085684" y="531.2178988326847"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -260,8 +260,8 @@ con el sistema<y:LabelModel>
     <edge id="e3" source="n1" target="n4">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1290.0" y="450.0"/>
+          <y:Path sx="-77.18452408731946" sy="14.991712395722573" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1212.8154759126805" y="450.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -271,7 +271,9 @@ con el sistema<y:LabelModel>
     <edge id="e4" source="n3" target="n5">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:Path sx="-73.48767833981833" sy="15.008663667315318" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1290.0" y="571.6566147859919"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
         </y:QuadCurveEdge>
@@ -280,7 +282,9 @@ con el sistema<y:LabelModel>
     <edge id="e5" source="n8" target="n9">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:Path sx="-71.00817634937675" sy="15.019807186654361" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1292.4795019904416" y="773.850194552528"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
         </y:QuadCurveEdge>
@@ -289,8 +293,8 @@ con el sistema<y:LabelModel>
     <edge id="e6" source="n1" target="n8">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1290.0" y="570.0"/>
+          <y:Path sx="-78.39883268482481" sy="1.0" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1211.6011673151752" y="733.4114785992208"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -300,8 +304,8 @@ con el sistema<y:LabelModel>
     <edge id="e7" source="n1" target="n7">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1290.0" y="480.0"/>
+          <y:Path sx="-76.92109011653429" sy="15.031072352666342" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1213.0789098834657" y="652.5340466926064"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -311,8 +315,8 @@ con el sistema<y:LabelModel>
     <edge id="e8" source="n1" target="n6">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1290.0" y="450.0"/>
+          <y:Path sx="-77.00875486381301" sy="15.026687641861201" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1212.991245136187" y="612.0953307392991"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -322,8 +326,8 @@ con el sistema<y:LabelModel>
     <edge id="e9" source="n1" target="n11">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1290.0" y="530.0"/>
+          <y:Path sx="-78.0" sy="14.9609375" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1212.0" y="692.9727626459136"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -333,8 +337,8 @@ con el sistema<y:LabelModel>
     <edge id="e10" source="n1" target="n10">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1290.0" y="600.0"/>
+          <y:Path sx="-78.39883268482481" sy="15.0234375" tx="-113.5198974609375" ty="0.0">
+            <y:Point x="1211.6011673151752" y="814.2889105058352"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
