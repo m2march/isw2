@@ -1,13 +1,28 @@
 #Primeras iteraciones
 
+(tambien van todas las tares en  #Tareas) 
 * Obteniendo información definida de Twitter.
 * Establecer una primera interfaz de fácil implementación
 * Si realizo una consulta por un producto A, obtengo ofertas de este producto.
+* Mostrando publicidades en la aplicación
+
+
+#Segunda iteracion
 * El usuario se autentifica usando OpenID.
 * Un usuario autentificado puede votar por la validez de una oferta.
-* Las ofertas mostradas a un usuario autenticado se priorizan usando su mecanismo de confianza. 
-* Mostrando publicidades en la aplicación
-* Filtrando ofertas falsas mediante nuestro sistema de spam
+* Las ofertas mostradas a un usuario autenticado se priorizan usando un mecanismo de confianza. 
+faltan
+
+#Tareas
+
+* Diseño conceptual del sistema.
+* Realización de WBS.
+* Definir objetivos y requerimientos más concretos, documentando estos.
+* Análisis de riesgos.
+* Definición y priorización de casos de uso, documentando los tiempos esperados para los casos de uso más prioritarios.
+* Definir junto a los stakholder los atributos de calidad del sistema.
+* Diseño de la Arquitectura, teniendo en cuenta las restricciones a las tecnologías impuestas por los stakholder.
+
 
 #Casos de Uso
 
@@ -109,11 +124,15 @@
 
 * El usuario se autentifica usando OpenID.
 * Un usuario autentificado puede votar por la validez de una oferta.
-* Las ofertas mostradas a un usuario autenticado se priorizan usando su mecanismo de confianza. 
+* Las ofertas mostradas a un usuario autenticado se priorizan usando un mecanismo de confianza. 
 
 * Sistema de ofertas promocionadas (las empresas pagan por que sus productos aparezcan primeros en las busquedas, o resaltados). La meto pq hay que autofinanciarse.
 
 * Mostrando publicidades en la aplicación
+**Descripción**: Cuando el usuario utiliza la aplicación visualiza, aparte de los resultados de su consulta, propaganda de los spónsores de _twitteando para ahorrar_.
+
+
+* Filtrando ofertas falsas mediante nuestro sistema de spam
 
 Referencias
 ===========

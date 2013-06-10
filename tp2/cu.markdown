@@ -36,7 +36,7 @@
 **Descripción**: Dentro de las ofertas relacionadas al producto A que conoce el sistema, se mostrarán primero aquellas cuya fuente yo haya declarado de mayor confianza, luego las de fuentes con menor confianza y no se mostrará ninguna oferta cuya fuente declaré como no confiable.
 
 ###CU12: Mostrando publicidades
-**Descripción**: Cuando el usuario utiliza la aplicación movil visualiza, aparte de los resultados de su consulta, propaganda de los spónsores de _twitteando para ahorrar_.
+**Descripción**: Cuando el usuario utiliza la aplicación visualiza, aparte de los resultados de su consulta, propaganda de los spónsores de _twitteando para ahorrar_.
 
 ###CU13: Detectando ofertas falsas
 **Descripción**: Al recopilar datos de precios en internet, el sistema es capaz de detectar si la información es sospechosa y marcarla como tal, para futura revisión. Además el sistema recopila todas las evidencias encontradas para sospechar de los datos.
