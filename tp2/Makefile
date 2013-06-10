@@ -7,13 +7,17 @@ TEX_MARKDOWN_DIR = ${INFORME_DIR}/markdowns
 INFORME_DIR = informe
 MARKDOWN_DIR = .
 INFORME = ${INFORME_DIR}/informe.pdf
+INFORME_DEPS = ${INFORME_DIR}/iterplan.tex ${INFORME_DIR}/wbs.tex ${ITEX_MARKDOWNS}
 
 
 all: ${TEX_MARKDOWNS} ${INFORME}
 
 pdfs: ${PDFS}
 
-${INFORME_DIR}/informe.pdf: ${INFORME_DIR}/informe.tex ${TEX_MARKDOWNS}
+informe: 
+	cd ${INFORME_DIR}; 	pdflatex informe.tex
+
+${INFORME_DIR}/informe.pdf: ${INFORME_DIR}/informe.tex ${INFORME_DEPS}
 	cd ${INFORME_DIR}; 	pdflatex informe.tex
 
 %.pdf: %.markdown
