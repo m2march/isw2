@@ -1,0 +1,79 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[paper=a4paper, left=1.5cm, right=1.5cm, bottom=1.5cm, top=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{footnote}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{framed}
+\usepackage{pdflscape}
+
+\usepackage{pdfpages}
+
+\usepackage{caratula}
+
+\materia{Ingeniería de Software II}
+
+\titulo{Trabajo Práctico 2}
+\subtitulo{Developing \emph{in-the-large} - Planificación}
+\grupo{Grupo 5 - \emph{El nene está bien}}
+
+\integrante{Martín Alejandro Miguel}{181/09}{m2.march@gmail.com}
+\integrante{Iván Postolski}{216/09}{ivan.postolski@gmail.com}
+\integrante{Juan Manuel Martinez Caamaño}{276/09}{jmartinezcaamao@gmail.com}
+\integrante{Matías Incem}{396/09}{matias.incem@gmail.com}
+\integrante{Pablo Gauna}{334/09}{gaunapablo@gmail.com}
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introducción}
+
+El presente informe constituye la planficación del proyecto \textbf{Twitteando para ahorrar} (TPA), que conforma una extensión del proyecto \textbf{Precio Justo} a partir de los intereses de parte de autoridades gubernamentales. Para este nuevo proyecto la metodología de trabajo utilizada se basará en la metodología \emph{RUP}, a causa del fuerte cambio en la escala de la aplicación respecto del trabajo anterior.  
+
+\subsection{Caso de negocio}
+
+El caso de negocio se modificó respecto del trabajo anterior principalmente en la escala del software a desarrollar. Esto incluye tanto un aumento en la base de usuarios de nuestra aplicación como en las funcionalidades a proveer. A continuación enunciamos el caso de negocio como una serie de objetivos a lograr:
+
+\begin{itemize}
+\item La información de precios no solo será obtenida de \emph{twitter}, sino que también de otras redes sociales (\emph{facebook}, \emph{pinterest}) y distintos sitios web (sitios de remate, sitios de supermercados, sitios de ofertas).
+\item La aplicación movil que accederá a los datos recopilados debe tener usabilidad accesible a toda la población, lo que implica una interfáz, limpia y amigable.
+\item La información recopilada también será provista de forma pública para otras aplicaciones, generando todo un nuevo lado de usabilidad a nuestra aplicación.
+\item La presentación de información contará con más inteligencia, mostrando no solo productos que el usuario declaró como interesnates, sino también información de otros productos que se encuentren relacionados.
+\item El uso de la aplicación será personalizable, dándole la oportunidad al usuario de definir niveles de confianza de las ofertas según su origen.
+\item La detección de información falsa o sospechosa deberá ser muy robusta. Además, los detalles de la detección deberá ser visible.
+\item Se continuará trabajando con una serie de \emph{productos} aceptados por la aplicación, pero estos se agruparán bajo el concepto de \emph{rubros}. La administración de productos y rubros tendrá como fin mejorar el manejo de información internamiente en el sistema.
+\end{itemize}
+
+\subsection{Detalles y restricciones}
+
+Para el desarrollo de la aplicación deberemos tener en cuenta los siguientes detalles:
+
+\begin{itemize}
+\item No contaremos con servidores potentes para el procesamiento de datos, pero si con la cantidad que nos sea necesaria de equipos de escritorio.
+\item Se nos exige que los datos se guarden en una base de datos \textbf{NOSQL}
+\item Se nos exige que los servicios de provean desde \emph{la nube} utilizando servicios de \textbf{cloud computing}
+\item Por limitaciones de presupuesto la aplicación debe ser capaz de generar ingresos en el corto plazo
+\item Se nos sugiere el servicio SpamBust para lograr la detección de ofertas falsas. No obstante el servicio es pago y deberá ser reemplazado en la brevedad.
+\end{itemize}
+
+\subsection{Diccionario de términos}
+
+\input{markdowns/dict}
+
+\section{Plan de proyecto}
+
+
+
+\end{document}
