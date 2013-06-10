@@ -7,7 +7,7 @@
 **Descripción**: Clientes externos pueden consultar a nuestro sistema por precios que recopilamos de distintos medios a través de un servicio público (API) ofrecido por nuestro sistema.
 
 
-###CU3: El usuario consulta precios a través de una interfaz amigable
+###CU3: El usuario consulta precios a través de una interfaz amigable en su celular
 **Descripción**: El usuario accede a una aplicación de celular propia de _twitteando para ahorrar_ a través de la cual puede consultar por precios para distintos productos.
 
 
@@ -53,3 +53,8 @@
 ###CU17: Un usuario autentificado puede votar por la validez de una oferta.
 **Descripción**: Un usuario ya autenticado en el sistema elije una oferta y la marca como válida o inválida. Esto afecta la reputación del usuario o fuente que dio origen a la oferta para facilitar la detección de ofertas sospechosas.
 
+###CU18: El usuario consulta precios a través de una interfaz amigable en su computadora
+**Descripción**: El usuario accede a un sitio web propio de _twitteando para ahorrar_ a través de la cual puede consultar por precios para distintos productos.
+
+###CU19: Almacenando datos obtenidos de distintos sitios de internet.
+**Descripción**: El sistema recorre distintos sitios de internet y consulta distintos servicios obteniendo precios y locaciones para comprar distintos productos y los almacena internamente en el sistema para poder ser accedidos después por los mecanismos que presentan la información a los usuarios de la aplicación.
