@@ -137,9 +137,14 @@ faltan
 
 * Sistema de ofertas promocionadas (las empresas pagan por que sus productos aparezcan primeros en las busquedas, o resaltados). La meto pq hay que autofinanciarse.
 
-* Mostrando publicidades en la aplicación
+* Mostrando publicidades en la aplicación. 
 **Descripción**: Cuando el usuario utiliza la aplicación visualiza, aparte de los resultados de su consulta, propaganda de los spónsores de _twitteando para ahorrar_.
-
+    + Definir el restricciones para el formato de las propagandas de spónsores.
+    + Realizar tramites administrativos para el cobro de este servicio.
+    + Promocionar el servicio con posibles interesados.
+    + Implementar un componente administrador de la presentación de la publicidad de sponsors.
+        + Realizar tests funcionales.
+    + Integrar a la aplicacion
 
 * Filtrando ofertas falsas mediante nuestro sistema de spam
 
