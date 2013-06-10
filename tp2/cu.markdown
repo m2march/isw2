@@ -45,10 +45,10 @@
 **Descripción**: Cada martes el sistema arma y publica un informe con los productos sobre los cuales se encontraron precios dudosos junto con la evidencia que genera la sospecha. Este informe debe estar disponible para revisión por usuarios externos selectos. 
 
 ###CU15: Se prepara un informe con las estadisticas de ofertas detectadas como falsas.
-**Descripción**: Al mismo tiempo que el usuario comienza a ingresar una consulta en la aplicación movil, la aplicación se anticipa a los deseos del usuario para mostrarle rápidamente precios de productos que podríán responder a la consulta que se está formulando.
+**Descripción**: Al mismo tiempo que el usuario comienza a ingresar una consulta, la aplicación se anticipa a los deseos del usuario para mostrarle rápidamente precios de productos que podríán responder a la consulta que se está formulando.
 
 ###CU16: El usuario se autentica con el sistema 
-**Descripción**: El usuario de la aplicación movil puede utilizar alguna cuenta de un servicio asociado con OpenID (google, yahoo, facebook y otro) para autenticarse en la aplicación. A partir de ese momento la aplicación sabe quién es el usuario y puede utilizar la información que tiene del mismo para proveerle funcionalidades más avanzadas.
+**Descripción**: El usuario de la aplicación puede utilizar alguna cuenta de un servicio asociado con OpenID (google, yahoo, facebook y otro) para autenticarse en la aplicación. A partir de ese momento la aplicación sabe quién es el usuario y puede utilizar la información que tiene del mismo para proveerle funcionalidades más avanzadas.
 
 ###CU17: Un usuario autentificado puede votar por la validez de una oferta.
 **Descripción**: Un usuario ya autenticado en el sistema elije una oferta y la marca como válida o inválida. Esto afecta la reputación del usuario o fuente que dio origen a la oferta para facilitar la detección de ofertas sospechosas.
