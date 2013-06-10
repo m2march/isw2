@@ -18,7 +18,7 @@ faltan
 
 * Diseño conceptual del sistema.
 * Realización de WBS.
-* Definir objetivos y requerimientos más concretos, documentando estos.
+* Primera revisión del caso de negocio, objetivos y requerimientos.
 * Análisis de riesgos.
 * Definición y priorización de casos de uso, documentando los tiempos esperados para los casos de uso más prioritarios.
 * Definir junto a los stakholder los atributos de calidad del sistema.
