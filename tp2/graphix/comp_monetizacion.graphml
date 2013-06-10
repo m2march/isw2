@@ -124,7 +124,7 @@ los servicios a proveer <y:LabelModel>
     <node id="n6">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="597.0953307392991"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="637.5340466926061"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="150.255859375" x="38.3720703125" y="-0.96875">Implementación de 
@@ -142,7 +142,7 @@ las alternativas elegidas<y:LabelModel>
     <node id="n7">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="637.5340466926064"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="677.9727626459133"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="196.357421875" x="15.3212890625" y="6.015625">Testing de alternativas elegidas<y:LabelModel>
@@ -159,7 +159,7 @@ las alternativas elegidas<y:LabelModel>
     <node id="n8">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="718.4114785992208"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="758.8501945525278"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="149.330078125" x="38.8349609375" y="6.015625">Revisión de definiciones<y:LabelModel>
@@ -176,7 +176,7 @@ las alternativas elegidas<y:LabelModel>
     <node id="n9">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1328.098573281453" y="758.850194552528"/>
+          <y:Geometry height="30.0" width="227.0" x="1328.098573281453" y="799.288910505835"/>
           <y:Fill color="#CC99FF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="174.935546875" x="26.0322265625" y="-0.96875">Documentación actualizada 
@@ -194,7 +194,7 @@ de los servicios provistos<y:LabelModel>
     <node id="n10">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="799.2889105058352"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="839.7276264591422"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="194.734375" x="16.1328125" y="6.015625">Implementación de los cambios<y:LabelModel>
@@ -211,11 +211,47 @@ de los servicios provistos<y:LabelModel>
     <node id="n11">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="677.9727626459136"/>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="718.4114785992206"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="173.248046875" x="26.8759765625" y="-0.96875">Integración del componente
 con el sistema<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n12">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="597.095330739299"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="203.224609375" x="11.8876953125" y="-0.96875">Realizar tramites administrativos
+para cobrar el servicio<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n13">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="227.0" x="1249.9876783398183" y="880.1663424124495"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="148.146484375" x="39.4267578125" y="-0.96875">Promocionar el servicio 
+con interesados<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -283,7 +319,7 @@ con el sistema<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-71.00817634937675" sy="15.019807186654361" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1292.4795019904416" y="773.850194552528"/>
+            <y:Point x="1292.4795019904416" y="814.288910505835"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -294,7 +330,7 @@ con el sistema<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-78.39883268482481" sy="1.0" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1211.6011673151752" y="733.4114785992208"/>
+            <y:Point x="1211.6011673151752" y="750.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -305,7 +341,7 @@ con el sistema<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-76.92109011653429" sy="15.031072352666342" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1213.0789098834657" y="652.5340466926064"/>
+            <y:Point x="1213.0789098834657" y="676.4114785992206"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -316,7 +352,7 @@ con el sistema<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-77.00875486381301" sy="15.026687641861201" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1212.991245136187" y="612.0953307392991"/>
+            <y:Point x="1212.991245136187" y="660.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -327,7 +363,7 @@ con el sistema<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-78.0" sy="14.9609375" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1212.0" y="692.9727626459136"/>
+            <y:Point x="1212.0" y="733.4114785992206"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -338,7 +374,31 @@ con el sistema<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-78.39883268482481" sy="15.0234375" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1211.6011673151752" y="814.2889105058352"/>
+            <y:Point x="1211.6011673151752" y="840.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+        </y:QuadCurveEdge>
+      </data>
+    </edge>
+    <edge id="e11" source="n1" target="n12">
+      <data key="d9"/>
+      <data key="d10">
+        <y:QuadCurveEdge straightness="0.1">
+          <y:Path sx="-79.0" sy="3.0" tx="-62.48767833981833" ty="0.9046692607009845">
+            <y:Point x="1211.0" y="630.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+        </y:QuadCurveEdge>
+      </data>
+    </edge>
+    <edge id="e12" source="n1" target="n13">
+      <data key="d9"/>
+      <data key="d10">
+        <y:QuadCurveEdge straightness="0.1">
+          <y:Path sx="-77.40315653890184" sy="14.982415630134199" tx="-95.48767833981833" ty="4.833657587550533">
+            <y:Point x="1212.5968434610982" y="900.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
