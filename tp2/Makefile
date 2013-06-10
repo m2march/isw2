@@ -8,7 +8,9 @@ INFORME_DIR = informe
 MARKDOWN_DIR = .
 
 
-all: ${PDFS} ${TEX_MARKDOWNS}
+all: ${TEX_MARKDOWNS}
+
+pdfs: ${PDFS}
 
 %.pdf: %.markdown
 	${MD2PDF} -o $@ $^

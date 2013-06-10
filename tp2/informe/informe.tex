@@ -66,13 +66,14 @@ Para el desarrollo de la aplicación deberemos tener en cuenta los siguientes de
 \item Se nos exige que los servicios de provean desde \emph{la nube} utilizando servicios de \textbf{cloud computing}
 \item Por limitaciones de presupuesto la aplicación debe ser capaz de generar ingresos en el corto plazo
 \item Se nos sugiere el servicio SpamBust para lograr la detección de ofertas falsas. No obstante el servicio es pago y deberá ser reemplazado en la brevedad.
+\item Las funcionalidades de preferencias y reputación de usuarios deberán ser visibles para los \emph{stakeholders} en un plazo de dos meses.
 \end{itemize}
 
 \subsection{Diccionario de términos}
 
 \input{markdowns/dict}
 
-\section{Plan de proyecto}
+\section{Análisis inicial de proyecto}
 
 \subsection{Casos de uso}
 
@@ -86,6 +87,18 @@ A su vez se realizó un análisis de los posibles problemas que pueden surgir en
 
 \input{markdowns/riesgos}
 
+\subsection{Intereses y prioridades}
 
+En vista de los análisis presentados resumimos una serie de intereses principales y criterios de priorización de tareas que serán usados para la planificación del proyecto. 
+
+En primer lugar consideramos que debe haber una versión de la nueva aplicación movil funcionando lo antes posible, aunque no poseea la funcionalidad completa. Esto está motivado por la mitigación de dos riegos importantes que son la incompatibiliad de la aplicación movil con los usuarios de la misma y la falta de dinero para el proyecto. Con una versión de la aplicación funcionando, es más fácil evaluar las preferencias de los usuarios y encontrar dificultades en su uso. Luego, dado que todavía estamos en las primeras etapas de desarrollo será mucho más facil corregir los requerimientos. La idea es mantener una fuerte atención sobre la recepción de la aplicación por parte de los usuarios, para lograr atender el interés de uso masivo.
+
+A su vez, en una aplicación andando podemos mostrar publicidades de distintos sponsores, empezando a conseguir financiación y mitigando el importante riesgo de falta de dinero, que podría cancelar el proyecto completamente.
+
+Por otra parte, dada la importancia de la funcionalidad de detección de ofertas sospechosas, será importante integrar \textbf{SpamBust} al sistema lo antes posible, por lo que priorizará capacitar al personal en su uso. A su vez, se deberán priorizar las tareas de análisis y desarrollo del sistema que reemplazará a \textbf{SpamBust}, dado el riesgo que implica depender de un servicio externo, así como los gastos que acarrea. 
+
+Debidas las limitaciones de hardware que tenemos consideramos clave hacer buen uso de nuestros recursos, ya que de otra forma el sistema podría tener problemas para proveer la performance deseada frente a la escala de la base de usuarios que tendrá. Para lograr esto, se entrenará al equipo de trabajo en metodologias y teconologías de \emph{computación distribuída}, que permitirán aprovechar los equipos de escritorio con los que contamos. 
+
+Finalmente, los principales \emph{stakeholders} del proyecto hicieron enfasís en que quieren ver la funcionalidad de reputación y preferencias de usuario funcionando lo antes posible. Estas funcionalidades están representadas en los \emph{casos de uso} 11 y 17. Las tareas relacionadas con los mismos serán priorizadas.
 
 \end{document}
