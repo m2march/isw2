@@ -3,6 +3,7 @@
 (tambien van todas las tares en  #Tareas) 
 * Obteniendo información definida de Twitter.
 * Establecer una primera interfaz de fácil implementación
+* Almacenando datos obtenidos de distintos sitios de internet.
 * Si realizo una consulta por un producto A, obtengo ofertas de este producto.
 * Mostrando publicidades en la aplicación
 
@@ -110,16 +111,20 @@ faltan
 * ABM de rubros habilitados.
 * ABM de productos en un rubro.
 
+* Almacenando datos obtenidos de distintos sitios de internet.
+**Descripción**: El sistema recorre distintos sitios de internet y consulta distintos servicios obteniendo precios y locaciones para comprar distintos productos y los almacena internamente en el sistema para poder ser accedidos después por los mecanismos que presentan la información a los usuarios de la aplicación.
+    + Crear un diseño de BD que se ajuste a las necesidades y requerimientos del sistema
+    + Implementar una componente que alimente a la BD con los datos extraido de los obtenedores de datos
+    + Realizar tests funcionales
+    + Realizar tests de stress
+    + Integración de las consultas con el resto del sistema
+
 * Si realizo una consulta por un producto A, obtengo ofertas de este producto.
 **Descripción**: Se busca en la base de datos del sistema ofertas que cumplan lo especificado.
     + Definir el tipo de consultas que se van a poder hacer
-    + Crear un diseño de BD que se ajuste a las necesidades y requerimientos del sistema
-    + Implementar una componente que alimente a la BD con los datos extraido de los obtenedores de datos
-        + Realizar tests funcionales
-        + Realizar tests de stress
     + Implementar la componente encargada de hacer las consultas a la BD.
-        + Realizar tests funcionales
-        + Realizar tests de stress
+    + Realizar tests funcionales
+    + Realizar tests de stress
     + Integración de las consultas con el resto del sistema
 
 * Si realizo una consulta por un producto A y este no esta se le informa al usuario.
