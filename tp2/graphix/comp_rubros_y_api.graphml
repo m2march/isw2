@@ -35,11 +35,12 @@
     <node id="n1">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1514.1945525291826" y="165.0"/>
+          <y:Geometry height="55.0" width="125.0" x="1450.1945525291826" y="178.5"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="128.236328125" x="49.3818359375" y="-0.96875">Componente de 
-publicación de datos<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="103.6796875" x="10.66015625" y="4.546875">Componente de 
+publicación 
+de datos<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -53,11 +54,12 @@ publicación de datos<y:LabelModel>
     <node id="n2">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1615.4027237354082" y="231.59995136186768"/>
+          <y:Geometry height="55.0" width="125.0" x="1501.4027237354082" y="245.09995136186768"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="207.484375" x="9.7578125" y="-0.96875">Documento funcional de servicios
-a proveer<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="118.205078125" x="3.3974609375" y="4.546875">Documento 
+funcional de 
+servicios a proveer<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -71,10 +73,11 @@ a proveer<y:LabelModel>
     <node id="n3">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1615.4027237354082" y="315.5999513618677"/>
+          <y:Geometry height="55.0" width="125.0" x="1501.4027237354082" y="367.0999513618677"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="197.078125" x="14.9609375" y="6.015625">Implementación de los servicios<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="104.9921875" x="10.00390625" y="11.53125">Implementación 
+de los servicios<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -88,10 +91,11 @@ a proveer<y:LabelModel>
     <node id="n4">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1615.4027237354082" y="358.5999513618677"/>
+          <y:Geometry height="55.0" width="125.0" x="1501.4027237354082" y="428.0999513618677"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="182.330078125" x="22.3349609375" y="6.015625">Testing de la implementación<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="100.97265625" x="12.013671875" y="11.53125">Testing de la 
+implementación<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -105,10 +109,11 @@ a proveer<y:LabelModel>
     <node id="n5">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1615.4027237354082" y="441.5999513618677"/>
+          <y:Geometry height="55.0" width="125.0" x="1501.4027237354082" y="550.0999513618676"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="172.744140625" x="27.1279296875" y="6.015625">Revisión de la funcionalidad<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="91.8203125" x="16.58984375" y="11.53125">Revisión de la 
+funcionalidad<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -122,10 +127,11 @@ a proveer<y:LabelModel>
     <node id="n6">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1686.108949416342" y="481.5999513618677"/>
+          <y:Geometry height="55.0" width="125.0" x="1554.108949416342" y="611.0999513618676"/>
           <y:Fill color="#CC99FF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="150.033203125" x="38.4833984375" y="-0.96875">Documento actualizado 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="96.0859375" x="14.45703125" y="4.546875">Documento 
+actualizado 
 de los servicios<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -140,10 +146,11 @@ de los servicios<y:LabelModel>
     <node id="n7">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1615.4027237354082" y="401.5999513618677"/>
+          <y:Geometry height="55.0" width="125.0" x="1501.4027237354082" y="489.0999513618677"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="173.248046875" x="26.8759765625" y="6.015625">Integración del componente<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="97.978515625" x="13.5107421875" y="11.53125">Integración del 
+componente<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -157,10 +164,11 @@ de los servicios<y:LabelModel>
     <node id="n8">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1615.4027237354082" y="521.5999513618676"/>
+          <y:Geometry height="55.0" width="125.0" x="1501.4027237354082" y="672.0999513618676"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="202.55078125" x="12.224609375" y="6.015625">Corrección de la implementación<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="115.474609375" x="4.7626953125" y="11.53125">Corrección de 
+la implementación<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -174,11 +182,12 @@ de los servicios<y:LabelModel>
     <node id="n9">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1615.4027237354082" y="273.5999513618677"/>
+          <y:Geometry height="55.0" width="148.0" x="1501.4027237354082" y="306.0999513618677"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="207.841796875" x="9.5791015625" y="-0.96875">Analisis de tecnologias 
-existentes para proveer servicios.<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="142.59765625" x="2.701171875" y="4.546875">Análisis de 
+tecnologías existentes 
+para proveer servicios<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -192,11 +201,12 @@ existentes para proveer servicios.<y:LabelModel>
     <node id="n10">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1118.0233463035015" y="173.0"/>
+          <y:Geometry height="55.0" width="125.0" x="1190.9484435797658" y="178.5"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="148.38671875" x="39.306640625" y="-0.96875">Componente de manejo
-de rubros y productos<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="113.833984375" x="5.5830078125" y="4.546875">Componente de 
+manejo de rubros 
+y productos<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -210,11 +220,12 @@ de rubros y productos<y:LabelModel>
     <node id="n11">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1244.464007782101" y="270.0"/>
+          <y:Geometry height="55.0" width="140.0" x="1265.3891050583652" y="308.0499756809338"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="196.732421875" x="15.1337890625" y="-0.96875">Documento funcional de 
-requerimientos del componente<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="136.140625" x="1.9296875" y="4.546875">Documento funcional 
+de requerimientos 
+del componente<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -228,10 +239,11 @@ requerimientos del componente<y:LabelModel>
     <node id="n12">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1244.464007782101" y="307.0"/>
+          <y:Geometry height="55.0" width="125.0" x="1265.3891050583652" y="369.14992704280155"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="197.078125" x="14.9609375" y="6.015625">Implementación de los servicios<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="123.806640625" x="0.5966796875" y="11.53125">Implementación de 
+los servicios<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -245,10 +257,11 @@ requerimientos del componente<y:LabelModel>
     <node id="n13">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1244.464007782101" y="344.0"/>
+          <y:Geometry height="55.0" width="125.0" x="1265.3891050583652" y="430.2498784046693"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="182.330078125" x="22.3349609375" y="6.015625">Testing de la implementación<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="100.97265625" x="12.013671875" y="11.53125">Testing de la 
+implementación<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -262,10 +275,11 @@ requerimientos del componente<y:LabelModel>
     <node id="n14">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1244.464007782101" y="422.0"/>
+          <y:Geometry height="55.0" width="125.0" x="1265.3891050583652" y="555.2998540856031"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="172.744140625" x="27.1279296875" y="6.015625">Revisión de la funcionalidad<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="99.42578125" x="12.787109375" y="11.53125">Revisión de 
+la funcionalidad<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -279,11 +293,12 @@ requerimientos del componente<y:LabelModel>
     <node id="n15">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1313.7324902723735" y="466.19990272373536"/>
+          <y:Geometry height="55.0" width="125.0" x="1305.6575875486378" y="619.8998054474708"/>
           <y:Fill color="#CC99FF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="150.033203125" x="38.483398437499886" y="-0.96875">Documento actualizado 
-de los servicios<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="95.5234375" x="14.73828125" y="4.546875">Documento 
+actualizado de 
+los servicios<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -297,10 +312,11 @@ de los servicios<y:LabelModel>
     <node id="n16">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1244.464007782101" y="383.0"/>
+          <y:Geometry height="55.0" width="125.0" x="1265.3891050583652" y="491.349829766537"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="173.248046875" x="26.8759765625" y="6.015625">Integración del componente<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="97.978515625" x="13.5107421875" y="11.53125">Integración del 
+componente<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -314,10 +330,11 @@ de los servicios<y:LabelModel>
     <node id="n17">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1244.464007782101" y="510.39980544747084"/>
+          <y:Geometry height="55.0" width="125.0" x="1265.3891050583652" y="684.4997568093386"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="202.55078125" x="12.224609375" y="6.015625">Corrección de la implementación<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="115.474609375" x="4.7626953125" y="11.53125">Corrección de 
+la implementación<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -331,11 +348,12 @@ de los servicios<y:LabelModel>
     <node id="n18">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1244.464007782101" y="233.0"/>
+          <y:Geometry height="55.0" width="125.0" x="1265.3891050583652" y="249.31966277561645"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="150.279296875" x="38.3603515625" y="-0.96875">Documentación de tipos
-de usuarios del servicio<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="121.029296875" x="1.9853515625" y="4.546875">Documentación de 
+tipos de usuarios 
+del servicio<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -349,7 +367,7 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e0" source="n0" target="n1">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="0.0" sy="0.0" tx="-113.5198974609375" ty="0.0"/>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="-27.50244140625"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
         </y:QuadCurveEdge>
@@ -358,8 +376,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e1" source="n1" target="n2">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-62.03696498054478" sy="1.342412451361895" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1565.6575875486378" y="246.59995136186774"/>
+          <y:Path sx="-62.03696498054478" sy="1.342412451361895" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1450.6575875486378" y="272.59995136186774"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -369,8 +387,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e2" source="n5" target="n6">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-83.62840466926082" sy="14.970323139591471" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1645.2743190661474" y="496.5999513618677"/>
+          <y:Path sx="-45.237236766395654" sy="27.53118710887884" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1518.6654869690126" y="638.5999513618676"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -380,8 +398,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e3" source="n1" target="n3">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-62.03696498054478" sy="15.011726349708141" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1565.6575875486378" y="330.5999513618677"/>
+          <y:Path sx="-62.03696498054478" sy="15.011726349708141" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1450.6575875486378" y="394.5999513618677"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -391,8 +409,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e4" source="n1" target="n4">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-62.03696498054478" sy="14.975825328307366" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1565.6575875486378" y="373.5999513618677"/>
+          <y:Path sx="-62.03696498054478" sy="14.975825328307366" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1450.6575875486378" y="455.5999513618677"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -402,8 +420,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e5" source="n1" target="n5">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-62.03696498054478" sy="2.4912451361867625" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1565.6575875486378" y="456.59995136186774"/>
+          <y:Path sx="-62.03696498054478" sy="2.4912451361867625" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1450.6575875486378" y="577.5999513618676"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -413,8 +431,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e6" source="n1" target="n7">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-62.03696498054478" sy="0.1935797665369705" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1565.6575875486378" y="416.59995136186774"/>
+          <y:Path sx="-62.03696498054478" sy="0.1935797665369705" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1450.6575875486378" y="516.5999513618676"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -424,8 +442,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e7" source="n1" target="n8">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-62.03696498054478" sy="14.975825328307366" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1565.6575875486378" y="536.5999513618676"/>
+          <y:Path sx="-62.03696498054478" sy="14.975825328307366" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1450.6575875486378" y="699.5999513618676"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -435,8 +453,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e8" source="n1" target="n9">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-62.03696498054478" sy="15.011726349708141" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="1565.6575875486378" y="288.59995136186774"/>
+          <y:Path sx="-62.03696498054478" sy="15.011726349708141" tx="-74.033203125" ty="0.0">
+            <y:Point x="1450.6575875486378" y="333.5999513618677"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -446,8 +464,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e9" source="n10" target="n11">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-64.84630350194561" sy="15.024980240758765" tx="70.91666666666492" ty="1.3133333333330484">
-            <y:Point x="1166.677042801556" y="293.2129961089495"/>
+          <y:Path sx="-64.84630350194561" sy="15.024980240758765" tx="-69.9794921875" ty="0.0">
+            <y:Point x="1188.6021400778202" y="335.5499756809338"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -457,8 +475,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e10" source="n14" target="n15">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-94.05771725032446" sy="15.016514165855995" tx="0.0" ty="0.0">
-            <y:Point x="1263.9062905317764" y="481.19990272373536"/>
+          <y:Path sx="-48.05771725032446" sy="27.5204584143969" tx="0.0" ty="0.0">
+            <y:Point x="1279.8313878080407" y="647.3998054474708"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -468,8 +486,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e11" source="n10" target="n12">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-64.84630350194561" sy="15.024980240758765" tx="83.076666666665" ty="0.0">
-            <y:Point x="1166.677042801556" y="328.8929961089495"/>
+          <y:Path sx="-64.84630350194561" sy="15.024980240758765" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1188.6021400778202" y="396.64992704280155"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -479,8 +497,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e12" source="n10" target="n13">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-64.84630350194561" sy="14.98907921935799" tx="77.31666666666501" ty="0.9133333333330711">
-            <y:Point x="1166.677042801556" y="366.80632944228256"/>
+          <y:Path sx="-64.84630350194561" sy="14.98907921935799" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1183.6021400778202" y="457.7498784046693"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -490,8 +508,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e13" source="n10" target="n14">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-64.84630350194561" sy="15.024980240758765" tx="71.55666666666502" ty="0.0">
-            <y:Point x="1166.677042801556" y="443.8929961089495"/>
+          <y:Path sx="-64.84630350194561" sy="15.024980240758765" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1188.6021400778202" y="582.7998540856031"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -501,8 +519,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e14" source="n10" target="n16">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-64.84630350194561" sy="14.97112870865763" tx="63.87666666666496" ty="-1.6066666666669107">
-            <y:Point x="1166.677042801556" y="404.8929961089495"/>
+          <y:Path sx="-64.84630350194561" sy="14.97112870865763" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1188.6021400778202" y="518.849829766537"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -512,8 +530,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e15" source="n10" target="n17">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-64.84630350194561" sy="14.971128708657574" tx="73.47666666666487" ty="0.0">
-            <y:Point x="1166.677042801556" y="532.2928015564203"/>
+          <y:Path sx="-64.84630350194561" sy="14.971128708657574" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1188.6021400778202" y="711.9997568093386"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -523,8 +541,8 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e16" source="n10" target="n18">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-63.04163424124499" sy="14.98907921935799" tx="80.51666666666506" ty="-3.9266666666669607">
-            <y:Point x="1168.4817120622565" y="254.8929961089495"/>
+          <y:Path sx="-63.04163424124499" sy="14.98907921935799" tx="-62.481689453125" ty="0.0">
+            <y:Point x="1190.4068093385208" y="272.8929961089495"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -534,7 +552,7 @@ de usuarios del servicio<y:LabelModel>
     <edge id="e17" source="n0" target="n10">
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-60.58456417833531" sy="14.99595550440975" tx="0.0" ty="0.0"/>
+          <y:Path sx="-60.58456417833531" sy="14.99595550440975" tx="0.0" ty="-27.50244140625"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
         </y:QuadCurveEdge>

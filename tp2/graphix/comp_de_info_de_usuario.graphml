@@ -35,7 +35,7 @@ información de usuario<y:LabelModel>
     <node id="n1">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="456.5" y="372.8877880083858"/>
+          <y:Geometry height="30.0" width="227.0" x="585.5" y="366.9355760167716"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="184.046875" x="21.4765625" y="-0.96875">Componente de identificación
@@ -53,7 +53,7 @@ de usuarios<y:LabelModel>
     <node id="n2">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="760.5" y="372.8877880083858"/>
+          <y:Geometry height="30.0" width="227.0" x="900.5" y="369.0477880083858"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="161.39453125" x="32.802734375" y="-0.96875">Componente de confianza
@@ -71,7 +71,7 @@ individualizado<y:LabelModel>
     <node id="n3">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1017.5" y="372.8877880083858"/>
+          <y:Geometry height="30.0" width="227.0" x="591.0" y="712.5963709853254"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="168.15625" x="29.421875" y="-0.96875">Componente de reputación
@@ -89,7 +89,7 @@ de usuarios<y:LabelModel>
     <node id="n4">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="503.5" y="431.15999999999997"/>
+          <y:Geometry height="30.0" width="227.0" x="632.5" y="425.20778800838576"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="186.35546875" x="20.322265625" y="6.015625">Aprendizaje de uso de OpenID<y:LabelModel>
@@ -106,7 +106,7 @@ de usuarios<y:LabelModel>
     <node id="n5">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="503.5" y="476.15999999999997"/>
+          <y:Geometry height="30.0" width="227.0" x="632.5" y="470.20778800838576"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="212.529296875" x="7.2353515625" y="-0.96875">Documentación de requerimientos
@@ -124,7 +124,7 @@ para el componente<y:LabelModel>
     <node id="n6">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="504.0" y="521.16"/>
+          <y:Geometry height="30.0" width="227.0" x="633.0" y="515.2077880083857"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="146.388671875" x="40.3056640625" y="6.015625">Diseño del componente<y:LabelModel>
@@ -141,7 +141,7 @@ para el componente<y:LabelModel>
     <node id="n7">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="503.5" y="567.216105995807"/>
+          <y:Geometry height="30.0" width="227.0" x="632.5" y="561.2638940041927"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="202.41015625" x="12.294921875" y="6.015625">Implementación del componente<y:LabelModel>
@@ -158,7 +158,7 @@ para el componente<y:LabelModel>
     <node id="n8">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="503.5" y="611.3283179874214"/>
+          <y:Geometry height="30.0" width="227.0" x="632.5" y="605.3761059958072"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="149.458984375" x="38.7705078125" y="6.015625">Testing del componente<y:LabelModel>
@@ -175,7 +175,7 @@ para el componente<y:LabelModel>
     <node id="n9">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="503.5" y="655.4405299790359"/>
+          <y:Geometry height="30.0" width="227.0" x="632.5" y="649.4883179874216"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="173.248046875" x="26.8759765625" y="6.015625">Integración del componente<y:LabelModel>
@@ -192,7 +192,7 @@ para el componente<y:LabelModel>
     <node id="n10">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1096.0" y="424.1641589937108"/>
+          <y:Geometry height="30.0" width="227.0" x="669.5" y="763.8727419706504"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="212.529296875" x="7.2353515625" y="-0.96875">Documentación de requerimientos
@@ -210,7 +210,7 @@ para el componente<y:LabelModel>
     <node id="n11">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1096.5" y="465.00000000000006"/>
+          <y:Geometry height="30.0" width="227.0" x="670.0" y="804.7085829769396"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="146.388671875" x="40.3056640625" y="6.015625">Diseño del componente<y:LabelModel>
@@ -227,7 +227,7 @@ para el componente<y:LabelModel>
     <node id="n12">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1096.0" y="505.8358410062893"/>
+          <y:Geometry height="30.0" width="227.0" x="669.5" y="845.5444239832289"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="202.41015625" x="12.294921875" y="6.015624999999943">Implementación del componente<y:LabelModel>
@@ -244,7 +244,7 @@ para el componente<y:LabelModel>
     <node id="n13">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1096.0" y="546.6716820125785"/>
+          <y:Geometry height="30.0" width="227.0" x="669.5" y="886.380264989518"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="149.458984375" x="38.7705078125" y="6.015625">Testing del componente<y:LabelModel>
@@ -261,7 +261,7 @@ para el componente<y:LabelModel>
     <node id="n14">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="1096.0" y="587.5075230188677"/>
+          <y:Geometry height="30.0" width="227.0" x="669.5" y="927.2161059958072"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="173.248046875" x="26.8759765625" y="6.015625">Integración del componente<y:LabelModel>
@@ -278,7 +278,7 @@ para el componente<y:LabelModel>
     <node id="n15">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="786.5" y="435.0"/>
+          <y:Geometry height="30.0" width="227.0" x="926.5" y="431.15999999999997"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="212.529296875" x="7.2353515625" y="-0.96875">Documentación de requerimientos
@@ -296,7 +296,7 @@ para el componente<y:LabelModel>
     <node id="n16">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="787.0" y="480.0"/>
+          <y:Geometry height="30.0" width="227.0" x="927.0" y="476.15999999999997"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="146.388671875" x="40.3056640625" y="6.015625">Diseño del componente<y:LabelModel>
@@ -313,7 +313,7 @@ para el componente<y:LabelModel>
     <node id="n17">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="786.5" y="525.0"/>
+          <y:Geometry height="30.0" width="227.0" x="926.5" y="521.16"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="202.41015625" x="12.294921875" y="6.015625">Implementación del componente<y:LabelModel>
@@ -330,7 +330,7 @@ para el componente<y:LabelModel>
     <node id="n18">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="786.5" y="571.056105995807"/>
+          <y:Geometry height="30.0" width="227.0" x="926.5" y="567.216105995807"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="149.458984375" x="38.7705078125" y="6.015625">Testing del componente<y:LabelModel>
@@ -347,7 +347,7 @@ para el componente<y:LabelModel>
     <node id="n19">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="786.5" y="615.1683179874215"/>
+          <y:Geometry height="30.0" width="227.0" x="926.5" y="611.3283179874214"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="173.248046875" x="26.8759765625" y="6.015625">Integración del componente<y:LabelModel>
@@ -364,7 +364,7 @@ para el componente<y:LabelModel>
     <node id="n20">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="786.5" y="655.4405299790359"/>
+          <y:Geometry height="30.0" width="227.0" x="926.5" y="651.6005299790359"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="158.2421875" x="34.37890625" y="6.015625">Revisión de funcionalidad<y:LabelModel>
@@ -381,7 +381,7 @@ para el componente<y:LabelModel>
     <node id="n21">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="864.2666666666664" y="696.5766359748432"/>
+          <y:Geometry height="30.0" width="227.0" x="1004.2666666666664" y="692.7366359748431"/>
           <y:Fill color="#CC99FF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="205.03515625" x="10.982421875" y="6.015625">Documento funcional actualizado<y:LabelModel>
@@ -398,7 +398,7 @@ para el componente<y:LabelModel>
     <node id="n22">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="227.0" x="786.5" y="737.7127419706503"/>
+          <y:Geometry height="30.0" width="227.0" x="926.5" y="733.8727419706503"/>
           <y:Fill color="#99CCFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="202.55078125" x="12.224609375" y="6.015625">Corrección de la implementación<y:LabelModel>
@@ -434,7 +434,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="570.0" y="330.0"/>
+            <y:Point x="699.0" y="335.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -454,7 +454,8 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1131.0" y="330.0"/>
+            <y:Point x="531.6366666666668" y="327.8877880083858"/>
+            <y:Point x="580.5" y="720.25"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -465,7 +466,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-97.31624974638368" sy="14.992559744320033" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="471.69504005533" y="444.30472468564085"/>
+            <y:Point x="600.6950400553301" y="438.35251269402664"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -476,7 +477,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-93.67678454047774" sy="14.983419588862148" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="472.49504005533" y="494.2922246856409"/>
+            <y:Point x="601.49504005533" y="488.3400126940267"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -487,7 +488,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-97.50495994467002" sy="15.002285811552213" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="472.49504005533" y="534.3047246856408"/>
+            <y:Point x="601.49504005533" y="528.3525126940267"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -498,7 +499,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-93.56487266428542" sy="15.01448987920071" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="473.78063136392205" y="582.216105995807"/>
+            <y:Point x="602.7806313639221" y="576.2638940041927"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -509,7 +510,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-93.85131389340216" sy="15.017358969661586" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="473.04788130698006" y="624.3047246856408"/>
+            <y:Point x="602.0478813069801" y="618.3525126940267"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -520,7 +521,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-92.60149447625884" sy="15.014818481801228" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="473.0077625067699" y="675.8922246856408"/>
+            <y:Point x="602.00776250677" y="669.9400126940266"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -531,7 +532,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-75.0" sy="0.11221199161417417" tx="0.0" ty="0.0">
-            <y:Point x="1056.0" y="450.0"/>
+            <y:Point x="629.5" y="789.7085829769395"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -542,7 +543,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-73.00000000000023" sy="-0.8877880083858258" tx="0.0" ty="0.0">
-            <y:Point x="1057.9999999999998" y="493.03999999999985"/>
+            <y:Point x="631.4999999999998" y="832.7485829769394"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -553,7 +554,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-75.0" sy="1.1122119916141742" tx="0.0" ty="0.0">
-            <y:Point x="1056.0" y="540.0"/>
+            <y:Point x="629.5" y="879.7085829769395"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -564,7 +565,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-75.0" sy="-1.8877880083858258" tx="0.0" ty="0.0">
-            <y:Point x="1056.0" y="570.0"/>
+            <y:Point x="629.5" y="909.7085829769395"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -575,7 +576,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-75.0" sy="1.1122119916141742" tx="0.0" ty="0.0">
-            <y:Point x="1056.0" y="600.0"/>
+            <y:Point x="629.5" y="939.7085829769395"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -586,7 +587,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-73.0" sy="15.020407520964113" tx="-113.5198974609375" ty="0.0">
-            <y:Point x="827.0" y="711.5766359748432"/>
+            <y:Point x="967.0" y="707.7366359748431"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -597,7 +598,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-113.5198974609375" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="761.3466666666665" y="460.23999999999995"/>
+            <y:Point x="901.3466666666665" y="456.3999999999999"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -608,7 +609,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-113.5198974609375" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="760.4801025390625" y="510.0"/>
+            <y:Point x="900.4801025390625" y="506.15999999999997"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -619,7 +620,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-113.5198974609375" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="760.4801025390625" y="553.36"/>
+            <y:Point x="900.4801025390625" y="549.52"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -630,7 +631,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-113.5198974609375" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="760.4801025390625" y="600.0"/>
+            <y:Point x="900.4801025390625" y="596.16"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -641,7 +642,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-113.5198974609375" sy="0.0" tx="-99.61333333333357" ty="4.791682012578349">
-            <y:Point x="760.4801025390625" y="600.0"/>
+            <y:Point x="900.4801025390625" y="596.16"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -652,7 +653,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-113.5198974609375" sy="0.0" tx="-96.41333333333353" ty="4.839470020963859">
-            <y:Point x="760.4801025390625" y="660.0"/>
+            <y:Point x="900.4801025390625" y="656.16"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -663,7 +664,7 @@ para el componente<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="-113.5198974609375" sy="0.0" tx="-101.53333333333353" ty="5.527258029349468">
-            <y:Point x="760.4801025390625" y="690.0"/>
+            <y:Point x="900.4801025390625" y="686.16"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
