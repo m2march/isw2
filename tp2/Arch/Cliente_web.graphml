@@ -18,10 +18,10 @@
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="329.0" width="438.0" x="-350.5" y="70.0"/>
+          <y:Geometry height="329.0" width="438.0" x="341.0" y="379.5"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="4.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="81.40234375" x="178.298828125" y="333.0">Cliente Movil<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="76.802734375" x="180.5986328125" y="333.0">Cliente Web<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -35,7 +35,7 @@
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="297.0" width="80.0" x="-334.5" y="88.0"/>
+          <y:Geometry height="297.0" width="80.0" x="357.0" y="397.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="47.59375" x="16.203125" y="132.53125">Modulo
@@ -53,7 +53,7 @@ UI<y:LabelModel>
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="294.0" width="80.0" x="-8.5" y="88.0"/>
+          <y:Geometry height="294.0" width="80.0" x="683.0" y="397.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.875" modelName="custom" textColor="#000000" visible="true" width="83.798828125" x="-1.8994140625" y="117.0625">Comunicador
@@ -72,25 +72,8 @@ TPA <y:LabelModel>
     <node id="n3">
       <data key="d5"/>
       <data key="d6">
-        <y:GenericNode configuration="com.yworks.flowchart.dataBase">
-          <y:Geometry height="104.0" width="129.0" x="-222.5" y="278.0"/>
-          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="41.318359375" x="43.8408203125" y="43.015625">Cache<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-        </y:GenericNode>
-      </data>
-    </node>
-    <node id="n4">
-      <data key="d5"/>
-      <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="72.0" width="222.9375" x="-244.4375" y="88.0"/>
+          <y:Geometry height="72.0" width="222.9375" x="447.0625" y="397.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="102.525390625" x="60.2060546875" y="13.046875">Comunicador
@@ -105,11 +88,11 @@ OpenID Provider<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n5">
+    <node id="n4">
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="329.0" width="80.0" x="170.0" y="70.0"/>
+          <y:Geometry height="329.0" width="80.0" x="861.5" y="379.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="72.501953125" x="3.7490234375" y="148.53125">Sist. 
@@ -123,11 +106,11 @@ central TPA<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n6">
+    <node id="n5">
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="72.0" width="257.0" x="-278.5" y="-66.0"/>
+          <y:Geometry height="72.0" width="257.0" x="413.0" y="243.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="102.525390625" x="77.2373046875" y="27.015625">OpenID Provider<y:LabelModel>
@@ -140,27 +123,7 @@ central TPA<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <edge id="e0" source="n2" target="n3">
-      <data key="d9"/>
-      <data key="d10">
-        <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="17.037037037037035" sy="70.0" tx="4.5" ty="-25.0"/>
-          <y:LineStyle color="#000000" type="dotted" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-        </y:QuadCurveEdge>
-      </data>
-    </edge>
-    <edge id="e1" source="n3" target="n2">
-      <data key="d9"/>
-      <data key="d10">
-        <y:QuadCurveEdge straightness="0.1">
-          <y:Path sx="-0.5" sy="28.0" tx="0.0" ty="123.0"/>
-          <y:LineStyle color="#000000" type="dotted" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-        </y:QuadCurveEdge>
-      </data>
-    </edge>
-    <edge id="e2" source="n1" target="n2">
+    <edge id="e0" source="n1" target="n2">
       <data key="d9"/>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
@@ -170,7 +133,7 @@ central TPA<y:LabelModel>
         </y:QuadCurveEdge>
       </data>
     </edge>
-    <edge id="e3" source="n2" target="n1">
+    <edge id="e1" source="n2" target="n1">
       <data key="d9"/>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
@@ -180,12 +143,12 @@ central TPA<y:LabelModel>
         </y:QuadCurveEdge>
       </data>
     </edge>
-    <edge id="e4" source="n1" target="n4">
+    <edge id="e2" source="n1" target="n3">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="11.39999999999992" sy="-16.5" tx="-17.03125" ty="5.108333333333292">
-            <y:Point x="-150.0" y="220.0"/>
+            <y:Point x="541.5" y="529.5"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="diamond"/>
@@ -193,7 +156,7 @@ central TPA<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e5" source="n2" target="n5">
+    <edge id="e3" source="n2" target="n4">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -204,7 +167,7 @@ central TPA<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e6" source="n4" target="n6">
+    <edge id="e4" source="n3" target="n5">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
