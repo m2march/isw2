@@ -5,6 +5,7 @@
 * Sistema de confianza configurable
 * Mecanismo interno de reputacion de usuarios.
 * Saber como conectarse con un provider de datos del usuario (LinkedIn, tarjetas de credito)
+
 -------
 * Productos o vendedores destacados (+ABM)
 * Eliminar ofertas por algun criterio (?) pero log.
@@ -12,6 +13,11 @@
 * Obtener datos de sms
 * Obtener datos de redes sociales
 * Obtener datos de sitios
+
+----------------
+singup openid (?)
+
+
 
 
 # Restricciones

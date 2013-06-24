@@ -44,7 +44,7 @@
 ###CU14: Siendo martes se publica un informe de ofertas falsas
 **Descripción**: Cada martes el sistema arma y publica un informe con los productos sobre los cuales se encontraron precios dudosos junto con la evidencia que genera la sospecha. Este informe debe estar disponible para revisión por usuarios externos selectos. 
 
-###CU15: Se prepara un informe con las estadisticas de ofertas detectadas como falsas.
+###CU15: Se anticipa a los deseos del usuario y se muestra informacion preliminar
 **Descripción**: Al mismo tiempo que el usuario comienza a ingresar una consulta, la aplicación se anticipa a los deseos del usuario para mostrarle rápidamente precios de productos que podríán responder a la consulta que se está formulando.
 
 ###CU16: El usuario se autentica con el sistema 
