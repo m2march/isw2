@@ -28,7 +28,7 @@ singup openid (?)
 * No hay servidor con redundancia, hay pcs.
 
 # Calidad 
-* Extensibilidad de las fuentes de datos (2do párrafo enunciado)
+* _Extensibilidad_ de las fuentes de datos. (2do párrafo enunciado)
 	* Fuente: El equipo de desarrolladores.
 	* Estimulo: Se desea implementar una nueva fuente de datos.
 	* Artefacto: Sistema de obtención de datos.
@@ -36,7 +36,7 @@ singup openid (?)
 	* Respuesta: Se implementa la fuente de datos y se la integra al sistema.
 	* Medida: La fuente de datos se implementa en el tiempo esperado, y se integra con el sistema en menos de 1 hora, sin detenerlo.
 
-* Modificabilidad de los rubros y productos de rubros (3pe)
+* _Modificabilidad_ de los rubros y productos de rubros. (3pe)
 	* Fuente: Administradores del sistema.
 	* Estimulo: Se desea agregar un nuevo producto/rubro.
 	* Artefacto: Sistema central TPA.
@@ -44,7 +44,7 @@ singup openid (?)
 	* Respuesta: Utilizando la interfaz de administración, se agrega un nuevo producto/rubro al sistema, sin detenerlo.
 	* Medida: Se agrega un producto/rubro en menos de 5 minutos.
 
-* Modificabilidad de las reglas de asociación y sustitución (3pe)
+* _Modificabilidad_ de las reglas de asociación y sustitución. (3pe)
 	* Fuente: Administradores del sistema
 	* Estimulo: Se desea agregar/modificar las reglas de asociación y sustitución.
 	* Artefacto: Sistema central TPA.
@@ -52,56 +52,63 @@ singup openid (?)
 	* Respuesta: Se modifican las reglas de asociación y sustitución. 
 	* Medida: En menos de 24hs se implementan y ponen en funcionamiento las modificaciones a estas reglas.
 
-* Performance para velocidad en que se publican las ofertas (4pe)
-	* Fuente: 
-	* Estimulo:
-	* Artefacto:
-	* Entorno:
-	* Respuesta:
-	* Medida:
+* _Performance_ para velocidad en que se identifican ofertas de las distintas fuentes de datos. (4pe)
+	* Fuente: Usuario externo
+	* Estimulo: Se publica en un medio monitoreado por el sistema de obtención de datos una oferta.
+	* Artefacto: Sistema de obtención de datos.
+	* Entorno: Funcionamiento normal.
+	* Respuesta: El sistema de obtención de datos identifica esta oferta y la agrega a la base de datos.
+	* Medida: La oferta no se encuentra mas de 1 hora sin ser identificada.
+
 * Seguridad para evitar usos malintencionados autenticarse con OpenId (6pe)
+	* Fuente:
+	* Estimulo: 
+	* Artefacto:
+	* Entorno:
+	* Respuesta:
+	* Medida:
+
+* _Usabilidad_, sistema de confianza facilmente configurable.
+	* Fuente: Usuario autentificado.
+	* Estimulo: Modifica las reglas de confianza de ofertas.
+	* Artefacto: Sistema central TPA.
+	* Entorno: Funcionamiento normal.
+	* Respuesta: Se modifican las reglas de confianza de ofertas.
+	* Medida: El sistema provee una guia de configuración de confianza de ofertas, que ayuda a completar dicha tarea en menos de 15 minutos para un usuario nuevo.
+
+* Extensibilidad de las provider de datos del usuario.
 	* Fuente: 
 	* Estimulo:
 	* Artefacto:
 	* Entorno:
 	* Respuesta:
 	* Medida:
-* Usabilidad sistema de confianza (facilmente?) configurable
-	* Fuente: 
-	* Estimulo:
-	* Artefacto:
-	* Entorno:
-	* Respuesta:
-	* Medida:
-* Extensibilidad de los provider de datos del usuario.
-	* Fuente: 
-	* Estimulo:
-	* Artefacto:
-	* Entorno:
-	* Respuesta:
-	* Medida:
+
 * Modificabilidad del servicio de deteccion de spam.
-	* Fuente: 
-	* Estimulo:
-	* Artefacto:
-	* Entorno:
-	* Respuesta:
-	* Medida:
+	* Fuente: Equipo de desarrollo.
+	* Estimulo: Se desea modificar el funcionamiento del servicio de detección de Spam.
+	* Artefacto: Sistema de detección de Spam.
+	* Entorno: Funcionamiento normal.
+	* Respuesta: Se modifica el funcionamiento del servicio.
+	* Medida: El funcionamiento del servicio de detección de Spam debe poder modificarse (Cambio de proveedor, nuevo proveedor, etc...) con el sistema en funcionamiento Normal, y deberia ser posible que mas de un sistema de detección de Spam puedan co-existir.
+
 * Auditabilidad para ver la cantidad de ofertas falsas detectadas, productos de precios dudosos, etc.
-	* Fuente: 
-	* Estimulo:
-	* Artefacto:
-	* Entorno:
-	* Respuesta:
-	* Medida:
+	* Fuente: Administradores del sistema.
+	* Estimulo: Se desea ver el resumen de ofertas falsas, detectadas, etc...
+	* Artefacto: Sistema de detección de Spam.
+	* Entorno: Funcionamiento normal.
+	* Respuesta: Se obtiene un resumen con la información de ofertas falsas detectadas, precios dudosos, etc...
+	* Medida: 
+
 --------------
-* Usabilidad interfaz elegante y entendible para todos los usuarios.
-	* Fuente: 
-	* Estimulo:
-	* Artefacto:
-	* Entorno:
-	* Respuesta:
-	* Medida:
+* Usabilidad de la interfaz del sistema para realizar consultas.
+	* Fuente: Un usuario nuevo.
+	* Estimulo: El usuario desea realizar una consulta.
+	* Artefacto: Interfaz Movil / Interfaz Web.
+	* Entorno: Funcionamiento normal.
+	* Respuesta: Se realiza la consulta y se informa de los resultados a los usuarios.
+	* Medida: En menos de 5 minutos, un usuario nuevo comprende la interfaz y comienza a utilizarla .
+
 * Disponibilidad que no decaiga, escala nacional y siga funcionando offline.
 	* Fuente: 
 	* Estimulo:
