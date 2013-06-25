@@ -18,23 +18,6 @@
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="329.0" width="438.0" x="-350.5" y="70.0"/>
-          <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="4.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="81.40234375" x="178.298828125" y="333.0">Cliente Movil<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="0.5" offsetX="0.0" offsetY="4.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-        </y:GenericNode>
-      </data>
-    </node>
-    <node id="n1">
-      <data key="d5"/>
-      <data key="d6">
-        <y:GenericNode configuration="com.yworks.flowchart.process">
           <y:Geometry height="297.0" width="80.0" x="-334.5" y="88.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
@@ -49,7 +32,7 @@ UI<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n2">
+    <node id="n1">
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
@@ -69,7 +52,7 @@ TPA <y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n3">
+    <node id="n2">
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.dataBase">
@@ -86,7 +69,7 @@ TPA <y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n4">
+    <node id="n3">
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
@@ -105,11 +88,11 @@ OpenID Provider<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n5">
+    <node id="n4">
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="329.0" width="80.0" x="170.0" y="70.0"/>
+          <y:Geometry height="329.0" width="80.0" x="170.0" y="70.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="72.501953125" x="3.7490234375" y="148.53125">Sist. 
@@ -123,7 +106,7 @@ central TPA<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n6">
+    <node id="n5">
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
@@ -140,7 +123,24 @@ central TPA<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <edge id="e0" source="n2" target="n3">
+    <node id="n6">
+      <data key="d5"/>
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.flowchart.process">
+          <y:Geometry height="329.0" width="438.0" x="-350.5" y="70.0"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="4.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="81.40234375" x="178.298828125" y="333.0">Cliente Movil<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="0.5" offsetX="0.0" offsetY="4.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <edge id="e0" source="n1" target="n2">
       <data key="d9"/>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
@@ -150,7 +150,7 @@ central TPA<y:LabelModel>
         </y:QuadCurveEdge>
       </data>
     </edge>
-    <edge id="e1" source="n3" target="n2">
+    <edge id="e1" source="n2" target="n1">
       <data key="d9"/>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
@@ -160,7 +160,7 @@ central TPA<y:LabelModel>
         </y:QuadCurveEdge>
       </data>
     </edge>
-    <edge id="e2" source="n1" target="n2">
+    <edge id="e2" source="n0" target="n1">
       <data key="d9"/>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
@@ -170,7 +170,7 @@ central TPA<y:LabelModel>
         </y:QuadCurveEdge>
       </data>
     </edge>
-    <edge id="e3" source="n2" target="n1">
+    <edge id="e3" source="n1" target="n0">
       <data key="d9"/>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
@@ -180,7 +180,7 @@ central TPA<y:LabelModel>
         </y:QuadCurveEdge>
       </data>
     </edge>
-    <edge id="e4" source="n1" target="n4">
+    <edge id="e4" source="n0" target="n3">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -193,7 +193,7 @@ central TPA<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e5" source="n2" target="n5">
+    <edge id="e5" source="n1" target="n4">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -204,7 +204,7 @@ central TPA<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e6" source="n4" target="n6">
+    <edge id="e6" source="n3" target="n5">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
