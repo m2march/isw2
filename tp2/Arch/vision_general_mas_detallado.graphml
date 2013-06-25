@@ -422,8 +422,8 @@ Administrador<y:LabelModel>
       <data key="d10">
         <y:QuadCurveEdge straightness="0.1">
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
-          <y:Arrows source="none" target="crows_foot_many"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_diamond"/>
         </y:QuadCurveEdge>
       </data>
     </edge>
@@ -433,8 +433,8 @@ Administrador<y:LabelModel>
           <y:Path sx="0.0" sy="0.0" tx="-29.0" ty="0.0">
             <y:Point x="893.4111999999996" y="731.5400000000001"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
-          <y:Arrows source="none" target="crows_foot_many"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_diamond"/>
         </y:QuadCurveEdge>
       </data>
     </edge>
@@ -444,8 +444,8 @@ Administrador<y:LabelModel>
           <y:Path sx="0.0" sy="0.0" tx="-29.0" ty="1.0">
             <y:Point x="893.4111999999996" y="582.66"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
-          <y:Arrows source="none" target="crows_foot_many"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_diamond"/>
         </y:QuadCurveEdge>
       </data>
     </edge>
@@ -493,8 +493,8 @@ Administrador<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
-          <y:Arrows source="none" target="crows_foot_many"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_diamond"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
