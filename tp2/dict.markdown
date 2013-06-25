@@ -1,2 +1,5 @@
-* **Oferta**: Información sobre donde comprar un producto X y a qué precio.
-* **Usuario autenticado**: Usuario del cual el sistema tiene seguridad quién es.
+* **Oferta**: Información sobre el precio de un producto (válido) determinado en un lugar determinado. Lleva un identificador de su autor y del tiempo en el que fue enviada.
+* **Usuario autenticado**: Usuario que tiene un identificador (o "nombre") único dentro del sistema, y que confirmó su identidad ante el mismo para establecer una comunicación.
+* **Admin/Administrador**: Usuario especial del sistema que tiene acceso a funciones no disponibles para usuarios normales, y que puede tomar decisiones que afectan el funcionamiento del sistema para todos los usuarios.
+* **Regla de sustitución**: Regla del sistema que relaciona un producto con otro similar, indicando que es sustituible, es decir, que un usuario interesado en el primero podría cambiar de idea e interesarse por el segundo si se le proporciona información.
+** Regla de asociación**: Regla del sistema que relaciona un producto con otro indicando que están asociados, es decir, que un usuario interesado en el primero podría interesarse también por el segundo (y comprar ambos) si se le proporciona información.
