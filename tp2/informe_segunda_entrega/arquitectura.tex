@@ -171,9 +171,16 @@ el SOD se encarga de recolectar datos vía SMS, redes sociales y Web Mining. Cad
 La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta es aceptada como validad por el sistema, como esto puede llegar a ser mucho más costoso computacionalmente que la recolección de datos, se tiene múltiples instancias de esta componente para poder soportar \emph{concurrencia}. Para los chequeos usa el estilo \emph{pipe and filter} para que sea fácilmente \emph{Modificable} en el futuro. Una vez que se hacen todos las validaciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.\\
 
 
-
-
 \nota{Nota: la mezcla entre nombre de ingle y espa~nol es cualquiera...}\\
 \nota{nota2: que eso eso de cliente servidor asincronico??}\\
 \nota{nota3: los robot hay que expandirlos, como?}\\
+
+
+\subsection{MARCHHHH}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{graficos/arch/temp_subsistema_que_habla_con_el_usuario.pdf}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Obtención de Datos}.}
+\end{figure}
 
