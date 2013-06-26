@@ -63,6 +63,49 @@ Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obt
 
 \subsection{Interfaz móvil}
 
+La interfaz móvil es uno de los componentes encargados de facilitar una interfaz comoda al usuario, y comunicar los pedidos de este con el servidor central de \emph{twitteando para ahorrar}.
+
+A través de este subsistema, el usuario deberia ser capaz de:
+\begin{enumerate}
+	\item Realizar consultas de ofertas.
+	\item Denunciar ofertas como falsas.
+	\item Permitir conectarse con una cuenta en un provedor de \emph{OpenId}.
+	\item Permitir modificar la configuración del usuario.
+\end{enumerate}
+
+Al mismo tiempo, ciertos atributos de calidad guian el diseño de este subsistema. Entre estos, los que afectan principalmente a este subsistema es la necesidad de \emph{responder rapidamente al usuario} (inclusive antes de que este comience a tipear algo!), y la necesidad de \emph{garantizar disponibilidad}, a pesar de que no exista conexión.
+
+Al modulo de interfaz de usuario se le delega la tarea de presentar los datos de una forma 'bonita y comprensible' al usuario. Además, este modulo se comunica con el componente encargado de facilitar la posibilidad de autenticarse con \emph{OpenId}. Vale destacar que el componente de comunicación con OpenId se encuentra en el cliente y no del lado del servidor, ya que es el \emph{proveedor de OpenId} el cual ofrece un formulario para autenticarse. De esta forma, durante la autenticación, el control es cedido al proveedor de OpenId.
+
+Por otro lado, la interfaz de usuario se comunica con el modulo que intercambia mensajes con el sistema central de \emph{twitteando para ahorrar}. Se decidio que, tanto los mensajes enviados de la interfaz al modulo de comunicación, como los del modulo de comunicación a la interfaz de usuario, sean de forma asincrona. Esta ultima decision tiene como objetivo evitar 'congelar' la interfaz esperando por una respuesta del servidor. 
+
+\subsubsection{Modulo de comunicación con el sistema de Twitteando para ahorrar}
+
+Este modulo convierte las ordenes que el usuario envia desde la interfaz grafica, en consultas efectivas por ofertas, entre otras funcionalidades. 
+
+Para comprender el funcionamiento de este subsistema, vamos a plantear el siguiente ejemplo:
+
+\begin{figure}[H]
+	\centering
+	\emph{Tito Codito, conocido ahorrador, abre la interfaz móvil de Twitteando para ahorrar, desde su smarthphone, y busca por ofertas de \emph{Pepas Tocoñato}\footnote{Muy superiores a las Terepín}.}
+\end{figure}
+
+En el momento en el que Tito inicia la aplicación desde su móvil, el \textsf{Modulo de consulta desde UI} realiza una consulta al \textsf{Modulo de consulta sin conección}, con el objetivo de obtener, de la \textsf{Cache de ofertas}, las ofertas registradas como \emph{Mas populares}. De esta forma, si bien Tito no comenzo a escribir una consulta, resultados interesantes se muestran en la interfaz de usuario. Estas ofertas son mantenidas actualizadas en la cache por el \textsf{Actualizador de consultas populares}.
+
+Luego, Tito comienza a escribir la consulta, \emph{Pep}, sin embargo, la interfaz grafica, registra este evento antes de que la consulta se termine de tipear, y lo informa al \textsf{modulo de consulta desde UI}. Este modulo, consulta al \textsf{Modulo de consulta sin conección} por consultas sobre productos que empiecen con este patrón. Los resultados son comunicados inmediatamente a la interfaz. Así, resultados son mostrados antes de que la consulta se termine de tipear. La desventaja de esta solución es que solo se pueden 'predecir' resultados de consultas realizadas previamente, o consultas populares. 
+
+Una alternativa que no posee este problema, es realizar esta consulta con el sistema central, sin verificar antes la cache, sin embargo los tiempos necesarios para la transferencia de datos y resultados con el servidor, hacen que esta opción sea inviable, y que una vez que se tienen resultados, Tito ya llevaria un timepo considerable desde haber terminado de escribir la consulta.
+
+Una vez que la interfaz detecta que la escritura de la consulta se ha terminado, se informa al \textsf{Modulo de consulta desde UI}, este resolvera:
+\begin{itemize}
+	\item Si hay conexión con el servidor central, enviar esta consulta a este servidor y esperar por los resultados. y una vez obtenidos.
+	\item En caso de no haber conexión, la consulta se intenta resolver utilizando la cache local.
+\end{itemize}
+
+En ambos casos, una vez obtenidos los resultados, estos son enviados a la interfaz grafica para su visualización y, de esta forma, Tito ya puede escoger cual es el lugar mas conveniente para comprar \emph{pepas}.
+
+De forma ortogonal a esto, existen otros dos subcomponentes de este modulo. Estos son, el \textsf{modulo de cambio de preferencias} y el \textsf{modulo de denuncia de ofertas}. El primero tiene la tarea de, ante un cambio de preferencias del usuario, comunicarselas al servidor central. El segundo componente, comunica al servidor central la denuncia de una oferta como posible falso. La comunicación de ambos modulos con el servidor se realiza de forma \emph{segura}, debido a que los datos que circulan en este momento son sensibles, y se busca evitar posibles usos malintencionados. Un ejemplo de lo anterior, seria atacar al sistema, denunciando ofertas, haciendose pasar por otro usuario. 
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/Cliente_movil.pdf}
@@ -70,6 +113,8 @@ Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obt
 \end{figure}
 
 \subsection{Interfaz web}
+
+De forma similar a la Interfaz móvil, para permitir el acceso desde un conjunto diverso de dispositivos, optamos por dar lugar a una interfaz web de nuestra aplicación.
 
 \begin{figure}[H]
 	\centering
