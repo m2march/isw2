@@ -137,7 +137,7 @@ central TPA<y:LabelModel>
     <node id="n7">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="72.0" width="80.0" x="-350.5" y="504.75"/>
+          <y:Geometry height="72.0" width="80.0" x="-334.5" y="504.75"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="47.59375" x="16.203125" y="20.03125">Modulo
@@ -171,7 +171,7 @@ ofertas<y:LabelModel>
     <node id="n9">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="135.0" width="80.0" x="124.0" y="465.5"/>
+          <y:Geometry height="135.0" width="80.0" x="170.0" y="465.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="72.501953125" x="3.7490234375" y="51.53125">Sist. 
@@ -188,7 +188,7 @@ central TPA<y:LabelModel>
     <node id="n10">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="307.0" width="257.0" x="-189.5" y="457.0"/>
+          <y:Geometry height="307.0" width="257.0" x="-173.5" y="457.0"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="4.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="211.01171875" x="22.994140625" y="311.0">Comunicador con Sist. central TPA<y:LabelModel>
@@ -204,7 +204,7 @@ central TPA<y:LabelModel>
     <node id="n11">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="72.0" width="80.0" x="-38.80000000000001" y="465.5"/>
+          <y:Geometry height="72.0" width="80.0" x="-22.80000000000001" y="465.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.875" modelName="custom" textColor="#000000" visible="true" width="80.142578125" x="-0.0712890625" y="6.0625">Modulo de 
@@ -223,7 +223,7 @@ central<y:LabelModel>
     <node id="n12">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="72.0" width="80.0" x="-165.11999999999998" y="684.0"/>
+          <y:Geometry height="72.0" width="80.0" x="-149.11999999999998" y="684.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="79.31640625" x="0.341796875" y="13.046875">Modulo de 
@@ -241,7 +241,7 @@ sin conexión<y:LabelModel>
     <node id="n13">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="72.0" width="80.0" x="-38.80000000000001" y="624.0"/>
+          <y:Geometry height="72.0" width="80.0" x="-22.80000000000001" y="624.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.875" modelName="custom" textColor="#000000" visible="true" width="70.22265625" x="4.888671875" y="6.0625">Modulo de 
@@ -260,7 +260,7 @@ escritura<y:LabelModel>
     <node id="n14">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="150.5" width="80.0" x="-165.11999999999998" y="465.5"/>
+          <y:Geometry height="150.5" width="80.0" x="-149.11999999999998" y="465.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="70.22265625" x="4.888671875" y="52.296875">Modulo de 
@@ -278,7 +278,7 @@ desde UI<y:LabelModel>
     <node id="n15">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="72.0" width="80.0" x="-38.80000000000001" y="544.0"/>
+          <y:Geometry height="72.0" width="80.0" x="-22.80000000000001" y="544.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="79.861328125" x="0.0693359375" y="13.046875">Actualizador
@@ -449,7 +449,7 @@ populares<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="39.46681520850177" sy="75.25525945356765" tx="-32.07286458333357" ty="-21.156399999999962">
-            <y:Point x="-85.6531847914982" y="638.8436"/>
+            <y:Point x="-69.6531847914982" y="638.8436"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -481,7 +481,7 @@ populares<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="30.0" ty="43.69360000000006">
-            <y:Point x="-95.11999999999998" y="660.0"/>
+            <y:Point x="-79.11999999999998" y="660.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -515,8 +515,8 @@ populares<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.5671354166664173" sy="26.843600000000038" tx="-25.83286458333356" ty="-14.216400000000021">
-            <y:Point x="81.7671354166664" y="606.8436"/>
-            <y:Point x="81.7671354166664" y="668.2836"/>
+            <y:Point x="97.7671354166664" y="606.8436"/>
+            <y:Point x="97.7671354166664" y="668.2836"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -528,8 +528,8 @@ populares<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="30.64713541666646" sy="26.62360000000001" tx="-6.632864583333571" ty="-30.21640000000002">
-            <y:Point x="89.44713541666641" y="528.1236"/>
-            <y:Point x="89.44713541666641" y="652.2836"/>
+            <y:Point x="105.44713541666641" y="528.1236"/>
+            <y:Point x="105.44713541666641" y="652.2836"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
