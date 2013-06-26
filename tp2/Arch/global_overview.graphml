@@ -515,6 +515,28 @@ por usuarios<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
+    <edge id="e19" source="n9" target="n1">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="27.700000000000045" sy="12.712580161167125" tx="-40.026508331799846" ty="12.712580161167125"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="white_diamond"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e20" source="n10" target="n1">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="40.00468749999982" sy="11.3599999999999" tx="-7.911199999999553" ty="2.3999999999999773">
+            <y:Point x="914.5" y="720.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="white_diamond"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
   </graph>
   <data key="d0">
     <y:Resources/>
