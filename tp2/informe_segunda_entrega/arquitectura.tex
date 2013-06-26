@@ -129,7 +129,7 @@ El siguiente diagrama representa el Subsistema de Detección de Spam(\textbf{SDS
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{graficos/arch/Sistema_deteccion_spam.png}
+	\includegraphics[width=\textwidth]{graficos/arch/Sistema_deteccion_spam.pdf}
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Sistema de Detección de Spam}.}
 \end{figure}
 
@@ -146,15 +146,20 @@ El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repo
 
 \subsection{Subsistema de Obtención de Datos}
 
-En el siguiente diagrama representa el Subsistema de Obtención de Datos (\textsf{SOD}) el cual se encarga de la interaccion con los diversos provedores de oferas para alimentar el sistema con estos.
+
+En el siguiente diagrama representa el Subsistema de Obtención de Datos (\textsf{SOD}) el cual se encarga de la interaccion con los diversos provedores de oferas para alimentar el sistema con estos.\\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{graficos/arch/Sistema_obtenedor_datos.png}
+	\includegraphics[width=\textwidth]{graficos/arch/Sistema_obtenedor_datos.pdf}
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Sistema de Obtención de Datos}.}
 \end{figure}
 
-el SOD se encarga de recolectar datos de 3 tipos de fuentes principalmente
+el SOD se encarga de recolectar datos via SMS, redes sociales y Web Mining. cada una de las cuales tiene un componente propia que se encarga de interactuar con sus respectivas fuentes de informacion y colocar la posible oferta de manera generica para que pueda ser validada por la componente \textsf{Control de Ofertas}. Esta ultima componente recibe en forma de \emph{Pipe} la informacion de las tres componentes encargadas de la interaccion con componentes exteriores al sistemas(\textsf{Robot Comunicator}, \textsf{Ofertas Retrieval} y \textsf{Ofertas SMS retrieval}).\\
+
+La componente Control de Ofertas se encarga de verificar si la oferta es aceptada como validad por el sistema, como esto puede llegar a ser mucho mas costoso computacionalmente que la recoleccion de datos, se tiene multiples intancias de esta componente para poder soportar \emph{concurencia}. Para los chequeos usa el estilo \emph{pipe and filter} para que sea facilmente \emph{Modificable} en el futuro. Una vez que se hacen todos las validadciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.\\
+
+
 
 
 

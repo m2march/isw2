@@ -191,7 +191,6 @@ Comunicator<y:LabelModel>
       </data>
     </node>
     <node id="n10">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="15.600000000000023" width="18.799999999999955" x="713.0113018879991" y="398.1999999999999"/>
@@ -350,7 +349,6 @@ Rubros y Productos<y:LabelModel>
       </data>
     </node>
     <node id="n15">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="160.56000000000017" x="971.2766666666668" y="579.4576666666669"/>
@@ -373,7 +371,7 @@ Rubros y Productos<y:LabelModel>
           <y:Geometry height="40.0" width="103.00000000000011" x="990.4933333333333" y="455.9999999999999"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="76.708984375" x="13.145507812500114" y="4.03125">Servicios de
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="76.708984375" x="13.1455078125" y="4.03125">Servicios de
 telefonia<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -385,7 +383,6 @@ telefonia<y:LabelModel>
       </data>
     </node>
     <node id="n17">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="249.67900338740856" width="195.943949068022" x="500.08511709146217" y="347.2426632792582"/>
@@ -400,7 +397,6 @@ telefonia<y:LabelModel>
       </data>
     </node>
     <node id="n18">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="40.0" width="104.6207958914365" x="989.6829353876151" y="315.9999999999999"/>
@@ -422,7 +418,6 @@ telefonia<y:LabelModel>
       </data>
     </node>
     <node id="n19">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="40.0" width="104.6207958914365" x="989.6829353876151" y="222.598468995445"/>
@@ -443,7 +438,6 @@ telefonia<y:LabelModel>
       </data>
     </node>
     <node id="n20">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="40.0" width="104.6207958914365" x="990.7462687209484" y="385.9999999999999"/>
@@ -464,7 +458,6 @@ telefonia<y:LabelModel>
       </data>
     </node>
     <node id="n21">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="40.0" width="104.6207958914365" x="761.8113018879991" y="385.9999999999999"/>
@@ -517,8 +510,8 @@ Retrieval<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="crows_foot_many_mandatory"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="white_diamond"/>
           <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="99.349609375" x="13.269677052615634" y="3.5934957375105796">Cliente-servidor
 Asincronico<y:LabelModel>
               <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
@@ -533,7 +526,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e3" source="n4" target="n10">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -546,7 +538,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e4" source="n5" target="n10">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -559,7 +550,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e5" source="n10" target="n11">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -570,7 +560,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e6" source="n11" target="n12">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -581,7 +570,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e7" source="n12" target="n13">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -592,7 +580,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e8" source="n13" target="n3">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -603,7 +590,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e9" source="n16" target="n4">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -614,7 +600,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e10" source="n13" target="n14">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -627,7 +612,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e11" source="n20" target="n21">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-10.686695610029119" sy="-11.18277996681735" tx="28.90861127697633" ty="-11.18277996681735"/>
@@ -638,7 +622,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e12" source="n21" target="n20">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="7.634492181926362" sy="11.155045082984998" tx="-34.08822661458396" ty="11.155045082984998"/>
@@ -649,7 +632,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e13" source="n21" target="n10">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -660,7 +642,6 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e14" source="n18" target="n19">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -671,12 +652,11 @@ Asincronico<y:LabelModel>
       </data>
     </edge>
     <edge id="e15" source="n18" target="n5">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="crows_foot_many_mandatory"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="white_diamond"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
