@@ -140,35 +140,32 @@ El siguiente diagrama representa el Subsistema de Detección de Spam(\textbf{SDS
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/Sistema_deteccion_spam.pdf}
-	\caption{Diagrama arquitectónico con el detalle del \textsf{Sistema de Detección de Spam}.}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Detección de Spam}.}
 \end{figure}
 
-El SDS lee constantemente el \textsf{Repositorio de Ofertas} priorizando las ofertas recientemente agregadas que no han sido analizadas nunca como spam, de esto se encarga la componente \textsf{Selector de Ofertas a Analizar}. Esta componente le pasa en forma de \emph{pipe} las ofertas seleccionadas a la componente \textsf{Analizador de Ofertas} que se encarga de discernir si la oferta es un spam o no lo es. Por temas de \emph{Performance} se decidió que haya múltiples instancias de esta componente, permitiendo que diversos recursos se ocupen de cada una de estas (\emph{Concurrencia}).\\
+El SDS lee constantemente el \textsf{Repositorio de Ofertas} priorizando las ofertas recientemente agregadas que no han sido analizadas nunca como spam y las que fueron reportadas como enga\~{n}osas por los usuarios, de esto se encarga la componente \textsf{Selector de Ofertas a Analizar}. Esta componente le pasa en forma de \emph{pipe} las ofertas seleccionadas a la componente \textsf{Analizador de Ofertas} que se encarga de discernir si la oferta es un spam o no lo es. Por temas de \emph{Performance} se decidió que haya múltiples instancias de esta componente, permitiendo que diversos recursos se ocupen de cada una de estas (\emph{Concurrencia}).\\
 
-El \textsf{Analizador de Ofertas} interactúa con un componente \emph{intermediario} llamada \textsf{Interfaz de Detección de Spam} la cual se encarga de transferir los pedidos a la componente \textsf{Comunicador SpamBust} que se encargar de los detalles específicos de la comunicación con el servicio de \textsf{SpamBust}. Esto concede a la arquitectura una gran \emph{Modificabilidad} ya que el \textsf{Analizador de Ofertas} se comunica solo con un \emph{intermediario} que es fácilmente sustituido/modificado para apuntar a otra componente que no sea el \textsf{Comunicador SpamBust}, como por ejemplo una implementación propia que sustituya los servicios de SpamBust.\\
+El \textsf{Analizador de Ofertas} consideración la respuesta del servicio de \textsf{SpamBust} como también los reportes de usuarios o viejas ofertas detectadas como spam para tomar la decisión final de marcar una oferta como spam. Para la comunicación con los servicios de \textsf{SpamBust} interactúa con un componente \emph{intermediario} llamada \textsf{Interfaz de Detección de Spam} la cual se encarga de transferir los pedidos a la componente \textsf{Comunicador SpamBust} que es el responsable de los detalles específicos de la comunicación con el servicio de \textsf{SpamBust}. Esto concede a la arquitectura una gran \emph{Modificabilidad} ya que el \textsf{Analizador de Ofertas} se comunica solo con un \emph{intermediario} que es fácilmente sustituido/modificado para apuntar a otra componente que no sea el \textsf{Comunicador SpamBust}, como por ejemplo una implementación propia que sustituya los servicios de \textsf{SpamBust}.\\
 
-El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repositorio de Ofertas} aquellas ofertas encontradas como Spam y guardarlas en el \textsf{Repositorio de Spams} para su posterior revisión/publicación, de esto último se encarga la componente \textsf{Publicador de Información}.\\
+El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repositorio de Ofertas} aquellas ofertas encontradas como Spam y guardarlas en el \textsf{Repositorio de Spams} para su posterior revisión/publicación, de esto último se encarga la componente \textsf{Publicador de Informe}.\\
 
 
 \nota{nota2: el publicador de informe es un nombre medio choto y creo que debería expandirse y detallarse más}\\
 
-\nota{\textsf{IMPORTANTE}: los usuarios tienen que ser capases de reportar enga~nos y que esta cosa los pueda leer, por el momento no esta ocurriendo................... medianamente emparchado pero falta reparar el humo de arriba}
-
 \subsection{Subsistema de Obtención de Datos}
 
 
-En el siguiente diagrama representa el Subsistema de Obtención de Datos (\textsf{SOD}) el cual se encarga de la interaccion con los diversos provedores de oferas para alimentar el sistema con estos.\\
+En el siguiente diagrama representa el Subsistema de Obtención de Datos (\textsf{SOD}) el cual se encarga de la interacción con los diversos proveedores de ofertas para alimentar el sistema con estas.\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/Sistema_obtenedor_datos.pdf}
-	\caption{Diagrama arquitectónico con el detalle del \textsf{Sistema de Obtención de Datos}.}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Obtención de Datos}.}
 \end{figure}
 
-el SOD se encarga de recolectar datos via SMS, redes sociales y Web Mining. cada una de las cuales tiene un componente propia que se encarga de interactuar con sus respectivas fuentes de informacion y colocar la posible oferta de manera generica para que pueda ser validada por la componente \textsf{Control de Ofertas}. Esta ultima componente recibe en forma de \emph{Pipe} la informacion de las tres componentes encargadas de la interaccion con componentes exteriores al sistemas(\textsf{Robot Comunicator}, \textsf{Ofertas Retrieval} y \textsf{Ofertas SMS retrieval}).\\
+el SOD se encarga de recolectar datos vía SMS, redes sociales y Web Mining. Cada una de las cuales tiene un componente responsable de interactuar con sus respectivas fuentes de información y colocar las posibles ofertas en una manera genérica para que puedan ser validadas por la componente \textsf{Control de Ofertas}. Esta última componente recibe en forma de \emph{Pipe} la información de las tres componentes encargadas de la interacción con el exterior(\textsf{Robot Comunicator}, \textsf{Ofertas Retrieval} y \textsf{Ofertas SMS retrieval}).\\
 
-La componente Control de Ofertas se encarga de verificar si la oferta es aceptada como validad por el sistema, como esto puede llegar a ser mucho mas costoso computacionalmente que la recoleccion de datos, se tiene multiples intancias de esta componente para poder soportar \emph{concurencia}. Para los chequeos usa el estilo \emph{pipe and filter} para que sea facilmente \emph{Modificable} en el futuro. Una vez que se hacen todos las validadciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.\\
-
+La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta es aceptada como validad por el sistema, como esto puede llegar a ser mucho más costoso computacionalmente que la recolección de datos, se tiene múltiples instancias de esta componente para poder soportar \emph{concurrencia}. Para los chequeos usa el estilo \emph{pipe and filter} para que sea fácilmente \emph{Modificable} en el futuro. Una vez que se hacen todos las validaciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.\\
 
 
 
