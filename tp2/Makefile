@@ -4,10 +4,10 @@ TEX_MARKDOWNS = ${TEX_MARKDOWN_DIR}/dict.tex ${TEX_MARKDOWN_DIR}/riesgos.tex ${T
 PANDOC = pandoc
 MD2PDF = ${PANDOC} 
 TEX_MARKDOWN_DIR = ${INFORME_DIR}/markdowns
-INFORME_DIR = informe
+INFORME_DIR = informe_primer_entrega
 MARKDOWN_DIR = .
 INFORME = ${INFORME_DIR}/informe.pdf
-INFORME_DEPS = ${INFORME_DIR}/iterplan.tex ${INFORME_DIR}/wbs.tex ${INFORME_DIR}/gantt.tex ${INFORME_DIR}/arquitectura.tex ${ITEX_MARKDOWNS} 
+INFORME_DEPS = ${INFORME_DIR}/iterplan.tex ${INFORME_DIR}/wbs.tex ${INFORME_DIR}/gantt.tex ${ITEX_MARKDOWNS} 
 
 
 all: ${TEX_MARKDOWNS} ${INFORME}
