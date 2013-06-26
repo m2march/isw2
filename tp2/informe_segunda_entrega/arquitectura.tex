@@ -38,7 +38,7 @@ En el siguiente diagrama vemos la disposición global del sistema central \textb
 
 Aquí vemos al \textsf{Sistema central TPA} dividido en 4 componentes. El \textsf{Subsistema de Ofertas} es el encargado de responder a las consultas de los posibles clientes. En este momento los clientes son nuestras aplicaciones web y móvil, así como aquellos que deseen consumir nuestra API pública. Dentro del \textsf{Subsistema de Ofertas} tenemos los componentes encargados de comprender los pedidos, administrar las preferencias y reputación de usuarios, administrar las publicidades generadas por el sistema, mantener las reglas de asociación y sustitución, y contener la información de los productos y rubros aceptados.
 
-El \textsf{Sist. Obtención de datos} es el encargado de recurrir a las distintas fuentes de datos con el fin de obtener ofertas a productos. Por lo tanto, contiene los medios necesarios para poder extraer información de \textsf{Redes sociales} y para poder recibir información mediante \textsf{SMS}. Como además se decidió poder registrar sitios web con interfaces variadas (muy distintas a las \textsf{Redes sociales}), se cuenta con los componentes \textsf{Web Mining Robots}, formadas por robots que saben recorrer ciertos sitios específicos en busca de ofertas. El \textsf{Sist. Obtención de datos} sabe cómo comunicarse con los robots, quienes le proveen información. 
+El \textsf{Sist. Obtención de datos} es el encargado de recurrir a las distintas fuentes de datos con el fin de obtener ofertas a productos. Por lo tanto, contiene los medios necesarios para poder extraer información de \textsf{Redes sociales} y para poder recibir información mediante \textsf{SMS}. Como además se decidió poder registrar sitios web con interfaces variadas (muy distintas a las \textsf{Redes sociales}), se cuenta con los componentes \textsf{Web Mining Robots}, que constituyen robots que saben recorrer ciertos sitios específicos en busca de ofertas. El \textsf{Sist. Obtención de datos} sabe cómo comunicarse con los robots, quienes le proveen información. 
 
 Las ofertas obtenidas por el \textsf{Sist. Obtención de datos} le son provistas al \textsf{Subsistema de Ofertas} mediante el uso de un repositorio intermedio.
 El mismo es revisado contínuamente por el \textsf{Sist. detector de Spam}, que contiene mecanismos para detectar ofertas de naturaleza dudosa. En este momento, el principal mecanismo es el sistema de terceros \textsf{SpamBust}.
@@ -46,6 +46,8 @@ El mismo es revisado contínuamente por el \textsf{Sist. detector de Spam}, que 
 \subsection{Subsistema de Query}
 
 En el siguiente diagrama se presenta el \textsf{Subsistema de Query} donde, dada una consulta por productos (\textbf{query}), se arma la respuesta para el usuario que realizó la consulta. En este diagrama se encuentran ejemplificados los \emph{casos de uso} 7, 8, 9, 10, 11 y 12.
+
+\nota{Revisar CUs}
 
 \begin{figure}[H]
 	\centering
@@ -74,9 +76,9 @@ A través de este subsistema, el usuario deberia ser capaz de:
 	\item Permitir modificar la configuración del usuario.
 \end{enumerate}
 
-Al mismo tiempo, ciertos atributos de calidad guian el diseño de este subsistema. Entre estos, los que afectan principalmente a este subsistema es la necesidad de \emph{responder rapidamente al usuario} (inclusive antes de que este comience a tipear algo!), y la necesidad de \emph{garantizar disponibilidad}, a pesar de que no exista conexión.
+Al mismo tiempo, ciertos atributos de calidad guían el diseño de este subsistema. Alguno de ellos son la necesidad de \emph{responder rapidamente al usuario} (¡inclusive antes de que este comience a tipear algo!), y la necesidad de \emph{garantizar disponibilidad}, a pesar de que no exista conexión.
 
-Al modulo de interfaz de usuario se le delega la tarea de presentar los datos de una forma 'bonita y comprensible' al usuario. Además, este modulo se comunica con el componente encargado de facilitar la posibilidad de autenticarse con \emph{OpenId}. Vale destacar que el componente de comunicación con OpenId se encuentra en el cliente y no del lado del servidor, ya que es el \emph{proveedor de OpenId} el cual ofrece un formulario para autenticarse. De esta forma, durante la autenticación, el control es cedido al proveedor de OpenId.
+Al modulo de interfaz de usuario se le delega la tarea de presentar los datos de una forma 'bonita y comprensible' al usuario. Además, este modulo se comunica con el componente encargado de facilitar la posibilidad de autenticarse con \emph{OpenId}. Vale destacar que el componente de comunicación con OpenId se encuentra en el cliente y no del lado del servidor, ya que es el \emph{proveedor de OpenId}(\textsf{facebook}, \textsf{linkedin}, etc.) el cual ofrece un formulario para autenticarse. De esta forma, durante la autenticación, el control es cedido al \emph{proveedor de OpenId}.
 
 Por otro lado, la interfaz de usuario se comunica con el modulo que intercambia mensajes con el sistema central de \emph{twitteando para ahorrar}. Se decidio que, tanto los mensajes enviados de la interfaz al modulo de comunicación, como los del modulo de comunicación a la interfaz de usuario, sean de forma asincrona. Esta ultima decision tiene como objetivo evitar 'congelar' la interfaz esperando por una respuesta del servidor. 
 
