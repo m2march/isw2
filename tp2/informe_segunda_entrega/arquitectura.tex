@@ -62,20 +62,37 @@ Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obt
 
 
 \subsection{Sistema de Detección de Spam}
-Nota: hay que aclarar el significado de spam... leer anteultimo parrafo del tp
+
+El siguiente diagrama representa el Sistema de Detección de Spam(\textbf{SDS}) donde se discriminan las ofertas deseadas en el sistema de las que no lo son (\textbf{Spam}). El hecho que una oferta sea no deseada puede deberse a que sea falsa, productos con precios dudosos, información contradictoria y/o alerta de enga\~{n}os reportados por los usuarios del sistema.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/Sistema_deteccion_spam.png}
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Sistema de Detección de Spam}.}
 \end{figure}
 
+El SDS lee constantemente el \textsf{Repositorio de Ofertas} priorizando las ofertas recientemente agregadas que no han sido analizadas nunca como spam, de esto se encarga la componente \textsf{Selector de Ofertas a Analizar}. Esta componente le pasa en forma de \emph{pipe} las ofertas seleccionadas a la componente \textsf{Analizador de Ofertas} que se encarga de discernir si la oferta es un spam o no lo es. Por temas de \emph{Performance} se decidió que haya múltiples instancias de esta componente, permitiendo que diversos recursos se ocupen de cada una de estas (\emph{Concurrencia}).\\
+
+El \textsf{Analizador de Ofertas} interactúa con un componente \emph{intermediario} llamada \textsf{Interfaz de Detección de Spam} la cual se encarga de transferir los pedidos a la componente \textsf{Comunicador SpamBust} que se encargar de los detalles específicos de la comunicación con el servicio de \textsf{SpamBust}. Esto concede a la arquitectura una gran \emph{Modificabilidad} ya que el \textsf{Analizador de Ofertas} se comunica solo con un \emph{intermediario} que es fácilmente sustituido/modificado para apuntar a otra componente que no sea el \textsf{Comunicador SpamBust}, como por ejemplo una implementación propia que sustituya los servicios de SpamBust.\\
+
+El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repositorio de Ofertas} aquellas ofertas encontradas como Spam y guardarlas en el \textsf{Repositorio de Spams} para su posterior revisión/publicación, de esto último se encarga la componente \textsf{Publicador de Información}.\\
+
+
+nota2: el publicador de informe es un nombre medio choto y creo que deberia expandirse y detallarse mas\\
+
+\textsf{IMPORTANTE}: los usuarios tienen que ser capases de reportar enga~nos y que esta cosa los pueda leer, por el momento no esta ocurriendo
+
 \subsection{Sistema de Obtención de Datos}
-Nota: la mescla entre nombre de ingle y espa~nol es cualquiera...
-nota2: que eso eso de cliente servidor asincronico??
-nota3: los robot hay que expandirlos, como?
+
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/Sistema_obtenedor_datos.png}
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Sistema de Obtención de Datos}.}
 \end{figure}
+
+
+Nota: la mescla entre nombre de ingle y espa~nol es cualquiera...\\
+nota2: que eso eso de cliente servidor asincronico??\\
+nota3: los robot hay que expandirlos, como?\\
 
