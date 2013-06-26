@@ -149,9 +149,11 @@ El \textsf{Analizador de Ofertas} consideración la respuesta del servicio de \t
 
 El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repositorio de Ofertas} aquellas ofertas encontradas como Spam y guardarlas en el \textsf{Repositorio de Spams} para su posterior revisión/publicación, de esto último se encarga la componente \textsf{Publicador de Informe}.\\
 
+También se cuenta con un \text{Manejador de Pedidos del Administrador} que se encargar de responder a los pedidos que el administrador pueda llegar a requerir como por ejemplo el informe de los martes, entre otras datos posibles.\\
+
 
 \nota{nota2: el publicador de informe es un nombre medio choto y creo que debería expandirse y detallarse más}\\
-
+\nota{nota3: el manejador de pedidos del administrador me parecere que hay algo parecido por otro lado, deberiamos sacarlo y que ese apunte aca a pedir informes}
 \subsection{Subsistema de Obtención de Datos}
 
 
@@ -168,9 +170,16 @@ el SOD se encarga de recolectar datos vía SMS, redes sociales y Web Mining. Cad
 La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta es aceptada como validad por el sistema, como esto puede llegar a ser mucho más costoso computacionalmente que la recolección de datos, se tiene múltiples instancias de esta componente para poder soportar \emph{concurrencia}. Para los chequeos usa el estilo \emph{pipe and filter} para que sea fácilmente \emph{Modificable} en el futuro. Una vez que se hacen todos las validaciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.\\
 
 
-
-
 \nota{Nota: la mezcla entre nombre de ingle y espa~nol es cualquiera...}\\
 \nota{nota2: que eso eso de cliente servidor asincronico??}\\
 \nota{nota3: los robot hay que expandirlos, como?}\\
+
+
+\subsection{MARCHHHH}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{graficos/arch/temp_subsistema_que_habla_con_el_usuario.pdf}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Obtención de Datos}.}
+\end{figure}
 
