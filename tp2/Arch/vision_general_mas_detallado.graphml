@@ -530,7 +530,7 @@ Administrador<y:LabelModel>
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_diamond"/>
+          <y:Arrows source="plain" target="white_diamond"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
@@ -543,7 +543,7 @@ Administrador<y:LabelModel>
             <y:Point x="1289.251708984375" y="711.4036254882812"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_diamond"/>
+          <y:Arrows source="none" target="none"/>
           <y:Arc height="-31.29718589782715" ratio="-0.9061945080757141" type="fixedRatio"/>
         </y:ArcEdge>
       </data>

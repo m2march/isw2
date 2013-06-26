@@ -187,26 +187,6 @@ SpamBust<y:LabelModel>
       </data>
     </node>
     <node id="n10">
-      <data key="d5"/>
-      <data key="d6">
-        <y:GenericNode configuration="ShinyPlateNode">
-          <y:Geometry height="70.30000000000001" width="157.20000000000005" x="815.0000000000001" y="326.30000000000007"/>
-          <y:Fill color="#FF9900" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.875" modelName="custom" textColor="#000000" visible="true" width="153.94140625" x="1.6292968750000227" y="5.212500000000034">Nota: hay que aclarar 
-el significado de spam... 
-leer anteultimo parrafo 
-del tp<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-        </y:GenericNode>
-      </data>
-    </node>
-    <node id="n11">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
           <y:Geometry height="40.0" width="90.0" x="943.5200000000001" y="521.0000000000005"/>
@@ -223,7 +203,7 @@ informe<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n12">
+    <node id="n11">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
           <y:Geometry height="45.60000000000002" width="104.39999999999986" x="1063.9566455078134" y="518.2000000000005"/>
@@ -322,7 +302,7 @@ spam<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e7" source="n8" target="n11">
+    <edge id="e7" source="n8" target="n10">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -333,7 +313,7 @@ spam<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e8" source="n11" target="n8">
+    <edge id="e8" source="n10" target="n8">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -344,7 +324,7 @@ spam<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e9" source="n6" target="n11">
+    <edge id="e9" source="n6" target="n10">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -355,7 +335,7 @@ spam<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e10" source="n7" target="n12">
+    <edge id="e10" source="n7" target="n11">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -377,7 +357,7 @@ spam<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e12" source="n12" target="n9">
+    <edge id="e12" source="n11" target="n9">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -388,7 +368,7 @@ spam<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e13" source="n9" target="n12">
+    <edge id="e13" source="n9" target="n11">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
