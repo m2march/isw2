@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
-  <!--Created by yFiles for Java 2.11-->
+  <!--Created by yFiles for Java 2.10-->
   <key for="graphml" id="d0" yfiles.type="resources"/>
   <key for="port" id="d1" yfiles.type="portgraphics"/>
   <key for="port" id="d2" yfiles.type="portgeometry"/>
@@ -17,10 +17,10 @@
     <node id="n0">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="343.89199999999994" width="488.2399999999999" x="807.8600000000001" y="421.208"/>
+          <y:Geometry height="343.89199999999994" width="421.2399999999999" x="807.8600000000001" y="421.208"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_height" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="343.89199999999994" modelName="custom" textColor="#000000" visible="true" width="4.0" x="242.1199999999999" y="-5.6843418860808015E-14">
+          <y:NodeLabel alignment="left" autoSizePolicy="node_height" borderDistance="0.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="343.89199999999994" modelName="custom" textColor="#000000" visible="true" width="4.0" x="208.6199999999999" y="-5.6843418860808015E-14">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="0.0"/>
             </y:LabelModel>
@@ -28,7 +28,7 @@
               <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
             </y:ModelParameter>
           </y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="node_size" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="343.89199999999994" modelName="custom" textColor="#000000" visible="true" width="488.2399999999999" x="0.0" y="-5.6843418860808015E-14">Sistema Central TPA<y:LabelModel>
+          <y:NodeLabel alignment="left" autoSizePolicy="node_size" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="343.89199999999994" modelName="custom" textColor="#000000" visible="true" width="421.2399999999999" x="0.0" y="-5.6843418860808015E-14">Sistema Central TPA<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -43,11 +43,11 @@
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="40.0" width="80.0" x="882.4111999999996" y="637.1"/>
+          <y:Geometry height="40.0" width="80.0" x="898.528619144065" y="459.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="73.80859375" x="3.095703125" y="4.03125">Subsistema
-de Ofertas<y:LabelModel>
+ **Loco**<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -63,7 +63,7 @@ de Ofertas<y:LabelModel>
     <node id="n2">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.dataBase">
-          <y:Geometry height="40.0" width="60.0" x="1083.6" y="629.4216666666667"/>
+          <y:Geometry height="40.0" width="60.0" x="1136.3999999999999" y="629.4216666666667"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="71.921875" x="-5.9609375" y="38.03125">Repositorio
@@ -80,7 +80,7 @@ de Ofertas<y:LabelModel>
     <node id="n3">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="40.0" width="103.0" x="1165.0600000000002" y="629.4216666666667"/>
+          <y:Geometry height="40.0" width="103.0" x="978.0600000000002" y="713.4216666666667"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="96.4375" x="3.28125" y="-2.953125">Subsistema de 
@@ -98,7 +98,7 @@ de datos<y:LabelModel>
     <node id="n4">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="80.0" x="600.8" y="637.1"/>
+          <y:Geometry height="40.0" width="80.0" x="902.5999999999999" y="278.69999999999993"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="47.20703125" x="16.396484375" y="11.015625">OpenId<y:LabelModel>
@@ -114,7 +114,7 @@ de datos<y:LabelModel>
     <node id="n5">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="40.0" width="91.5" x="1067.85" y="459.5"/>
+          <y:Geometry height="40.0" width="91.5" x="1120.6499999999999" y="459.5"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="77.623046875" x="6.9384765625" y="-2.953125">Subsistema 
@@ -132,7 +132,7 @@ de Spam<y:LabelModel>
     <node id="n6">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.terminator">
-          <y:Geometry height="40.0" width="80.0" x="1073.6" y="331.3"/>
+          <y:Geometry height="40.0" width="80.0" x="1126.3999999999999" y="331.3"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="65.072265625" x="7.4638671875" y="11.015625">SpamBust<y:LabelModel>
@@ -148,7 +148,7 @@ de Spam<y:LabelModel>
     <node id="n7">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="40.0" width="90.0" x="975.0" y="803.1"/>
+          <y:Geometry height="40.0" width="90.0" x="1045.6" y="284.3"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="88.92578125" x="0.537109375" y="4.03125">Interfaz de 
@@ -165,7 +165,7 @@ Administrador<y:LabelModel>
     <node id="n8">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="40.0" width="80.0" x="710.0" y="561.1"/>
+          <y:Geometry height="40.0" width="80.0" x="807.8600000000001" y="369.09999999999997"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="69.876953125" x="5.0615234375" y="4.03125">Cliente de
@@ -186,7 +186,7 @@ API Pública<y:LabelModel>
     <node id="n9">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="40.0" width="80.0" x="710.8" y="637.1"/>
+          <y:Geometry height="40.0" width="80.0" x="902.5999999999999" y="369.09999999999997"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="46.123046875" x="16.9384765625" y="4.03125">Cliente
@@ -207,7 +207,7 @@ Movil<y:LabelModel>
     <node id="n10">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="40.0" width="80.0" x="710.8000000000002" y="688.6400000000001"/>
+          <y:Geometry height="40.0" width="80.0" x="997.3399999999998" y="369.09999999999997"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="46.123046875" x="16.9384765625" y="4.03125">Cliente
@@ -228,7 +228,7 @@ Web<y:LabelModel>
     <node id="n11">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="40.0" width="103.00000000000023" x="1313.1599999999999" y="629.4216666666667"/>
+          <y:Geometry height="40.0" width="103.00000000000023" x="987.1599999999999" y="815.0079999999999"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="53.212890625" x="24.8935546875" y="4.03125">Redes
@@ -249,7 +249,7 @@ Sociales<y:LabelModel>
     <node id="n12">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="40.0" width="103.00000000000023" x="1313.1599999999999" y="699.4216666666666"/>
+          <y:Geometry height="40.0" width="103.00000000000023" x="1120.6499999999999" y="815.0079999999999"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="74.529296875" x="14.2353515625" y="4.03125">Web Mining
@@ -270,7 +270,7 @@ Robots<y:LabelModel>
     <node id="n13">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.attribute">
-          <y:Geometry height="44.0" width="104.0" x="1314.1" y="550.5"/>
+          <y:Geometry height="44.0" width="104.0" x="858.4111999999996" y="813.0079999999999"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="76.708984375" x="13.6455078125" y="6.03125">Servicios de
@@ -290,7 +290,7 @@ Telefonía<y:LabelModel>
     <node id="n14">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.dataBase">
-          <y:Geometry height="40.0" width="60.0" x="892.4111999999996" y="485.5"/>
+          <y:Geometry height="40.0" width="60.0" x="1086.3999999999999" y="544.4608333333333"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="78.384765625" x="-9.1923828125" y="37.1701626712329">Reportes 
@@ -308,7 +308,9 @@ por usuarios<y:LabelModel>
     <edge id="e0" source="n3" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="1029.5600000000002" y="649.4216666666667"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -318,7 +320,7 @@ por usuarios<y:LabelModel>
     <edge id="e1" source="n2" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="61.61999999999989" ty="-93.654"/>
+          <y:Path sx="0.0" sy="0.0" tx="53.16403572013754" ty="-93.654"/>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -348,8 +350,8 @@ por usuarios<y:LabelModel>
     <edge id="e4" source="n7" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="8.088800000000447" ty="2.8999999999999773">
-            <y:Point x="1020.0" y="660.0"/>
+          <y:Path sx="0.0" sy="0.0" tx="8.796774400000345" ty="-0.036012799999980416">
+            <y:Point x="1090.6" y="479.4639872"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
@@ -361,7 +363,7 @@ por usuarios<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1020.0" y="479.5"/>
+            <y:Point x="1090.6" y="479.5"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
@@ -372,7 +374,7 @@ por usuarios<y:LabelModel>
     <edge id="e6" source="n11" target="n3">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-5.6599999999998545" sy="-11.921666666666738" tx="3.439999999999827" ty="-11.921666666666738"/>
+          <y:Path sx="-25.858399999999392" sy="-1.3280000000003156" tx="-16.75839999999971" ty="-8.541666666667197"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="plain"/>
           <y:BendStyle smoothed="false"/>
@@ -382,7 +384,7 @@ por usuarios<y:LabelModel>
     <edge id="e7" source="n3" target="n11">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="11.439999999999827" sy="8.078333333333262" tx="4.3400000000001455" ty="8.078333333333262"/>
+          <y:Path sx="35.08160000000021" sy="4.898333333332857" tx="25.981600000000526" ty="1.8719999999996162"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="crows_foot_many"/>
           <y:BendStyle smoothed="false"/>
@@ -393,9 +395,9 @@ por usuarios<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1216.5600000000002" y="719.4216666666666"/>
+            <y:Point x="1171.6600000000003" y="733.4216666666667"/>
           </y:Path>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="crows_foot_many_mandatory"/>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
@@ -405,7 +407,7 @@ por usuarios<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="1216.5600000000002" y="572.5"/>
+            <y:Point x="910.4111999999996" y="733.4216666666667"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="crows_foot_one"/>
@@ -417,7 +419,7 @@ por usuarios<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-22.411199999999553" ty="7.399999999999977">
-            <y:Point x="900.0" y="581.1"/>
+            <y:Point x="847.8600000000001" y="486.9"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
@@ -428,7 +430,7 @@ por usuarios<y:LabelModel>
     <edge id="e11" source="n9" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:Path sx="10.782499999999573" sy="6.340000000000316" tx="14.853880855934449" ty="-3.2599999999997067"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
           <y:BendStyle smoothed="false"/>
@@ -438,8 +440,8 @@ por usuarios<y:LabelModel>
     <edge id="e12" source="n10" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="-22.411199999999553" ty="2.3999999999999773">
-            <y:Point x="900.0" y="708.6400000000001"/>
+          <y:Path sx="-18.207500000000437" sy="2.3000000000000114" tx="4.8513000000000375" ty="-10.059999999999889">
+            <y:Point x="1019.1324999999993" y="469.4400000000001"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
@@ -461,7 +463,7 @@ por usuarios<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-7.300000000000182" sy="-11.540000000000077" tx="0.0" ty="0.0">
-            <y:Point x="640.8" y="697.1"/>
+            <y:Point x="1030.0399999999995" y="298.69999999999993"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
@@ -482,7 +484,9 @@ por usuarios<y:LabelModel>
     <edge id="e16" source="n2" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="37.58880000000045" ty="-7.600000000000023"/>
+          <y:Path sx="2.3199999999999363" sy="-6.526082666666753" tx="23.988800000000424" ty="-5.404415999999969">
+            <y:Point x="962.5174191440655" y="642.895584"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -493,9 +497,7 @@ por usuarios<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
-            <y:Point x="920.5" y="570.0"/>
-            <y:Point x="870.0" y="570.0"/>
-            <y:Point x="870.0" y="505.5"/>
+            <y:Point x="938.528619144065" y="564.4608333333333"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -506,9 +508,7 @@ por usuarios<y:LabelModel>
     <edge id="e18" source="n14" target="n5">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="7.588800000000447" sy="-5.5" tx="-28.09999999999991" ty="-14.0">
-            <y:Point x="930.0" y="465.5"/>
-          </y:Path>
+          <y:Path sx="21.90000000000009" sy="-2.960833333333312" tx="-28.09999999999991" ty="-14.0"/>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -518,7 +518,7 @@ por usuarios<y:LabelModel>
     <edge id="e19" source="n9" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="27.700000000000045" sy="12.712580161167125" tx="-40.026508331799846" ty="12.712580161167125"/>
+          <y:Path sx="27.700000000000045" sy="12.712580161167125" tx="31.771380855934922" ty="-20.03309165407012"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
           <y:BendStyle smoothed="false"/>
@@ -528,8 +528,8 @@ por usuarios<y:LabelModel>
     <edge id="e20" source="n10" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="40.00468749999982" sy="11.3599999999999" tx="-7.911199999999553" ty="2.3999999999999773">
-            <y:Point x="914.5" y="720.0"/>
+          <y:Path sx="17.604687499999727" sy="19.981250000000045" tx="29.91588085593412" ty="9.730400000000031">
+            <y:Point x="1054.9446874999994" y="489.23040000000003"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
