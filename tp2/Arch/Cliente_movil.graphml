@@ -154,7 +154,7 @@ UI<y:LabelModel>
     <node id="n8">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.dataBase">
-          <y:Geometry height="104.0" width="129.0" x="129.5" y="669.0"/>
+          <y:Geometry height="104.0" width="129.0" x="129.5" y="728.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="63.947265625" x="32.5263671875" y="50.291250000000105">Cache de 
@@ -188,10 +188,10 @@ central TPA<y:LabelModel>
     <node id="n10">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="349.2938181818182" width="257.0" x="-173.5" y="456.99999999999994"/>
+          <y:Geometry height="407.0748282828282" width="257.0" x="-173.5" y="456.99999999999994"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="4.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="211.01171875" x="22.994140625" y="353.2938181818181">Comunicador con Sist. central TPA<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="211.01171875" x="22.994140625" y="411.07482828282815">Comunicador con Sist. central TPA<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -223,7 +223,7 @@ central<y:LabelModel>
     <node id="n12">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="72.0" width="80.0" x="-149.11999999999998" y="695.8380606060606"/>
+          <y:Geometry height="72.0" width="80.0" x="-149.11999999999998" y="760.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="79.31640625" x="0.341796875" y="13.046875">Modulo de 
@@ -241,7 +241,7 @@ sin conexión<y:LabelModel>
     <node id="n13">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="72.0" width="80.0" x="-22.80000000000001" y="701.0"/>
+          <y:Geometry height="72.0" width="80.0" x="-22.80000000000001" y="774.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.875" modelName="custom" textColor="#000000" visible="true" width="70.22265625" x="4.888671875" y="6.0625">Modulo de 
@@ -302,6 +302,24 @@ populares<y:LabelModel>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="66.408203125" x="6.7958984375" y="13.046875">Modulo de
 denuncia
 de ofertas<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n17">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.flowchart.process">
+          <y:Geometry height="72.0" width="80.0" x="-22.80000000000001" y="698.25"/>
+          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="79.0" x="0.5" y="13.046875">Modulo de 
+cambio de 
+preferencias<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -467,9 +485,9 @@ de ofertas<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="28.47433036001695" sy="75.21943434343461" tx="-39.99290909090915" ty="-17.0">
-            <y:Point x="-80.64566963998303" y="660.0"/>
-            <y:Point x="-60.0" y="660.0"/>
-            <y:Point x="-60.0" y="720.0"/>
+            <y:Point x="-80.64566963998303" y="750.0"/>
+            <y:Point x="-60.0" y="750.0"/>
+            <y:Point x="-60.0" y="793.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -490,7 +508,7 @@ de ofertas<y:LabelModel>
     <edge id="e18" source="n10" target="n14">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-45.0" sy="15.394408400110535" tx="29.874447988636604" ty="75.25200599266668"/>
+          <y:Path sx="-45.0" sy="17.940987872647433" tx="29.874447988636604" ty="75.25200599266668"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -501,9 +519,9 @@ de ofertas<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-6.268969696969748" sy="-26.33268686868678" tx="38.03018181818172" ty="49.84555555555562">
-            <y:Point x="-49.10484848484856" y="710.6673131313132"/>
-            <y:Point x="-49.10484848484856" y="650.6314343434344"/>
-            <y:Point x="-71.08981818181826" y="650.6314343434344"/>
+            <y:Point x="-49.10484848484856" y="783.6673131313132"/>
+            <y:Point x="-49.10484848484856" y="740.6314343434344"/>
+            <y:Point x="-71.08981818181826" y="740.6314343434344"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -515,8 +533,8 @@ de ofertas<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-34.69866666666667" sy="44.4777979797982" tx="2.0871354166664275" ty="30.0">
-            <y:Point x="159.30133333333333" y="793.0"/>
-            <y:Point x="-107.03286458333355" y="793.0"/>
+            <y:Point x="159.30133333333333" y="852.0"/>
+            <y:Point x="-107.03286458333355" y="852.0"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -527,7 +545,7 @@ de ofertas<y:LabelModel>
     <edge id="e21" source="n8" target="n13">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="15.715999999999951" ty="-16.0"/>
+          <y:Path sx="-2.468080808080799" sy="14.0" tx="15.715999999999951" ty="-16.0"/>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -539,7 +557,7 @@ de ofertas<y:LabelModel>
         <y:PolyLineEdge>
           <y:Path sx="0.5671354166664173" sy="26.843600000000038" tx="-25.83286458333356" ty="-14.216400000000021">
             <y:Point x="97.7671354166664" y="606.8436"/>
-            <y:Point x="97.7671354166664" y="706.7836"/>
+            <y:Point x="97.7671354166664" y="765.7836"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -552,7 +570,7 @@ de ofertas<y:LabelModel>
         <y:PolyLineEdge>
           <y:Path sx="30.64713541666646" sy="26.62360000000001" tx="-6.632864583333571" ty="-30.21640000000002">
             <y:Point x="105.44713541666641" y="528.1236"/>
-            <y:Point x="105.44713541666641" y="690.7836"/>
+            <y:Point x="105.44713541666641" y="749.7836"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dotted" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -600,6 +618,31 @@ de ofertas<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.852282828282739" sy="17.843878787878793" tx="-0.07680808080823454" ty="17.843878787878793"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="white_diamond"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e28" source="n14" target="n17">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="39.98681682364935" sy="59.01053725424788" tx="-1.1250505050504103" ty="-14.25">
+            <y:Point x="-60.0" y="600.0"/>
+            <y:Point x="-60.0" y="720.0"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e29" source="n17" target="n9">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="5.216767676767688" sy="-27.43383838383852" tx="0.0" ty="0.0">
+            <y:Point x="210.0" y="706.8161616161615"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
           <y:BendStyle smoothed="false"/>
