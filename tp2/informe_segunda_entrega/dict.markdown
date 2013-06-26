@@ -2,4 +2,5 @@
 * **Usuario autenticado**: Usuario que tiene un identificador (o "nombre") único dentro del sistema, y que confirmó su identidad ante el mismo para establecer una comunicación.
 * **Admin/Administrador**: Usuario especial del sistema que tiene acceso a funciones no disponibles para usuarios normales, y que puede tomar decisiones que afectan el funcionamiento del sistema para todos los usuarios.
 * **Regla de sustitución**: Regla del sistema que relaciona un producto con otro similar, indicando que es sustituible, es decir, que un usuario interesado en el primero podría cambiar de idea e interesarse por el segundo si se le proporciona información.
-** Regla de asociación**: Regla del sistema que relaciona un producto con otro indicando que están asociados, es decir, que un usuario interesado en el primero podría interesarse también por el segundo (y comprar ambos) si se le proporciona información.
+* **Regla de asociación**: Regla del sistema que relaciona un producto con otro indicando que están asociados, es decir, que un usuario interesado en el primero podría interesarse también por el segundo (y comprar ambos) si se le proporciona información.
+* **Query**: Pedido que un usuario realiza al sistema, mediante la aplicación, con el objetivo de obtener un conjunto de ofertas como respuesta.
