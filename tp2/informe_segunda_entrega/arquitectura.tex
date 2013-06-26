@@ -36,3 +36,11 @@ En primer lugar se valida que el pedido sea realizable (i.e.: es de un producto 
 Las modificaciones que se realizan a la consulta están relacionadas con las preferencias del usuario (que puede decidir no ver las consultas provenientes de algunos usuarios) y las reglas de asociación y substitución, (que establecen que distintas extenciones a las búsquedas). La naturaleza de estas modificaciones no está completamente definida pero estará contenida exclusivamente en los \textsf{Subsistema de Preferencias de Usuario} y \textsf{Subsistema de Reglas}. 
 
 Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obtenedor de Ofertas} accede al repositorio de ofertas y adquiere todas aquellas que responden a la consulta.  Una vez realizado esto pasamos a la etapa donde se prepara el resultado. Por un lado el componente \textsf{Modificador de resultados por Preferencias de Usuario} se encarga de tareas como jerarquizar las ofertas según las preferencias del usuario. Las ofertas luego son decoradas, eliminadas y reorganizadas según la reputación de los usuarios que las originaron (componente \textsf{Modificador de resultados por Reputación}). A continuación se realiza un nuevo trabajo sobre los resultados aplicando los filtros y estrategias seleccionados por el usuario en la consulta original (componente \textsf{Modificador de resultados por filtros y estrategias}). Finalmente, el componente \textsf{Preparador de la Respuesta de la Búsqueda} prepara todo el paquete de respuesta que será enviado denuevo al usuario. 
+
+\subsection{Interfáz movil}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{graficos/arch/Cliente_movil.png}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Cliente movil}.}
+\end{figure}
