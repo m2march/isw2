@@ -18,8 +18,8 @@
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="966.0376569037658" width="388.5387029288703" x="245.0" y="129.02092050209217"/>
-          <y:Fill color="#69CD9B" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" textColor="#000000" visible="true" width="4.0" x="192.26935146443515" y="481.0188284518829">
             <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
@@ -296,24 +296,6 @@ Reputación<y:LabelModel>
     </node>
     <node id="n14">
       <data key="d6">
-        <y:ShapeNode>
-          <y:Geometry height="50.0" width="226.25" x="447.42089435146454" y="142.9069037656904"/>
-          <y:Fill hasColor="false" transparent="false"/>
-          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="right" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="41.25" modelName="custom" textColor="#000000" visible="true" width="108.8671875" x="58.69140625" y="4.375">Subsistema
-de Query<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-          <y:Shape type="rectangle"/>
-        </y:ShapeNode>
-      </data>
-    </node>
-    <node id="n15">
-      <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="60.0" width="158.5" x="677.9626020133394" y="424.0690376569039"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
@@ -332,7 +314,7 @@ Publicidades<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n16">
+    <node id="n15">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.0" width="158.5" x="273.25" y="31.247071129706825"/>
@@ -350,7 +332,7 @@ Publicidades<y:LabelModel>
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n17">
+    <node id="n16">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="60.0" width="158.5" x="719.7847557376031" y="715.2311715481173"/>
@@ -370,7 +352,7 @@ Filtros y Estragias<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n18">
+    <node id="n17">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="60.0" width="158.5" x="677.9626020133394" y="337.75"/>
@@ -390,14 +372,32 @@ Rubros y Productos<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n19">
-      <data key="d5"/>
+    <node id="n18">
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.541254125412593" width="61.84937238493728" x="69.66317991631792" y="564.0376569037659"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="48.296875" x="6.776248692468641" y="0.28625206270635317">Ofertas<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="custom" textColor="#000000" visible="true" width="48.296875" x="6.776248692468641" y="0.2862520627062395">Ofertas<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n19">
+      <data key="d5"/>
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="50.0" width="111.40993262724623" x="522.1287703016241" y="129.02092050209217"/>
+          <y:Fill hasColor="false" transparent="false"/>
+          <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="73.80859375" x="18.800669438623117" y="9.03125">Subsistema
+de Query<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -571,7 +571,7 @@ Rubros y Productos<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e14" source="n5" target="n15">
+    <edge id="e14" source="n5" target="n14">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -581,7 +581,7 @@ Rubros y Productos<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e15" source="n16" target="n1">
+    <edge id="e15" source="n15" target="n1">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -591,7 +591,7 @@ Rubros y Productos<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e16" source="n1" target="n16">
+    <edge id="e16" source="n1" target="n15">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="34.138214426129935" sy="-5.7188807531380235" tx="34.138214426129935" ty="14.97462612231088"/>
@@ -601,7 +601,7 @@ Rubros y Productos<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e17" source="n9" target="n16">
+    <edge id="e17" source="n9" target="n15">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-51.304100458718665" ty="14.99663025020378">
@@ -614,8 +614,7 @@ Rubros y Productos<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e18" source="n1" target="n18">
-      <data key="d9"/>
+    <edge id="e18" source="n1" target="n17">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -627,8 +626,7 @@ Rubros y Productos<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e19" source="n8" target="n17">
-      <data key="d9"/>
+    <edge id="e19" source="n8" target="n16">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -640,8 +638,7 @@ Rubros y Productos<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e20" source="n1" target="n17">
-      <data key="d9"/>
+    <edge id="e20" source="n1" target="n16">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="8.820132013201373" sy="-14.09323432343237" tx="61.81507924589528" ty="0.8925908281202055">

@@ -1,3 +1,7 @@
+\newcommand{\nota}[1]{
+  $\bullet$ {\color{red}{#1}}
+}
+
 \subsection{Referencia de conectores}
 A continuación presentamos una referencia a los conectores utilizados en los diagramas que se presentaran en las siguientes secciones. Los conectores \emph{no-standard} utilizados son especificados más abajo.
 
@@ -25,6 +29,19 @@ A continuación presentamos una referencia a los conectores utilizados en los di
 \subsection{Conectividad externa del sistema \textbf{TPA}}
 
 En el siguiente diagrama vemos la disposición global del sistema central \textbf{TPA} respecto a los agentes externos con los que interactúa. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{graficos/arch/global_overview.png}
+	\caption{Diagrama arquitectónico global del sistema \textbf{TPA}.}
+\end{figure}
+
+Aquí vemos al \textsf{Sistema central TPA} dividido en 4 componentes. El \textsf{Subsistema de Ofertas} es el encargado de responder a las consultas de los posibles clientes. En este momento los clientes son nuestras aplicaciones web y móvil, así como aquellos que deseen consumir nuestra api pública. Dentro del \textsf{Subsistema de Ofertas} tenemos los componentes encargados de comprender los pedidos, administrar las preferencias y reputación de usuarios, administrar las publicidades generadas por el sistema, mantener las reglas de asociación y substitución y contener la información de los productos y rubros aceptados.
+
+El \textsf{Sist. Obtención de datos} se el encargado de recurrir a las distintas fuentes de datos con el fin de obtener ofertas a productos. Por lo tanto, contiene los medios necesarios para poder extraer información de \textsf{Redes sociales} y para poder recibir información mediante \textsf{SMS}. Como además se decidió poder registrar sitios web con interfases variadas (muy distintas a las \textsf{Redes sociales}), se cuenta con los componentes \textsf{Web Mining Robots}, que constituyen robots que saben recorrer ciertos sitios específicos en busca de ofertas. El \textsf{Sist. Obtención de datos} sabe como comunicarse con los robots quienes le proveen información. 
+
+Las ofertas obtenidas por el \textsf{Sist. Obtención de datos} le son provistas al \textsf{Subsistema de Ofertas} mediante el uso de un repositorio intermedio.
+El mismo es revisado contínuamente por el \textsf{Sist. detector de Spam}, que contiene mecanismos para detectar ofertas de naturaleza dudosa. En este momento, el principal mecanismo es el sistema de terceros \textsf{SpamBust}.
 
 \subsection{Subsistema de Query}
 
@@ -78,9 +95,9 @@ El \textsf{Analizador de Ofertas} interactúa con un componente \emph{intermedia
 El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repositorio de Ofertas} aquellas ofertas encontradas como Spam y guardarlas en el \textsf{Repositorio de Spams} para su posterior revisión/publicación, de esto último se encarga la componente \textsf{Publicador de Información}.\\
 
 
-nota2: el publicador de informe es un nombre medio choto y creo que debería expandirse y detallarse más\\
+\nota{nota2: el publicador de informe es un nombre medio choto y creo que debería expandirse y detallarse más}\\
 
-\textsf{IMPORTANTE}: los usuarios tienen que ser capases de reportar enga~nos y que esta cosa los pueda leer, por el momento no esta ocurriendo
+\nota{\textsf{IMPORTANTE}: los usuarios tienen que ser capases de reportar enga~nos y que esta cosa los pueda leer, por el momento no esta ocurriendo}
 
 \subsection{Sistema de Obtención de Datos}
 
@@ -92,7 +109,7 @@ nota2: el publicador de informe es un nombre medio choto y creo que debería exp
 \end{figure}
 
 
-Nota: la mezcla entre nombre de ingle y espa~nol es cualquiera...\\
-nota2: que eso eso de cliente servidor asincronico??\\
-nota3: los robot hay que expandirlos, como?\\
+\nota{Nota: la mezcla entre nombre de ingle y espa~nol es cualquiera...}\\
+\nota{nota2: que eso eso de cliente servidor asincronico??}\\
+\nota{nota3: los robot hay que expandirlos, como?}\\
 
