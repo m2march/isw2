@@ -116,6 +116,16 @@ De forma ortogonal a esto, existen otros dos subcomponentes de este modulo. Esto
 
 De forma similar a la Interfaz móvil, para permitir el acceso desde un conjunto diverso de dispositivos, optamos por dar lugar a una interfaz web de nuestra aplicación.
 
+Esta interfaz se diferencia de la móvil en un punto importante, \textbf{no} se puede \emph{persistir la información} obtenida de consultas anteriores. Esto imposibilita utilizar las estrategias, utilizadas en la interfaz movil, para responder rapidamente a consultas del usuario, mientras estas se escriben. Por el mismo motivo, resulta imposible acceder sin conexión al servicio, sin embargo, es esperable que la misma interfaz sea inaccesible, en ausencia de conexión.
+
+La unica funcionalidad recortada en la interfaz web en comparación con la interfaz móvil es la posibilidad de anticiparse al usuario mientras este escribe la consulta.
+
+Cuando un usuario se conecta a este servicio, al mismo tiempo que se carga la interfaz de usuario, comienzan a obtenerse las ofertas mas populares, para sugerirlas por la interfaz, antes de que se comiencen a realizar consultas por otros productos.
+
+Luego, si se realiza una consulta por un producto en particular, esta es delegada al \textsf{Modulo de consultas desde UI}, y de forma sincronica se realiza la comunicación con el servidor central.
+
+La comunicación entre la interfaz grafica y el modulo de consultas desde UI se realiza de forma asincronica, para dar al usuario la sensación de agilidad en la respuesta, y no 'congelar' la interfaz grafica.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/Cliente_web.pdf}
