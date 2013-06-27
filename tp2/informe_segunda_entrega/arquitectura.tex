@@ -211,7 +211,7 @@ El \textsf{Analizador de Ofertas} toma en consideración la respuesta del servic
  \vspace{9pt} 
 
 
-El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repositorio de Ofertas} aquellas ofertas encontradas como Spam y guardarlas en el \textsf{Repositorio de Spam} para su posterior revisión/publicación. En este último también se almacena toda la evidencia encontrada por el \textsf{analizador}. La componente \textsf{Publicador de Informe} obtiene la información del \textsf{Repositorio de spam} para generar informes sobre las ofertas descartadas y el motivo de las mismas. Se nos pide que el mismo se publique todos los martes. (Ver atributo de auditabilidad 10.) El \textsf{Subsistema de Manejo de Spam} es el punto de acceso a estos datos para la \textsf{interfáz de administrador}.
+El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repositorio de Ofertas} aquellas ofertas encontradas como Spam y guardarlas en el \textsf{Repositorio de Spam} para su posterior revisión/publicación. En este último también se almacena toda la evidencia encontrada por el \textsf{analizador}. La componente \textsf{Publicador de Informe} obtiene la información del \textsf{Repositorio de spam} para generar informes sobre las ofertas descartadas y el motivo de las mismas. Se nos pide que el mismo se publique todos los martes (Ver atributo de auditabilidad 10). El \textsf{Subsistema de Manejo de Spam} es el punto de acceso a estos datos para la \textsf{interfáz de administrador}.
  \vspace{9pt} 
 
 
@@ -236,8 +236,9 @@ El SOD se encarga de recolectar datos vía SMS, redes sociales y Web Mining. Cad
 La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta es aceptada como válida por el sistema. Como esto puede llegar a ser mucho más costoso computacionalmente que la recolección de datos, se tiene múltiples instancias de esta componente para poder soportar \emph{concurrencia}. Para los chequeos usa el estilo \emph{pipes and filters} para que sea fácilmente \emph{Modificable} en el futuro, de acuerdo a lo especificado en el atributo de extensibilidad 11. Una vez que se hacen todos las validaciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.
  \vspace{9pt} 
 
+Los \textsf{Web Mining Robots} son un conjunto de componentes que cada una está programa para revisar un sitios web específicos con el fin de encontrar nuevas ofertas, para luego enviársela al \textsf{Comunicador de Robots}. En caso de ser incapaces de entender la estructura del sitio que relevan, debido a que el mismo cambio recientemente (o si detectan grandes cambios y podría haber peligro de estar entendiendo mal la ofertas), los Robots se detienen y mandan una alerta avisando lo sucedido al \textsf{Comunicador de Robots}, este último le avisa al \textsf{Subsistema de Alertas} para darle aviso a los Admins (esto corresponde al atributo número 14 de detección y prevención de fallas).
+\vspace{9pt}
 
-\nota{nota4: hay un atributo de calidad que dice que los bot tienen que avisarle al admin que la pagina a la que esta viendo cambio mucho su estructura}
 
 
 
