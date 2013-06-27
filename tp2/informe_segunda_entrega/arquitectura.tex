@@ -33,7 +33,7 @@ A continuación presentamos una referencia a los conectores utilizados en los di
 
 En el siguiente diagrama vemos la disposición global del sistema central \textbf{TPA} respecto a los agentes externos con los que interactúa. Además se presenta una primera subdivisión del sistema principal en sus componentes más importantes.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/global_overview.pdf}
 	\caption{Diagrama arquitectónico global del sistema \textbf{TPA}.}
@@ -92,7 +92,7 @@ Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obt
 
 \subsection{Subsistemas de Información de Negocio}
 
-En el diagrama del \textsf{Subsistema de Negocio de Ofertas} (figura \ref{arch:neg_ofertas}) se encuentran varios subsistemas que manejan información de negocio. Estos subsistemas son: el \textsf{Subsistema de Publicidades}, el \textsf{Subsistema de Rubros y Productos}, el \textsf{Subsistema de Reglas}, el \textsf{Subsistema Pref. de Usuario}, el \textsf{Subsistema de Reputación}, el \textsf{Subsistema de Filtros y Estrategias} y el \textsf{Subsistema de Manejo de Spam}. El \textsf{Subsistema de Query} es también considerado un \emph{subsistema de negocio}, pero por su relevancia es tratado individualmente en las secciones anteriores.
+En el diagrama del \textsf{Subsistema de Negocio de Ofertas} (figura \ref{arch:neg_ofertas}) se encuentran varios subsistemas que manejan información de negocio. Estos subsistemas son: el \textsf{Subsistema de Publicidades}, el \textsf{Subsistema de Rubros y Productos}, el \textsf{Subsistema de Reglas}, el \textsf{Subsistema Pref. de Usuario}, el \textsf{Subsistema de Reputación}, el \textsf{Subsistema de Filtros y Estrategias}, el \textsf{Subsistema de Manejo de Spam} y el \textsf{Subsistema de Alertas}. El \textsf{Subsistema de Query} es también considerado un \emph{subsistema de negocio}, pero por su relevancia es tratado individualmente en las secciones anteriores.
 En todos los otros casos los \emph{subsistemas de negocio} son accedidos mediante una conexión de tipo \emph{cliente-servidor} ya que proveen un servicio respecto a la información de negocio contenida en cada uno. Además, se busca permitir concurrencia en el acceso a cada uno de los servicios.
 
 \begin{figure}[H]
@@ -238,7 +238,7 @@ El SOD se encarga de recolectar datos vía SMS, redes sociales y Web Mining. Cad
 La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta es aceptada como válida por el sistema. Como esto puede llegar a ser mucho más costoso computacionalmente que la recolección de datos, se tiene múltiples instancias de esta componente para poder soportar \emph{concurrencia}. Para los chequeos usa el estilo \emph{pipes and filters} para que sea fácilmente \emph{Modificable} en el futuro, de acuerdo a lo especificado en el atributo de extensibilidad 11. Una vez que se hacen todos las validaciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.
  \vspace{9pt} 
 
-Los \textsf{Web Mining Robots} son un conjunto de componentes que cada una está programa para revisar un sitios web específicos con el fin de encontrar nuevas ofertas, para luego enviársela al \textsf{Comunicador de Robots}. En caso de ser incapaces de entender la estructura del sitio que relevan, debido a que el mismo cambio recientemente (o si detectan grandes cambios y podría haber peligro de estar entendiendo mal la ofertas), los Robots se detienen y mandan una alerta avisando lo sucedido al \textsf{Comunicador de Robots}, este último le avisa al \textsf{Subsistema de Alertas} para darle aviso a los Admins (esto corresponde al atributo número 14 de detección y prevención de fallas).
+Los \textsf{Web Mining Robots} son un conjunto de componentes que cada una está programa para revisar un sitios web específicos con el fin de encontrar nuevas ofertas, para luego enviársela al \textsf{Comunicador de Robots}. Esto otorga una gran flexibilidad para poder fácilmente eliminar/modificar/agregar nuevos robots debido a que son completamente independientes entre ellos (esto posibilita cumplir con el atributo de \emph{Modificabilidad} numero 13).En caso de ser incapaces de entender la estructura del sitio que relevan, debido a que el mismo cambio recientemente (o si detectan grandes cambios y podría haber peligro de estar entendiendo mal la ofertas), los Robots se detienen y mandan una alerta avisando lo sucedido al \textsf{Comunicador de Robots}, este último le avisa al \textsf{Subsistema de Alertas} para darle aviso a los Admins (esto corresponde al atributo número 14 de \emph{detección y prevención de fallas}).
 \vspace{9pt}
 
 
@@ -251,6 +251,7 @@ Los componentes de control de ofertas, encargados de determinar si la informaci�
 Con el objetivo de \emph{alimentar al sistema con la mas fresca información de internet}, se pensaron las fuentes de datos de forma que cada una se controle de forma independiente de las demas. Estas no necesariamente deben correr en maquinas separadas. No se implemento ningun tipo de redundancia sobre estos procesos, debido a que no consideramos como riesgosa la situación en la que alguna o varios de estos equipos fallen, durante un periodo corto de tiempo. Debido a la independencia entre estos procesos, resulta simple agregar nuevas instancias encargadas de obtener datos de otros medios, sin afectar a los demas componentes obtenedores de datos.
 
 Una vez que los datos fueron identificados como ofertas validas, estos se serializan en la base de datos de ofertas. Para poder soportar las grandes cargas de consultas, esta base de datos se encuentra implementada con un motor NOSQL. La replicación de los datos es manejada directamente por el software de la base de datos. De esta forma, podemos garantizar alta disponibilidad de los datos, y performance a la hora de responder las consultas.
+
 
 \begin{figure}[H]
 	\centering

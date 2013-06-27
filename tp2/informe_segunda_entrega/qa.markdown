@@ -8,7 +8,7 @@ Se trabajará con todo tipo de productos, clasificados en rubros. Se espera que 
 * Artefacto: Subsistema de rubros y productos.
 * Entorno: Funcionamiento normal.
 * Respuesta: Utilizando la interfaz de administración, se agrega un nuevo producto/rubro al sistema, sin detener su funcionamiento.
-* Medida: La interfaz para agregar productos/rubros es lo suficientemente intuitiva como para poder agregar un producto/rubro en menos de 5 minutos, y no es necesario cambiar el código fuente del sistema.
+* Medida: El administrador puede acceder mediante una interfas apropiada al sistema y realizar los cambios sin que sea necesario cambiar el código fuente del sistema.
 
 ###Atributo de **modificabilidad**:  
 Las reglas de asociación y sustitución entre productos todavía no están bien definidas, por lo que se anticipa que deberán cambiarse con frecuencia.
