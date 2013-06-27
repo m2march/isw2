@@ -27,7 +27,7 @@ A continuación presentamos una referencia a los conectores utilizados en los di
 		\NonStandardConector{Client-Server Async}{Funciona igual que un client-server, pero el cliente no espera una respuesta. El server luego puede retornar su respuesta de manera asincrónica.}
 		\NonStandardConector{Secure Client-Server}{Este conector resulta muy similar al conector client-server. Se diferencia únicamente en que el cliente, antes de enviar una consulta al servidor, \emph{encripta} el mensaje para luego enviarlo. Ya en el servidor, este último desencripta el mensaje y lo interpreta. Para la respuesta, la comúnicación sucede de forma similar; ahora es el servidor quien encripta el mensaje y el cliente quien lo desencripta.}
 \end{itemize}
-
+\newpage
 \subsection{Conectividad externa del sistema \textbf{TPA}}
 
 En el siguiente diagrama vemos la disposición global del sistema central \textbf{TPA} respecto a los agentes externos con los que interactúa. Además se presenta una primera subdivisión del sistema principal en sus componentes más importantes.
@@ -67,7 +67,7 @@ Esta forma de manejar los pedidos de los clientes sobre ofertas satisface el atr
 
 El manejo de mensajes relacionado con las otras funcionalidades (como ser cambios de reputaci\'on y preferencias de usuario) se hace de manera diferente al de pedido de ofertas, porque el volumen esperado para los mismos es menor y además su resoluci\'on es mucho más r\'apida. Usamos entonces un conector client-server convencional entre el \textsf{manejador} y el \textsf{subsistema de negocio} correspondiente.
 
-
+\newpage
 \subsection{Subsistema de Query}
 
 En el siguiente diagrama se presenta el \textsf{Subsistema de Query} donde, dada una consulta por productos (\textbf{query}), se arma la respuesta para el usuario que realizó la consulta. Este es el \textsf{subsistema de negocio} más importante, ya que es encargado de la principal funcionalidad del sistema. Sobre el mismo se aplican varios atributos de calidad relacionados con \emph{performance} y \emph{modificabilidad}. La funcionalidad de este sistema responde a los \emph{casos de uso} 4 (consultar por un producto), 9 y 10 (relacionados con productos asociados y sustituibles), 11 (mostrar publicidades), y 16 (consultar estando autenticado y aprovechar las preferencias).
@@ -89,6 +89,7 @@ Las modificaciones que se realizan a la consulta están relacionadas con las pre
 
 Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obtenedor de Ofertas} accede al repositorio de ofertas y adquiere todas aquellas que responden a la consulta.  Una vez realizado esto pasamos a la etapa donde se prepara el resultado. Por un lado el componente \textsf{Modificador de resultados por Preferencias de Usuario} se encarga de tareas como jerarquizar las ofertas según las preferencias del usuario. Las ofertas luego son decoradas, eliminadas y reorganizadas según la reputación de los usuarios que las originaron (componente \textsf{Modificador de resultados por Reputación}). A continuación se realiza un nuevo trabajo sobre los resultados aplicando los filtros y estrategias seleccionados por el usuario en la consulta original (componente \textsf{Modificador de resultados por filtros y estrategias}). Finalmente, el componente \textsf{Preparador de la Respuesta de la Búsqueda} prepara todo el paquete de respuesta que será enviado denuevo al usuario. 
 
+\newpage
 \subsection{Subsistemas de Información de Negocio}
 
 En el diagrama del \textsf{Subsistema de Negocio de Ofertas} (figura \ref{arch:neg_ofertas}) se encuentran varios subsistemas que manejan información de negocio. Estos subsistemas son: el \textsf{Subsistema de Publicidades}, el \textsf{Subsistema de Rubros y Productos}, el \textsf{Subsistema de Reglas}, el \textsf{Subsistema Pref. de Usuario}, el \textsf{Subsistema de Reputación}, el \textsf{Subsistema de Filtros y Estrategias}, el \textsf{Subsistema de Manejo de Spam} y el \textsf{Subsistema de Alertas}. El \textsf{Subsistema de Query} es también considerado un \emph{subsistema de negocio}, pero por su relevancia es tratado individualmente en las secciones anteriores.
@@ -198,7 +199,7 @@ La comunicación entre la interfaz gráfica y el módulo de consultas desde UI s
 
 De la misma forma que en la Interfaz móvil, los atributos de usabilidad 3 y 5 están contemplados en un \textsf{Módulo UI} de fácil modificación.
 
-
+\newpage
 \subsection{Subsistema de Detección de Spam}
 
 El siguiente diagrama representa el Subsistema de Detección de Spam (\textbf{SDS}) donde se discriminan las ofertas deseadas en el sistema de las que no lo son (\textbf{Spam}). Una oferta puede ser considerada no deseada por ser falsa, tener un producto con precio dudoso, contener información contradictoria y/o haber sido reportada por los usuarios del sistema como enga\~{n}osa.
@@ -221,7 +222,7 @@ El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repo
  \vspace{9pt} 
 
 
-
+\newpage
 \subsection{Subsistema de Obtención de Datos}
 
 
@@ -235,27 +236,26 @@ En el siguiente diagrama representa el Subsistema de Obtención de Datos (\texts
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Obtención de Datos}.}
 \end{figure}
 
-El SOD se encarga de recolectar datos vía SMS, redes sociales y Web Mining. Cada una de las cuales tiene un componente responsable de interactuar con sus respectivas fuentes de información y colocar las posibles ofertas en una manera genérica para que puedan ser validadas por la componente \textsf{Control de Ofertas}. Esta última componente recibe en forma de \emph{Pipe} la información de las tres componentes encargadas de la interacción con el exterior(\textsf{Comunicador de robots}, \textsf{Recolector de ofertas} y \textsf{Recolector de ofertas SMS}).
+El SOD se encarga de recolectar datos vía SMS, redes sociales y Web Mining. Cada una de estas fuentes de datos tiene un componente responsable de interactuar con sus respectivas fuentes de información y colocar las posibles ofertas en una manera genérica para que puedan ser validadas por la componente \textsf{Control de Ofertas}. Esta última componente recibe en forma de \emph{Pipe} la información de las tres componentes encargadas de la interacción con el exterior(\textsf{Comunicador de robots}, \textsf{Recolector de ofertas} y \textsf{Recolector de ofertas SMS}).
  \vspace{9pt} 
 
 
 La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta es aceptada como válida por el sistema. Como esto puede llegar a ser mucho más costoso computacionalmente que la recolección de datos, se tiene múltiples instancias de esta componente para poder soportar \emph{concurrencia}. Para los chequeos usa el estilo \emph{pipes and filters} para que sea fácilmente \emph{Modificable} en el futuro, de acuerdo a lo especificado en el atributo de extensibilidad 11. Una vez que se hacen todos las validaciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.
  \vspace{9pt} 
 
-Los \textsf{Web Mining Robots} son un conjunto de componentes que cada una está programa para revisar un sitios web específicos con el fin de encontrar nuevas ofertas, para luego enviársela al \textsf{Comunicador de Robots}. Esto otorga una gran flexibilidad para poder fácilmente eliminar/modificar/agregar nuevos robots debido a que son completamente independientes entre ellos (esto posibilita cumplir con el atributo de \emph{Modificabilidad} numero 13).En caso de ser incapaces de entender la estructura del sitio que relevan, debido a que el mismo cambio recientemente (o si detectan grandes cambios y podría haber peligro de estar entendiendo mal la ofertas), los Robots se detienen y mandan una alerta avisando lo sucedido al \textsf{Comunicador de Robots}, este último le avisa al \textsf{Subsistema de Alertas} para darle aviso a los Admins (esto corresponde al atributo número 14 de \emph{detección y prevención de fallas}).
+Los \textsf{Web Mining Robots} son un conjunto de componentes, cada uno asignado a un sitio web específico, que leen periódicamente su contenido con el fin de encontrar nuevas ofertas, para luego enviarlas al \textsf{Comunicador de Robots}. Esto otorga una gran flexibilidad para poder eliminar/modificar/agregar fácilmente nuevos robots, debido a que son completamente independientes entre ellos (esto posibilita cumplir con el atributo de \emph{Modificabilidad} número 13). En caso de que un robot incapaz de entender la estructura del sitio que releva, debido a que el mismo cambió recientemente (o si detectan grandes cambios y podría haber peligro de estar entendiendo mal las ofertas), el robot se detiene y manda una alerta avisando lo sucedido al \textsf{Comunicador de Robots}; este último le avisa al \textsf{Subsistema de Alertas} para darles aviso a los Admins (esto corresponde al atributo número 14 de \emph{detección y prevención de fallas}).
 \vspace{9pt}
 
 
 \subsection{Deployment}
 
-En la figura \ref{fig:obtencion_datos} presentamos un diagrama de alocación de recursos a distintos procesos de nuestro sistema. En particular, en este diagrama, nos centramos en la alocación de recursos para el modulo que obtiene datos de ofertas. 
+En la figura \ref{fig:obtencion_datos} presentamos un diagrama de alocación de recursos a distintos procesos de nuestro sistema. En particular, en este diagrama nos centramos en la alocación de recursos para el módulo que obtiene datos de ofertas. 
 
-Los componentes de control de ofertas, encargados de determinar si la información obtenida es realmente una oferta, se espera que se ejecuten en varias maquinas. Notemos que la instancias para determinar si información es realmente una oferta valida son completamente independientes entre si. Se penso de esta manera, con la idea de que el sistema pueda soportar la gran carga de trabajo que supone analizar la información obtenida. Ademas, de aumentar esta carga con el tiempo, resulta facil escalar horizontalmente la performance del sistema, agregando mas equipos. Seria deseable en un futuro, poder manejar de forma elastica las instancias asignadas a la tarea de analizar esta información.
+Se espera que los componentes de control de ofertas, encargados de determinar si la información obtenida es realmente una oferta, se ejecuten en varias máquinas. Notemos que las instancias para determinar si cierta  información es realmente una oferta válida son completamente independientes entre sí. Se pensó de esta manera con la idea de que el sistema pueda soportar la gran carga de trabajo que supone analizar la información obtenida. Además, de aumentar esta carga con el tiempo, resulta fácil escalar horizontalmente la performance del sistema, agregando más equipos. Sería deseable en un futuro poder manejar de forma elástica las instancias asignadas a la tarea de analizar esta información.
 
-Con el objetivo de \emph{alimentar al sistema con la mas fresca información de internet}, se pensaron las fuentes de datos de forma que cada una se controle de forma independiente de las demas. Estas no necesariamente deben correr en maquinas separadas. No se implemento ningun tipo de redundancia sobre estos procesos, debido a que no consideramos como riesgosa la situación en la que alguna o varios de estos equipos fallen, durante un periodo corto de tiempo. Debido a la independencia entre estos procesos, resulta simple agregar nuevas instancias encargadas de obtener datos de otros medios, sin afectar a los demas componentes obtenedores de datos.
+Con el objetivo de \emph{alimentar al sistema con la mas fresca información de Internet}, se pensaron las fuentes de datos de forma que cada una se controle de forma independiente de las demás. Estas no necesariamente deben correr en máquinas separadas. No se implementó ningún tipo de redundancia sobre estos procesos, debido a que no consideramos como riesgosa la situación en la que uno o varios de estos equipos fallen durante un periodo corto de tiempo. Debido a la independencia entre estos procesos, resulta simple agregar nuevas instancias encargadas de obtener datos de otros medios, sin afectar a los demás componentes obtenedores de datos.
 
-Una vez que los datos fueron identificados como ofertas validas, estos se serializan en la base de datos de ofertas. Para poder soportar las grandes cargas de consultas, esta base de datos se encuentra implementada con un motor NOSQL. La replicación de los datos es manejada directamente por el software de la base de datos. De esta forma, podemos garantizar alta disponibilidad de los datos, y performance a la hora de responder las consultas.
-
+Una vez que los datos fueron identificados como ofertas válidas, estas se serializan en la base de datos de ofertas. Para poder soportar las grandes cargas de consultas, esta base de datos se encuentra implementada con un motor NOSQL. La replicación de los datos es manejada directamente por el software de la base de datos. De esta forma, podemos garantizar alta disponibilidad de los datos, y performance a la hora de responder las consultas.
 
 \begin{figure}[H]
 	\centering
@@ -264,8 +264,18 @@ Una vez que los datos fueron identificados como ofertas validas, estos se serial
 	\label{fig:obtencion_datos}
 \end{figure}
 
-En la figura \ref{fig:deploy_query} se detalla el viewtype de alocación del subconjunto del sistema, encargado de responde, 
+En la figura \ref{fig:deploy_query} se detalla el viewtype de alocación del subconjunto del sistema que se encarga de responder a las queries de los distintos usuarios.  
 
+Para poder manejar la cantidad de consultas provenientes de los distintos usuarios, distintos tipos de manejadores de consultas son instanciados en varias máquinas. 
+
+En particular, dado el volumen de consultas esperado, proveniente de la interfaz web y de la interfaz móvil, el manejador de pedidos de aplicación se encuentra instanciado en varias máquinas. Esto permite manejar una gran cantidad de consultas, y provee redundancia en caso de falla de uno de los servidores, para garantizar la disponibilidad del servicio. De forma similar se encuentran desplegadas varias instancias del manejador de pedidos de la API pública. Estos servicios fueron dise\~nados con el objetivo de poder escalar horizontalmente sin mayores complicaciones.
+
+El subsistema de queries es el componente del sistema que recibe una mayor cantidad de consultas. Con el objetivo de poder lidiar con la carga de consultas, y dado que cada consulta es independiente de las demás, resulta natural  distribuir esta carga de trabajo en un gran número de servidores. Es deseable que, en un futuro, estos puedan ser desplegados de forma elástica, para poder adaptarse a la carga del sistema y reducir costos. Replicar este servicio en varios servidores otorga una segunda ventaja: ayuda a garantizar una mayor disponibilidad del servicio. Esto último es particularmente importante, ya que este servicio forma parte del núcleo del sistema.
+Este sistema se encuentra conectado directamente a la base de datos de ofertas. Es importante que esta base de datos pueda antender a la cantidad de consultas de lectura que el procesador de consultas realiza. Vale aclarar que, dado que las ofertas se representan como un conjunto desestructurado de datos, resulta natural almacenarlos en una base de datos NOSQL.
+
+De los distintos subsistemas de rubros y productos, de publicidades, de preferencias de usuario y de reputaci\'on, podemos destacar una caracteristica común: todos estos subsistemas poseen una base de datos propia. Dado que en estos casos los datos son estructurados, optamos por utilizar bases de datos SQL. No se espera que estos sistemas sufran una gran carga de trabajo.
+
+Una característica a destacar de la interfaz web es su capacidad para poder ser utilizada desde los más diversos dispositivos.
 
 \begin{figure}[H]
 	\centering
@@ -273,7 +283,3 @@ En la figura \ref{fig:deploy_query} se detalla el viewtype de alocación del sub
 	\caption{Diagrama de deployment del sistema central.}
 	\label{fig:deploy_query}
 \end{figure}
-
-
-
-\nota{Juansis va a escribir y hacer dibujitos aca. March va a ayudar también.}

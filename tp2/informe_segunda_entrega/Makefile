@@ -1,5 +1,5 @@
 .PHONY: informe.tex caratula.sty qa.markdown cu.markdown dict.markdown comparacion.tex introduccion.tex arquitectura.tex
-PANDOC = ../utils/pandoc
+PANDOC = pandoc
 
 all: informe.tex caratula.sty qa.markdown cu.markdown dict.markdown comparacion.tex introduccion.tex arquitectura.tex
 	${PANDOC} qa.markdown -o qa.tex
