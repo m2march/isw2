@@ -46,8 +46,7 @@
           <y:Geometry height="298.20000000000005" width="401.9000000000001" x="910.51" y="479.19999999999993"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle color="#000000" type="dashed" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="free" modelPosition="anywhere" textColor="#000000" visible="true" width="88.017578125" x="4.0" y="4.0">Sist. detector 
-de Spam</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.96875" modelName="free" modelPosition="anywhere" textColor="#000000" visible="true" width="185.1953125" x="4.0" y="4.0">Subsistema detector de Spam</y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -202,7 +201,7 @@ de Ofertas<y:LabelModel>
     <node id="n10">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.dataBase">
-          <y:Geometry height="40.0" width="60.0" x="1207.7416772460938" y="805.3216666666667"/>
+          <y:Geometry height="40.0" width="60.0" x="1086.9416772460938" y="805.3216666666667"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="76.767578125" x="-8.3837890625" y="37.1701626712329">Reportes de
@@ -220,7 +219,7 @@ Usuarios<y:LabelModel>
     <node id="n11">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="38.94926848762202" width="114.0" x="1199.2433544921867" y="382.35873151237803"/>
+          <y:Geometry height="38.94926848762202" width="114.0" x="1199.2433544921867" y="805.8470324228557"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="104.27734375" x="4.861328125" y="3.5058842438110105">Subsistema de
@@ -385,7 +384,7 @@ Manejo de Spam<y:LabelModel>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="49.97999999999979" ty="0.8999999999997499">
-            <y:Point x="1237.7416772460938" y="697.5"/>
+            <y:Point x="1116.9416772460938" y="697.5"/>
             <y:Point x="1038.5" y="697.5"/>
           </y:Path>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
