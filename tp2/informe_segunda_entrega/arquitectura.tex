@@ -24,6 +24,8 @@ A continuación presentamos una referencia a los conectores utilizados en los di
 		%Completar con conectores no standard!
 		%Agregar asi:
 		\NonStandardConector{A non standard conector name}{A non standard conector description.}
+		\NonStandardConector{client-server async}{F\'unciona igual que un client-server pero el cliente no se cuelga esperando una respuesta, y el server puede retornar su respuesta de manera asincrónica. Lo utilizamos para poder aprovechar el dispatch que el conector tiene sobre las instancias de servidores que hay disponibles que un conector async no soporta.}
+		\NonStandardConector{Secure Client-Server}{Este conector resulta muy similar a Cliente-Servidor. Se diferencia unicamente en que antes de que el cliente envie una consulta al servidor, este \emph{encripta} el mensaje, y luego se lo envia. Ya en el servidor, este desencripta el mensaje y lo interpreta. Para la respuesta, de forma similar a la mencionada anteriormente, ahora es el servidor quien encripta el mensaje y el cliente quien lo desencripta.}
 \end{itemize}
 
 \subsection{Conectividad externa del sistema \textbf{TPA}}
@@ -50,6 +52,17 @@ El mismo es revisado contínuamente por el \textsf{Sist. detector de Spam}, que 
 	\includegraphics[width=\textwidth]{graficos/arch/temp_subsistema_que_habla_con_el_usuario.pdf}
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Negocio de Ofertas}.}\ref{arch:neg_ofertas}
 \end{figure}
+
+\subsubsection{Manejo de pedidos de ofertas}
+
+El manejo de pedidos de ofertas provenientes de clientes se resuelve de la siguiente manera, el mismo es aceptado por un \textsf{Manejador de pedidos de API} o \textsf{Manejador de pedidos de aplicación} este recibe el pedido y le asigna un identificador de pedido. Luego arma un mensaje con su identificador, el identificador del pedido y el contenido del pedido y env\'ia dicho mensaje por medio de nuestro conector custom hacia alg\'un \textsf{Query Dispatcher}. Cabe destacar que el manejador tiene memoria de aquellos pedidos que todavia le debe responder a sus clientes. El \textsf{Query Dispatcher} toma el mensaje y lo pone en la cola de trabajo del \textsf{Subsistema de Query}. Al terminar el procesamiento del mensaje el resultado del mismo es devuelto en la cola de \textsf{QueryDispatcher} que seg\'un el identificador del mensaje original lo envia asincrónicamente hacia el manejador que lo creo. El manejador recibe el resultado y se lo devuelve al cliente que origino el pedido.     
+\\
+Esta forma de manejar los pedidos de los clientes sobre ofertas satisface el atributo de calidad 3.8 que se refiere a \emph{disponibilidad} porque ning\'un pedido deberia ser rechazado asumiendo una coherente asignacion de instancias de manejadores, dispatchers y de elementos procesadores de querys. El volumen esperado de este tipo de interacción es muy grande.
+
+\subsubsection{Manejo de mensajes de reputación y preferencias}
+
+El manejo de mensajes de reputaci\'on y preferencias se hace de manera diferente al de pedido de ofertas porque el volumen esperado de los mismos es menor y además su resoluci\'on es muchisimo mas r\'apida. Usamos entonces un conector client-server convencional entre el \textsf{Manejador} y los sistemas de reputación y preferencias.
+
 
 \subsection{Subsistema de Query}
 
@@ -122,6 +135,10 @@ Una vez que la interfaz detecta que la escritura de la consulta se ha terminado,
 En ambos casos, una vez obtenidos los resultados, estos son enviados a la interfaz grafica para su visualización y, de esta forma, Tito ya puede escoger cuál es el lugar mas conveniente para comprar \emph{pepas}.
 
 De forma ortogonal a esto, existen otros dos subcomponentes de este módulo. Estos son, el \textsf{módulo de cambio de preferencias} y el \textsf{módulo de denuncia de ofertas}. El primero tiene la tarea de, ante un cambio de las preferencias del usuario, comunicarselas al servidor central. El segundo componente, comunica al servidor central la denuncia de una oferta como posible falso. La comunicación de ambos modulos con el servidor se realiza de forma \emph{segura}, debido a que los datos que circulan en este momento son sensibles, y se busca evitar posibles usos malintencionados. Un ejemplo de lo anterior, seria atacar al sistema, denunciando ofertas, haciendose pasar por otro usuario. 
+
+En la \textsf{cache de ofertas}, se almacenan las consultas recientes y sus resultados, y consultas populares y sus resultados. Si un usuario, sin conexión, consulta por ofertas de productos, que no son validos, no es necesario verificar la validez de estos, ya que resulta imposible que existan resultados de ofertas de este producto en la cache.
+
+Es imposible modificar la configuración del usuario estando sin conexión. Consideramos que esta es la mejor opción, para evitar problemas de sincronización si el usuario posee varios dispositivos moviles o accede desde la interfaz web. Ademas, por este motivo, la información sobre las fuentes de datos de confianza, se obtienen unicamente cuando hay conexión con el servidor central.
 
 \begin{figure}[H]
 	\centering
@@ -208,3 +225,6 @@ El \textsf{Subsistema de Reputación} difiere del resto de los subsistemas de ne
 	\includegraphics[width=\textwidth]{graficos/arch/subsist_reputacion.pdf}
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Reputación}.}
 \end{figure}
+\subsection{Deployment}
+
+\nota{Juansis va a escribir y hacer dibujitos aca. March va a ayudar también.}
