@@ -128,7 +128,7 @@ de Ofertas<y:LabelModel>
           <y:Geometry height="40.0" width="90.0" x="668.5489963724308" y="878.0370692786386"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="88.92578125" x="0.537109375" y="4.03125">Interfaz de 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="88.92578125" x="0.537109375" y="4.03125">Interfaz de
 Administrador<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -184,7 +184,7 @@ Movil<y:LabelModel>
     <node id="n7">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
-          <y:Geometry height="40.0" width="80.0" x="673.5489963724308" y="691.0832560778911"/>
+          <y:Geometry height="40.0" width="80.0" x="673.5489963724308" y="692.275777705992"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="46.123046875" x="16.9384765625" y="4.03125">Cliente
@@ -208,6 +208,7 @@ Web<y:LabelModel>
           <y:Geometry height="40.0" width="60.0" x="1124.1393648074898" y="424.7079999999999"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="4.0" x="28.0" y="18.0"/>
         </y:GenericNode>
       </data>
     </node>
@@ -237,7 +238,7 @@ Reputación<y:LabelModel>
           <y:Geometry height="37.89853697524404" width="158.5" x="1023.8600000000001" y="759.9214574616452"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="96.4375" x="31.03125" y="2.980518487622021">Subsistema de 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="92.623046875" x="32.9384765625" y="2.980518487622021">Subsistema de
 Reglas<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -317,7 +318,7 @@ Filtros y Estrategias<y:LabelModel>
           <y:Geometry height="37.89853697524404" width="158.5" x="1023.8600000000001" y="814.2755083211291"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="120.44921875" x="19.025390625" y="2.980518487622021">Subsistema de 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="120.44921875" x="19.025390625" y="2.980518487622021">Subsistema de
 Rubros y Productos<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -382,7 +383,7 @@ de API<y:LabelModel>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="101.705078125" x="8.6474609375" y="96.25156564893166">Manejador
-de pedidos de 
+de pedidos de
 administradores<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -508,7 +509,7 @@ Dispatcher<y:LabelModel>
     <edge id="e3" source="n7" target="n15">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="30.114825665255353" sy="-8.738371837052455" tx="-68.50609782363021" ty="19.298227241611816"/>
+          <y:Path sx="39.960937499999886" sy="-9.930893465153417" tx="-68.50609782363021" ty="19.298227241611816"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
           <y:BendStyle smoothed="false"/>
@@ -548,7 +549,7 @@ Dispatcher<y:LabelModel>
     <edge id="e7" source="n7" target="n15">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="39.963090404428726" sy="8.548176484832425" tx="-8.818655462184832" ty="36.58477556349667"/>
+          <y:Path sx="16.97768792509021" sy="7.355654856731462" tx="-8.818655462184832" ty="36.58477556349667"/>
           <y:LineStyle color="#000000" type="dashed" width="1.0"/>
           <y:Arrows source="none" target="white_diamond"/>
           <y:BendStyle smoothed="false"/>
