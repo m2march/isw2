@@ -36,12 +36,20 @@ En el siguiente diagrama vemos la disposición global del sistema central \textb
 	\caption{Diagrama arquitectónico global del sistema \textbf{TPA}.}
 \end{figure}
 
-Aquí vemos al \textsf{Sistema central TPA} dividido en 4 componentes. El \textsf{Subsistema de Ofertas} es el encargado de responder a las consultas de los posibles clientes. En este momento los clientes son nuestras aplicaciones web y móvil, así como aquellos que deseen consumir nuestra API pública. Dentro del \textsf{Subsistema de Ofertas} tenemos los componentes encargados de comprender los pedidos, administrar las preferencias y reputación de usuarios, administrar las publicidades generadas por el sistema, mantener las reglas de asociación y sustitución, y contener la información de los productos y rubros aceptados.
+Aquí vemos al \textsf{Sistema central TPA} dividido en 4 componentes. El \textsf{Subsistema de Negocio de Ofertas} es el encargado de responder a las consultas de los posibles clientes. En este momento los clientes son nuestras aplicaciones web y móvil, así como aquellos que deseen consumir nuestra API pública. Dentro del \textsf{Subsistema de Ofertas} tenemos los componentes encargados de comprender los pedidos, administrar las preferencias y reputación de usuarios, administrar las publicidades generadas por el sistema, mantener las reglas de asociación y sustitución, y contener la información de los productos y rubros aceptados.
 
 El \textsf{Sist. Obtención de datos} es el encargado de recurrir a las distintas fuentes de datos con el fin de obtener ofertas a productos. Por lo tanto, contiene los medios necesarios para poder extraer información de \textsf{Redes sociales} y para poder recibir información mediante \textsf{SMS}. Como además se decidió poder registrar sitios web con interfaces variadas (muy distintas a las \textsf{Redes sociales}), se cuenta con los componentes \textsf{Web Mining Robots}, que constituyen robots que saben recorrer ciertos sitios específicos en busca de ofertas. El \textsf{Sist. Obtención de datos} sabe cómo comunicarse con los robots, quienes le proveen información. 
 
 Las ofertas obtenidas por el \textsf{Sist. Obtención de datos} le son provistas al \textsf{Subsistema de Ofertas} mediante el uso de un repositorio intermedio.
 El mismo es revisado contínuamente por el \textsf{Sist. detector de Spam}, que contiene mecanismos para detectar ofertas de naturaleza dudosa. En este momento, el principal mecanismo es el sistema de terceros \textsf{SpamBust}.
+
+\subsection{Subsistema de Negocio de Ofertas}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{graficos/arch/temp_subsistema_que_habla_con_el_usuario.pdf}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Negocio de Ofertas}.}
+\end{figure}
 
 \subsection{Subsistema de Query}
 
@@ -185,13 +193,6 @@ La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta e
 \nota{nota3: los robot hay que expandirlos, como?}\\
 
 
-\subsection{MARCHHHH}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{graficos/arch/temp_subsistema_que_habla_con_el_usuario.pdf}
-	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Obtención de Datos}.}
-\end{figure}
 
 \subsection{Deployment}
 
