@@ -48,7 +48,7 @@ El mismo es revisado contínuamente por el \textsf{Sist. detector de Spam}, que 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/temp_subsistema_que_habla_con_el_usuario.pdf}
-	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Negocio de Ofertas}.}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Negocio de Ofertas}.}\ref{arch:neg_ofertas}
 \end{figure}
 
 \subsection{Subsistema de Query}
@@ -187,6 +187,11 @@ La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta e
 \nota{Nota: la mezcla entre nombre de ingle y espa~nol es cualquiera...}\\
 \nota{nota2: que eso eso de cliente servidor asincronico??}\\
 \nota{nota3: los robot hay que expandirlos, como?}\\
+
+\subsection{Subsistemas de información de negocio}
+
+En el diagrama del \textsf{Subsistema de Negocio de Ofertas} (figura \ref{arch:neg_ofertas}) se encuentran varios subsistemas que manejan información de negocio. Estos subsistemas son: el \textsf{Subsistema de Publicidades}, el \textsf{Subsistema de Rubros y Productos}, el \textsf{Subsistema de Reglas}, el \textsf{Subsistema Pref. de Usuario}, el \textsf{Subsistema de Reputación}, el \textsf{Subsistema de Filtros y Estrategias} y el \textsf{Subsistema de Manejo de Spam}.
+En todos los casos estos subsistemas son accedidos mediante una conexión de tipo \emph{cliente-servidor} ya que proveen un servicio respecto a la información de negocio contenida en cada uno. Además, se busca permitir concurrencia en el acceso a cada uno de los subsistemas.
 
 
 
