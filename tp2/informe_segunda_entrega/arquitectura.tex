@@ -24,8 +24,7 @@ A continuación presentamos una referencia a los conectores utilizados en los di
 		%Completar con conectores no standard!
 		%Agregar asi:
 		%\NonStandardConector{A non standard conector name}{A non standard conector description.}
-		\NonStandardConector{Client-Server Async}{Funciona igual que un client-server, pero el cliente no espera una respuesta. El server luego puede retornar su respuesta de manera asincrónica. Lo utilizamos para poder aprovechar el dispatch que el conector tiene sobre las instancias de servidores que hay disponibles que un conector async no soporta.}
-    \nota{revisar}
+		\NonStandardConector{Client-Server Async}{Funciona igual que un client-server, pero el cliente no espera una respuesta. El server luego puede retornar su respuesta de manera asincrónica.}
 		\NonStandardConector{Secure Client-Server}{Este conector resulta muy similar al conector client-server. Se diferencia únicamente en que el cliente, antes de enviar una consulta al servidor, \emph{encripta} el mensaje para luego enviarlo. Ya en el servidor, este último desencripta el mensaje y lo interpreta. Para la respuesta, la comúnicación sucede de forma similar; ahora es el servidor quien encripta el mensaje y el cliente quien lo desencripta.}
 \end{itemize}
 
@@ -62,7 +61,7 @@ En las siguiente secciones hacemos principal enfoque en el \emph{manejo de pedid
 
 El manejo de pedidos de ofertas provenientes de clientes se resuelve de la siguiente manera: el pedido es aceptado por un \textsf{Manejador de pedidos de API} o \textsf{Manejador de pedidos de aplicación}; este recibe el pedido y le asigna un identificador de pedido. Luego arma un mensaje con su identificador, el identificador del pedido y el contenido del pedido y env\'ia dicho mensaje como cliente (asincrónico) de alg\'un \textsf{Query Dispatcher}. Cabe destacar que el manejador tiene memoria de aquellos pedidos que todavía le debe responder a sus clientes. El \textsf{Query Dispatcher} toma el mensaje y lo pone en la cola de trabajo del \textsf{Subsistema de Query}. Al terminar el procesamiento del mensaje el resultado del mismo es devuelto en la cola de resultados del \textsf{Query Dispatcher}, que seg\'un el identificador del mensaje original sabe enviarlo asincrónicamente hacia el manejador que lo creó. El manejador recibe el resultado y se lo devuelve al cliente que originó el pedido.
 
-Esta forma de manejar los pedidos de los clientes sobre ofertas satisface el atributo de calidad 7, que refiere a la \emph{disponibilidad} del sistema para responder consultas. Con los comonentes descriptos anteriormente, ning\'un pedido deberia ser rechazado por no haber nadie disponible para atenderlo; si se asume una coherente asignacion de instancias de manejadores, dispatchers y de elementos procesadores de queries. Se espera que el sistema pueda manejar grandes volúmenes de consultas por productos.
+Esta forma de manejar los pedidos de los clientes sobre ofertas satisface el atributo de calidad 7, que refiere a la \emph{disponibilidad} del sistema para responder consultas. Con los componentes descriptos anteriormente, ning\'un pedido debería ser rechazado por no haber nadie disponible para atenderlo; si se asume una coherente asignacion de instancias de manejadores, dispatchers y de elementos procesadores de queries. Lo que se logra es desacoplar la consulta y el procesamiento, de forma de aprovechar el pipeline de procesamiento contenido en el \textsf{Subsistema de query}, y así aumentar el thoughput. Se espera así que el sistema pueda manejar grandes volúmenes de consultas por productos.
 
 \subsubsection{Manejo de mensajes de otros subsistemas de negocio}
 
