@@ -188,10 +188,23 @@ La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta e
 \nota{nota2: que eso eso de cliente servidor asincronico??}\\
 \nota{nota3: los robot hay que expandirlos, como?}\\
 
-\subsection{Subsistemas de información de negocio}
+\subsection{Subsistemas de Información de Negocio}
 
 En el diagrama del \textsf{Subsistema de Negocio de Ofertas} (figura \ref{arch:neg_ofertas}) se encuentran varios subsistemas que manejan información de negocio. Estos subsistemas son: el \textsf{Subsistema de Publicidades}, el \textsf{Subsistema de Rubros y Productos}, el \textsf{Subsistema de Reglas}, el \textsf{Subsistema Pref. de Usuario}, el \textsf{Subsistema de Reputación}, el \textsf{Subsistema de Filtros y Estrategias} y el \textsf{Subsistema de Manejo de Spam}.
 En todos los casos estos subsistemas son accedidos mediante una conexión de tipo \emph{cliente-servidor} ya que proveen un servicio respecto a la información de negocio contenida en cada uno. Además, se busca permitir concurrencia en el acceso a cada uno de los subsistemas.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{graficos/arch/subsistemas_neg.pdf}
+	\caption{Diagramas arquitectónicos con el detalle de algunos \textsf{Subsistemas de Información de Negocio}.}
+\end{figure}
 
+Cada uno de estos subsistemas permiten modificar la información de negocio por usuarios y administradores según corresponda. Tanto los datos como la inteligencia de negocio contenida en cada uno de los subsistemas además es publicada mediante otro componente para uso interno del sistema, en particular, el \textsf{Subsistema de Query}. En la medida de lo posible, el acceso podrá ser eficiente y concurrente por distintos clientes. La \emph{modificabilidad} de cada una de los mecanismos de negocio representado en cada subsistema estará contenido en cada uno de ellos. Luego, si se agregan o modifican reglas de asociación o substitución, o si se modifican posibilidades de preferencias de usuario, esto solo afecta al subsistema correspondiente. 
 
+El \textsf{Subsistema de Reputación} difiere del resto de los subsistemas de negocio en que el repositorio que contiene los datos no es interno, sino que es externo, ya que es compartido con otros subsistemas. Su diagrama se muestra a continuación. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{graficos/arch/subsist_reputacion.pdf}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Reputación}.}
+\end{figure}

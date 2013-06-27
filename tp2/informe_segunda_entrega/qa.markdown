@@ -57,18 +57,8 @@ Una característica que se espera de sistema será su inmediata respuesta y su c
 * Estimulo: El usuario desea realizar una consulta.
 * Artefacto: Interfaz Movil / Interfaz Web.
 * Entorno: Funcionamiento normal.
-* Respuesta: Conforme se escribe la respuesta, se muestran resultados.
-* Medida: En menos de 1 segundo luego de que se comenzo a escribir una consulta, el sistema comienza a sugerir posibles resultados.
-
-###Atributo de **usabilidad**:  
-Los resultados deben aparecer a medida que ingresamos una búsqueda, o aún antes.
-
-* Fuente: Un usuario.
-* Estimulo: Se accede a la interfaz y aún no se realiza ningun tipo de consulta.
-* Artefacto: Interfaz Móvil / Interfaz Web.
-* Entorno: Funcionamiento normal.
 * Respuesta: Se comienzan a presentar resultados, que son las ofertas populares / más buscadas / más recomendadas.
-* Medida: El sistema presenta ofertas en todo momento.
+* Medida: En menos de 1 segundo luego de que se comenzo a escribir una consulta, el sistema comienza a sugerir posibles resultados.
 
 ###Atributo de **disponibilidad**:  
 El servicio debe estar disponible en todo momento, y no debe caerse, en la medida de lo posible.  
