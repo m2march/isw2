@@ -124,11 +124,11 @@ La actualización de precios debe realizarse en el instante mismo en que se publ
 El sistema será capaz de minar la web en busca de ofertas en las páginas de las grandes cadenas de supermercados, sitios de descuento y páginas de subastas. A futuro se podrá decidir que se incorporen nuevas páginas a esta búsqueda.
 
 * Fuente: El equipo de desarrolladores.
-* Estimulo: Se desea _implementar/modificar/eliminar_ un bot para obtener datos de una página web determinada.
+* Estimulo: Se desea _implementar/modificar_ un bot para obtener datos de una página web determinada.
 * Artefacto: Sistema de obtención de datos.
 * Entorno: En funcionamiento normal.
 * Respuesta: Se implementa el bot y se integra con el sistema.
-* Medida: El bot se implementa o modifica en menos de 10 horas y se integra con el sistema en menos de 1 hora, sin detener al sistema.
+* Medida: Implementar o modificar el bot modifica un único componente (el respectivo al bot) y se integra con el sistema en menos de 1 hora, sin detener al sistema.
 
 ###Atributo de **detección y prevención de fallas**:  
 Si la estructura de un sitio web monitoreado por un bot cambia de manera que la información no puede ser interpretada, se deberá ajustar el bot para que pueda continuar funcionando correctamente.

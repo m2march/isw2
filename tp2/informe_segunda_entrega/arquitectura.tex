@@ -24,23 +24,24 @@ A continuación presentamos una referencia a los conectores utilizados en los di
 		%Completar con conectores no standard!
 		%Agregar asi:
 		%\NonStandardConector{A non standard conector name}{A non standard conector description.}
-		\NonStandardConector{Client-Server Async}{Funciona igual que un client-server, pero el cliente no se cuelga esperando una respuesta, y el server puede retornar su respuesta de manera asincrónica. Lo utilizamos para poder aprovechar el dispatch que el conector tiene sobre las instancias de servidores que hay disponibles que un conector async no soporta.}
-		\NonStandardConector{Secure Client-Server}{Este conector resulta muy similar a Cliente-Servidor. Se diferencia únicamente en que antes de que el cliente envíe una consulta al servidor, este \emph{encripta} el mensaje, y luego se lo envía. Ya en el servidor, este desencripta el mensaje y lo interpreta. Para la respuesta, de forma similar a la mencionada anteriormente, ahora es el servidor quien encripta el mensaje y el cliente quien lo desencripta.}
+		\NonStandardConector{Client-Server Async}{Funciona igual que un client-server, pero el cliente no espera una respuesta. El server luego puede retornar su respuesta de manera asincrónica. Lo utilizamos para poder aprovechar el dispatch que el conector tiene sobre las instancias de servidores que hay disponibles que un conector async no soporta.}
+    \nota{revisar}
+		\NonStandardConector{Secure Client-Server}{Este conector resulta muy similar al conector client-server. Se diferencia únicamente en que el cliente, antes de enviar una consulta al servidor, \emph{encripta} el mensaje para luego enviarlo. Ya en el servidor, este último desencripta el mensaje y lo interpreta. Para la respuesta, la comúnicación sucede de forma similar; ahora es el servidor quien encripta el mensaje y el cliente quien lo desencripta.}
 \end{itemize}
 
 \subsection{Conectividad externa del sistema \textbf{TPA}}
 
-En el siguiente diagrama vemos la disposición global del sistema central \textbf{TPA} respecto a los agentes externos con los que interactúa. 
+En el siguiente diagrama vemos la disposición global del sistema central \textbf{TPA} respecto a los agentes externos con los que interactúa. Además se presenta una primera subdivisión del sistema principal en sus componentes más importantes.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/global_overview.pdf}
 	\caption{Diagrama arquitectónico global del sistema \textbf{TPA}.}
 \end{figure}
 
-Aquí vemos al \textsf{Sistema central TPA} dividido en 4 componentes. El \textsf{Subsistema de Negocio de Ofertas} es el encargado de responder a las consultas de los posibles clientes. En este momento los clientes son nuestras aplicaciones web y móvil, así como aquellos que deseen consumir nuestra API pública. Dentro del \textsf{Subsistema de Negocio de Ofertas} tenemos los componentes encargados de comprender los pedidos, administrar las preferencias y reputación de usuarios, administrar las publicidades generadas por el sistema, mantener las reglas de asociación y sustitución, y contener la información de los productos y rubros aceptados.
+Aquí vemos al \textsf{Sistema central TPA} dividido en 4 componentes. El \textsf{Subsistema de Negocio de Ofertas} es el encargado de responder a las consultas de los posibles clientes. En este momento los clientes son nuestras aplicaciones web y móvil, así como aquellos que deseen consumir nuestra API pública. Dentro del \textsf{Subsistema de Negocio de Ofertas} tenemos los componentes encargados de comprender los pedidos, administrar las preferencias y reputación de usuarios, administrar las publicidades generadas por el sistema, mantener las reglas de asociación y sustitución y contener la información de los productos y rubros aceptados.
 
-El \textsf{Subsistema de Obtención de datos} es el encargado de recurrir a las distintas fuentes de datos con el fin de obtener ofertas a productos. Por lo tanto, contiene los medios necesarios para poder extraer información de \textsf{Redes sociales} y para poder recibir información mediante \textsf{SMS}. Como además se decidió poder registrar sitios web con interfaces variadas (muy distintas a las \textsf{Redes sociales}), se cuenta con los componentes \textsf{Web Mining Robots}, que constituyen robots que saben recorrer ciertos sitios específicos en busca de ofertas. El \textsf{Subsistema de Obtención de datos} sabe cómo comunicarse con los robots, quienes le proveen información. 
+El \textsf{Subsistema de Obtención de datos} es el encargado de recurrir a las distintas fuentes de datos con el fin de obtener ofertas para productos. Por lo tanto, contiene los medios necesarios para poder extraer información de \textsf{Redes sociales} y para poder recibir información mediante \textsf{SMS}. Como además se decidió poder registrar sitios web con interfaces variadas (muy distintas a las \textsf{Redes sociales}), se cuenta con los componentes \textsf{Web Mining Robots}, que constituyen robots que saben recorrer ciertos sitios específicos en busca de ofertas. El \textsf{Subsistema de Obtención de datos} sabe cómo comunicarse con los robots, quienes le proveen información. 
 
 Las ofertas obtenidas por el \textsf{Subsistema de Obtención de datos} le son provistas al \textsf{Subsistema de Negocio de Ofertas} mediante el uso de un repositorio intermedio.
 El mismo es revisado contínuamente por el \textsf{Subsistema de Detección de Spam}, que contiene mecanismos para detectar ofertas de naturaleza dudosa. En este momento, el principal mecanismo es el sistema de terceros \textsf{SpamBust}.
@@ -53,22 +54,24 @@ El mismo es revisado contínuamente por el \textsf{Subsistema de Detección de S
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Negocio de Ofertas}.}\label{arch:neg_ofertas}
 \end{figure}
 
+El \textsf{Subsistema de Negocio de Ofertas} es un componente que contiene los distintos \emph{subistemas de negocio} y los componentes de iteracción con el cliente. Los \emph{subsistemas de negocio} son componentes que se encargan de administrar datos y mecanismos relacionados con las distintas fucionalidades del sistema. Los \emph{componentes de interacción con el cliente} son los que saben comunicarse con los distintos clientes y administrar sus pedidos.
+
+En las siguiente secciones hacemos principal enfoque en el \emph{manejo de pedidos de ofertas}, que es la principal funcionalidad del sistema.
+
 \subsubsection{Manejo de pedidos de ofertas}
 
-El manejo de pedidos de ofertas provenientes de clientes se resuelve de la siguiente manera: el pedido es aceptado por un \textsf{Manejador de pedidos de API} o \textsf{Manejador de pedidos de aplicación}; este recibe el pedido y le asigna un identificador de pedido. Luego arma un mensaje con su identificador, el identificador del pedido y el contenido del pedido y env\'ia dicho mensaje como cliente (asincrónico) de alg\'un \textsf{Query Dispatcher}. Cabe destacar que el manejador tiene memoria de aquellos pedidos que todavía le debe responder a sus clientes. El \textsf{Query Dispatcher} toma el mensaje y lo pone en la cola de trabajo del \textsf{Subsistema de Query}. Al terminar el procesamiento del mensaje el resultado del mismo es devuelto en la cola de \textsf{Query Dispatcher}, que seg\'un el identificador del mensaje original lo envia asincrónicamente hacia el manejador que lo creó. El manejador recibe el resultado y se lo devuelve al cliente que originó el pedido.
+El manejo de pedidos de ofertas provenientes de clientes se resuelve de la siguiente manera: el pedido es aceptado por un \textsf{Manejador de pedidos de API} o \textsf{Manejador de pedidos de aplicación}; este recibe el pedido y le asigna un identificador de pedido. Luego arma un mensaje con su identificador, el identificador del pedido y el contenido del pedido y env\'ia dicho mensaje como cliente (asincrónico) de alg\'un \textsf{Query Dispatcher}. Cabe destacar que el manejador tiene memoria de aquellos pedidos que todavía le debe responder a sus clientes. El \textsf{Query Dispatcher} toma el mensaje y lo pone en la cola de trabajo del \textsf{Subsistema de Query}. Al terminar el procesamiento del mensaje el resultado del mismo es devuelto en la cola de resultados del \textsf{Query Dispatcher}, que seg\'un el identificador del mensaje original sabe enviarlo asincrónicamente hacia el manejador que lo creó. El manejador recibe el resultado y se lo devuelve al cliente que originó el pedido.
 
- \vspace{9pt}
+Esta forma de manejar los pedidos de los clientes sobre ofertas satisface el atributo de calidad 7, que refiere a la \emph{disponibilidad} del sistema para responder consultas. Con los comonentes descriptos anteriormente, ning\'un pedido deberia ser rechazado por no haber nadie disponible para atenderlo; si se asume una coherente asignacion de instancias de manejadores, dispatchers y de elementos procesadores de queries. Se espera que el sistema pueda manejar grandes volúmenes de consultas por productos.
 
-Esta forma de manejar los pedidos de los clientes sobre ofertas satisface el atributo de calidad 8, que se refiere a \emph{disponibilidad}, porque ning\'un pedido deberia ser rechazado, si se asume una coherente asignacion de instancias de manejadores, dispatchers y de elementos procesadores de queries. El volumen esperado de este tipo de interacción es muy grande.
+\subsubsection{Manejo de mensajes de otros subsistemas de negocio}
 
-\subsubsection{Manejo de mensajes de reputación y preferencias}
-
-El manejo de mensajes de reputaci\'on y preferencias se hace de manera diferente al de pedido de ofertas, porque el volumen esperado de los mismos es menor y además su resoluci\'on es muchísimo mas r\'apida. Usamos entonces un conector client-server convencional entre el \textsf{Manejador} y los sistemas de reputación y preferencias.
+El manejo de mensajes relacionado con las otras funcionalidades (como ser cambios de reputaci\'on y preferencias de usuario) se hace de manera diferente al de pedido de ofertas, porque el volumen esperado para los mismos es menor y además su resoluci\'on es mucho más r\'apida. Usamos entonces un conector client-server convencional entre el \textsf{manejador} y el \textsf{subsistema de negocio} correspondiente.
 
 
 \subsection{Subsistema de Query}
 
-En el siguiente diagrama se presenta el \textsf{Subsistema de Query} donde, dada una consulta por productos (\textbf{query}), se arma la respuesta para el usuario que realizó la consulta. En este diagrama se encuentran ejemplificados los \emph{casos de uso} 4 (consultar por un producto), 9 y 10 (relacionados con productos asociados y sustituibles), 11 (mostrar publicidades), y 16 (consultar estando autenticado y aprovechar las preferencias).
+En el siguiente diagrama se presenta el \textsf{Subsistema de Query} donde, dada una consulta por productos (\textbf{query}), se arma la respuesta para el usuario que realizó la consulta. Este es el \textsf{subsistema de negocio} más importante, ya que es encargado de la principal funcionalidad del sistema. Sobre el mismo se aplican varios atributos de calidad relacionados con \emph{performance} y \emph{modificabilidad}. La funcionalidad de este sistema responde a los \emph{casos de uso} 4 (consultar por un producto), 9 y 10 (relacionados con productos asociados y sustituibles), 11 (mostrar publicidades), y 16 (consultar estando autenticado y aprovechar las preferencias).
 
 
 \begin{figure}[H]
@@ -79,12 +82,34 @@ En el siguiente diagrama se presenta el \textsf{Subsistema de Query} donde, dada
 
 La funcionalidad de este componente es la de procesar un pedido por productos para armar todo el contenido que le será devuelto al usuario. Este procesamiento incluye varias funcionalidades del sistema. Todas estas pueden realizarse de forma encadenada, lo cual lleva a que el componente trabaje con un estilo arquitectónico de tipo \emph{pipes and filters}, en el cual cada etapa de procesamiento se realiza secuencialmente pero de forma independiente. La elección de este estilo tiene como fin lograr \emph{modificabilidad} y \emph{performance}, ya que las etapas pueden reubicarse sin tener que modificar fuertemente el sistema; además, para aquellas etapas que requieren mayor poder de cómputo pueden agregarse más recursos, de forma que no generen un cuello de botella.
 
-En primer lugar se valida que el pedido sea realizable (i.e.: es de un producto soportado y posee estrategias y filtros del sistema) por el \textsf{Validador de Query}. Dentro de las funcionalidades, se definieron distintas modificaciones que podrían sufrir las consultas. Los siguientes dos componentes (\textsf{Modificador de Query por Preferencias Usuario} y \textsf{Modificador de Query por Reglas}) se encargan de comunicarse con los subsistemas correspondientes que definen como debe realizarse las modificaciones. El validador encola la consulta para que sea procesada por estos componentes y a su vez la encola para que sea trabajada por el \textsf{Generador de publicidades}, que se encarga de generar las publicidades que formarán parte de la respuesta. Esto se realiza con un mecanismo de \emph{fork and join}, donde el \textsf{Generador de publicidades} toma la \emph{query}, la trabaja y luego espera a que sea consultado por el resultado. De esta forma, la generación de propagandas, que se considera 
-independiente del resto del procesamiento a realizar, puede realizarse en paralelo, mejorando la \emph{performance del proceso}.
+En primer lugar se valida que el pedido sea realizable (i.e.: es de un producto soportado y los filtros y estrategias son válidos en el sistema) por el \textsf{Validador de Query}. Si la consulta no es válida el componente ya genera una respuesta y la encola para ser devuelta por el \textsf{Query Dispatcher}. Sino continúa el proceso.
 
-Las modificaciones que se realizan a la consulta están relacionadas con las preferencias del usuario (que puede decidir no ver las consultas provenientes de algunos usuarios) y las reglas de asociación y sustitución, (que establecen que distintas extensiones a las búsquedas). La naturaleza de estas modificaciones no está completamente definida pero estará contenida exclusivamente en los \textsf{Subsistema de Preferencias de Usuario} y \textsf{Subsistema de Reglas}.
+Dentro de las funcionalidades que forman parte de una \emph{consulta}, se definieron distintas modificaciones que podrían sufrir las mismas. Los siguientes dos componentes (\textsf{Modificador de Query por Preferencias Usuario} y \textsf{Modificador de Query por Reglas}) se encargan de comunicarse con los subsistemas correspondientes que definen como debe realizarse estas modificaciones. El validador encola la consulta para que sea procesada por estos componentes y a su vez la encola para que sea trabajada por el \textsf{Generador de publicidades}, que se encarga de generar las publicidades que formarán parte de la respuesta. Esto se realiza con un mecanismo de \emph{fork and join}, donde el \textsf{Generador de publicidades} toma la \emph{query}, la trabaja y luego espera a que sea consultado por el resultado. De esta forma, la generación de propagandas, que se considera independiente del resto del procesamiento a realizar, puede hacerse en paralelo, mejorando la \emph{performance del proceso}.
+
+Las modificaciones que se realizan a la consulta están relacionadas con las preferencias del usuario (que puede decidir no ver las consultas provenientes de algunos usuarios) y las reglas de asociación y sustitución, (que establecen que distintas extensiones a las búsquedas). La naturaleza de estas modificaciones no está completamente definida pero estará contenida exclusivamente en los \textsf{Subsistema de Preferencias de Usuario} y \textsf{Subsistema de Reglas}, para lograr fácil \emph{modificabilidad} de las misma.
 
 Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obtenedor de Ofertas} accede al repositorio de ofertas y adquiere todas aquellas que responden a la consulta.  Una vez realizado esto pasamos a la etapa donde se prepara el resultado. Por un lado el componente \textsf{Modificador de resultados por Preferencias de Usuario} se encarga de tareas como jerarquizar las ofertas según las preferencias del usuario. Las ofertas luego son decoradas, eliminadas y reorganizadas según la reputación de los usuarios que las originaron (componente \textsf{Modificador de resultados por Reputación}). A continuación se realiza un nuevo trabajo sobre los resultados aplicando los filtros y estrategias seleccionados por el usuario en la consulta original (componente \textsf{Modificador de resultados por filtros y estrategias}). Finalmente, el componente \textsf{Preparador de la Respuesta de la Búsqueda} prepara todo el paquete de respuesta que será enviado denuevo al usuario. 
+
+\subsubsection{Subsistemas de Información de Negocio}
+
+En el diagrama del \textsf{Subsistema de Negocio de Ofertas} (figura \ref{arch:neg_ofertas}) se encuentran varios subsistemas que manejan información de negocio. Estos subsistemas son: el \textsf{Subsistema de Publicidades}, el \textsf{Subsistema de Rubros y Productos}, el \textsf{Subsistema de Reglas}, el \textsf{Subsistema Pref. de Usuario}, el \textsf{Subsistema de Reputación}, el \textsf{Subsistema de Filtros y Estrategias}, el \textsf{Subsistema de Manejo de Spam} y el \textsf{Subsistema de Alertas}. El \textsf{Subsistema de Query} es también considerado un \emph{subsistema de negocio}, pero por su relevancia es tratado individualmente en las secciones anteriores.
+En todos los otros casos los \emph{subsistemas de negocio} son accedidos mediante una conexión de tipo \emph{cliente-servidor} ya que proveen un servicio respecto a la información de negocio contenida en cada uno. Además, se busca permitir concurrencia en el acceso a cada uno de los servicios.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{graficos/arch/subsistemas_neg.pdf}
+	\caption{Diagramas arquitectónicos con el detalle de algunos \textsf{Subsistemas de Información de Negocio}.}
+\end{figure}
+
+Cada uno de estos subsistemas permiten modificar la información de negocio por usuarios y administradores según corresponda. Tanto los datos como la inteligencia de negocio contenida en cada uno de los subsistemas es además publicada mediante otro componente para uso interno del sistema, en particular, para ser consultada por el \textsf{Subsistema de Query}. En la medida de lo posible, el acceso podrá ser eficiente y concurrente por distintos clientes. La \emph{modificabilidad} de cada una de los mecanismos de negocio representado en cada subsistema estará contenido en cada uno de ellos. Luego, si se agregan o modifican reglas de asociación o sustitución, o si se modifican posibilidades de preferencias de usuario, esto solo afecta al subsistema correspondiente.
+
+El \textsf{Subsistema de Reputación} difiere del resto de los subsistemas de negocio en que el repositorio que contiene los datos no es interno, sino que es externo, ya que es compartido con otros subsistemas. Su diagrama se muestra a continuación. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{graficos/arch/subsist_reputacion.pdf}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Reputación}.}
+\end{figure}
 
 \subsection{Interfaz móvil}
 
@@ -215,26 +240,7 @@ Los \textsf{Web Mining Robots} son un conjunto de componentes que cada una está
 \vspace{9pt}
 
 
-\subsection{Subsistemas de Información de Negocio}
 
-En el diagrama del \textsf{Subsistema de Negocio de Ofertas} (figura \ref{arch:neg_ofertas}) se encuentran varios subsistemas que manejan información de negocio. Estos subsistemas son: el \textsf{Subsistema de Publicidades}, el \textsf{Subsistema de Rubros y Productos}, el \textsf{Subsistema de Reglas}, el \textsf{Subsistema Pref. de Usuario}, el \textsf{Subsistema de Reputación}, el \textsf{Subsistema de Filtros y Estrategias}, el \textsf{Subsistema de Manejo de Spam} y el \textsf{Subsistema de Alertas}.
-En todos los casos estos subsistemas son accedidos mediante una conexión de tipo \emph{cliente-servidor} ya que proveen un servicio respecto a la información de negocio contenida en cada uno. Además, se busca permitir concurrencia en el acceso a cada uno de los subsistemas.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{graficos/arch/subsistemas_neg.pdf}
-	\caption{Diagramas arquitectónicos con el detalle de algunos \textsf{Subsistemas de Información de Negocio}.}
-\end{figure}
-
-Cada uno de estos subsistemas permiten modificar la información de negocio por usuarios y administradores según corresponda. Tanto los datos como la inteligencia de negocio contenida en cada uno de los subsistemas además es publicada mediante otro componente para uso interno del sistema, en particular, el \textsf{Subsistema de Query}. En la medida de lo posible, el acceso podrá ser eficiente y concurrente por distintos clientes. La \emph{modificabilidad} de cada una de los mecanismos de negocio representado en cada subsistema estará contenido en cada uno de ellos. Luego, si se agregan o modifican reglas de asociación o sustitución, o si se modifican posibilidades de preferencias de usuario, esto solo afecta al subsistema correspondiente.
-
-El \textsf{Subsistema de Reputación} difiere del resto de los subsistemas de negocio en que el repositorio que contiene los datos no es interno, sino que es externo, ya que es compartido con otros subsistemas. Su diagrama se muestra a continuación. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\textwidth]{graficos/arch/subsist_reputacion.pdf}
-	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Reputación}.}
-\end{figure}
 
 
 \subsection{Deployment}
