@@ -115,6 +115,10 @@ En ambos casos, una vez obtenidos los resultados, estos son enviados a la interf
 
 De forma ortogonal a esto, existen otros dos subcomponentes de este módulo. Estos son, el \textsf{módulo de cambio de preferencias} y el \textsf{módulo de denuncia de ofertas}. El primero tiene la tarea de, ante un cambio de las preferencias del usuario, comunicarselas al servidor central. El segundo componente, comunica al servidor central la denuncia de una oferta como posible falso. La comunicación de ambos modulos con el servidor se realiza de forma \emph{segura}, debido a que los datos que circulan en este momento son sensibles, y se busca evitar posibles usos malintencionados. Un ejemplo de lo anterior, seria atacar al sistema, denunciando ofertas, haciendose pasar por otro usuario. 
 
+En la \textsf{cache de ofertas}, se almacenan las consultas recientes y sus resultados, y consultas populares y sus resultados. Si un usuario, sin conexión, consulta por ofertas de productos, que no son validos, no es necesario verificar la validez de estos, ya que resulta imposible que existan resultados de ofertas de este producto en la cache.
+
+Es imposible modificar la configuración del usuario estando sin conexión. Consideramos que esta es la mejor opción, para evitar problemas de sincronización si el usuario posee varios dispositivos moviles o accede desde la interfaz web. Ademas, por este motivo, la información sobre las fuentes de datos de confianza, se obtienen unicamente cuando hay conexión con el servidor central.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/cliente_movil_comunicador.pdf}
@@ -188,4 +192,8 @@ La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta e
 	\includegraphics[width=\textwidth]{graficos/arch/temp_subsistema_que_habla_con_el_usuario.pdf}
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Obtención de Datos}.}
 \end{figure}
+
+\subsection{Deployment}
+
+\nota{Juansis va a escribir y hacer dibujitos aca.}
 
