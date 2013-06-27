@@ -175,6 +175,8 @@ Es imposible modificar la configuración del usuario estando sin conexión. Cons
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Comunicador con Sist. central TPA} del \textsf{Cliente móvil}.}
 \end{figure}
 
+Los atributos de calidad relacionados con la usabilidad del cliente móvil (atributos 3 y 5) son tenidos en cuenta en la arquitectura al tener desacoplado el \textsf{Módulo UI}, lo que hace que sea fácilmente modificable para lograr buena \emph{usabilidad}.
+
 \subsection{Interfaz web}
 
 De forma similar a la Interfaz móvil, para permitir el acceso desde un conjunto diverso de dispositivos, optamos por dar lugar a una interfaz web de nuestra aplicación.
@@ -194,6 +196,8 @@ La comunicación entre la interfaz gráfica y el módulo de consultas desde UI s
 	\includegraphics[width=\textwidth]{graficos/arch/Cliente_web.pdf}
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Cliente web}.}
 \end{figure}
+
+De la misma forma que en la Interfaz móvil, los atributos de usabilidad 3 y 5 están contemplados en un \textsf{Módulo UI} de fácil modificación.
 
 
 \subsection{Subsistema de Detección de Spam}

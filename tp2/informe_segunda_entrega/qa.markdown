@@ -15,7 +15,7 @@ Las reglas de asociación y sustitución entre productos todavía no están bien
 
 * Fuente: Administradores del sistema
 * Estimulo: Se desea agregar/modificar las reglas de asociación y sustitución.
-* Artefacto: Sistema central TPA.
+* Artefacto: Subsistema de reglas.
 * Entorno: Modo de mantenimiento.
 * Respuesta: Se modifican las reglas de asociación y sustitución.
 * Medida: En menos de 5 horas de trabajo se implementan y ponen en funcionamiento las modificaciones a estas reglas.
@@ -25,20 +25,20 @@ Se desarrollará un sistema de confianza configurable individualmente, el cual s
 
 * Fuente: Usuario autenticado.
 * Estimulo: Modifica las reglas de confianza de ofertas.
-* Artefacto: Sistema central TPA.
+* Artefacto: Módulo UI (tanto el cliente web como cliente móvil).
 * Entorno: Funcionamiento normal.
 * Respuesta: El sistema provee un asistente de configuración de confianza de ofertas, que ayuda a modificar dichas preferencias.
 * Medida: Un usuario nuevo del sistema logra completar la tarea en menos de 15 minutos.
 
-###Atributo de **extensibilidad**:  
- Un usuario puede confiar en distinta medida en sus contactos de redes sociales, en sus promociones de tarjetas de crédito, en usuarios anónimos, y otros tipos de fuentes de ofertas. A futuro pueden agregarse nuevos tipos de fuentes.
+###Atributo de **detección y prevención de fallas**:  
+Si la estructura de un sitio web monitoreado por un bot cambia de manera que la información no puede ser interpretada, se deberá ajustar el bot para que pueda continuar funcionando correctamente.
 
-* Fuente: Equipo de desarrollo.
-* Estimulo: Se desea agregar una configuración de confianza del usuario para una nueva fuente de ofertas.
-* Artefacto: Sistema central TPA.
-* Entorno: Modo de mantenimiento.
-* Respuesta: Se agrega la configuración de confianza de datos al sistema.
-* Medida: La configuración de confianza se implementa en menos de 5 horas de trabajo y se integra al sistema en menos de 1 hora.
+* Fuente: Las páginas monitoreadas.
+* Estimulo: Se produce un cambio en la estructura de las páginas monitoreadas.
+* Artefacto: Bot del sistema de obtención de datos.
+* Entorno: En funcionamiento normal.
+* Respuesta: Se detecta el cambio en la estructura de la página, se detiene el bot, y se informa a los administradores.
+* Medida: Cuando en una serie de consultas se detecta un 70% de cambios en su estructura, se considera como error, se informa de esta situación y el bot se detiene.
 
 ###Atributo de **usabilidad**:  
 Se desea que la interfaz de la aplicación para realizar consultas sea intuitiva y amigable.
@@ -65,7 +65,7 @@ El servicio debe estar disponible en todo momento, y no debe caerse, en la medid
 
 * Fuente: Usuario.
 * Estimulo: Se desea realizar una consulta.
-* Artefacto: Interfaz móvil.
+* Artefacto: Sistema Central TPA.
 * Entorno: Funcionamiento normal.
 * Respuesta: Se realiza la consulta al sistema, se obtienen resultados y son mostrados al usuario.
 * Medida: Siempre que el usuario disponga de conexión, en el 99% de los casos el envío de la consulta al sistema central y la recepción de la respuesta se realizan con éxito.
@@ -130,12 +130,3 @@ El sistema será capaz de minar la web en busca de ofertas en las páginas de la
 * Respuesta: Se implementa el bot y se integra con el sistema.
 * Medida: Implementar o modificar el bot modifica un único componente (el respectivo al bot) y se integra con el sistema en menos de 1 hora, sin detener al sistema.
 
-###Atributo de **detección y prevención de fallas**:  
-Si la estructura de un sitio web monitoreado por un bot cambia de manera que la información no puede ser interpretada, se deberá ajustar el bot para que pueda continuar funcionando correctamente.
-
-* Fuente: Las páginas monitoreadas.
-* Estimulo: Se produce un cambio en la estructura de las páginas monitoreadas.
-* Artefacto: Bot del sistema de obtención de datos.
-* Entorno: En funcionamiento normal.
-* Respuesta: Se detecta el cambio en la estructura de la página, se detiene el bot, y se informa a los administradores.
-* Medida: Cuando en una serie de consultas se detecta un 70% de cambios en su estructura, se considera como error, se informa de esta situación y el bot se detiene.
