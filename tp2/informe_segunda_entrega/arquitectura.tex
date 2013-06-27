@@ -24,6 +24,7 @@ A continuación presentamos una referencia a los conectores utilizados en los di
 		%Completar con conectores no standard!
 		%Agregar asi:
 		\NonStandardConector{A non standard conector name}{A non standard conector description.}
+		\NonStandardConector{client-server async}{F\'unciona igual que un client-server pero el cliente no se cuelga esperando una respuesta, y el server puede retornar su respuesta de manera asincrónica}
 \end{itemize}
 
 \subsection{Conectividad externa del sistema \textbf{TPA}}
@@ -50,6 +51,11 @@ El mismo es revisado contínuamente por el \textsf{Sist. detector de Spam}, que 
 	\includegraphics[width=\textwidth]{graficos/arch/temp_subsistema_que_habla_con_el_usuario.pdf}
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Negocio de Ofertas}.}
 \end{figure}
+
+\subsubsection{Manejo de pedidos}
+
+El manejo de pedidos provenientes de clientes se resuelve de la siguiente manera, el mismo es aceptado por un \textsf{Manejador de pedidos de API} o \textsf{Manejador de pedidos de aplicación} este recibe el pedido y le asigna un identificador de pedido. Luego arma un mensaje con su identificador, el identificador del pedido y el contenido del pedido y env\'ia dicho mensaje por medio de nuestro conector custom hacia alg\'un \textsf{Query Dispatcher}. Cabe destacar que el manejador tiene memoria de aquellos pedidos que todavia le debe responder a sus clientes. El \textsf{Query Dispatcher} toma el mensaje y lo pone en la cola de trabajo del \textsf{Subsistema de Query}. Al terminar el procesamiento del mensaje el resultado del mismo es devuelto en la cola de \textsf{QueryDispatcher} que seg\'un el identificador del mensaje original lo envia asincrónicamente hacia el manejador que lo creo. El manejador recibe el resultado y se lo devuelve al cliente que origino el pedido.     
+
 
 \subsection{Subsistema de Query}
 
