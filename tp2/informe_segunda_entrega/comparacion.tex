@@ -9,10 +9,26 @@
 	El desarrollo en Scrum, se centra en priorizar las funcionalidades que otorguen mas 'valor' al producto, esto se refleja en la idea de organizar las tareas a realizar en cada iteración en \emph{user stories}, una serie de historias, similares a casos de uso, contadas desde el punto de vista del usuario/product owner de la aplicación. En cambio, en Unified Process, las tareas a realizar en cada iteración estan son elegidas con el objetivo de reducir los riesgos. Para capturar las funcionalidades a implementar en cada iteración, Unified Process utiliza \emph{casos de uso}.
 
 	De tener que escoger una metodologia para el desarrollo de software, nosotros creemos que \textbf{no} tiene sentido elegir de forma \emph{estricta} una unica metodologia. Nosotros proponemos utilizar ambas metodologias como un marco de ideas para construir una metodologia que se adapte de la mejor forma a nuestro equipo y al proyecto con el cual nos enfrentemos.
+
+	Una de las diferencias que encontramos entre ambas metodologias, es que Scrum pide al final de cada iteración presentar un entregable, potencialmente listo a ser usado. De esta forma, se obtiene feedback temprano de los interesados en el proyecto. En cambio en UP, no necesariamente hace falta presentar un entregable con capacidad de funcionar.
+
 	De ambas metodologias, las caracteristicas que mas nos gustaron son:
 
 	\begin{itemize}
-		\item En este momento, Juan esta QUE-MA-DO.
+		\item El desarrollo \textbf{iterativo incremental}: El metodo iterativo incremental nos permite tener 'checkpoints' bien definidos, distribuidos mas o menos uniformemente en la linea de tiempo. Esto facilita el establecer objetivos chicos, alcanzables en el corto plazo, que ayudan a mantener al equipo focalizado. Ademas ayudan a obtener feedback de los interesados tempranamente. Esto ultimo es especialmente importante para descubrir si las expectativas de los interesados eran distintas a las del equipo de desarrollo, y permite tomar acciones rapidamente, para contrarrestar esta situación.
+
+		\item De Scrum, la idea de \textbf{al final de cada iteración presentar un entregable}, para obtener feedback temprano de los usuarios. Sin embargo, en algunos casos es necesario ser flexible con esta condicion, en especial para proyectos grandes o que tienen poca interacción con el usuario, en las primeras iteraciones del proyecto.
+
+		\item De Unified Process, el separar el desarrollo del sistema en \textbf{etapas}. Debido a que es esperable que en las primeras iteraciones, los esfuerzos se concentren en obtener requerimientos y planificar el proyecto, y que una vez que el proyecto se encuentra mas maduro, el foco se centre en programación, testing e integración.
+
+		\item Las ideas de organizar el desarrollo en funcionalidades, representadas con \emph{user stories}, y decidir cuando implementar cada funcionalidad de acuerdo a una combinación de \textbf{business values} y minimización de \textbf{riesgos}. De esta forma, se intenta satisfacer cuanto antes los intereses de los stakeholders, y se intenta obtener feedback de ellos cuanto antes y al mismo tiempo, se tienen en cuenta los riesgos, que tienden a afectar fuertemente la arquitectura del sistema y de no tenerse en cuenta de forma temprana, podrian poner en riesgo el proyecto, o los tiempos planeados para completarlo.
+
+		\item La elaboración detallada de la \textbf{arquitectura} como uno de los puntos centrales de la metodologia. Para, desde el inicio del proyecto, planificar el software para poder contrarrestar \emph{riesgos} y satisfacer los \emph{atributos de calidad} que restringen al proyecto. Ademas, el desarrollo de la arquitectura, suele dividir al sistema, en subsistemas mas pequeños, de los cuales es esperable que uno o dos desarrolladores puedan completar. Esto ayuda a la hora de asignar trabajo a los distintos miembros del equipo de desarrollo.
+
+		\item De las metodologias agiles, uno de sus pautas claves, el \textbf{aceptar cambios} en los requerimientos e intentar adaptarse rapidamente a las circunstancias cambiantes que van surgiendo a lo largo del desarrollo de un proyecto.
+
+		\item De Scrum, las \textbf{stand up meetings}, que ayudan a los distintos miembros del equipo a conocer en que componentes trabajan sus pares y permite comprender el estado de avance de la iteración en detalle. Esto favorece la sincronización de los distintos miembros del equipo.
+
 	\end{itemize}
 
 \subsection{Comparación 'programming in the small' y 'programming in the large'}
