@@ -27,14 +27,14 @@ A continuación presentamos una referencia a los conectores utilizados en los di
 		\NonStandardConector{Client-Server Async}{Funciona igual que un client-server, pero el cliente no espera una respuesta. El server luego puede retornar su respuesta de manera asincrónica.}
 		\NonStandardConector{Secure Client-Server}{Este conector resulta muy similar al conector client-server. Se diferencia únicamente en que el cliente, antes de enviar una consulta al servidor, \emph{encripta} el mensaje para luego enviarlo. Ya en el servidor, este último desencripta el mensaje y lo interpreta. Para la respuesta, la comunicación sucede de forma similar; ahora es el servidor quien encripta el mensaje y el cliente quien lo desencripta.}
 \end{itemize}
-\newpage
+
 \subsection{Conectividad externa del sistema \textbf{TPA}}
 
 En el siguiente diagrama vemos la disposición global del sistema central \textbf{TPA} respecto a los agentes externos con los que interactúa. Además se presenta una primera subdivisión del sistema principal en sus componentes más importantes.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{graficos/arch/global_overview.pdf}
+	\includegraphics[width=0.8\textwidth]{graficos/arch/global_overview.pdf}
 	\caption{Diagrama arquitectónico global del sistema \textbf{TPA}.}
 \end{figure}
 
