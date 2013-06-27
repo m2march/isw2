@@ -69,23 +69,6 @@ de Spam</y:NodeLabel>
     </node>
     <node id="n3">
       <data key="d6">
-        <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="40.0" width="90.0" x="1211.2433544921867" y="381.30800000000005"/>
-          <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
-          <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="88.92578125" x="0.537109375" y="4.03125">Interfaz de 
-Administrador<y:LabelModel>
-              <y:SmartNodeLabelModel distance="4.0"/>
-            </y:LabelModel>
-            <y:ModelParameter>
-              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
-            </y:ModelParameter>
-          </y:NodeLabel>
-        </y:GenericNode>
-      </data>
-    </node>
-    <node id="n4">
-      <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.dataBase">
           <y:Geometry height="40.0" width="60.0" x="1098.3816772460934" y="622.6000000000003"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
@@ -101,7 +84,7 @@ de Spams<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n5">
+    <node id="n4">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
           <y:Geometry height="40.0" width="90.0" x="1211.2433544921867" y="622.6000000000003"/>
@@ -118,7 +101,7 @@ informe<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n6">
+    <node id="n5">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="57.19999999999982" width="124.03664550781309" x="926.5016772460935" y="519.4400000000005"/>
@@ -140,7 +123,7 @@ Deteccion de
         </y:GenericNode>
       </data>
     </node>
-    <node id="n7">
+    <node id="n6">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="57.19999999999982" width="124.03664550781309" x="1074.563354492187" y="519.4400000000005"/>
@@ -161,7 +144,7 @@ SpamBust<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n8">
+    <node id="n7">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
           <y:Geometry height="40.0" width="124.03664550781309" x="981.9916124562723" y="708.5600000000002"/>
@@ -178,7 +161,7 @@ Ofertas a Analizar<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n9">
+    <node id="n8">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
           <y:Geometry height="57.19999999999982" width="114.0" x="931.5200000000002" y="614.0000000000003"/>
@@ -199,7 +182,7 @@ Ofertas<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n10">
+    <node id="n9">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.dataBase">
           <y:Geometry height="40.0" width="60.0" x="957.0999999999996" y="805.3216666666667"/>
@@ -216,7 +199,7 @@ de Ofertas<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n11">
+    <node id="n10">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.dataBase">
           <y:Geometry height="40.0" width="60.0" x="1207.7416772460938" y="805.3216666666667"/>
@@ -234,21 +217,23 @@ Usuarios<y:LabelModel>
         </y:GenericNode>
       </data>
     </node>
-    <node id="n12">
+    <node id="n11">
       <data key="d6">
-        <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="48.59999999999991" width="100.40000000000009" x="1206.0433544921866" y="523.7400000000005"/>
+        <y:GenericNode configuration="com.yworks.entityRelationship.small_entity">
+          <y:Geometry height="38.94926848762202" width="114.0" x="1199.2433544921867" y="382.35873151237803"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.90625" modelName="custom" textColor="#000000" visible="true" width="88.92578125" x="5.7371093750000455" y="1.3468749999999545">Manejo
-Peticiones del
-Administrador<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="104.27734375" x="4.861328125" y="3.5058842438110105">Subsistema de
+Manejo de Spam<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
               <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
             </y:ModelParameter>
           </y:NodeLabel>
+          <y:StyleProperties>
+            <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
+          </y:StyleProperties>
         </y:GenericNode>
       </data>
     </node>
@@ -264,7 +249,7 @@ Administrador<y:LabelModel>
         </y:ArcEdge>
       </data>
     </edge>
-    <edge id="e1" source="n10" target="n0">
+    <edge id="e1" source="n9" target="n0">
       <data key="d10">
         <y:ArcEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -276,7 +261,7 @@ Administrador<y:LabelModel>
         </y:ArcEdge>
       </data>
     </edge>
-    <edge id="e2" source="n10" target="n8">
+    <edge id="e2" source="n9" target="n7">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="16.93320000000017" sy="-4.321666666666829" tx="-39.97673521017908" ty="19.96343749999983"/>
@@ -286,7 +271,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e3" source="n4" target="n5">
+    <edge id="e3" source="n3" target="n4">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="18.27999999999986" sy="-5.000000000000341" tx="-33.41943724609382" ty="-5.000000000000341"/>
@@ -296,7 +281,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e4" source="n5" target="n4">
+    <edge id="e4" source="n4" target="n3">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-25.099437246093657" sy="11.999999999999886" tx="-14.234405507813108" ty="11.999999999999886"/>
@@ -306,7 +291,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e5" source="n7" target="n2">
+    <edge id="e5" source="n6" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -316,7 +301,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e6" source="n7" target="n6">
+    <edge id="e6" source="n6" target="n5">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="1.9805627539062698" sy="-12.88000000000011" tx="7.0422399999996514" ty="-12.88000000000011"/>
@@ -326,7 +311,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e7" source="n6" target="n7">
+    <edge id="e7" source="n5" target="n6">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="4.0422399999996514" sy="12.11999999999989" tx="-27.01943724609373" ty="12.11999999999989"/>
@@ -336,7 +321,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e8" source="n9" target="n6">
+    <edge id="e8" source="n8" target="n5">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="15.965739999999641" sy="-6.60000000000025" tx="15.965739999999755" ty="3.9599999999995816"/>
@@ -346,7 +331,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e9" source="n9" target="n10">
+    <edge id="e9" source="n8" target="n9">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-21.03426000000036" sy="0.3999999999997499" tx="-19.614259999999717" ty="-0.3216666666667152"/>
@@ -356,7 +341,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e10" source="n8" target="n9">
+    <edge id="e10" source="n7" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-39.35305139286666" sy="5.482517482517443" tx="15.965739999999641" ty="-1.6000000000002501"/>
@@ -366,7 +351,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e11" source="n6" target="n9">
+    <edge id="e11" source="n5" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-22.034260000000245" sy="0.9599999999995816" tx="-22.03426000000036" ty="0.3999999999997499"/>
@@ -376,7 +361,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e12" source="n9" target="n4">
+    <edge id="e12" source="n8" target="n3">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="3.4633400000000165" sy="-4.715200000000209" tx="21.337094492187134" ty="-4.715200000000209"/>
@@ -386,7 +371,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e13" source="n4" target="n9">
+    <edge id="e13" source="n3" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="2.7719744921867004" sy="12.569919999999684" tx="1.9580599999997048" ty="12.569919999999684"/>
@@ -396,7 +381,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e14" source="n11" target="n9">
+    <edge id="e14" source="n10" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="49.97999999999979" ty="0.8999999999997499">
@@ -409,7 +394,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e15" source="n11" target="n8">
+    <edge id="e15" source="n10" target="n7">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -422,18 +407,7 @@ Administrador<y:LabelModel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e16" source="n3" target="n12">
-      <data key="d9"/>
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="white_diamond"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e17" source="n12" target="n5">
+    <edge id="e16" source="n11" target="n4">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
