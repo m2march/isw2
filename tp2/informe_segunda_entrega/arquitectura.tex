@@ -28,7 +28,7 @@ A continuación presentamos una referencia a los conectores utilizados en los di
     \nota{revisar}
 		\NonStandardConector{Secure Client-Server}{Este conector resulta muy similar al conector client-server. Se diferencia únicamente en que el cliente, antes de enviar una consulta al servidor, \emph{encripta} el mensaje para luego enviarlo. Ya en el servidor, este último desencripta el mensaje y lo interpreta. Para la respuesta, la comúnicación sucede de forma similar; ahora es el servidor quien encripta el mensaje y el cliente quien lo desencripta.}
 \end{itemize}
-
+\newpage
 \subsection{Conectividad externa del sistema \textbf{TPA}}
 
 En el siguiente diagrama vemos la disposición global del sistema central \textbf{TPA} respecto a los agentes externos con los que interactúa. Además se presenta una primera subdivisión del sistema principal en sus componentes más importantes.
@@ -68,7 +68,7 @@ Esta forma de manejar los pedidos de los clientes sobre ofertas satisface el atr
 
 El manejo de mensajes relacionado con las otras funcionalidades (como ser cambios de reputaci\'on y preferencias de usuario) se hace de manera diferente al de pedido de ofertas, porque el volumen esperado para los mismos es menor y además su resoluci\'on es mucho más r\'apida. Usamos entonces un conector client-server convencional entre el \textsf{manejador} y el \textsf{subsistema de negocio} correspondiente.
 
-
+\newpage
 \subsection{Subsistema de Query}
 
 En el siguiente diagrama se presenta el \textsf{Subsistema de Query} donde, dada una consulta por productos (\textbf{query}), se arma la respuesta para el usuario que realizó la consulta. Este es el \textsf{subsistema de negocio} más importante, ya que es encargado de la principal funcionalidad del sistema. Sobre el mismo se aplican varios atributos de calidad relacionados con \emph{performance} y \emph{modificabilidad}. La funcionalidad de este sistema responde a los \emph{casos de uso} 4 (consultar por un producto), 9 y 10 (relacionados con productos asociados y sustituibles), 11 (mostrar publicidades), y 16 (consultar estando autenticado y aprovechar las preferencias).
@@ -90,6 +90,7 @@ Las modificaciones que se realizan a la consulta están relacionadas con las pre
 
 Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obtenedor de Ofertas} accede al repositorio de ofertas y adquiere todas aquellas que responden a la consulta.  Una vez realizado esto pasamos a la etapa donde se prepara el resultado. Por un lado el componente \textsf{Modificador de resultados por Preferencias de Usuario} se encarga de tareas como jerarquizar las ofertas según las preferencias del usuario. Las ofertas luego son decoradas, eliminadas y reorganizadas según la reputación de los usuarios que las originaron (componente \textsf{Modificador de resultados por Reputación}). A continuación se realiza un nuevo trabajo sobre los resultados aplicando los filtros y estrategias seleccionados por el usuario en la consulta original (componente \textsf{Modificador de resultados por filtros y estrategias}). Finalmente, el componente \textsf{Preparador de la Respuesta de la Búsqueda} prepara todo el paquete de respuesta que será enviado denuevo al usuario. 
 
+\newpage
 \subsection{Subsistemas de Información de Negocio}
 
 En el diagrama del \textsf{Subsistema de Negocio de Ofertas} (figura \ref{arch:neg_ofertas}) se encuentran varios subsistemas que manejan información de negocio. Estos subsistemas son: el \textsf{Subsistema de Publicidades}, el \textsf{Subsistema de Rubros y Productos}, el \textsf{Subsistema de Reglas}, el \textsf{Subsistema Pref. de Usuario}, el \textsf{Subsistema de Reputación}, el \textsf{Subsistema de Filtros y Estrategias}, el \textsf{Subsistema de Manejo de Spam} y el \textsf{Subsistema de Alertas}. El \textsf{Subsistema de Query} es también considerado un \emph{subsistema de negocio}, pero por su relevancia es tratado individualmente en las secciones anteriores.
@@ -195,7 +196,7 @@ La comunicación entre la interfaz gráfica y el módulo de consultas desde UI s
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Cliente web}.}
 \end{figure}
 
-
+\newpage
 \subsection{Subsistema de Detección de Spam}
 
 El siguiente diagrama representa el Subsistema de Detección de Spam (\textbf{SDS}) donde se discriminan las ofertas deseadas en el sistema de las que no lo son (\textbf{Spam}). Una oferta puede ser considerada no deseada por ser falsa, tener un producto con precio dudoso, contener información contradictoria y/o haber sido reportada por los usuarios del sistema como enga\~{n}osa.
@@ -218,7 +219,7 @@ El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repo
  \vspace{9pt} 
 
 
-
+\newpage
 \subsection{Subsistema de Obtención de Datos}
 
 
