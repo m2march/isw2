@@ -23,9 +23,9 @@ A continuación presentamos una referencia a los conectores utilizados en los di
 \begin{itemize}
 		%Completar con conectores no standard!
 		%Agregar asi:
-		\NonStandardConector{A non standard conector name}{A non standard conector description.}
-		\NonStandardConector{client-server async}{F\'unciona igual que un client-server pero el cliente no se cuelga esperando una respuesta, y el server puede retornar su respuesta de manera asincrónica. Lo utilizamos para poder aprovechar el dispatch que el conector tiene sobre las instancias de servidores que hay disponibles que un conector async no soporta.}
-		\NonStandardConector{Secure Client-Server}{Este conector resulta muy similar a Cliente-Servidor. Se diferencia unicamente en que antes de que el cliente envie una consulta al servidor, este \emph{encripta} el mensaje, y luego se lo envia. Ya en el servidor, este desencripta el mensaje y lo interpreta. Para la respuesta, de forma similar a la mencionada anteriormente, ahora es el servidor quien encripta el mensaje y el cliente quien lo desencripta.}
+		%\NonStandardConector{A non standard conector name}{A non standard conector description.}
+		\NonStandardConector{Client-Server Async}{Funciona igual que un client-server, pero el cliente no se cuelga esperando una respuesta, y el server puede retornar su respuesta de manera asincrónica. Lo utilizamos para poder aprovechar el dispatch que el conector tiene sobre las instancias de servidores que hay disponibles que un conector async no soporta.}
+		\NonStandardConector{Secure Client-Server}{Este conector resulta muy similar a Cliente-Servidor. Se diferencia únicamente en que antes de que el cliente envíe una consulta al servidor, este \emph{encripta} el mensaje, y luego se lo envía. Ya en el servidor, este desencripta el mensaje y lo interpreta. Para la respuesta, de forma similar a la mencionada anteriormente, ahora es el servidor quien encripta el mensaje y el cliente quien lo desencripta.}
 \end{itemize}
 
 \subsection{Conectividad externa del sistema \textbf{TPA}}
@@ -50,14 +50,16 @@ El mismo es revisado contínuamente por el \textsf{Subsistema de Detección de S
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/arch/temp_subsistema_que_habla_con_el_usuario.pdf}
-	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Negocio de Ofertas}.}\ref{arch:neg_ofertas}
+	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Negocio de Ofertas}.}\label{arch:neg_ofertas}
 \end{figure}
 
 \subsubsection{Manejo de pedidos de ofertas}
 
 El manejo de pedidos de ofertas provenientes de clientes se resuelve de la siguiente manera, el mismo es aceptado por un \textsf{Manejador de pedidos de API} o \textsf{Manejador de pedidos de aplicación} este recibe el pedido y le asigna un identificador de pedido. Luego arma un mensaje con su identificador, el identificador del pedido y el contenido del pedido y env\'ia dicho mensaje por medio de nuestro conector custom hacia alg\'un \textsf{Query Dispatcher}. Cabe destacar que el manejador tiene memoria de aquellos pedidos que todavia le debe responder a sus clientes. El \textsf{Query Dispatcher} toma el mensaje y lo pone en la cola de trabajo del \textsf{Subsistema de Query}. Al terminar el procesamiento del mensaje el resultado del mismo es devuelto en la cola de \textsf{QueryDispatcher} que seg\'un el identificador del mensaje original lo envia asincrónicamente hacia el manejador que lo creo. El manejador recibe el resultado y se lo devuelve al cliente que origino el pedido.     
-\\
-Esta forma de manejar los pedidos de los clientes sobre ofertas satisface el atributo de calidad 3.8 que se refiere a \emph{disponibilidad} porque ning\'un pedido deberia ser rechazado asumiendo una coherente asignacion de instancias de manejadores, dispatchers y de elementos procesadores de querys. El volumen esperado de este tipo de interacción es muy grande.
+
+ \vspace{9pt}
+
+Esta forma de manejar los pedidos de los clientes sobre ofertas satisface el atributo de calidad 3.8 que se refiere a \emph{disponibilidad} porque ning\'un pedido deberia ser rechazado asumiendo una coherente asignacion de instancias de manejadores, dispatchers y de elementos procesadores de queries. El volumen esperado de este tipo de interacción es muy grande.
 
 \subsubsection{Manejo de mensajes de reputación y preferencias}
 
@@ -81,27 +83,27 @@ La funcionalidad de este componente es la de procesar un pedido por productos pa
 En primer lugar se valida que el pedido sea realizable (i.e.: es de un producto soportado y posee estrategias y filtros del sistema) por el \textsf{Validador de Query}. Dentro de las funcionalidades, se definieron distintas modificaciones que podrían sufrir las consultas. Los siguientes dos componentes (\textsf{Modificador de Query por Preferencias Usuario} y \textsf{Modificador de Query por Reglas}) se encargan de comunicarse con los subsistemas correspondientes que definen como debe realizarse las modificaciones. El validador encola la consulta para que sea procesada por estos componentes y a su vez la encola para que sea trabajada por el \textsf{Generador de publicidades}, que se encarga de generar las publicidades que formarán parte de la respuesta. Esto se realiza con un mecanismo de \emph{fork and join}, donde el \textsf{Generador de publicidades} toma la \emph{query}, la trabaja y luego espera a que sea consultado por el resultado. De esta forma, la generación de propagandas, que se considera 
 independiente del resto del procesamiento a realizar, puede realizarse en paralelo, mejorando la \emph{performance del proceso}.
 
-Las modificaciones que se realizan a la consulta están relacionadas con las preferencias del usuario (que puede decidir no ver las consultas provenientes de algunos usuarios) y las reglas de asociación y substitución, (que establecen que distintas extensiones a las búsquedas). La naturaleza de estas modificaciones no está completamente definida pero estará contenida exclusivamente en los \textsf{Subsistema de Preferencias de Usuario} y \textsf{Subsistema de Reglas}. 
+Las modificaciones que se realizan a la consulta están relacionadas con las preferencias del usuario (que puede decidir no ver las consultas provenientes de algunos usuarios) y las reglas de asociación y sustitución, (que establecen que distintas extensiones a las búsquedas). La naturaleza de estas modificaciones no está completamente definida pero estará contenida exclusivamente en los \textsf{Subsistema de Preferencias de Usuario} y \textsf{Subsistema de Reglas}.
 
 Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obtenedor de Ofertas} accede al repositorio de ofertas y adquiere todas aquellas que responden a la consulta.  Una vez realizado esto pasamos a la etapa donde se prepara el resultado. Por un lado el componente \textsf{Modificador de resultados por Preferencias de Usuario} se encarga de tareas como jerarquizar las ofertas según las preferencias del usuario. Las ofertas luego son decoradas, eliminadas y reorganizadas según la reputación de los usuarios que las originaron (componente \textsf{Modificador de resultados por Reputación}). A continuación se realiza un nuevo trabajo sobre los resultados aplicando los filtros y estrategias seleccionados por el usuario en la consulta original (componente \textsf{Modificador de resultados por filtros y estrategias}). Finalmente, el componente \textsf{Preparador de la Respuesta de la Búsqueda} prepara todo el paquete de respuesta que será enviado denuevo al usuario. 
 
 \subsection{Interfaz móvil}
 
-La interfaz móvil es uno de los componentes encargados de facilitar una interfaz comoda al usuario, y comunicar los pedidos de este con el servidor central de \emph{twitteando para ahorrar}.
+La interfaz móvil es uno de los componentes encargados de facilitar una interfaz cómoda al usuario, y comunicar los pedidos de este con el servidor central de \emph{Twitteando para ahorrar}.
 
-A través de este subsistema, el usuario deberia ser capaz de:
+A través de este subsistema, el usuario debería ser capaz de:
 \begin{enumerate}
 	\item Realizar consultas de ofertas.
 	\item Denunciar ofertas como falsas.
-	\item Permitir conectarse con una cuenta en un provedor de \emph{OpenId}.
-	\item Permitir modificar la configuración del usuario.
+	\item Conectarse con una cuenta en un proveedor de \emph{OpenId}.
+	\item Modificar la configuración del usuario.
 \end{enumerate}
 
-Al mismo tiempo, ciertos atributos de calidad guían el diseño de este subsistema. Alguno de ellos son la necesidad de \emph{responder rapidamente al usuario} (¡inclusive antes de que este comience a tipear algo!), y la necesidad de \emph{garantizar disponibilidad}, a pesar de que no exista conexión.
+Al mismo tiempo, ciertos atributos de calidad guían el diseño de este subsistema. Algunos de ellos son la necesidad de \emph{responder rapidamente al usuario}, inclusive antes de que este comience a tipear algo (atributo de usabilidad 6), y la necesidad de \emph{garantizar disponibilidad}, a pesar de que no exista conexión (atributo 8).
 
-Al modulo de interfaz de usuario se le delega la tarea de presentar los datos de una forma 'bonita y comprensible' al usuario. Además, este modulo se comunica con el componente encargado de facilitar la posibilidad de autenticarse con \emph{OpenId}. Vale destacar que el componente de comunicación con OpenId se encuentra en el cliente y no del lado del servidor, ya que es el \emph{proveedor de OpenId} (\textsf{facebook}, \textsf{linkedin}, etc.) el cual ofrece un formulario para autenticarse. De esta forma, durante la autenticación, el control es cedido al \emph{proveedor de OpenId}.
+Al módulo de interfaz de usuario se le delega la tarea, especificada en el atributo de usabilidad 5, de presentar los datos de una forma 'bonita y comprensible' al usuario. Además, este módulo se comunica con el componente encargado de facilitar la posibilidad de autenticarse con \emph{OpenId}. Vale destacar que el componente de comunicación con OpenId se encuentra en el cliente y no del lado del servidor, ya que es el \emph{proveedor de OpenId} (\textsf{Facebook}, \textsf{LinkedIn}, etc.) el cual ofrece un formulario para autenticarse. De esta forma, durante la autenticación, el control es cedido al \emph{proveedor de OpenId}.
 
-Por otro lado, la interfaz de usuario se comunica con el modulo que intercambia mensajes con el sistema central de \emph{twitteando para ahorrar}. Se decidió que, tanto los mensajes enviados desde la interfaz al modulo de comunicación, como los del modulo de comunicación a la interfaz de usuario, serán enviados de forma asíncrona. Esta ultima decisión tiene como objetivo evitar 'congelar' la interfaz esperando por una respuesta del servidor. 
+Por otro lado, la interfaz de usuario se comunica con el módulo que intercambia mensajes con el sistema central de \emph{twitteando para ahorrar}. Se decidió que, tanto los mensajes enviados desde la interfaz al módulo de comunicación, como los del módulo de comunicación a la interfaz de usuario, serán enviados de forma asíncrona. Esta ultima decisión tiene como objetivo evitar 'congelar' la interfaz esperando por una respuesta del servidor.
 
 \begin{figure}[H]
 	\centering
@@ -109,9 +111,9 @@ Por otro lado, la interfaz de usuario se comunica con el modulo que intercambia 
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Cliente móvil}.}
 \end{figure}
 
-\subsubsection{Modulo de comunicación con el sistema de Twitteando para ahorrar}
+\subsubsection{Módulo de comunicación con el sistema de Twitteando para ahorrar}
 
-Este modulo convierte las ordenes que el usuario envia desde la interfaz grafica, en consultas efectivas por ofertas, entre otras funcionalidades. 
+Este módulo convierte las órdenes que el usuario envia desde la interfaz gráfica, en consultas efectivas por ofertas, entre otras funcionalidades.
 
 Para comprender el funcionamiento de este subsistema, vamos a plantear el siguiente ejemplo:
 
@@ -120,21 +122,21 @@ Para comprender el funcionamiento de este subsistema, vamos a plantear el siguie
 	\emph{Tito Codito, conocido ahorrador, abre la interfaz móvil de Twitteando para ahorrar, desde su smarthphone, y busca por ofertas de \emph{Pepas Tocoñato}\footnote{Muy superiores a las Terepín}.}
 \end{figure}
 
-En el momento en el que Tito inicia la aplicación desde su móvil, el \textsf{Modulo de consulta desde UI} realiza una consulta al \textsf{Modulo de consulta sin conexión}, con el objetivo de obtener, de la \textsf{Cache de ofertas}, las ofertas registradas como \emph{Mas populares}. De esta forma, si bién Tito no comenzó a escribir una consulta, resultados interesantes se muestran en la interfaz de usuario. Estas ofertas se mantienen actualizadas en la cache por el \textsf{Actualizador de consultas populares}.
+En el momento en el que Tito inicia la aplicación desde su móvil, el \textsf{Modulo de consulta desde UI} realiza una consulta al \textsf{Modulo de consulta sin conexión}, con el objetivo de obtener, de la \textsf{Cache de ofertas}, las ofertas registradas como \emph{Más populares}. De esta forma, si bien Tito no comenzó a escribir una consulta, resultados interesantes se muestran en la interfaz de usuario. Estas ofertas se mantienen actualizadas en la cache por el \textsf{Actualizador de consultas populares}.
 
-Luego, Tito comienza a escribir la consulta, \emph{Pep}, sin embargo, la interfaz gráfica, registra este evento antes de que la consulta se termine de tipear, y lo informa al \textsf{modulo de consulta desde UI}. Este modulo, consulta al \textsf{Modulo de consulta sin conexión} por consultas sobre productos que empiecen con este patrón. Los resultados son comunicados inmediatamente a la interfaz. Así, resultados son mostrados antes de que la consulta se termine de tipear. La desventaja de esta solución es que solo se pueden 'predecir' resultados de consultas realizadas previamente, o consultas populares. 
+Luego, Tito comienza a escribir la consulta, \emph{Pep}, sin embargo, la interfaz gráfica registra este evento antes de que la consulta se termine de tipear, y lo informa al \textsf{módulo de consulta desde UI}. Este módulo consulta al \textsf{Módulo de consulta sin conexión} por consultas sobre productos que empiecen con este patrón. Los resultados son comunicados inmediatamente a la interfaz. Así, resultados son mostrados antes de que la consulta se termine de tipear. La desventaja de esta solución es que solo se pueden 'predecir' resultados de consultas realizadas previamente, o consultas populares.
 
-Una alternativa que no posee este problema, es realizar esta consulta con el sistema central, sin verificar antes la cache, sin embargo los tiempos necesarios para la transferencia de datos y resultados con el servidor, hacen que esta opción sea inviable, y que una vez que se tienen resultados, Tito ya llevaría un timepo considerable desde haber terminado de escribir la consulta.
+Una alternativa que no posee este problema es la de realizar esta consulta con el sistema central, sin verificar antes la cache; sin embargo, los tiempos necesarios para la transferencia de datos y resultados con el servidor hacen que esta opción sea inviable, y que una vez que se tienen resultados, Tito ya llevaría un timepo considerable desde haber terminado de escribir la consulta.
 
-Una vez que la interfaz detecta que la escritura de la consulta se ha terminado, se informa al \textsf{Modulo de consulta desde UI}, este resolverá:
+Una vez que la interfaz detecta que la escritura de la consulta se ha terminado, se informa al \textsf{Módulo de consulta desde UI}, este resolverá:
 \begin{itemize}
 	\item Si hay conexión con el servidor central, enviar esta consulta a este servidor y esperar por los resultados. 
 	\item En caso de no haber conexión, la consulta se intenta resolver utilizando la cache local.
 \end{itemize}
 
-En ambos casos, una vez obtenidos los resultados, estos son enviados a la interfaz grafica para su visualización y, de esta forma, Tito ya puede escoger cuál es el lugar mas conveniente para comprar \emph{pepas}.
+En ambos casos, una vez obtenidos los resultados, estos son enviados a la interfaz gráfica para su visualización y, de esta forma, Tito ya puede escoger cuál es el lugar mas conveniente para comprar \emph{pepas}.
 
-De forma ortogonal a esto, existen otros dos subcomponentes de este módulo. Estos son, el \textsf{módulo de cambio de preferencias} y el \textsf{módulo de denuncia de ofertas}. El primero tiene la tarea de, ante un cambio de las preferencias del usuario, comunicarselas al servidor central. El segundo componente, comunica al servidor central la denuncia de una oferta como posible falso. La comunicación de ambos modulos con el servidor se realiza de forma \emph{segura}, debido a que los datos que circulan en este momento son sensibles, y se busca evitar posibles usos malintencionados. Un ejemplo de lo anterior, seria atacar al sistema, denunciando ofertas, haciendose pasar por otro usuario. 
+De forma ortogonal a esto, existen otros dos subcomponentes de este módulo. Estos son, el \textsf{módulo de cambio de preferencias} y el \textsf{módulo de denuncia de ofertas}. El primero tiene la tarea de, ante un cambio de las preferencias del usuario, comunicarselas al servidor central. El segundo componente, comunica al servidor central la denuncia de una oferta como posible falso. La comunicación de ambos módulos con el servidor se realiza de forma \emph{segura}, debido a que los datos que circulan en este momento son sensibles, y se busca evitar posibles usos malintencionados. Un ejemplo de lo anterior, seria atacar al sistema, denunciando ofertas, haciendose pasar por otro usuario.
 
 En la \textsf{cache de ofertas}, se almacenan las consultas recientes y sus resultados, y consultas populares y sus resultados. Si un usuario, sin conexión, consulta por ofertas de productos, que no son validos, no es necesario verificar la validez de estos, ya que resulta imposible que existan resultados de ofertas de este producto en la cache.
 
@@ -158,7 +160,7 @@ Cuando un usuario se conecta a este servicio, al mismo tiempo que se carga la in
 
 Luego, si se realiza una consulta por un producto en particular, esta es delegada al \textsf{Modulo de consultas desde UI}, y de forma sincrónica se realiza la comunicación con el servidor central.
 
-La comunicación entre la interfaz gráfica y el módulo de consultas desde UI se realiza de forma asincrónica, para dar al usuario la sensación de agilidad en la respuesta, y no 'congelar' la interfaz grafica.
+La comunicación entre la interfaz gráfica y el módulo de consultas desde UI se realiza de forma asincrónica, para dar al usuario la sensación de agilidad en la respuesta, y no 'congelar' la interfaz gráfica.
 
 \begin{figure}[H]
 	\centering
@@ -170,7 +172,6 @@ La comunicación entre la interfaz gráfica y el módulo de consultas desde UI s
 \subsection{Subsistema de Detección de Spam}
 
 El siguiente diagrama representa el Subsistema de Detección de Spam (\textbf{SDS}) donde se discriminan las ofertas deseadas en el sistema de las que no lo son (\textbf{Spam}). Una oferta puede ser considerada no deseada por ser falsa, tener un producto con precio dudoso, contener información contradictoria y/o haber sido reportada por los usuarios del sistema como enga\~{n}osa.
-\nota{revisar la oración anterior// la cambie un poco, asi va?}
 
 \begin{figure}[H]
 	\centering
@@ -178,17 +179,25 @@ El siguiente diagrama representa el Subsistema de Detección de Spam (\textbf{SD
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Detección de Spam}.}
 \end{figure}
 
-El SDS lee constantemente el \textsf{Repositorio de Ofertas} priorizando las ofertas recientemente agregadas que no han sido analizadas nunca como spam y las que fueron reportadas como enga\~{n}osas por los usuarios, de esto se encarga la componente \textsf{Selector de Ofertas a Analizar}. Esta componente le pasa en forma de \emph{pipe} las ofertas seleccionadas a la componente \textsf{Analizador de Ofertas} que se encarga de discernir si la oferta es un spam o no lo es. Por temas de \emph{Performance} se decidió que haya múltiples instancias de esta componente, permitiendo que diversos recursos se ocupen de cada una de estas (\emph{Concurrencia}).\\
+El SDS lee constantemente el \textsf{Repositorio de Ofertas} priorizando las ofertas recientemente agregadas que no han sido analizadas nunca como spam y las que fueron reportadas como enga\~{n}osas por los usuarios; de esto se encarga la componente \textsf{Selector de Ofertas a Analizar}. Esta componente le pasa en forma de \emph{pipe} las ofertas seleccionadas a la componente \textsf{Analizador de Ofertas} que se encarga de discernir si la oferta es spam o no lo es. Por temas de \emph{Performance} se decidió que haya múltiples instancias de esta componente, permitiendo que diversos recursos se ocupen de cada una de estas (\emph{Concurrencia}).
+ \vspace{9pt} 
 
-El \textsf{Analizador de Ofertas} toma en consideración la respuesta del servicio de \textsf{SpamBust} como también los reportes de usuarios o viejas ofertas detectadas como spam para tomar la decisión final de marcar una oferta como spam. Para la comunicación con los servicios de \textsf{SpamBust} interactúa con un componente \emph{intermediario} llamada \textsf{Interfaz de Detección de Spam} la cual se encarga de transferir los pedidos a la componente \textsf{Comunicador SpamBust} que es el responsable de los detalles específicos de la comunicación con el servicio de \textsf{SpamBust}. Esto concede a la arquitectura una gran \emph{Modificabilidad} ya que el \textsf{Analizador de Ofertas} se comunica solo con un \emph{intermediario} que es fácilmente sustituido/modificado para apuntar a otra componente que no sea el \textsf{Comunicador SpamBust}, como por ejemplo una implementación propia que sustituya los servicios de \textsf{SpamBust}.\\
 
-El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repositorio de Ofertas} aquellas ofertas encontradas como Spam y guardarlas en el \textsf{Repositorio de Spams} para su posterior revisión/publicación. En este último también se almacena toda la evidencia encontrada por el \textsf{analizador}. La componente \textsf{Publicador de Informe} obtiene la información del \textsf{Repositorio de spams} para generar informes sobre las ofertas descartadas y el motivo de las mismas. Se nos pidió que el mismo se publique todos los martes. El \textsf{Subsistema de Manejo de Spam} es el punto de acceso a estos datos para la \textsf{interfáz de administrador}.\\
+El \textsf{Analizador de Ofertas} toma en consideración la respuesta del servicio de \textsf{SpamBust}, como también los reportes de usuarios o viejas ofertas detectadas como spam para tomar la decisión final de marcar una oferta como spam. Para la comunicación con los servicios de \textsf{SpamBust} interactúa con un componente \emph{intermediario} llamada \textsf{Interfaz de Detección de Spam}, la cual se encarga de transferir los pedidos a la componente \textsf{Comunicador SpamBust}, que es el responsable de los detalles específicos de la comunicación con el servicio de \textsf{SpamBust}. Esto concede a la arquitectura una gran \emph{Modificabilidad} ya que el \textsf{Analizador de Ofertas} se comunica solo con un \emph{intermediario} que es fácilmente sustituido/modificado para apuntar a otra componente que no sea el \textsf{Comunicador SpamBust}, como por ejemplo una implementación propia que sustituya los servicios de \textsf{SpamBust}. Esto responde a lo especificado en el atributo de calidad 9.
+ \vspace{9pt} 
+
+
+El \textsf{Analizador de Ofertas} también se encarga de borrar del \textsf{Repositorio de Ofertas} aquellas ofertas encontradas como Spam y guardarlas en el \textsf{Repositorio de Spam} para su posterior revisión/publicación. En este último también se almacena toda la evidencia encontrada por el \textsf{analizador}. La componente \textsf{Publicador de Informe} obtiene la información del \textsf{Repositorio de spam} para generar informes sobre las ofertas descartadas y el motivo de las mismas. Se nos pide que el mismo se publique todos los martes. (Ver atributo de auditabilidad 10.) El \textsf{Subsistema de Manejo de Spam} es el punto de acceso a estos datos para la \textsf{interfáz de administrador}.
+ \vspace{9pt} 
+
 
 
 \subsection{Subsistema de Obtención de Datos}
 
 
-En el siguiente diagrama representa el Subsistema de Obtención de Datos (\textsf{SOD}) el cual se encarga de la interacción con los diversos proveedores de ofertas para alimentar el sistema con estas.\\
+En el siguiente diagrama representa el Subsistema de Obtención de Datos (\textsf{SOD}) el cual se encarga de la interacción con los diversos proveedores de ofertas para alimentar el sistema con estas.
+ \vspace{9pt} 
+
 
 \begin{figure}[H]
 	\centering
@@ -196,15 +205,15 @@ En el siguiente diagrama representa el Subsistema de Obtención de Datos (\texts
 	\caption{Diagrama arquitectónico con el detalle del \textsf{Subsistema de Obtención de Datos}.}
 \end{figure}
 
-el SOD se encarga de recolectar datos vía SMS, redes sociales y Web Mining. Cada una de las cuales tiene un componente responsable de interactuar con sus respectivas fuentes de información y colocar las posibles ofertas en una manera genérica para que puedan ser validadas por la componente \textsf{Control de Ofertas}. Esta última componente recibe en forma de \emph{Pipe} la información de las tres componentes encargadas de la interacción con el exterior(\textsf{Robot Comunicator}, \textsf{Ofertas Retrieval} y \textsf{Ofertas SMS retrieval}).\\
+El SOD se encarga de recolectar datos vía SMS, redes sociales y Web Mining. Cada una de las cuales tiene un componente responsable de interactuar con sus respectivas fuentes de información y colocar las posibles ofertas en una manera genérica para que puedan ser validadas por la componente \textsf{Control de Ofertas}. Esta última componente recibe en forma de \emph{Pipe} la información de las tres componentes encargadas de la interacción con el exterior(\textsf{Comunicador de robots}, \textsf{Recolector de ofertas} y \textsf{Recolector de ofertas SMS}).
+ \vspace{9pt} 
 
-La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta es aceptada como validad por el sistema, como esto puede llegar a ser mucho más costoso computacionalmente que la recolección de datos, se tiene múltiples instancias de esta componente para poder soportar \emph{concurrencia}. Para los chequeos usa el estilo \emph{pipe and filter} para que sea fácilmente \emph{Modificable} en el futuro. Una vez que se hacen todos las validaciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.\\
+
+La componente \textsf{Control de Ofertas} se encarga de verificar si la oferta es aceptada como válida por el sistema. Como esto puede llegar a ser mucho más costoso computacionalmente que la recolección de datos, se tiene múltiples instancias de esta componente para poder soportar \emph{concurrencia}. Para los chequeos usa el estilo \emph{pipes and filters} para que sea fácilmente \emph{Modificable} en el futuro, de acuerdo a lo especificado en el atributo de extensibilidad 11. Una vez que se hacen todos las validaciones pertinentes esta componente le pasa la oferta al \textsf{Almacenador de Ofertas} para que la guarde en el \textsf{Repositorio de Ofertas}.
+ \vspace{9pt} 
 
 
-\nota{Nota: la mezcla entre nombre de ingle y espa~nol es cualquiera...}\\
-\nota{nota2: que eso eso de cliente servidor asincronico??}\\
-\nota{nota3: los robot hay que expandirlos, como?}\\
-\nota{nota4: hay un atributo de calidad que dice que los bot tienen que avisarle al admin que la pagina a la que esta viendo cambio mucho su estructura}\\
+\nota{nota4: hay un atributo de calidad que dice que los bot tienen que avisarle al admin que la pagina a la que esta viendo cambio mucho su estructura}
 
 \subsection{Subsistemas de Información de Negocio}
 
@@ -217,7 +226,7 @@ En todos los casos estos subsistemas son accedidos mediante una conexión de tip
 	\caption{Diagramas arquitectónicos con el detalle de algunos \textsf{Subsistemas de Información de Negocio}.}
 \end{figure}
 
-Cada uno de estos subsistemas permiten modificar la información de negocio por usuarios y administradores según corresponda. Tanto los datos como la inteligencia de negocio contenida en cada uno de los subsistemas además es publicada mediante otro componente para uso interno del sistema, en particular, el \textsf{Subsistema de Query}. En la medida de lo posible, el acceso podrá ser eficiente y concurrente por distintos clientes. La \emph{modificabilidad} de cada una de los mecanismos de negocio representado en cada subsistema estará contenido en cada uno de ellos. Luego, si se agregan o modifican reglas de asociación o substitución, o si se modifican posibilidades de preferencias de usuario, esto solo afecta al subsistema correspondiente. 
+Cada uno de estos subsistemas permiten modificar la información de negocio por usuarios y administradores según corresponda. Tanto los datos como la inteligencia de negocio contenida en cada uno de los subsistemas además es publicada mediante otro componente para uso interno del sistema, en particular, el \textsf{Subsistema de Query}. En la medida de lo posible, el acceso podrá ser eficiente y concurrente por distintos clientes. La \emph{modificabilidad} de cada una de los mecanismos de negocio representado en cada subsistema estará contenido en cada uno de ellos. Luego, si se agregan o modifican reglas de asociación o sustitución, o si se modifican posibilidades de preferencias de usuario, esto solo afecta al subsistema correspondiente.
 
 El \textsf{Subsistema de Reputación} difiere del resto de los subsistemas de negocio en que el repositorio que contiene los datos no es interno, sino que es externo, ya que es compartido con otros subsistemas. Su diagrama se muestra a continuación. 
 
