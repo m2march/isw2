@@ -260,18 +260,18 @@ Una vez que los datos fueron identificados como ofertas válidas, estas se seria
 	\label{fig:obtencion_datos}
 \end{figure}
 
-En la figura \ref{fig:deploy_query} se detalla el viewtype de alocación del subconjunto del sistema, encargado de responder a las queries de los distintos usuarios.  
+En la figura \ref{fig:deploy_query} se detalla el viewtype de alocación del subconjunto del sistema que se encarga de responder a las queries de los distintos usuarios.  
 
-Para poder manejar la cantidad de consultas provenientes de los distintos usuarios, distintos tipos de manejadores de consultas son instanciados en varias maquinas. 
+Para poder manejar la cantidad de consultas provenientes de los distintos usuarios, distintos tipos de manejadores de consultas son instanciados en varias máquinas. 
 
-En particular, dado el volumen de consultas esperado, proveniente de la intefaz web y de la interfaz movil, el manejador de pedidos de aplicacion se encuentra instanciado en varias maquinas, de forme de poder manejar el volumen de consultas, y proveer redundancia en caso de falla de uno de los servidores, para garantizar la disponibilidad del servicio. De forma similar se encuentran desplegadas, instancias del manejador de pedidos del api publica. Estos servicios fueron dise\~nados con el objetivo de poder escalar horizontalmente sin mayores complicaciones.
+En particular, dado el volumen de consultas esperado, proveniente de la interfaz web y de la interfaz móvil, el manejador de pedidos de aplicación se encuentra instanciado en varias máquinas. Esto permite manejar una gran cantidad de consultas, y provee redundancia en caso de falla de uno de los servidores, para garantizar la disponibilidad del servicio. De forma similar se encuentran desplegadas varias instancias del manejador de pedidos de la API pública. Estos servicios fueron dise\~nados con el objetivo de poder escalar horizontalmente sin mayores complicaciones.
 
-El subsistema de queries es el componente del sistema que recibe una mayor cantidad de consultas. Con el objetivo de poder lidear con la carga de consultas, y dado que cada consulta es independiente de las demas, resulta natural el distribuir esta carga de trabajo en un gran numero de servidores. Es deseable que, en un futuro, estos puedan ser desplegados de forma elastica, para poder adaptarse a la carga del sistema y reducir costos. El replicar este servicio en varios servidores otorga una segunda ventaga, ayuda a garantizar una mayor disponibilidad de este. Esto ultimo es particularmente importante, ya que este servicio forma parte del nucleo del sistema.
-Este sistema se encuentra conectado directamente a la base de datos de ofertas. Es importante que esta base de datos pueda antender a la cantidad de consultas de lectura que el procesador de consultas realiza. Vale aclarar que, dado que las ofertas, se representan como un conjunto desestructurado de datos, resulta natural almacenarlos en una base de datos NOSQL.
+El subsistema de queries es el componente del sistema que recibe una mayor cantidad de consultas. Con el objetivo de poder lidiar con la carga de consultas, y dado que cada consulta es independiente de las demás, resulta natural  distribuir esta carga de trabajo en un gran número de servidores. Es deseable que, en un futuro, estos puedan ser desplegados de forma elástica, para poder adaptarse a la carga del sistema y reducir costos. Replicar este servicio en varios servidores otorga una segunda ventaja: ayuda a garantizar una mayor disponibilidad del servicio. Esto último es particularmente importante, ya que este servicio forma parte del núcleo del sistema.
+Este sistema se encuentra conectado directamente a la base de datos de ofertas. Es importante que esta base de datos pueda antender a la cantidad de consultas de lectura que el procesador de consultas realiza. Vale aclarar que, dado que las ofertas se representan como un conjunto desestructurado de datos, resulta natural almacenarlos en una base de datos NOSQL.
 
-De los distintos subsistemas de rubros y productos, de publicidades, de preferencias de usuario y de reputaci\'on, podemos destacar una caracteristica comun, todos estos subsistemas poseen una base de datos propia. Dado que en estos casos los datos son estructurados, optamos por utilizar bases de datos SQL. No se espera que estos sistemas sufran de una gran carga de trabajo.
+De los distintos subsistemas de rubros y productos, de publicidades, de preferencias de usuario y de reputaci\'on, podemos destacar una caracteristica común: todos estos subsistemas poseen una base de datos propia. Dado que en estos casos los datos son estructurados, optamos por utilizar bases de datos SQL. No se espera que estos sistemas sufran una gran carga de trabajo.
 
-Una caracteristica a destacar de la interfaz web, es su capacidad para poder ser utilizada desde los mas diversos dispositivos.
+Una característica a destacar de la interfaz web es su capacidad para poder ser utilizada desde los más diversos dispositivos.
 
 \begin{figure}[H]
 	\centering
