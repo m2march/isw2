@@ -252,7 +252,6 @@ Con el objetivo de \emph{alimentar al sistema con la mas fresca información de 
 
 Una vez que los datos fueron identificados como ofertas validas, estos se serializan en la base de datos de ofertas. Para poder soportar las grandes cargas de consultas, esta base de datos se encuentra implementada con un motor NOSQL. La replicación de los datos es manejada directamente por el software de la base de datos. De esta forma, podemos garantizar alta disponibilidad de los datos, y performance a la hora de responder las consultas.
 
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/deploy/deploy_obtencion_datos.pdf}
@@ -260,8 +259,18 @@ Una vez que los datos fueron identificados como ofertas validas, estos se serial
 	\label{fig:obtencion_datos}
 \end{figure}
 
-En la figura \ref{fig:deploy_query} se detalla el viewtype de alocación del subconjunto del sistema, encargado de responde, 
+En la figura \ref{fig:deploy_query} se detalla el viewtype de alocación del subconjunto del sistema, encargado de responder a las queries de los distintos usuarios.  
 
+Para poder manejar la cantidad de consultas provenientes de los distintos usuarios, distintos tipos de manejadores de consultas son instanciados en varias maquinas. 
+
+En particular, dado el volumen de consultas esperado, proveniente de la intefaz web y de la interfaz movil, el manejador de pedidos de aplicacion se encuentra instanciado en varias maquinas, de forme de poder manejar el volumen de consultas, y proveer redundancia en caso de falla de uno de los servidores, para garantizar la disponibilidad del servicio. De forma similar se encuentran desplegadas, instancias del manejador de pedidos del api publica. Estos servicios fueron dise\~nados con el objetivo de poder escalar horizontalmente sin mayores complicaciones.
+
+El subsistema de queries es el componente del sistema que recibe una mayor cantidad de consultas. Con el objetivo de poder lidear con la carga de consultas, y dado que cada consulta es independiente de las demas, resulta natural el distribuir esta carga de trabajo en un gran numero de servidores. Es deseable que, en un futuro, estos puedan ser desplegados de forma elastica, para poder adaptarse a la carga del sistema y reducir costos. El replicar este servicio en varios servidores otorga una segunda ventaga, ayuda a garantizar una mayor disponibilidad de este. Esto ultimo es particularmente importante, ya que este servicio forma parte del nucleo del sistema.
+Este sistema se encuentra conectado directamente a la base de datos de ofertas. Es importante que esta base de datos pueda antender a la cantidad de consultas de lectura que el procesador de consultas realiza. Vale aclarar que, dado que las ofertas, se representan como un conjunto desestructurado de datos, resulta natural almacenarlos en una base de datos NOSQL.
+
+De los distintos subsistemas de rubros y productos, de publicidades, de preferencias de usuario y de reputaci\'on, podemos destacar una caracteristica comun, todos estos subsistemas poseen una base de datos propia. Dado que en estos casos los datos son estructurados, optamos por utilizar bases de datos SQL. No se espera que estos sistemas sufran de una gran carga de trabajo.
+
+Una caracteristica a destacar de la interfaz web, es su capacidad para poder ser utilizada desde los mas diversos dispositivos.
 
 \begin{figure}[H]
 	\centering
@@ -269,7 +278,3 @@ En la figura \ref{fig:deploy_query} se detalla el viewtype de alocación del sub
 	\caption{Diagrama de deployment del sistema central.}
 	\label{fig:deploy_query}
 \end{figure}
-
-
-
-\nota{Juansis va a escribir y hacer dibujitos aca. March va a ayudar también.}
