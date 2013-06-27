@@ -90,7 +90,7 @@ Las modificaciones que se realizan a la consulta están relacionadas con las pre
 
 Con la consulta (\emph{query}) ya definida y ajustada, el componente \textsf{Obtenedor de Ofertas} accede al repositorio de ofertas y adquiere todas aquellas que responden a la consulta.  Una vez realizado esto pasamos a la etapa donde se prepara el resultado. Por un lado el componente \textsf{Modificador de resultados por Preferencias de Usuario} se encarga de tareas como jerarquizar las ofertas según las preferencias del usuario. Las ofertas luego son decoradas, eliminadas y reorganizadas según la reputación de los usuarios que las originaron (componente \textsf{Modificador de resultados por Reputación}). A continuación se realiza un nuevo trabajo sobre los resultados aplicando los filtros y estrategias seleccionados por el usuario en la consulta original (componente \textsf{Modificador de resultados por filtros y estrategias}). Finalmente, el componente \textsf{Preparador de la Respuesta de la Búsqueda} prepara todo el paquete de respuesta que será enviado denuevo al usuario. 
 
-\subsubsection{Subsistemas de Información de Negocio}
+\subsection{Subsistemas de Información de Negocio}
 
 En el diagrama del \textsf{Subsistema de Negocio de Ofertas} (figura \ref{arch:neg_ofertas}) se encuentran varios subsistemas que manejan información de negocio. Estos subsistemas son: el \textsf{Subsistema de Publicidades}, el \textsf{Subsistema de Rubros y Productos}, el \textsf{Subsistema de Reglas}, el \textsf{Subsistema Pref. de Usuario}, el \textsf{Subsistema de Reputación}, el \textsf{Subsistema de Filtros y Estrategias} y el \textsf{Subsistema de Manejo de Spam}. El \textsf{Subsistema de Query} es también considerado un \emph{subsistema de negocio}, pero por su relevancia es tratado individualmente en las secciones anteriores.
 En todos los otros casos los \emph{subsistemas de negocio} son accedidos mediante una conexión de tipo \emph{cliente-servidor} ya que proveen un servicio respecto a la información de negocio contenida en cada uno. Además, se busca permitir concurrencia en el acceso a cada uno de los servicios.
@@ -101,7 +101,9 @@ En todos los otros casos los \emph{subsistemas de negocio} son accedidos mediant
 	\caption{Diagramas arquitectónicos con el detalle de algunos \textsf{Subsistemas de Información de Negocio}.}
 \end{figure}
 
-Cada uno de estos subsistemas permiten modificar la información de negocio por usuarios y administradores según corresponda. Tanto los datos como la inteligencia de negocio contenida en cada uno de los subsistemas es además publicada mediante otro componente para uso interno del sistema, en particular, para ser consultada por el \textsf{Subsistema de Query}. En la medida de lo posible, el acceso podrá ser eficiente y concurrente por distintos clientes. La \emph{modificabilidad} de cada una de los mecanismos de negocio representado en cada subsistema estará contenido en cada uno de ellos. Luego, si se agregan o modifican reglas de asociación o sustitución, o si se modifican posibilidades de preferencias de usuario, esto solo afecta al subsistema correspondiente.
+Cada uno de estos subsistemas permiten modificar la información de negocio por usuarios y administradores según corresponda. Tanto los datos como la inteligencia de negocio contenida en cada uno de los subsistemas es además publicada mediante otro componente para uso interno del sistema, en particular, para ser consultada por el \textsf{Subsistema de Query}. En la medida de lo posible, el acceso podrá ser eficiente y concurrente por distintos clientes. La \emph{modificabilidad} de cada una de los mecanismos de negocio representado en cada subsistema estará contenido en cada uno de ellos.
+
+Los atributos de calidad 1 y 2 refieren a la modificabilidad de dos de estas secciones del negocio. Mediante la \textsf{interfaz de administrador} un \emph{administrador} puede modificar productos y rubros. Los componentes que comunican al \emph{administrador} con el \textsf{Subsistema de Rubros y Productos} están preparados 
 
 El \textsf{Subsistema de Reputación} difiere del resto de los subsistemas de negocio en que el repositorio que contiene los datos no es interno, sino que es externo, ya que es compartido con otros subsistemas. Su diagrama se muestra a continuación. 
 
@@ -240,22 +242,31 @@ Los \textsf{Web Mining Robots} son un conjunto de componentes que cada una está
 \vspace{9pt}
 
 
-
-
 \subsection{Deployment}
+
+En la figura \ref{fig:obtencion_datos} presentamos un diagrama de alocación de recursos a distintos procesos de nuestro sistema. En particular, en este diagrama, nos centramos en la alocación de recursos para el modulo que obtiene datos de ofertas. 
+
+Los componentes de control de ofertas, encargados de determinar si la información obtenida es realmente una oferta, se espera que se ejecuten en varias maquinas. Notemos que la instancias para determinar si información es realmente una oferta valida son completamente independientes entre si. Se penso de esta manera, con la idea de que el sistema pueda soportar la gran carga de trabajo que supone analizar la información obtenida. Ademas, de aumentar esta carga con el tiempo, resulta facil escalar horizontalmente la performance del sistema, agregando mas equipos. Seria deseable en un futuro, poder manejar de forma elastica las instancias asignadas a la tarea de analizar esta información.
+
+Con el objetivo de \emph{alimentar al sistema con la mas fresca información de internet}, se pensaron las fuentes de datos de forma que cada una se controle de forma independiente de las demas. Estas no necesariamente deben correr en maquinas separadas. No se implemento ningun tipo de redundancia sobre estos procesos, debido a que no consideramos como riesgosa la situación en la que alguna o varios de estos equipos fallen, durante un periodo corto de tiempo. Debido a la independencia entre estos procesos, resulta simple agregar nuevas instancias encargadas de obtener datos de otros medios, sin afectar a los demas componentes obtenedores de datos.
+
+Una vez que los datos fueron identificados como ofertas validas, estos se serializan en la base de datos de ofertas. Para poder soportar las grandes cargas de consultas, esta base de datos se encuentra implementada con un motor NOSQL. La replicación de los datos es manejada directamente por el software de la base de datos. De esta forma, podemos garantizar alta disponibilidad de los datos, y performance a la hora de responder las consultas.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/deploy/deploy_obtencion_datos.pdf}
 	\caption{Diagrama de deployment del \textsf{Subsistema de obtención de datos}.}
-	\ref{depl:obtencion_datos}
+	\label{fig:obtencion_datos}
 \end{figure}
+
+En la figura \ref{fig:deploy_query} se detalla el viewtype de alocación del subconjunto del sistema, encargado de responde, 
+
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{graficos/deploy/deploy_cont.pdf}
 	\caption{Diagrama de deployment del sistema central.}
-	\ref{depl:deploy_querty}
+	\label{fig:deploy_query}
 \end{figure}
 
 
